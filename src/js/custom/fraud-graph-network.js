@@ -246,15 +246,15 @@ class FraudGraphNetwork {
 
     // Reduce padding on mobile for fuller coverage
     const padding = this.isMobile ? 20 : 40;
-    const topPadding = this.isMobile ? 80 : padding;
+    const topOffset = this.isMobile ? 40 : 0;
     const effectiveWidth = this.width - padding * 2;
-    const effectiveHeight = this.height - padding - topPadding;
+    const effectiveHeight = this.height - padding * 2;
 
     // Create mule clusters (complex web structure)
     const clusterPositions = [
-      { x: this.width * 0.2, y: this.height * 0.35 },
-      { x: this.width * 0.8, y: this.height * 0.35 },
-      { x: this.width * 0.35, y: this.height * 0.7 },
+      { x: this.width * 0.2, y: this.height * 0.35 + topOffset / 2 },
+      { x: this.width * 0.8, y: this.height * 0.35 + topOffset / 2 },
+      { x: this.width * 0.35, y: this.height * 0.7 + topOffset / 2 },
     ];
 
     for (let c = 0; c < CONFIG.MULE_CLUSTERS; c++) {
@@ -488,7 +488,7 @@ class FraudGraphNetwork {
       const col = i % gridCols;
       const row = Math.floor(i / gridCols);
       const baseX = padding + col * cellWidth + cellWidth / 2;
-      const baseY = padding + row * cellHeight + cellHeight / 2;
+      const baseY = padding + topOffset + row * cellHeight + cellHeight / 2;
 
       // Add jitter to avoid grid look
       const jitterX = randomRange(-cellWidth * 0.4, cellWidth * 0.4);
