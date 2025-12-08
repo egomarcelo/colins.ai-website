@@ -32,7 +32,7 @@ let currentAssetType = 'pump';
 // =========================================
 async function startDesktopSimulationLoop() {
     const pumpViewer = document.getElementById('spline-viewer-pump');
-    const motorViewer = document.getElementById('spline-viewer-motor');
+    const motorViewer = document.getElementById('desktop-svg-motor');
     const assetTitle = document.getElementById('asset-title');
     const processingIndicator = document.getElementById('processing-indicator');
     const serverActivity = document.getElementById('server-activity');
@@ -139,7 +139,7 @@ async function startDesktopSimulationLoop() {
                 motorViewer.style.opacity = "1";
             }
         } else {
-            if (motorViewer) motorViewer.style.opacity = "0";
+            if (motorViewer) motorViewer.style.opacity = "0";  
             await wait(600);
             if (motorViewer) motorViewer.style.visibility = "hidden";
             if (pumpViewer) {

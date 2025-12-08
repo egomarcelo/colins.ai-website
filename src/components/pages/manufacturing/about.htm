@@ -37,15 +37,14 @@
               events-target="none"
             ></spline-viewer>
 
-            <!-- MOTOR VIEWER -->
-            <spline-viewer 
-              id="spline-viewer-motor"
-              url="https://prod.spline.design/OD8wU07AKz3URGBr/scene.splinecode"
-              class="w-full h-full pointer-events-none transition-all duration-500 ease-in-out z-20 absolute top-0 left-0 opacity-0"
-              loading-anim-type="none"
-              events-target="none"
-              style="visibility: hidden; transform: scale(0.4) translateX(18%);"
-            ></spline-viewer>
+            <!-- MOTOR SVG -->
+            <img 
+              id="desktop-svg-motor"
+              src="/images/motor.svg"
+              alt="Electric Motor"
+              class="h-[280px] w-auto object-contain pointer-events-none transition-all duration-500 ease-in-out z-20 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0"
+              style="visibility: hidden; height: 250px; width: auto; top: 50%; left: 50%; transform: translateX(10%) translateY(-10%);"
+            />
             
             <!-- Spline Watermark Cover -->
             <div class="absolute bottom-0 left-0 right-0 h-[180px] bg-gray-50 dark:bg-[#0B0F19] z-30"></div>
