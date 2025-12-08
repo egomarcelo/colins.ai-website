@@ -1,0 +1,307 @@
+{
+  "meta": {
+    "title": "Manifattura || Colins AI",
+    "description": "Le nostre reti neurali simulano la fisica interna di pompe centrifughe e motori elettrici in tempo reale. Rileviamo problemi mesi in anticipo con una precisione del 99% e risparmiamo milioni evitando fermi macchina."
+  },
+  "header": {
+    "nav": {
+      "manufacturing": "Manifattura",
+      "banking": "Banche",
+      "research": "Ricerca e Sviluppo",
+      "language": "Italiano"
+    },
+    "cta": "Contatti",
+    "menu": "Menu"
+  },
+  "hero": {
+    "badge": "Reti Neurali Informate dalla Fisica",
+    "title": "Produzione senza Fallimenti Imprevisti",
+    "description": "Le nostre reti neurali simulano la fisica interna di pompe centrifughe e motori elettrici in tempo reale. Rileviamo problemi mesi in anticipo con una precisione del 99% e risparmiamo milioni evitando fermi macchina.",
+    "cta": {
+      "primary": "Iniziare",
+      "secondary": "Prenota chiamata"
+    }
+  },
+  "about": {
+    "title": "Come funziona",
+    "description": "Il nostro modello fisico proprietario elabora i dati dei sensori in tempo reale e risolve equazioni complesse di fluidodinamica ed elettromagnetismo. Questo ci permette di vedere difetti interni che i sistemi normali non rilevano.",
+    "assetTitle": {
+      "pump": "Gemello Digitale Pompa Centrifuga",
+      "motor": "Gemello Digitale Motore Elettrico"
+    },
+    "cloudServer": "Server Cloud",
+    "pinnAnalysis": "Analisi PINN",
+    "mobile": {
+      "step1": "Raccoltando dati dai sensori...",
+      "step2": "Elaborazione con IA...",
+      "step3": "Analisi completata"
+    },
+    "metrics": {
+      "pump": {
+        "cavitation": {
+          "title": "Indice di Cavitazione Virtuale",
+          "value": "0.72",
+          "safe": "Sicuro",
+          "moderate": "Attenzione",
+          "critical": "Cavitazione",
+          "description": "Condizioni operative attuali mostrano livelli sicuri"
+        },
+        "bep": {
+          "title": "Mappa di Efficienza (BEP)",
+          "operating": "Attuale",
+          "optimal": "BEP",
+          "description": "Operativo all'8% sotto il punto di efficienza ottimale"
+        },
+        "npsh": {
+          "title": "Analisi NPSH",
+          "available": "Disponibile",
+          "required": "Richiesto",
+          "margin": "Margine",
+          "description": "Margine di pressione di aspirazione sano mantenuto"
+        },
+        "stress": {
+          "title": "Analisi Stress della Girante",
+          "leadingEdge": "Bordo d'attacco",
+          "hub": "Mozzo",
+          "bladeTip": "Punta della pala",
+          "yield": "Snervamento",
+          "description": "Livelli di stress meccanico entro i limiti di sicurezza"
+        },
+        "hydraulic": {
+          "title": "Spinta Idraulica",
+          "axial": "Assiale",
+          "radial": "Radiale",
+          "ofMax": "65% del max",
+          "ofMaxRadial": "35% del max",
+          "status": "Cuscinetti reggispinta operativi entro i limiti",
+          "description": "Operativo all'88% della capacità idraulica nominale"
+        }
+      },
+      "motor": {
+        "imbalance": {
+          "title": "Analisi Corrente di Fase",
+          "phaseA": "Fase A",
+          "phaseB": "Fase B",
+          "phaseC": "Fase C",
+          "label": "Sbilanciamento:",
+          "threshold": "Soglia: 5%",
+          "status": "Stato: Normale",
+          "description": "Tutte le fasi bilanciate con una tolleranza del 2%"
+        },
+        "rotor": {
+          "title": "Salute Barre del Rotore",
+          "healthy": "Sano",
+          "degraded": "Degradato",
+          "critical": "Rotto",
+          "healthScore": "Punteggio Salute",
+          "totalBars": "28 Barre Totali",
+          "description": "Tutte le barre del rotore in condizioni eccellenti"
+        },
+        "efficiency": {
+          "title": "Efficienza Motore vs Carico",
+          "optimal": "Ottimale",
+          "current": "Attuale",
+          "description": "Operativo nel range di efficienza ottimale"
+        },
+        "winding": {
+          "title": "Temperatura Avvolgimenti",
+          "windingU": "Avvolgimento U",
+          "windingV": "Avvolgimento V",
+          "windingW": "Avvolgimento W",
+          "classF": "Classe F",
+          "description": "Temperatura degli avvolgimenti ben entro i limiti"
+        },
+        "torque": {
+          "title": "Coppia di Uscita",
+          "current": "Attuale",
+          "rated": "Nominale",
+          "load": "Carico",
+          "status": "Operativo entro la capacità nominale",
+          "description": "Operativo entro la capacità nominale"
+        }
+      }
+    }
+  },
+  "useCases": {
+    "pumps": {
+      "badge": "Pompe",
+      "title": "Dati importanti",
+      "items": {
+        "cavitation": {
+          "title": "Indice di Cavitazione Virtuale",
+          "description": "La cavitazione è la formazione di bolle di vapore dovute alla bassa pressione, che implodono causando danni."
+        },
+        "bep": {
+          "title": "Punto di Migliore Efficienza (BEP)",
+          "description": "Una pompa ha una curva di efficienza (Prevalenza vs Portata). Il picco è il punto più efficiente."
+        },
+        "npsh": {
+          "title": "Altezza Netta Positiva di Aspirazione",
+          "description": "È la pressione disponibile nella tubazione di aspirazione per prevenire la cavitazione che causa danni."
+        },
+        "stress": {
+          "title": "Mappa di Stress della Girante",
+          "description": "Mostra lo stress meccanico sulle pale metalliche causato dalla pressione dell'acqua."
+        },
+        "hydraulic": {
+          "title": "Carico Idraulico",
+          "description": "Mostra le forze assiali e radiali che agiscono sull'albero della pompa."
+        }
+      }
+    },
+    "motors": {
+      "badge": "Motori",
+      "title": "Salute ed Efficienza",
+      "items": {
+        "imbalance": {
+          "title": "Sbilanciamento di Corrente",
+          "description": "La corrente deve essere in equilibrio. Se la Fase A assorbe 100A e la Fase B 105A, il motore si surriscalda."
+        },
+        "rotor": {
+          "title": "Salute Barre del Rotore",
+          "description": "Le barre interne possono creparsi e causare danni. Possiamo identificare questo problema con una frequenza specifica."
+        },
+        "efficiency": {
+          "title": "Curva di Efficienza Motore",
+          "description": "I motori hanno una curva Coppia vs Efficienza. Normalmente lavorano meglio al 75-100% del carico."
+        },
+        "winding": {
+          "title": "Temperatura degli Avvolgimenti",
+          "description": "Stimiamo la temperatura dentro le bobine di rame basandoci su corrente e resistenza."
+        },
+        "torque": {
+          "title": "Coppia di Uscita",
+          "description": "Misura la forza di rotazione reale trasmessa dall'albero del motore al carico."
+        }
+      }
+    },
+    "general": {
+      "badge": "Dati Generali",
+      "title": "Per Motori e Pompe",
+      "items": {
+        "vibration": {
+          "title": "Vibrazione RMS",
+          "description": "Una metrica importante per rilevare sbilanciamenti, disallineamenti, montaggi allentati e problemi di flusso."
+        },
+        "temperature": {
+          "title": "Trend di Temperatura",
+          "description": "Critico per l'isolamento degli avvolgimenti e i cuscinetti. Ogni aumento di 10°C dimezza la vita utile."
+        },
+        "rul": {
+          "title": "Vita Utile Residua",
+          "description": "Misura esattamente quando i cuscinetti si bloccheranno o quando la guarnizione/girante si degraderà."
+        }
+      }
+    }
+  },
+  "integration": {
+    "badge": "Integrazione",
+    "title": "Ci adattiamo al tuo sistema",
+    "description": "La nostra API si integra facilmente con SAP, Maximo o Ignition, generando ticket di manutenzione nel momento in cui viene rilevato un rischio."
+  },
+  "footer": {
+    "tagline": "Fallo meglio.",
+    "company": {
+      "title": "Azienda",
+      "technology": "Tecnologia",
+      "support": "Supporto",
+      "contact": "Contatti"
+    },
+    "quality": {
+      "title": "Standard di Qualità"
+    },
+    "legal": {
+      "title": "Legale",
+      "terms": "Termini e Condizioni",
+      "privacy": "Privacy Policy",
+      "refund": "Politica di Rimborso",
+      "gdpr": "Conformità GDPR"
+    },
+    "copyright": "Copyright ©Colins AI 2025 – Tutti i diritti riservati."
+  },
+  "banking": {
+    "hero": {
+      "badge": "Reti Neurali a Grafo",
+      "title": "Rilevamento Frodi Superiore per le Banche Medie",
+      "description": "Aiutiamo le banche medie ad adottare la tecnologia di IA a grafo usata dalle più grandi per soltanto il 10% del costo. Rileviamo reti illegali e riduciamo i falsi positivi che ti costano milioni fino al 50%.",
+      "cta": {
+        "primary": "Iniziare",
+        "secondary": "Prenota chiamata"
+      }
+    },
+    "graph": {
+      "title": "Come funziona",
+      "description": "La nostra tecnologia modella l'intera rete di transazioni. I nodi rappresentano entità (clienti, conti, dispositivi) e le connessioni rappresentano attributi (IP, importo). Modellare la relazione completa tra nodi e connessioni ci permette di capire il contesto di ogni transazione e così minimizzare i falsi positivi e trovare le vere frodi.",
+      "legend": "Alto Rischio. Tocca per esplorare",
+      "riskScore": "Probabilità di Rischio",
+      "account": "Conto"
+    },
+    "value": {
+      "badge": "Valore",
+      "title": "2x Velocità a 10% del costo",
+      "subtitle": "Ci focalizziamo esclusivamente sulla tecnologia di più alto valore con integrazioni agili. Questo ci permette di dare alle banche medie il 90% dei benefici al 10% del costo.",
+      "items": {
+        "refund": {
+          "title": "Addebiti non riconosciuti",
+          "description": "Sappiamo quanto costano i rimborsi. La nostra tecnologia riduce significativamente i furti di account (ATO) e le frodi APP, risparmiandoti milioni."
+        },
+        "falsePositives": {
+          "title": "Falsi Positivi",
+          "description": "Mappando l'intera rete, verifichiamo utenti legittimi che i sistemi tradizionali bloccano. Vediamo se il destinatario è 'amico di un amico' e sopprimiamo l'allarme."
+        },
+        "aml": {
+          "title": "Conformità AML",
+          "description": "Le GNN sono la migliore tecnologia per scovare schemi di riciclaggio di denaro. Rileverai queste reti più velocemente e con più precisione rispetto ai sistemi standard."
+        }
+      }
+    },
+    "integration": {
+      "badge": "Integrazione",
+      "title": "Plug-and-play col tuo ecosistema",
+      "description": "Il tuo sistema attuale resta intatto. La nostra API si connette direttamente ai tuoi flussi di dati senza interrompere i tuoi processi."
+    }
+  },
+  "pharma": {
+    "hero": {
+      "badge": "Reti Neurali a Grafo Molecolari",
+      "title": "Deep Learning Geometrico. Su misura.",
+      "description": "Accedi alle stesse Reti Neurali a Grafo usate dalle grandi case farmaceutiche. Adattiamo i nostri modelli per darti la migliore tecnologia senza aver bisogno d'infrastrutture multimilionarie.",
+      "cta": {
+        "primary": "Iniziare",
+        "secondary": "Prenota chiamata"
+      }
+    },
+    "value": {
+      "badge": "Valore",
+      "title": "2x Velocità a 10% del costo",
+      "subtitle": "Ci focalizziamo esclusivamente su reti neurali a grafo molecolari con integrazioni agili. Così siamo in grado di dare ai dipartimenti di ricerca medi il 90% dei benefici al 10% del costo.",
+      "items": {
+        "nam": {
+          "title": "FDA 2.0",
+          "description": "I nostri modelli rispettano il FDA Modernization Act. Ti aiutiamo a superare le barriere normative più velocemente con dati verificabili."
+        },
+        "geometry": {
+          "title": "Topologia Molecolare 3D",
+          "description": "Il Deep Learning Geometrico comprende la topologia 3D e l'invarianza rotazionale e predice l'affinità di legame con precisione."
+        },
+        "toxicity": {
+          "title": "Rilevamento Tossicità",
+          "description": "Le nostre reti analizzano milioni di rischi di tossicità in minuti. Assicuri così che solo i candidati validi avanzino ai test di laboratorio."
+        },
+        "explainable": {
+          "title": "IA Spiegabile (XAI)",
+          "description": "I nostri modelli sono vincolati da leggi fisiche. Le loro predizioni sono molto più affidabili anche senza un database enorme."
+        },
+        "data": {
+          "title": "Efficienza dei Dati",
+          "description": "Applicando vincoli fisici direttamente nella rete neurale, otteniamo un apprendimento ad alta affidabilità con i tuoi stessi dati."
+        }
+      }
+    },
+    "integration": {
+      "badge": "Integrazione",
+      "title": "Compatibile col tuo Stack di Laboratorio",
+      "description": "La nostra API si connette direttamente ai tuoi sistemi di laboratorio e database, migliorando il flusso di lavoro con la tecnologia più avanzata."
+    }
+  }
+}

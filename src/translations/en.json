@@ -1,0 +1,307 @@
+{
+  "meta": {
+    "title": "Manufacturing || Colins AI",
+    "description": "Our neural networks simulate internal physics of pumps and electric motors in real-time. We detect problems months in advance with 99% accuracy and save millions from unplanned downtime."
+  },
+  "header": {
+    "nav": {
+      "manufacturing": "Manufacturing",
+      "banking": "Banking",
+      "research": "Research & Development",
+      "language": "English"
+    },
+    "cta": "Contact",
+    "menu": "Menu"
+  },
+  "hero": {
+    "badge": "Physics Informed Neural Networks",
+    "title": "Uninterrupted Production",
+    "description": "Our neural networks simulate internal physics of centrifugal pumps and electric motors in real-time. We detect problems months in advance with 99% accuracy and save millions from unplanned downtime.",
+    "cta": {
+      "primary": "Get started",
+      "secondary": "Book a call"
+    }
+  },
+  "about": {
+    "title": "How it works",
+    "description": "Our proprietary physics model takes real-time sensor data and solves complex fluid dynamics and electromagnetic equations happening inside the machine. This allows us to see internal defects that standard tools miss.",
+    "assetTitle": {
+      "pump": "Centrifugal Pump Digital Twin",
+      "motor": "Electric Motor Digital Twin"
+    },
+    "cloudServer": "Cloud Server",
+    "pinnAnalysis": "PINN Analysis",
+    "mobile": {
+      "step1": "Collecting sensor data...",
+      "step2": "Processing with AI...",
+      "step3": "Analysis complete"
+    },
+    "metrics": {
+      "pump": {
+        "cavitation": {
+          "title": "Virtual Cavitation Index",
+          "value": "0.72",
+          "safe": "Safe",
+          "moderate": "Caution",
+          "critical": "Cavitation",
+          "description": "Current operating conditions show safe cavitation levels"
+        },
+        "bep": {
+          "title": "Efficiency Map (BEP)",
+          "operating": "Current",
+          "optimal": "BEP",
+          "description": "Operating 8% below optimal efficiency point"
+        },
+        "npsh": {
+          "title": "NPSH Analysis",
+          "available": "Available",
+          "required": "Required",
+          "margin": "Margin",
+          "description": "Healthy suction pressure margin maintained"
+        },
+        "stress": {
+          "title": "Impeller Stress Analysis",
+          "leadingEdge": "Leading Edge",
+          "hub": "Hub",
+          "bladeTip": "Blade Tip",
+          "yield": "Yield",
+          "description": "Stress levels within safe operating limits"
+        },
+        "hydraulic": {
+          "title": "Hydraulic Thrust",
+          "axial": "Axial",
+          "radial": "Radial",
+          "ofMax": "65% of max",
+          "ofMaxRadial": "35% of max",
+          "status": "Thrust bearings operating within limits",
+          "description": "Operating at 88% of rated hydraulic capacity"
+        }
+      },
+      "motor": {
+        "imbalance": {
+          "title": "Phase Current Analysis",
+          "phaseA": "Phase A",
+          "phaseB": "Phase B",
+          "phaseC": "Phase C",
+          "label": "Current Imbalance:",
+          "threshold": "Threshold: 5%",
+          "status": "Status: Normal",
+          "description": "All phases balanced within 2% tolerance"
+        },
+        "rotor": {
+          "title": "Rotor Bar Health",
+          "healthy": "Healthy",
+          "degraded": "Degraded",
+          "critical": "Broken",
+          "healthScore": "Health Score",
+          "totalBars": "28 Total Bars",
+          "description": "All rotor bars in excellent condition"
+        },
+        "efficiency": {
+          "title": "Motor Efficiency vs Load",
+          "optimal": "Optimal",
+          "current": "Current",
+          "description": "Operating within optimal efficiency range"
+        },
+        "winding": {
+          "title": "Winding Temperature",
+          "windingU": "Winding U",
+          "windingV": "Winding V",
+          "windingW": "Winding W",
+          "classF": "Class F",
+          "description": "Winding temperature well within safe limits"
+        },
+        "torque": {
+          "title": "Output Torque",
+          "current": "Current",
+          "rated": "Rated",
+          "load": "Load",
+          "status": "Operating within rated capacity",
+          "description": "Operating within rated capacity"
+        }
+      }
+    }
+  },
+  "useCases": {
+    "pumps": {
+      "badge": "Pumps",
+      "title": "Data you must have",
+      "items": {
+        "cavitation": {
+          "title": "Virtual Cavitation Index",
+          "description": "Cavitation is the formation of vapor bubbles in a liquid due to low pressure. These later implode and cause damage."
+        },
+        "bep": {
+          "title": "Best Efficiency Point",
+          "description": "A pump has a specific efficiency curve (Head vs. Flow). The Best Efficiency Point is the peak of that curve."
+        },
+        "npsh": {
+          "title": "Net Positive Suction Head",
+          "description": "This is the pressure available at the suction pipe to prevent the cavitation that later causes damage."
+        },
+        "stress": {
+          "title": "Impeller Stress Heatmap",
+          "description": "This shows the mechanical stress on the metal vanes caused by water pressure."
+        },
+        "hydraulic": {
+          "title": "Hydraulic Load",
+          "description": "Shows axial and radial forces acting on pump shaft. This is critical for preventing bearing failure."
+        }
+      }
+    },
+    "motors": {
+      "badge": "Motors",
+      "title": "Health & Efficiency",
+      "items": {
+        "imbalance": {
+          "title": "Current Imbalance",
+          "description": "If Phase A draws 100 Amps and Phase B draws 105 Amps, the motor overheats."
+        },
+        "rotor": {
+          "title": "Rotor Bar Health",
+          "description": "In AC Induction motors, the internal bars can crack. This creates a specific vibration frequency."
+        },
+        "efficiency": {
+          "title": "Motor Efficiency Curve",
+          "description": "Motors have a Torque vs. Efficiency curve. They are usually best at 75-100% load."
+        },
+        "winding": {
+          "title": "Winding Temperature",
+          "description": "Our neural networks estimate the temperature inside the copper coils based on current and resistance."
+        },
+        "torque": {
+          "title": "Output Torque",
+          "description": "Measures rotational force delivered by the motor shaft and ensures the motor operates within capacity."
+        }
+      }
+    },
+    "general": {
+      "badge": "General Data",
+      "title": "For Motors & Pumps",
+      "items": {
+        "vibration": {
+          "title": "Vibration RMS",
+          "description": "Used to detect imbalances, misalignments, loose mountings, and electric or hydraulic flow issues."
+        },
+        "temperature": {
+          "title": "Temperature Trends",
+          "description": "Critical for winding insulation in motors and bearings in pumps. Every 10°C rise cuts insulation life in half."
+        },
+        "rul": {
+          "title": "Remaining Useful Life",
+          "description": "Predicts when the insulation or bearings will seize in motors and when the seal or impeller will degrade in pumps."
+        }
+      }
+    }
+  },
+  "integration": {
+    "badge": "Integration",
+    "title": "Works with the tools you already use",
+    "description": "Our API automatically feeds predictive health metrics into SAP, Maximo, or Ignition, triggering maintenance tickets the moment a risk is detected."
+  },
+  "footer": {
+    "tagline": "Do Better.",
+    "company": {
+      "title": "Company",
+      "technology": "Technology",
+      "support": "Support",
+      "contact": "Contact"
+    },
+    "quality": {
+      "title": "Quality Standards"
+    },
+    "legal": {
+      "title": "Legal Policies",
+      "terms": "Terms & Conditions",
+      "privacy": "Privacy Policy",
+      "refund": "Refund Policy",
+      "gdpr": "GDPR Compliance"
+    },
+    "copyright": "Copyright ©Colins AI 2025 – All rights reserved."
+  },
+  "banking": {
+    "hero": {
+      "badge": "Graph Neural Networks",
+      "title": "Elite Fraud Detection for Mid-sized Banks",
+      "description": "We provide mid-sized banks the advanced Graph technology that the larger banks use for just 10% of the cost. We identify mule network schemes, ATO, and reduce the false positives costing you millions by up to 50%.",
+      "cta": {
+        "primary": "Get Started",
+        "secondary": "Book a call"
+      }
+    },
+    "graph": {
+      "title": "How it works",
+      "description": "Our proprietary graph technology models your entire network. Nodes represent entities (customers, accounts, devices) and Edges represent transaction attributes (IP address, amount). Mapping the entire relationship between nodes and edges allows us to understand the context of each transaction, minimizing false positives and finding the real fraud.",
+      "legend": "High Risk. Tap to explore",
+      "riskScore": "Risk Score",
+      "account": "Account"
+    },
+    "integration": {
+      "badge": "Integration",
+      "title": "Plug-and-play with your ecosystem",
+      "description": "Keep your current setup, just make it smarter. Our API connects directly to your data streams and monitoring dashboards without disrupting workflow."
+    },
+    "value": {
+      "badge": "Value",
+      "title": "2x Speed at 10% cost",
+      "subtitle": "We focus exclusively on providing mid-sized banks with the advanced graph AI technology that is currently mostly only available to large banks. This allows us to provide 90% of the benefit at 10% of the cost. We integrate fast and easy with your current setup and stop fraud 2x faster where it's hurting you the most.",
+      "items": {
+        "refund": {
+          "title": "Refund Liability",
+          "description": "We understand how much time and money refunds are costing you every year. Our technology will significantly reduce Account takeovers and APP Fraud, saving you millions every year and making your customers happy."
+        },
+        "falsePositives": {
+          "title": "False Positives",
+          "description": "By understanding the network, we verify legitimate high-velocity users like small businesses that rule-based systems often block. We see that the recipient is a friend of a friend (2-hop connection) and suppress the alert."
+        },
+        "aml": {
+          "title": "AML Compliance",
+          "description": "Graph Neural Networks are the absolute best technology in the world to catch mule network schemes. You will be able to detect money laundering faster and more accurately than any KYC technology can."
+        }
+      }
+    }
+  },
+  "pharma": {
+    "hero": {
+      "badge": "Molecular Graph Neural Networks",
+      "title": "Geometric Deep Learning. Tailored to your Lab.",
+      "description": "Access the same Molecular Graph Neural Networks used by top-tier pharma. We custom-fit our models and give you Big Pharma technology without the multi-million dollar infrastructure.",
+      "cta": {
+        "primary": "Get Started",
+        "secondary": "Book a call"
+      }
+    },
+    "value": {
+      "badge": "Value",
+      "title": "2x Speed at 10% cost",
+      "subtitle": "Mid-sized biotechs shouldn't be priced out of innovation. We focus exclusively on Molecular GNN technology and provide fast and agile integrations. We're able to provide mid-sized labs 90% of the benefit at 10% of the cost.",
+      "items": {
+        "nam": {
+          "title": "FDA 2.0",
+          "description": "Our models are purpose-built to serve as high-fidelity solutions for the FDA Modernization Act, helping you clear regulatory hurdles faster using verifiable computational data."
+        },
+        "geometry": {
+          "title": "3D Molecular Topology",
+          "description": "We use Geometric Deep Learning that understands 3D topology and rotational invariance. This allows us to accurately predict binding affinity where other models fail."
+        },
+        "toxicity": {
+          "title": "Early Toxicity Screening",
+          "description": "Our Graph Neural Networks screen millions of candidates for toxicity risks in minutes, ensuring you only advance viable candidates to wet-lab trials."
+        },
+        "explainable": {
+          "title": "Explainable AI",
+          "description": "Our Physics informed and Graph models are constrained by physics or structure. Their predictions are inherently more trustworthy and robust to data scarcity."
+        },
+        "data": {
+          "title": "Data Efficiency",
+          "description": "By embedding physical constraints directly into the neural network, we achieve high-fidelity learning from your limited proprietary data, eliminating the need for tons of data."
+        }
+      }
+    },
+    "integration": {
+      "badge": "Integration",
+      "title": "Compatible with your Lab Stack",
+      "description": "Our API connects directly to your existing Electronic Lab Notebooks and cloud data lakes, enhancing your current workflow with state of the art technology."
+    }
+  }
+}

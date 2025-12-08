@@ -1,0 +1,238 @@
+<!-- =========================
+Mobile Menu - Fixed
+===========================-->
+
+<aside
+  class="sidebar fixed top-0 right-0 w-full sm:w-1/2 translate-x-full transition-all duration-300 h-screen bg-white dark:bg-background-8 rounded-l-3xl xl:hidden z-[9999] scroll-bar"
+>
+  <div class="lg:p-9 sm:p-8 p-5 space-y-4">
+    <div class="flex items-center justify-between">
+      <a href="./ai-software.html">
+        <span class="sr-only">Home</span>
+        <figure class="max-w-[44px]">
+          <img src="./images/shared/logo.svg" alt="NextSaaS" class="w-full dark:hidden block" />
+          <img
+            src="./images/shared/logo-dark.svg"
+            alt="NextSaaS"
+            class="w-full dark:block hidden"
+          />
+        </figure>
+      </a>
+      <button
+        class="nav-hamburger-close flex flex-col gap-1.5 size-10 bg-background-4 dark:bg-background-9 rounded-full items-center justify-center cursor-pointer relative"
+      >
+        <span class="sr-only">Close Menu</span>
+        <span class="block w-4 h-0.5 bg-stroke-9/60 dark:bg-stroke-1 rotate-45 absolute"></span>
+        <span class="block w-4 h-0.5 bg-stroke-9/60 dark:bg-stroke-1 -rotate-45 absolute"></span>
+      </button>
+    </div>
+    <div class="mt-6 h-[85vh] w-full overflow-y-auto overflow-x-hidden pb-10 scroll-bar">
+      <ul class="space-y-2">
+        <!-- Main Navigation Links -->
+        <li>
+          <a
+            href="./index.html"
+            class="flex items-center justify-between w-full py-3 text-secondary dark:text-accent font-normal text-base hover:text-secondary/80 dark:hover:text-accent/80 transition-colors duration-200"
+          >
+            <span data-i18n="header.nav.manufacturing">Manufacturing</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="./banking.html"
+            class="flex items-center justify-between w-full py-3 text-secondary dark:text-accent font-normal text-base hover:text-secondary/80 dark:hover:text-accent/80 transition-colors duration-200"
+          >
+            <span data-i18n="header.nav.banking">Banking</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="./research.html"
+            class="flex items-center justify-between w-full py-3 text-secondary dark:text-accent font-normal text-base hover:text-secondary/80 dark:hover:text-accent/80 transition-colors duration-200"
+          >
+            <span data-i18n="header.nav.research">Research & Development</span>
+          </a>
+        </li>
+
+        <!-- Language Dropdown -->
+        <li class="space-y-2">
+          <button
+            class="mobile-language-toggle flex items-center justify-between w-full py-3 cursor-pointer"
+            data-menu="language"
+          >
+            <span id="mobile-current-language" class="text-secondary dark:text-accent font-normal text-base">English</span>
+
+            <span class="language-menu-arrow transition-transform duration-300">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </span>
+          </button>
+          
+          <!-- Language Submenu (Collapsed by Default) -->
+          <ul class="mobile-language-submenu hidden" data-submenu="language">
+            <li>
+              <button 
+                data-language-option="en"
+                class="w-full text-left py-2.5 text-secondary dark:text-accent font-normal text-tagline-1 transition-colors duration-200 ml-4 flex items-center justify-between hover:text-secondary/80 dark:hover:text-accent/80"
+              >
+                <span>English</span>
+                <span class="language-indicator hidden text-blue-500">✓</span>
+              </button>
+            </li>
+            <li>
+              <button 
+                data-language-option="es"
+                class="w-full text-left py-2.5 text-secondary dark:text-accent font-normal text-tagline-1 transition-colors duration-200 ml-4 flex items-center justify-between hover:text-secondary/80 dark:hover:text-accent/80"
+              >
+                <span>Español</span>
+                <span class="language-indicator hidden text-blue-500">✓</span>
+              </button>
+            </li>
+            <li>
+              <button 
+                data-language-option="de"
+                class="w-full text-left py-2.5 text-secondary dark:text-accent font-normal text-tagline-1 transition-colors duration-200 ml-4 flex items-center justify-between hover:text-secondary/80 dark:hover:text-accent/80"
+              >
+                <span>Deutsch</span>
+                <span class="language-indicator hidden text-blue-500">✓</span>
+              </button>
+            </li>
+            <li>
+              <button 
+                data-language-option="fr"
+                class="w-full text-left py-2.5 text-secondary dark:text-accent font-normal text-tagline-1 transition-colors duration-200 ml-4 flex items-center justify-between hover:text-secondary/80 dark:hover:text-accent/80"
+              >
+                <span>Français</span>
+                <span class="language-indicator hidden text-blue-500">✓</span>
+              </button>
+            </li>
+            <li>
+              <button 
+                data-language-option="it"
+                class="w-full text-left py-2.5 text-secondary dark:text-accent font-normal text-tagline-1 transition-colors duration-200 ml-4 flex items-center justify-between hover:text-secondary/80 dark:hover:text-accent/80"
+              >
+                <span>Italiano</span>
+                <span class="language-indicator hidden text-blue-500">✓</span>
+              </button>
+            </li>
+            <li>
+              <button 
+                data-language-option="pt"
+                class="w-full text-left py-2.5 text-secondary dark:text-accent font-normal text-tagline-1 transition-colors duration-200 ml-4 flex items-center justify-between hover:text-secondary/80 dark:hover:text-accent/80"
+              >
+                <span>Português</span>
+                <span class="language-indicator hidden text-blue-500">✓</span>
+              </button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- CTA Button -->
+      <div class="border-t border-stroke-4 dark:border-stroke-6 pt-6 mt-6">
+        <a
+          href="https://wa.me/17077022817"
+          class="btn btn-md btn-secondary dark:btn-accent hover:btn-white dark:hover:btn-white-dark w-full justify-center"
+        >
+          <span data-i18n="header.cta">Talk to us now</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<style>
+/* Mobile menu language indicator for active language */
+[data-language-option].active .language-indicator {
+  display: inline-block !important;
+}
+
+[data-language-option].active {
+  color: rgb(59, 130, 246) !important;
+}
+</style>
+
+<script>
+// Mobile menu language dropdown functionality
+document.addEventListener('DOMContentLoaded', () => {
+  const languageToggle = document.querySelector('.mobile-language-toggle');
+  const languageSubmenu = document.querySelector('.mobile-language-submenu');
+  const languageArrow = document.querySelector('.language-menu-arrow');
+  
+  // Toggle language dropdown
+  if (languageToggle && languageSubmenu && languageArrow) {
+    languageToggle.addEventListener('click', () => {
+      const isHidden = languageSubmenu.classList.contains('hidden');
+      
+      if (isHidden) {
+        // Open dropdown
+        languageSubmenu.classList.remove('hidden');
+        languageArrow.style.transform = 'rotate(180deg)';
+      } else {
+        // Close dropdown
+        languageSubmenu.classList.add('hidden');
+        languageArrow.style.transform = 'rotate(0deg)';
+      }
+    });
+  }
+
+  // Close dropdown when language is selected
+  const languageOptions = document.querySelectorAll('.sidebar [data-language-option]');
+  languageOptions.forEach(option => {
+    option.addEventListener('click', () => {
+      // Close the dropdown after selection
+      if (languageSubmenu && languageArrow) {
+        languageSubmenu.classList.add('hidden');
+        languageArrow.style.transform = 'rotate(0deg)';
+      }
+    });
+  });
+
+  // Update mobile menu language display and indicators
+  const updateMobileLanguageDisplay = () => {
+    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+    const languageNames = {
+      en: 'English',
+      es: 'Español',
+      de: 'Deutsch',
+      fr: 'Français',
+      it: 'Italiano',
+      pt: 'Português'
+    };
+    
+    // Update the current language display
+    const currentLangDisplay = document.getElementById('mobile-current-language');
+    if (currentLangDisplay) {
+      currentLangDisplay.textContent = languageNames[currentLang];
+    }
+    
+    // Update mobile menu language buttons (show checkmark for active)
+    document.querySelectorAll('.sidebar [data-language-option]').forEach(btn => {
+      const lang = btn.getAttribute('data-language-option');
+      if (lang === currentLang) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+  };
+
+  // Update on page load
+  updateMobileLanguageDisplay();
+
+  // Update when language changes
+  document.addEventListener('languageChanged', updateMobileLanguageDisplay);
+});
+</script>

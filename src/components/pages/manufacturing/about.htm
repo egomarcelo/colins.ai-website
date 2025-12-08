@@ -1,0 +1,827 @@
+<section class="relative py-16 bg-background-3 dark:bg-background-6 overflow-hidden">
+  
+  <div class="main-container flex flex-col gap-4 h-full">
+    
+    <div class="flex flex-col items-center text-center gap-y-4">
+      <h2 class="max-w-[750px] mx-auto" data-i18n="about.title">How it works</h2>
+      <p class="max-w-[850px] text-secondary/70 dark:text-secondary-light/70" data-i18n="about.description">
+        Our proprietary physics model takes real-time sensor data and solves complex fluid and electromagnetic equations happening inside the machine. This allows us to see internal defects that standard tools miss.
+      </p>
+    </div>
+
+    <!-- ================================================== -->
+    <!-- DESKTOP VERSION (hidden on mobile) - UNCHANGED -->
+    <!-- ================================================== -->
+    <div id="desktop-animation" class="hidden md:block relative w-full h-[520px] bg-gray-50 dark:bg-[#0B0F19] rounded-2xl border border-stroke-2 dark:border-stroke-6 shadow-2xl overflow-hidden">
+      
+      <!-- Asset Title - Higher z-index -->
+      <div class="absolute top-6 left-8 z-50">
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+            <h4 id="asset-title" class="text-lg font-bold text-secondary dark:text-white transition-all" data-i18n="about.assetTitle.pump">Centrifugal Pump Digital Twin</h4>
+          </div>
+      </div>
+
+      <!-- Main Grid Layout -->
+      <div class="w-full h-full grid grid-cols-12 relative">
+        
+        <!-- LEFT: 3D Model Viewer -->
+        <div class="col-span-4 relative flex items-center justify-center">
+
+            <spline-viewer 
+              id="spline-viewer-pump"
+              url="https://prod.spline.design/FJrgIOEkewBizgJ8/scene.splinecode"
+              class="w-full h-full pointer-events-none transition-all duration-500 ease-in-out z-20"
+              style="visibility: visible;"
+              loading-anim-type="none"
+              events-target="none"
+            ></spline-viewer>
+
+            <!-- MOTOR VIEWER -->
+            <spline-viewer 
+              id="spline-viewer-motor"
+              url="https://prod.spline.design/OD8wU07AKz3URGBr/scene.splinecode"
+              class="w-full h-full pointer-events-none transition-all duration-500 ease-in-out z-20 absolute top-0 left-0 opacity-0"
+              loading-anim-type="none"
+              events-target="none"
+              style="visibility: hidden; transform: scale(0.4) translateX(18%);"
+            ></spline-viewer>
+            
+            <!-- Spline Watermark Cover -->
+            <div class="absolute bottom-0 left-0 right-0 h-[180px] bg-gray-50 dark:bg-[#0B0F19] z-30"></div>
+        </div>
+
+        <!-- CENTER: NVIDIA Jetson -->
+        <div class="col-span-2 flex items-center justify-center relative">
+            <!-- Arc Waves flowing INTO Jetson -->
+            <div class="absolute left-[-80px] top-1/2 -translate-y-1/2 w-[120px] h-[200px] pointer-events-none z-10">
+              <svg class="w-full h-full overflow-visible" viewBox="0 0 120 200">
+                <path class="wave-arc wave-arc-1" d="M 0 30 Q 60 100, 0 170" fill="none" stroke="rgba(59, 130, 246, 0.6)" stroke-width="3"/>
+                <path class="wave-arc wave-arc-2" d="M 0 30 Q 60 100, 0 170" fill="none" stroke="rgba(59, 130, 246, 0.5)" stroke-width="3"/>
+                <path class="wave-arc wave-arc-3" d="M 0 30 Q 60 100, 0 170" fill="none" stroke="rgba(59, 130, 246, 0.4)" stroke-width="3"/>
+              </svg>
+            </div>
+
+            <div class="relative w-[140px] bg-[#1a1a1a] rounded-lg border border-gray-700 shadow-2xl flex flex-col overflow-hidden group z-30">
+                <div class="h-16 bg-[#2d2d2d] w-full flex justify-between px-1 pt-1">
+                    <div class="w-1 h-full bg-[#1a1a1a]"></div><div class="w-1 h-full bg-[#1a1a1a]"></div>
+                    <div class="w-1 h-full bg-[#1a1a1a]"></div><div class="w-1 h-full bg-[#1a1a1a]"></div>
+                    <div class="w-1 h-full bg-[#1a1a1a]"></div><div class="w-1 h-full bg-[#1a1a1a]"></div>
+                    <div class="w-1 h-full bg-[#1a1a1a]"></div><div class="w-1 h-full bg-[#1a1a1a]"></div>
+                </div>
+                <div class="p-3 flex flex-col gap-1 items-center">
+                    <div class="text-[8px] text-green-500 font-bold tracking-widest uppercase">NVIDIA</div>
+                    <div class="text-[10px] text-white font-bold">Jetson Orin</div>
+                </div>
+                <div class="absolute bottom-2 right-2 w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse shadow-[0_0_10px_rgba(34,197,94,0.8)]"></div>
+                
+                <!-- Processing Indicator -->
+                <div id="processing-indicator" class="absolute -top-1 -right-1 w-3 h-3 bg-blue-500 rounded-full opacity-0 scale-0 transition-all duration-300">
+                    <div class="absolute inset-0 bg-blue-500 rounded-full animate-ping"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT: Server + Metrics Panel -->
+        <div class="col-span-6 flex flex-col p-6 relative">
+            
+            <!-- Server Block with Connected Metrics -->
+            <div class="relative flex-1 flex flex-col">
+                
+                <!-- Incoming Data Path SVG -->
+                <svg class="absolute top-0 left-0 w-full h-full pointer-events-none z-10" style="overflow: visible;">
+                    <defs>
+                        <linearGradient id="dataFlowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.8"/>
+                            <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.8"/>
+                        </linearGradient>
+                    </defs>
+                    <!-- Path from left edge (Jetson) to Server -->
+                    <path id="data-path-line" 
+                          d="M -30 280 L 40 280 L 40 85 L 100 85"
+                          fill="none" 
+                          stroke="url(#dataFlowGradient)" 
+                          stroke-width="3" 
+                          stroke-dasharray="8,6"
+                          stroke-linecap="round"
+                          class="data-path-animated"
+                    />
+                    <!-- Data packets animation -->
+                    <circle class="data-packet" r="4" fill="#3b82f6">
+                        <animateMotion dur="2s" repeatCount="indefinite" path="M -30 280 L 40 280 L 40 85 L 100 85"/>
+                    </circle>
+                </svg>
+
+                <!-- Cloud Server -->
+                <div class="relative z-20 ml-[100px] mt-16 mb-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-20 h-14 bg-gray-800 rounded-lg border-b-4 border-gray-900 flex flex-col justify-center gap-1 px-2 shadow-xl relative">
+                            <div class="flex gap-1"><div class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></div><div class="w-full h-0.5 bg-gray-600"></div></div>
+                            <div class="flex gap-1"><div class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse delay-75"></div><div class="w-full h-0.5 bg-gray-600"></div></div>
+                            <div class="flex gap-1"><div class="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse delay-150"></div><div class="w-full h-0.5 bg-gray-600"></div></div>
+            
+                            <!-- Server Activity Indicator -->
+                            <div id="server-activity" class="absolute -top-1 -right-1 w-3 h-3 bg-purple-500 rounded-full opacity-0 scale-0 transition-all duration-300">
+                                <div class="absolute inset-0 bg-purple-500 rounded-full animate-ping"></div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-[10px] font-mono text-secondary/60 uppercase" data-i18n="about.cloudServer">Cloud Server</span>
+                            <span class="text-[10px] font-mono text-blue-500" data-i18n="about.pinnAnalysis">PINN Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Metrics Container -->
+                <div class="relative z-20 ml-4 flex-1 flex flex-col justify-start pt-10">
+                    
+                    <!-- Vertical Connection Line -->
+                    <div id="vertical-line" class="absolute left-[130px] -top-4 w-[2px] h-0 bg-gradient-to-b from-purple-500 via-blue-500/50 to-transparent transition-all duration-1000 ease-out"></div>
+                    
+                    <!-- PUMP METRICS (shown when pump is active) -->
+                    <div id="pump-metrics" class="ml-[143px] space-y-3">
+        
+                        <!-- PUMP Metric 1: Virtual Cavitation Index -->
+                        <div id="pump-metric-1" class="metric-card pump-metric hidden flex-col w-[300px] bg-white dark:bg-black/80 backdrop-blur-md border border-stroke-2 dark:border-stroke-7 rounded-xl p-4 shadow-lg relative">
+                            <div class="absolute -left-[20px] top-1/2 -translate-y-1/2 w-3 h-3 bg-purple-500 rounded-full border-2 border-white dark:border-gray-900 shadow"></div>
+                            <h6 class="text-xs font-bold uppercase text-secondary dark:text-secondary-light mb-3 flex items-center gap-2">
+                                <svg class="w-4 h-4 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                                <span data-i18n="about.metrics.pump.cavitation.title">Virtual Cavitation Index</span>
+                            </h6>
+                            <div class="relative w-full h-6 bg-gray-200 dark:bg-gray-800 rounded-full overflow-hidden">
+                                <div class="cavitation-bar absolute top-0 left-0 h-full bg-gradient-to-r from-green-400 via-yellow-400 to-red-500 rounded-full transition-all duration-1000"></div>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <span id="cavitation-value" class="text-[10px] font-bold text-white drop-shadow-md">0.72</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between mt-2 text-[10px] font-mono">
+                                <span class="text-green-500 flex items-center gap-1">
+                                    <span class="w-2 h-2 rounded-full bg-green-500"></span><span data-i18n="about.metrics.pump.cavitation.safe">Safe</span>
+                                </span>
+                                <span class="text-yellow-500 flex items-center gap-1">
+                                    <span class="w-2 h-2 rounded-full bg-yellow-500"></span><span data-i18n="about.metrics.pump.cavitation.moderate">Caution</span>
+                                </span>
+                                <span class="text-red-500 flex items-center gap-1 font-bold">
+                                    <span class="w-2 h-2 rounded-full bg-red-500"></span><span data-i18n="about.metrics.pump.cavitation.critical">Cavitation</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- PUMP Metric 2: BEP -->
+                        <div id="pump-metric-2" class="metric-card pump-metric hidden flex-col w-[300px] bg-white dark:bg-black/80 backdrop-blur-md border border-stroke-2 dark:border-stroke-7 rounded-xl p-4 shadow-lg relative">
+                            <div class="absolute -left-[20px] top-1/2 -translate-y-1/2 w-3 h-3 bg-blue-500 rounded-full border-2 border-white dark:border-gray-900 shadow"></div>
+                            <h6 class="text-xs font-bold uppercase text-secondary dark:text-secondary-light mb-2 flex items-center gap-2">
+                                <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                </svg>
+                                <span data-i18n="about.metrics.pump.bep.title">Efficiency Map (BEP)</span>
+                            </h6>
+                            <canvas id="bepCanvas" width="260" height="80" class="w-full"></canvas>
+                            <div class="mt-2 flex items-center justify-between text-[10px]">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                                    <span class="text-secondary/60 dark:text-secondary-light/60"><span data-i18n="about.metrics.pump.bep.optimal">BEP</span>: 85%</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <span class="w-2 h-2 rounded-full bg-red-500"></span>
+                                    <span class="text-secondary/60 dark:text-secondary-light/60"><span data-i18n="about.metrics.pump.bep.operating">Current</span>: 78%</span>
+                                </div>
+                            </div>
+                            <div class="mt-2 p-2 bg-yellow-100 dark:bg-yellow-900/30 rounded text-[10px] text-yellow-700 dark:text-yellow-400 flex items-center gap-2">
+                                <span class="text-sm">⚠️</span> 
+                                <span data-i18n="about.metrics.pump.bep.description">Operating 8% below optimal efficiency point</span>
+                            </div>
+                        </div>
+
+                        <!-- PUMP Metric 3: NPSH -->
+                        <div id="pump-metric-3" class="metric-card pump-metric hidden flex-col w-[300px] bg-white dark:bg-black/80 backdrop-blur-md border border-stroke-2 dark:border-stroke-7 rounded-xl p-4 shadow-lg relative">
+                            <div class="absolute -left-[20px] top-1/2 -translate-y-1/2 w-3 h-3 bg-cyan-500 rounded-full border-2 border-white dark:border-gray-900 shadow"></div>
+                            <h6 class="text-xs font-bold uppercase text-secondary dark:text-secondary-light mb-3 flex items-center gap-2">
+                                <svg class="w-4 h-4 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                                </svg>
+                                <span data-i18n="about.metrics.pump.npsh.title">NPSH Analysis</span>
+                            </h6>
+                            <div class="flex gap-4 mb-3">
+                                <div class="flex-1 bg-gray-100 dark:bg-gray-800 rounded-lg p-3 text-center">
+                                    <div class="text-[10px] text-secondary/60 dark:text-secondary-light/60 uppercase mb-1">NPSHa</div>
+                                    <div class="text-xl font-bold text-cyan-500">8.2<span class="text-xs ml-1">m</span></div>
+                                    <div class="text-[9px] text-secondary/50 dark:text-secondary-light/50" data-i18n="about.metrics.pump.npsh.available">Available</div>
+                                </div>
+                                <div class="flex-1 bg-gray-100 dark:bg-gray-800 rounded-lg p-3 text-center">
+                                    <div class="text-[10px] text-secondary/60 dark:text-secondary-light/60 uppercase mb-1">NPSHr</div>
+                                    <div class="text-xl font-bold text-orange-500">5.4<span class="text-xs ml-1">m</span></div>
+                                    <div class="text-[9px] text-secondary/50 dark:text-secondary-light/50" data-i18n="about.metrics.pump.npsh.required">Required</div>
+                                </div>
+                            </div>
+                            <div class="relative h-4 bg-gray-200 dark:bg-gray-800 rounded-full overflow-hidden">
+                                <div class="absolute left-0 top-0 h-full w-[66%] bg-gradient-to-r from-cyan-500 to-cyan-400 rounded-full"></div>
+                                <div class="absolute left-[66%] top-0 h-full w-[2px] bg-orange-500"></div>
+                            </div>
+                            <div class="flex justify-between mt-1 text-[9px] font-mono text-secondary/50 dark:text-secondary-light/50">
+                                <span>0m</span>
+                                <span class="text-green-500 font-bold"><span data-i18n="about.metrics.pump.npsh.margin">Margin</span>: +2.8m ✓</span>
+                                <span>12m</span>
+                            </div>
+                        </div>
+
+                        <!-- PUMP Metric 4: Impeller Stress -->
+                        <div id="pump-metric-4" class="metric-card pump-metric hidden flex-col w-[300px] bg-white dark:bg-black/80 backdrop-blur-md border border-stroke-2 dark:border-stroke-7 rounded-xl p-4 shadow-lg relative">
+                            <div class="absolute -left-[20px] top-1/2 -translate-y-1/2 w-3 h-3 bg-red-500 rounded-full border-2 border-white dark:border-gray-900 shadow"></div>
+                            <h6 class="text-xs font-bold uppercase text-secondary dark:text-secondary-light mb-3 flex items-center gap-2">
+                                <svg class="w-4 h-4 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/>
+                                </svg>
+                                <span data-i18n="about.metrics.pump.stress.title">Impeller Stress Analysis</span>
+                            </h6>
+                            <div class="flex gap-3">
+                                <div class="flex-1">
+                                    <canvas id="impellerCanvas" width="120" height="100" class="w-full"></canvas>
+                                </div>
+                                <div class="flex-1 flex flex-col justify-center gap-2">
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-[10px] text-secondary/60 dark:text-secondary-light/60" data-i18n="about.metrics.pump.stress.leadingEdge">Leading Edge</span>
+                                        <span class="text-xs font-bold text-yellow-500">72 MPa</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-[10px] text-secondary/60 dark:text-secondary-light/60" data-i18n="about.metrics.pump.stress.hub">Hub</span>
+                                        <span class="text-xs font-bold text-green-500">45 MPa</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-[10px] text-secondary/60 dark:text-secondary-light/60" data-i18n="about.metrics.pump.stress.bladeTip">Blade Tip</span>
+                                        <span class="text-xs font-bold text-red-500">98 MPa</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 h-2 w-full rounded-full bg-gradient-to-r from-blue-500 via-green-500 via-yellow-500 to-red-500"></div>
+                            <div class="flex justify-between mt-1 text-[9px] font-mono text-secondary/50 dark:text-secondary-light/50">
+                                <span>0 MPa</span>
+                                <span><span data-i18n="about.metrics.pump.stress.yield">Yield</span>: 120 MPa</span>
+                            </div>
+                        </div>
+
+                        <!-- PUMP Metric 5: Hydraulic Thrust -->
+                        <div id="pump-metric-5" class="metric-card pump-metric hidden flex-col w-[300px] bg-white dark:bg-black/80 backdrop-blur-md border border-stroke-2 dark:border-stroke-7 rounded-xl p-4 shadow-lg relative">
+                            <div class="absolute -left-[20px] top-1/2 -translate-y-1/2 w-3 h-3 bg-indigo-500 rounded-full border-2 border-white dark:border-gray-900 shadow"></div>
+                            <h6 class="text-xs font-bold uppercase text-secondary dark:text-secondary-light mb-3 flex items-center gap-2">
+                                <svg class="w-4 h-4 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"/>
+                                </svg>
+                                <span data-i18n="about.metrics.pump.hydraulic.title">Hydraulic Thrust</span>
+                            </h6>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div class="bg-gray-100 dark:bg-gray-800 rounded-lg p-3">
+                                    <div class="text-[10px] text-secondary/60 dark:text-secondary-light/60 uppercase mb-1 flex items-center gap-1">
+                                        <span>↑↓</span> <span data-i18n="about.metrics.pump.hydraulic.axial">Axial</span>
+                                    </div>
+                                    <div class="text-lg font-bold text-indigo-500">4.2<span class="text-xs ml-1">kN</span></div>
+                                    <div class="w-full h-1 bg-gray-300 dark:bg-gray-700 rounded-full mt-2">
+                                        <div class="h-full w-[65%] bg-indigo-500 rounded-full"></div>
+                                    </div>
+                                    <div class="text-[9px] text-secondary/50 dark:text-secondary-light/50 mt-1" data-i18n="about.metrics.pump.hydraulic.ofMax">65% of max</div>
+                                </div>
+                                <div class="bg-gray-100 dark:bg-gray-800 rounded-lg p-3">
+                                    <div class="text-[10px] text-secondary/60 dark:text-secondary-light/60 uppercase mb-1 flex items-center gap-1">
+                                        <span>←→</span> <span data-i18n="about.metrics.pump.hydraulic.radial">Radial</span>
+                                    </div>
+                                    <div class="text-lg font-bold text-purple-500">1.8<span class="text-xs ml-1">kN</span></div>
+                                    <div class="w-full h-1 bg-gray-300 dark:bg-gray-700 rounded-full mt-2">
+                                        <div class="h-full w-[35%] bg-purple-500 rounded-full"></div>
+                                    </div>
+                                    <div class="text-[9px] text-secondary/50 dark:text-secondary-light/50 mt-1" data-i18n="about.metrics.pump.hydraulic.ofMaxRadial">35% of max</div>
+                                </div>
+                            </div>
+                            <div class="mt-2 p-2 bg-green-100 dark:bg-green-900/30 rounded text-[10px] text-green-700 dark:text-green-400 flex items-center gap-2">
+                                <span class="text-sm">✓</span> 
+                                <span data-i18n="about.metrics.pump.hydraulic.status">Thrust bearings operating within limits</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- MOTOR METRICS (shown when motor is active) -->
+                    <div id="motor-metrics" class="ml-[143px] space-y-3 hidden">
+
+                        <!-- MOTOR Metric 1: Current Imbalance -->
+                        <div id="motor-metric-1" class="metric-card motor-metric hidden flex-col w-[300px] bg-white dark:bg-black/80 backdrop-blur-md border border-stroke-2 dark:border-stroke-7 rounded-xl p-4 shadow-lg relative">
+                            <div class="absolute -left-[20px] top-1/2 -translate-y-1/2 w-3 h-3 bg-yellow-500 rounded-full border-2 border-white dark:border-gray-900 shadow"></div>
+                            <h6 class="text-xs font-bold uppercase text-secondary dark:text-secondary-light mb-3 flex items-center gap-2">
+                                <svg class="w-4 h-4 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                                <span data-i18n="about.metrics.motor.imbalance.title">Phase Current Analysis</span>
+                            </h6>
+                            <div class="flex gap-2 mb-3">
+                                <div class="flex-1 text-center">
+                                    <div class="relative w-full h-16 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-end justify-center pb-1 overflow-hidden">
+                                        <div class="absolute bottom-0 w-full h-[75%] bg-gradient-to-t from-yellow-500 to-yellow-400 opacity-80"></div>
+                                        <span class="relative text-sm font-bold text-secondary dark:text-white">45.2A</span>
+                                    </div>
+                                    <span class="text-[10px] font-mono text-yellow-500 mt-1 block" data-i18n="about.metrics.motor.imbalance.phaseA">Phase A</span>
+                                </div>
+                                <div class="flex-1 text-center">
+                                    <div class="relative w-full h-16 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-end justify-center pb-1 overflow-hidden">
+                                        <div class="absolute bottom-0 w-full h-[72%] bg-gradient-to-t from-blue-500 to-blue-400 opacity-80"></div>
+                                        <span class="relative text-sm font-bold text-secondary dark:text-white">43.8A</span>
+                                    </div>
+                                    <span class="text-[10px] font-mono text-blue-500 mt-1 block" data-i18n="about.metrics.motor.imbalance.phaseB">Phase B</span>
+                                </div>
+                                <div class="flex-1 text-center">
+                                    <div class="relative w-full h-16 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-end justify-center pb-1 overflow-hidden">
+                                        <div class="absolute bottom-0 w-full h-[78%] bg-gradient-to-t from-green-500 to-green-400 opacity-80"></div>
+                                        <span class="relative text-sm font-bold text-secondary dark:text-white">46.5A</span>
+                                    </div>
+                                    <span class="text-[10px] font-mono text-green-500 mt-1 block" data-i18n="about.metrics.motor.imbalance.phaseC">Phase C</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center p-2 bg-yellow-100 dark:bg-yellow-900/30 rounded">
+                                <span class="text-[10px] text-yellow-700 dark:text-yellow-400" data-i18n="about.metrics.motor.imbalance.label">Current Imbalance:</span>
+                                <span class="text-sm font-bold text-yellow-600 dark:text-yellow-400">3.2%</span>
+                            </div>
+                            <div class="text-[9px] text-secondary/50 dark:text-secondary-light/50 mt-1 text-center"><span data-i18n="about.metrics.motor.imbalance.threshold">Threshold: 5%</span> | <span data-i18n="about.metrics.motor.imbalance.status">Status: Normal</span></div>
+                        </div>
+
+                        <!-- MOTOR Metric 2: Rotor Bar Health -->
+                        <div id="motor-metric-2" class="metric-card motor-metric hidden flex-col w-[300px] bg-white dark:bg-black/80 backdrop-blur-md border border-stroke-2 dark:border-stroke-7 rounded-xl p-4 shadow-lg relative">
+                            <div class="absolute -left-[20px] top-1/2 -translate-y-1/2 w-3 h-3 bg-emerald-500 rounded-full border-2 border-white dark:border-gray-900 shadow"></div>
+                            <h6 class="text-xs font-bold uppercase text-secondary dark:text-secondary-light mb-3 flex items-center gap-2">
+                                <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                </svg>
+                                <span data-i18n="about.metrics.motor.rotor.title">Rotor Bar Health</span>
+                            </h6>
+                            <canvas id="rotorBarCanvas" width="260" height="60" class="w-full mb-2"></canvas>
+                            <div class="grid grid-cols-3 gap-2 text-center">
+                                <div class="bg-green-100 dark:bg-green-900/30 rounded p-2">
+                                    <div class="text-lg font-bold text-green-500">26</div>
+                                    <div class="text-[9px] text-green-600 dark:text-green-400" data-i18n="about.metrics.motor.rotor.healthy">Healthy</div>
+                                </div>
+                                <div class="bg-yellow-100 dark:bg-yellow-900/30 rounded p-2">
+                                    <div class="text-lg font-bold text-yellow-500">2</div>
+                                    <div class="text-[9px] text-yellow-600 dark:text-yellow-400" data-i18n="about.metrics.motor.rotor.degraded">Degraded</div>
+                                </div>
+                                <div class="bg-red-100 dark:bg-red-900/30 rounded p-2">
+                                    <div class="text-lg font-bold text-red-500">0</div>
+                                    <div class="text-[9px] text-red-600 dark:text-red-400" data-i18n="about.metrics.motor.rotor.critical">Broken</div>
+                                </div>
+                            </div>
+                            <div class="mt-2 text-[9px] text-secondary/50 dark:text-secondary-light/50 text-center">
+                                <span data-i18n="about.metrics.motor.rotor.healthScore">Health Score</span>: <span class="text-emerald-500 font-bold">94%</span> | <span data-i18n="about.metrics.motor.rotor.totalBars">28 Total Bars</span>
+                            </div>
+                        </div>
+
+                        <!-- MOTOR Metric 3: Motor Efficiency Curve -->
+                        <div id="motor-metric-3" class="metric-card motor-metric hidden flex-col w-[300px] bg-white dark:bg-black/80 backdrop-blur-md border border-stroke-2 dark:border-stroke-7 rounded-xl p-4 shadow-lg relative">
+                            <div class="absolute -left-[20px] top-1/2 -translate-y-1/2 w-3 h-3 bg-blue-500 rounded-full border-2 border-white dark:border-gray-900 shadow"></div>
+                            <h6 class="text-xs font-bold uppercase text-secondary dark:text-secondary-light mb-2 flex items-center gap-2">
+                                <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"/>
+                                </svg>
+                                <span data-i18n="about.metrics.motor.efficiency.title">Motor Efficiency vs Load</span>
+                            </h6>
+                            <canvas id="motorEfficiencyCanvas" width="260" height="80" class="w-full"></canvas>
+                            <div class="mt-2 flex items-center justify-between text-[10px]">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-2 h-2 rounded-full bg-green-500"></span>
+                                    <span class="text-secondary/60 dark:text-secondary-light/60"><span data-i18n="about.metrics.motor.efficiency.optimal">Optimal</span>: 75-100%</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                                    <span class="text-secondary/60 dark:text-secondary-light/60"><span data-i18n="about.metrics.motor.efficiency.current">Current</span>: 82%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- MOTOR Metric 4: Winding Temperature -->
+                        <div id="motor-metric-4" class="metric-card motor-metric hidden flex-col w-[300px] bg-white dark:bg-black/80 backdrop-blur-md border border-stroke-2 dark:border-stroke-7 rounded-xl p-4 shadow-lg relative">
+                            <div class="absolute -left-[20px] top-1/2 -translate-y-1/2 w-3 h-3 bg-orange-500 rounded-full border-2 border-white dark:border-gray-900 shadow"></div>
+                            <h6 class="text-xs font-bold uppercase text-secondary dark:text-secondary-light mb-3 flex items-center gap-2">
+                                <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+                                </svg>
+                                <span data-i18n="about.metrics.motor.winding.title">Winding Temperature</span>
+                            </h6>
+                            <div class="flex gap-2 mb-2">
+                                <div class="flex-1 bg-gray-100 dark:bg-gray-800 rounded-lg p-2 text-center relative overflow-hidden">
+                                    <div class="absolute bottom-0 left-0 right-0 h-[60%] bg-gradient-to-t from-orange-500/30 to-transparent"></div>
+                                    <div class="relative">
+                                        <div class="text-lg font-bold text-orange-500">78°C</div>
+                                        <div class="text-[9px] text-secondary/50 dark:text-secondary-light/50" data-i18n="about.metrics.motor.winding.windingU">Winding U</div>
+                                    </div>
+                                </div>
+                                <div class="flex-1 bg-gray-100 dark:bg-gray-800 rounded-lg p-2 text-center relative overflow-hidden">
+                                    <div class="absolute bottom-0 left-0 right-0 h-[65%] bg-gradient-to-t from-orange-500/30 to-transparent"></div>
+                                    <div class="relative">
+                                        <div class="text-lg font-bold text-orange-500">82°C</div>
+                                        <div class="text-[9px] text-secondary/50 dark:text-secondary-light/50" data-i18n="about.metrics.motor.winding.windingV">Winding V</div>
+                                    </div>
+                                </div>
+                                <div class="flex-1 bg-gray-100 dark:bg-gray-800 rounded-lg p-2 text-center relative overflow-hidden">
+                                    <div class="absolute bottom-0 left-0 right-0 h-[58%] bg-gradient-to-t from-orange-500/30 to-transparent"></div>
+                                    <div class="relative">
+                                        <div class="text-lg font-bold text-orange-500">76°C</div>
+                                        <div class="text-[9px] text-secondary/50 dark:text-secondary-light/50" data-i18n="about.metrics.motor.winding.windingW">Winding W</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-2 w-full rounded-full bg-gradient-to-r from-blue-500 via-green-500 via-yellow-500 to-red-500"></div>
+                            <div class="flex justify-between mt-1 text-[9px] font-mono text-secondary/50 dark:text-secondary-light/50">
+                                <span>20°C</span>
+                                <span class="text-yellow-500"><span data-i18n="about.metrics.motor.winding.classF">Class F</span>: 155°C max</span>
+                                <span>180°C</span>
+                            </div>
+                        </div>
+
+                        <!-- MOTOR Metric 5: Output Torque -->
+                        <div id="motor-metric-5" class="metric-card motor-metric hidden flex-col w-[300px] bg-white dark:bg-black/80 backdrop-blur-md border border-stroke-2 dark:border-stroke-7 rounded-xl p-4 shadow-lg relative">
+                            <div class="absolute -left-[20px] top-1/2 -translate-y-1/2 w-3 h-3 bg-violet-500 rounded-full border-2 border-white dark:border-gray-900 shadow"></div>
+                            <h6 class="text-xs font-bold uppercase text-secondary dark:text-secondary-light mb-3 flex items-center gap-2">
+                                <svg class="w-4 h-4 text-violet-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                                </svg>
+                                <span data-i18n="about.metrics.motor.torque.title">Output Torque</span>
+                            </h6>
+                            <div class="flex items-center gap-4">
+                                <div class="relative">
+                                    <canvas id="torqueGaugeCanvas" width="100" height="60" class="w-[100px]"></canvas>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex justify-between items-center border-b border-gray-200 dark:border-gray-700 pb-2 mb-2">
+                                        <span class="text-[10px] text-secondary/60 dark:text-secondary-light/60" data-i18n="about.metrics.motor.torque.current">Current</span>
+                                        <span class="text-lg font-bold text-violet-500">425 <span class="text-xs">Nm</span></span>
+                                    </div>
+                                    <div class="flex justify-between items-center border-b border-gray-200 dark:border-gray-700 pb-2 mb-2">
+                                        <span class="text-[10px] text-secondary/60 dark:text-secondary-light/60" data-i18n="about.metrics.motor.torque.rated">Rated</span>
+                                        <span class="text-sm font-medium text-secondary/70 dark:text-secondary-light/70">500 Nm</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-[10px] text-secondary/60 dark:text-secondary-light/60" data-i18n="about.metrics.motor.torque.load">Load</span>
+                                        <span class="text-sm font-bold text-green-500">85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 p-2 bg-green-100 dark:bg-green-900/30 rounded text-[10px] text-green-700 dark:text-green-400 flex items-center gap-2">
+                                <span class="text-sm">✓</span> 
+                                <span data-i18n="about.metrics.motor.torque.status">Operating within rated capacity</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ================================================== -->
+    <!-- MOBILE VERSION (hidden on desktop) -->
+    <!-- ================================================== -->
+    <div id="mobile-animation" class="block md:hidden relative w-full bg-gray-50 dark:bg-[#0B0F19] rounded-2xl border border-stroke-2 dark:border-stroke-6 shadow-2xl overflow-hidden">
+      
+      <!-- Asset Title -->
+      <div class="p-4 border-b border-stroke-2 dark:border-stroke-6">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+          <h4 id="mobile-asset-title" class="text-base font-bold text-secondary dark:text-white transition-all">Centrifugal Pump Digital Twin</h4>
+        </div>
+      </div>
+
+      <!-- STEP 1: 3D Model with Vibration -->
+      <div id="mobile-step-1" class="mobile-step">
+        <div class="relative w-full h-[280px] flex items-center justify-center overflow-hidden">
+          <!-- Pump SVG Image -->
+          <img 
+            id="mobile-svg-pump"
+            src="/images/pump.svg"
+            alt="Centrifugal Pump"
+            class="h-[220px] w-auto object-contain transition-all duration-500 ease-in-out"
+          />
+
+          <!-- Motor SVG Image -->
+          <img 
+            id="mobile-svg-motor"
+            src="/images/motor.svg"
+            alt="Electric Motor"
+            class="h-[220px] w-auto object-contain transition-all duration-500 ease-in-out absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 hidden"
+          />
+          <!-- Wave Animation Overlay -->
+          <div class="absolute right-4 top-1/2 -translate-y-1/2 w-[80px] h-[150px] pointer-events-none z-40">
+            <svg class="w-full h-full overflow-visible" viewBox="0 0 80 150">
+              <path class="mobile-wave-arc mobile-wave-arc-1" d="M 0 20 Q 40 75, 0 130" fill="none" stroke="rgba(59, 130, 246, 0.6)" stroke-width="3"/>
+              <path class="mobile-wave-arc mobile-wave-arc-2" d="M 0 20 Q 40 75, 0 130" fill="none" stroke="rgba(59, 130, 246, 0.5)" stroke-width="3"/>
+              <path class="mobile-wave-arc mobile-wave-arc-3" d="M 0 20 Q 40 75, 0 130" fill="none" stroke="rgba(59, 130, 246, 0.4)" stroke-width="3"/>
+            </svg>
+          </div>
+        </div>
+        
+        <div class="px-4 py-3 bg-blue-50 dark:bg-blue-900/20 border-t border-stroke-2 dark:border-stroke-6">
+          <div class="flex items-center gap-2 text-sm text-blue-600 dark:text-blue-400">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+            </svg>
+            <span data-i18n="about.mobile.step1">Collecting sensor data...</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 2: NVIDIA Jetson + Server Connection -->
+      <div id="mobile-step-2" class="mobile-step hidden">
+        <div class="relative w-full p-8 flex flex-col items-center justify-center gap-6">
+          
+          <div class="relative">
+            <div class="relative w-[160px] bg-[#1a1a1a] rounded-lg border border-gray-700 shadow-2xl flex flex-col overflow-hidden">
+              <div class="h-16 bg-[#2d2d2d] w-full flex justify-between px-1 pt-1">
+                <div class="w-1 h-full bg-[#1a1a1a]"></div><div class="w-1 h-full bg-[#1a1a1a]"></div>
+                <div class="w-1 h-full bg-[#1a1a1a]"></div><div class="w-1 h-full bg-[#1a1a1a]"></div>
+                <div class="w-1 h-full bg-[#1a1a1a]"></div><div class="w-1 h-full bg-[#1a1a1a]"></div>
+                <div class="w-1 h-full bg-[#1a1a1a]"></div><div class="w-1 h-full bg-[#1a1a1a]"></div>
+              </div>
+              <div class="p-4 flex flex-col gap-1 items-center">
+                <div class="text-[10px] text-green-500 font-bold tracking-widest uppercase">NVIDIA</div>
+                <div class="text-sm text-white font-bold">Jetson Orin</div>
+              </div>
+              <div class="absolute bottom-2 right-2 w-2 h-2 bg-green-500 rounded-full animate-pulse shadow-[0_0_10px_rgba(34,197,94,0.8)]"></div>
+              
+              <div id="mobile-processing-indicator" class="absolute -top-1 -right-1 w-4 h-4 bg-blue-500 rounded-full">
+                <div class="absolute inset-0 bg-blue-500 rounded-full animate-ping"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center gap-2">
+            <div class="w-0.5 h-8 bg-gradient-to-b from-blue-500 to-purple-500"></div>
+            <svg class="w-4 h-4 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+            </svg>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <div class="w-24 h-16 bg-gray-800 rounded-lg border-b-4 border-gray-900 flex flex-col justify-center gap-1 px-3 shadow-xl relative">
+              <div class="flex gap-1"><div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div><div class="w-full h-0.5 bg-gray-600"></div></div>
+              <div class="flex gap-1"><div class="w-2 h-2 rounded-full bg-green-500 animate-pulse delay-75"></div><div class="w-full h-0.5 bg-gray-600"></div></div>
+              <div class="flex gap-1"><div class="w-2 h-2 rounded-full bg-blue-500 animate-pulse delay-150"></div><div class="w-full h-0.5 bg-gray-600"></div></div>
+              
+              <div id="mobile-server-activity" class="absolute -top-1 -right-1 w-4 h-4 bg-purple-500 rounded-full">
+                <div class="absolute inset-0 bg-purple-500 rounded-full animate-ping"></div>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-xs font-mono text-secondary/60 uppercase" data-i18n="about.cloudServer">Cloud Server</span>
+              <span class="text-xs font-mono text-blue-500" data-i18n="about.pinnAnalysis">PINN Analysis</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="px-4 py-3 bg-purple-50 dark:bg-purple-900/20 border-t border-stroke-2 dark:border-stroke-6">
+          <div class="flex items-center gap-2 text-sm text-purple-600 dark:text-purple-400">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+            <span data-i18n="about.mobile.step2">Processing with AI...</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 3: Metrics Display -->
+      <div id="mobile-step-3" class="mobile-step hidden">
+        <div class="p-4">
+          <div id="mobile-metrics-container">
+            <!-- Mobile Pump Metrics -->
+            <div id="mobile-pump-metrics"></div>
+            <!-- Mobile Motor Metrics -->
+            <div id="mobile-motor-metrics" class="hidden"></div>
+          </div>
+        </div>
+        
+        <div class="px-4 py-3 bg-green-50 dark:bg-green-900/20 border-t border-stroke-2 dark:border-stroke-6">
+          <div class="flex items-center gap-2 text-sm text-green-600 dark:text-green-400">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <span data-i18n="about.mobile.step3">Analysis complete</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  /* ARC WAVE ANIMATION - Flows toward Jetson */
+  @keyframes arcWave1 {
+    0% { 
+      transform: translateX(-20px) scale(0.8); 
+      opacity: 0; 
+    }
+    50% {
+      opacity: 0.8;
+    }
+    100% { 
+      transform: translateX(60px) scale(1.1); 
+      opacity: 0; 
+    }
+  }
+
+  @keyframes arcWave2 {
+    0% { 
+      transform: translateX(-20px) scale(0.8); 
+      opacity: 0; 
+    }
+    50% {
+      opacity: 0.6;
+    }
+    100% { 
+      transform: translateX(60px) scale(1.1); 
+      opacity: 0; 
+    }
+  }
+
+  @keyframes arcWave3 {
+    0% { 
+      transform: translateX(-20px) scale(0.8); 
+      opacity: 0; 
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% { 
+      transform: translateX(60px) scale(1.1); 
+      opacity: 0; 
+    }
+  }
+
+  .wave-arc {
+    transform-origin: center center;
+    opacity: 0;
+  }
+
+  .wave-arc.animating.wave-arc-1 {
+    animation: arcWave1 1.2s ease-out infinite;
+  }
+  .wave-arc.animating.wave-arc-2 {
+    animation: arcWave2 1.2s ease-out infinite 0.25s;
+  }
+  .wave-arc.animating.wave-arc-3 {
+    animation: arcWave3 1.2s ease-out infinite 0.5s;
+  }
+
+  /* DATA PATH ANIMATION (Jetson to Server) */
+  @keyframes dashFlow {
+    from { stroke-dashoffset: 28; }
+    to { stroke-dashoffset: 0; }
+  }
+  
+  .data-path-animated {
+    opacity: 0.3;
+    transition: opacity 0.3s;
+  }
+  
+  .data-path-animated.active {
+    opacity: 1;
+    animation: dashFlow 0.5s linear infinite;
+  }
+
+  /* DATA PACKET */
+  .data-packet {
+    opacity: 0;
+  }
+  
+  .data-packet.active {
+    opacity: 1;
+  }
+
+  /* METRIC ENTRANCE */
+  @keyframes fadeInSlide {
+    from { 
+      opacity: 0; 
+      transform: translateX(-20px); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateX(0); 
+    }
+  }
+  
+  .animate-fade-in-slide {
+    animation: fadeInSlide 0.4s ease-out forwards;
+  }
+
+  /* CAVITATION BAR ANIMATION */
+  @keyframes growBar {
+    from { width: 0%; }
+    to { width: 72%; }
+  }
+  
+  .cavitation-bar {
+    width: 0%;
+  }
+  
+  .cavitation-bar.animate {
+    animation: growBar 1.2s ease-out forwards;
+  }
+
+  /* ================================================== */
+  /* MOBILE ANIMATIONS */
+  /* ================================================== */
+
+  /* Mobile Wave Animation */
+  @keyframes mobileArcWave1 {
+    0% { 
+      transform: translateX(-15px) scale(0.8); 
+      opacity: 0; 
+    }
+    50% {
+      opacity: 0.8;
+    }
+    100% { 
+      transform: translateX(40px) scale(1.1); 
+      opacity: 0; 
+    }
+  }
+
+  @keyframes mobileArcWave2 {
+    0% { 
+      transform: translateX(-15px) scale(0.8); 
+      opacity: 0; 
+    }
+    50% {
+      opacity: 0.6;
+    }
+    100% { 
+      transform: translateX(40px) scale(1.1); 
+      opacity: 0; 
+    }
+  }
+
+  @keyframes mobileArcWave3 {
+    0% { 
+      transform: translateX(-15px) scale(0.8); 
+      opacity: 0; 
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% { 
+      transform: translateX(40px) scale(1.1); 
+      opacity: 0; 
+    }
+  }
+
+  .mobile-wave-arc {
+    transform-origin: center center;
+    opacity: 0;
+  }
+
+  .mobile-wave-arc.animating.mobile-wave-arc-1 {
+    animation: mobileArcWave1 1.2s ease-out infinite;
+  }
+  .mobile-wave-arc.animating.mobile-wave-arc-2 {
+    animation: mobileArcWave2 1.2s ease-out infinite 0.25s;
+  }
+  .mobile-wave-arc.animating.mobile-wave-arc-3 {
+    animation: mobileArcWave3 1.2s ease-out infinite 0.5s;
+  }
+
+  /* Mobile Step Transitions */
+  .mobile-step {
+    transition: opacity 0.5s ease-out;
+  }
+
+  .mobile-step.hidden {
+    display: none;
+  }
+
+  /* Mobile Metric Entrance */
+  @keyframes mobileFadeInSlide {
+    from { 
+      opacity: 0; 
+      transform: translateY(20px); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+  }
+  
+  .mobile-animate-fade-in-slide {
+    animation: mobileFadeInSlide 0.4s ease-out forwards;
+  }
+  
+  /* Mobile Cavitation Bar */
+  .mobile-cavitation-bar {
+    width: 0%;
+  }
+  
+  .mobile-cavitation-bar.animate {
+    animation: growBar 1.2s ease-out forwards;
+  }
+
+  /* DELAY UTILITIES */
+  .delay-75 { animation-delay: 75ms; }
+  .delay-150 { animation-delay: 150ms; }
+
+</style>

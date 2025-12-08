@@ -1,0 +1,307 @@
+{
+  "meta": {
+    "title": "Fertigung || Colins AI",
+    "description": "Unsere neuronalen Netze simulieren die interne Physik von Pumpen und Motoren in Echtzeit. Wir erkennen Probleme Monate im Voraus mit 99 % Genauigkeit und sparen Millionen an Ausfallkosten."
+  },
+  "header": {
+    "nav": {
+      "manufacturing": "Fertigung",
+      "banking": "Bankwesen",
+      "research": "Forschung & Entwicklung",
+      "language": "Deutsch"
+    },
+    "cta": "Kontakt",
+    "menu": "Menü"
+  },
+  "hero": {
+    "badge": "Physik-Informierte Neuronale Netze",
+    "title": "Null ungeplante Ausfälle",
+    "description": "Unsere neuronalen Netze simulieren die interne Physik von Kreiselpumpen und E-Motoren in Echtzeit. Wir erkennen Probleme Monate im Voraus mit 99% Genauigkeit und sparen Millionen an Ausfallkosten.",
+    "cta": {
+      "primary": "Jetzt starten",
+      "secondary": "Gespräch buchen"
+    }
+  },
+  "about": {
+    "title": "So funktioniert es",
+    "description": "Unser Physikmodell nutzt Echtzeit-Sensordaten und löst komplexe strömungsmechanische und elektromagnetische Gleichungen, die im Inneren der Maschine ablaufen. So sehen wir interne Defekte, die Standardwerkzeugen entgehen.",
+    "assetTitle": {
+      "pump": "Digitaler Zwilling: Kreiselpumpe",
+      "motor": "Digitaler Zwilling: Elektromotor"
+    },
+    "cloudServer": "Cloud-Server",
+    "pinnAnalysis": "PINN-Analyse",
+    "mobile": {
+      "step1": "Sensordaten werden erfasst...",
+      "step2": "KI-Verarbeitung läuft...",
+      "step3": "Analyse abgeschlossen"
+    },
+    "metrics": {
+      "pump": {
+        "cavitation": {
+          "title": "Virtueller Kavitationsindex",
+          "value": "0,72",
+          "safe": "Sicher",
+          "moderate": "Vorsicht",
+          "critical": "Kavitation",
+          "description": "Aktuelle Betriebsbedingungen zeigen sichere Kavitationswerte"
+        },
+        "bep": {
+          "title": "Effizienzkennfeld (Bestpunkt)",
+          "operating": "Aktuell",
+          "optimal": "BEP",
+          "description": "Betrieb 8% unter dem optimalen Wirkungsgrad"
+        },
+        "npsh": {
+          "title": "NPSH-Analyse (Haltedruckhöhe)",
+          "available": "Vorhanden",
+          "required": "Erforderlich",
+          "margin": "Sicherheitsabstand",
+          "description": "Gesunder Saugdruck-Sicherheitsabstand eingehalten"
+        },
+        "stress": {
+          "title": "Laufrad-Belastungsanalyse",
+          "leadingEdge": "Eintrittskante",
+          "hub": "Nabe",
+          "bladeTip": "Schaufelspitze",
+          "yield": "Streckgrenze",
+          "description": "Spannungswerte innerhalb sicherer Betriebsgrenzen"
+        },
+        "hydraulic": {
+          "title": "Hydraulischer Schub",
+          "axial": "Axial",
+          "radial": "Radial",
+          "ofMax": "65% von Max",
+          "ofMaxRadial": "35% von Max",
+          "status": "Axiallager arbeiten innerhalb der Grenzwerte",
+          "description": "Betrieb bei 88% der hydraulischen Nennleistung"
+        }
+      },
+      "motor": {
+        "imbalance": {
+          "title": "Phasenstrom-Analyse",
+          "phaseA": "Phase A",
+          "phaseB": "Phase B",
+          "phaseC": "Phase C",
+          "label": "Stromungleichgewicht:",
+          "threshold": "Grenzwert: 5%",
+          "status": "Status: Normal",
+          "description": "Alle Phasen innerhalb von 2% Toleranz ausgeglichen"
+        },
+        "rotor": {
+          "title": "Rotorstab-Gesundheit",
+          "healthy": "Gesund",
+          "degraded": "Degradiert",
+          "critical": "Gebrochen",
+          "healthScore": "Gesundheitswert",
+          "totalBars": "28 Stäbe gesamt",
+          "description": "Alle Rotorstäbe in hervorragendem Zustand"
+        },
+        "efficiency": {
+          "title": "Motorwirkungsgrad vs. Last",
+          "optimal": "Optimal",
+          "current": "Aktuell",
+          "description": "Betrieb im optimalen Effizienzbereich"
+        },
+        "winding": {
+          "title": "Wicklungstemperatur",
+          "windingU": "Wicklung U",
+          "windingV": "Wicklung V",
+          "windingW": "Wicklung W",
+          "classF": "Klasse F",
+          "description": "Wicklungstemperatur weit innerhalb der Sicherheitsgrenzen"
+        },
+        "torque": {
+          "title": "Ausgangsdrehmoment",
+          "current": "Aktuell",
+          "rated": "Nennwert",
+          "load": "Last",
+          "status": "Betrieb innerhalb der Nennleistung",
+          "description": "Betrieb innerhalb der Nennleistung"
+        }
+      }
+    }
+  },
+  "useCases": {
+    "pumps": {
+      "badge": "Pumpen",
+      "title": "Wichtige Daten",
+      "items": {
+        "cavitation": {
+          "title": "Virtueller Kavitationsindex",
+          "description": "Kavitation ist die Bildung von Dampfblasen in einer Flüssigkeit aufgrund von Unterdruck, die implodieren und dadurch Schäden verursachen."
+        },
+        "bep": {
+          "title": "Bestpunkt (BEP)",
+          "description": "Eine Pumpe hat eine spezifische Wirkungsgradkurve (Förderhöhe vs. Durchfluss). Der BEP ist der Scheitelpunkt dieser Kurve."
+        },
+        "npsh": {
+          "title": "Netto-Haltedruckhöhe (NPSH)",
+          "description": "Dies ist der am Saugstutzen verfügbare Druck, um Kavitation zu verhindern, die später Schäden verursacht."
+        },
+        "stress": {
+          "title": "Laufrad-Belastungs-Heatmap",
+          "description": "Zeigt die mechanische Belastung auf die Metallschaufeln, verursacht durch den Wasserdruck."
+        },
+        "hydraulic": {
+          "title": "Hydraulische Last",
+          "description": "Zeigt die auf die Pumpenwelle wirkenden Axial- und Radialkräfte. Dies ist kritisch zur Vermeidung von Lagerschäden."
+        }
+      }
+    },
+    "motors": {
+      "badge": "Motoren",
+      "title": "Gesundheit & Effizienz",
+      "items": {
+        "imbalance": {
+          "title": "Stromungleichgewicht",
+          "description": "Der Stromfluss muss in Gleichgewicht sein. Wenn Phase A 100 Ampere und Phase B 105 Ampere zieht, überhitzt der Motor."
+        },
+        "rotor": {
+          "title": "Rotorstab-Gesundheit",
+          "description": "Die inneren Stäbe können Risse bekommen, die Schäden verursachen. Dies erkennen wir durch eine spezifische Vibrationsfrequenz."
+        },
+        "efficiency": {
+          "title": "Motorwirkungsgrad-Kurve",
+          "description": "Motoren haben eine Drehmoment-Wirkungsgrad-Kurve. Sie arbeiten meist am besten bei 75-100% Last."
+        },
+        "winding": {
+          "title": "Wicklungstemperatur",
+          "description": "Unsere neuronalen Netze schätzen die Temperatur im Inneren der Kupferspulen basierend auf Strom und Widerstand."
+        },
+        "torque": {
+          "title": "Ausgangsdrehmoment",
+          "description": "Misst die von der Motorwelle gelieferte Rotationskraft und stellt sicher, dass der Motor innerhalb seiner Kapazität arbeitet."
+        }
+      }
+    },
+    "general": {
+      "badge": "Allgemeine Daten",
+      "title": "Für Motoren & Pumpen",
+      "items": {
+        "vibration": {
+          "title": "Vibration Effektivwert",
+          "description": "Wird verwendet, um Unwuchten, Fehlausrichtungen, lose Befestigungen sowie elektrische oder strömungstechnische Probleme zu erkennen."
+        },
+        "temperature": {
+          "title": "Temperaturtrends",
+          "description": "Temperaturtrends sind kritisch für die Wicklungsisolierung in Motoren und Lager in Pumpen. Jeder Anstieg um 10°C halbiert die Lebensdauer der Isolierung."
+        },
+        "rul": {
+          "title": "Restlebensdauer",
+          "description": "Prognostiziert, wann die Isolierung oder Lager bei Motoren blockieren oder wann Dichtungen und Laufräder bei Pumpen degradieren."
+        }
+      }
+    }
+  },
+  "integration": {
+    "badge": "Integration",
+    "title": "Wir passen uns Ihrem System an.",
+    "description": "Unsere API lässt sich problemlos in SAP, Maximo oder Ignition integrieren und generiert Wartungstickets, sobald ein Risiko erkannt wird."
+  },
+  "footer": {
+    "tagline": "Besser machen.",
+    "company": {
+      "title": "Unternehmen",
+      "technology": "Technologie",
+      "support": "Support",
+      "contact": "Kontakt"
+    },
+    "quality": {
+      "title": "Qualitätsstandards"
+    },
+    "legal": {
+      "title": "Rechtliches",
+      "terms": "AGB",
+      "privacy": "Datenschutz",
+      "refund": "Rückerstattung",
+      "gdpr": "DSGVO-Konformität"
+    },
+    "copyright": "Copyright ©Colins AI 2025 – Alle Rechte vorbehalten."
+  },
+  "banking": {
+    "hero": {
+      "badge": "Graph-Neuronale Netzwerke",
+      "title": "Elite Betrugserkennung für den Mittelstand",
+      "description": "Wir bieten mittelständischen Banken die Graph-Technologie, die nur Großbanken benutzen, aber für 10% der Kosten. Wir erkennen Finanzagenten-Netzwerke und reduzieren die Falschmeldungen die Sie millionen kosten, bis zum 50%.",
+      "cta": {
+        "primary": "Jetzt starten",
+        "secondary": "Gespräch buchen"
+      }
+    },
+    "graph": {
+      "title": "So funktioniert es",
+      "description": "Unsere Graph-Technologie modelliert das gesamte Netzwerk. Knoten repräsentieren Entitäten (Kunden, Konten, Geräte) und Verbindungen stehen für Transaktionsattribute (IP-Adresse, Betrag). Die Kartierung der gesamten Beziehungen zwischen Knoten und Verbindungen ermöglicht es uns, den Kontext jeder Transaktion zu verstehen, Falschmeldungen zu minimieren und echten Betrug zu finden.",
+      "legend": "Hohes Risiko. Tippen zum Erkunden",
+      "riskScore": "Risikobewertung",
+      "account": "Konto"
+    },
+    "integration": {
+      "badge": "Integration",
+      "title": "Plug-and-Play mit Ihrem Ökosystem",
+      "description": "Unsere API verbindet sich direkt mit Ihren Datenströmen und Monitoring-Dashboards, ohne den Arbeitsablauf zu stören."
+    },
+    "value": {
+      "badge": "Wertschöpfung",
+      "title": "Doppelte Geschwindigkeit, 10% der Kosten",
+      "subtitle": "Wir konzentrieren uns ausschließlich darauf, mittelständischen Banken die fortschrittliche Graph-KI-Technologie bereitzustellen, die derzeit meist nur Großbanken zur Verfügung steht. Dabei bieten wir 90% der Vorteile zu 10% der Kosten. Wir integrieren uns schnell und einfach in Ihr aktuelles Setup und stoppen Betrug doppelt so schnell dort, wo er Ihnen am meisten schadet.",
+      "items": {
+        "refund": {
+          "title": "Haftung für Rückerstattungen",
+          "description": "Wir verstehen, wie viel Zeit und Geld Sie jährliche Rückerstattungen kosten. Unsere Technologie reduziert Kontoübernahmen und APP-Betrug erheblich, spart Ihnen Millionen und sorgt für zufriedene Kunden."
+        },
+        "falsePositives": {
+          "title": "Falsch-Positive Meldungen",
+          "description": "Durch das Verständnis des Netzwerks verifizieren wir legitime Nutzer wie kleine Unternehmen, die von regelbasierten Systemen oft blockiert werden. Wir erkennen, dass der Empfänger ein 'Freund eines Freundes' ist."
+        },
+        "aml": {
+          "title": "Geldwäsche-Compliance",
+          "description": "Graph-Neuronale Netze sind die weltweit beste Technologie, um Finanzagenten-Netzwerke aufzudecken. Sie werden Geldwäsche schneller und präziser erkennen können als jede reine KYC-Technologie."
+        }
+      }
+    }
+  },
+  "pharma": {
+    "hero": {
+      "badge": "Molekulare Graph-Neuronale Netze",
+      "title": "Geometrisches Deep Learning. Maßgeschneidert.",
+      "description": "Greifen Sie auf dieselben Molekularen Graph-Neuronalen Netze zu, die von Top-Pharmaunternehmen genutzt werden. Wir passen unsere Modelle an und bieten Ihnen Big-Pharma-Technologie ohne die Infrastruktur Kosten.",
+      "cta": {
+        "primary": "Jetzt starten",
+        "secondary": "Gespräch buchen"
+      }
+    },
+    "value": {
+      "badge": "Wertschöpfung",
+      "title": "Doppelte Geschwindigkeit, 10% der Kosten",
+      "subtitle": "Wir konzentrieren uns exklusiv auf Molekulare GNN-Technologie und bieten schnelle, agile Integrationen. So können wir mittelständischen Laboren 90% des Nutzens zu 10% der Kosten bieten.",
+      "items": {
+        "nam": {
+          "title": "FDA 2.0",
+          "description": "Unsere Modelle sind speziell als hochpräzise Lösungen für den 'FDA Modernization Act' konzipiert und helfen Ihnen, regulatorische Hürden durch verifizierbare computergestützte Daten schneller zu nehmen."
+        },
+        "geometry": {
+          "title": "3D-Molekulartopologie",
+          "description": "Wir nutzen Geometrisches Deep Learning, das 3D-Topologie und Rotationsinvarianz versteht. Dies ermöglicht uns, Bindungsaffinitäten präzise vorherzusagen, wo andere Modelle versagen."
+        },
+        "toxicity": {
+          "title": "Frühes Toxizitäts-Screening",
+          "description": "Unsere Graph-Neuronalen Netze prüfen Millionen von Kandidaten in Minuten und stellen sicher, dass Sie nur viable Kandidaten in die Nasslabor-Tests geben."
+        },
+        "explainable": {
+          "title": "Erklärbare KI (XAI)",
+          "description": "Unsere Graph-Modelle werden durch physikalische Gesetze eingeschränkt. Ihre Vorhersagen sind deshalb vertrauenswürdiger selbst ohne riesige Datenmengen."
+        },
+        "data": {
+          "title": "Dateneffizienz",
+          "description": "Indem wir physikalische Randbedingungen direkt in das neuronale Netz einbetten, erreichen wir hochpräzises Lernen aus Ihren begrenzten proprietären Daten und eliminieren den Bedarf an riesigen Datenmengen."
+        }
+      }
+    },
+    "integration": {
+      "badge": "Integration",
+      "title": "Kompatibel mit Ihrem Labor-Stack",
+      "description": "Unsere API integriert sich direkt mit Ihren bestehendem Laborsystem und Datenbank und erweitert Ihren aktuellen Arbeitsablauf um modernste Technologie."
+    }
+  }
+}

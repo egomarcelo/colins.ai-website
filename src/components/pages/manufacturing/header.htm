@@ -1,0 +1,198 @@
+<!-- =========================
+Header v1 with Language Switcher
+===========================-->
+<header>
+  <div
+    class="header-one opacity-0 rounded-full lp:!max-w-[1290px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] min-[500px]:max-w-[450px] min-[425px]:max-w-[375px] max-w-[350px] mx-auto w-full fixed left-1/2 -translate-x-1/2 z-50 flex items-center justify-between px-2.5 xl:py-0 py-2.5 bg-white/60 backdrop-blur-[25px] top-5 dark:bg-background-7 {=$class} max-[400px]:max-w-[350px]"
+    data-ns-animate
+    data-direction="up"
+    data-offset="100"
+  >
+    <div>
+      <a href="./index.html">
+        <span class="sr-only">Home</span>
+        <figure class="lg:max-w-[40px] lg:block hidden">
+          <img src="./images/shared/logo.svg" alt="ColinsAI" class="dark:invert" />
+        </figure>
+        <figure class="max-w-[44px] lg:hidden block">
+          <img src="./images/shared/logo.svg" alt="ColinsAI" class="w-full dark:hidden block" />
+          <img
+            src="./images/shared/logo-dark.svg"
+            alt="ColinsAI"
+            class="w-full dark:block hidden"
+          />
+        </figure>
+      </a>
+    </div>
+    <nav class="hidden xl:flex items-center">
+      <ul class="flex items-center">
+        <li class="relative nav-item cursor-pointer py-2.5">
+          <a
+            href="./index.html"
+            class="flex items-center gap-1 px-4 py-2 border border-transparent hover:border-stroke-2 dark:hover:border-stroke-7 rounded-full text-tagline-1 font-normal text-secondary/60 hover:text-secondary transition-all duration-200 dark:text-accent/60 dark:hover:text-accent"
+          >
+            <span data-i18n="header.nav.manufacturing">Manufacturing</span>
+          </a>
+        </li>
+        <li class="relative nav-item cursor-pointer py-2.5" data-menu="platform-mega-menu-v2">
+          <a
+            href="./banking.html"
+            class="flex items-center gap-1 px-4 py-2 border border-transparent hover:border-stroke-2 dark:hover:border-stroke-7 rounded-full text-tagline-1 font-normal text-secondary/60 hover:text-secondary transition-all duration-200 dark:text-accent/60 dark:hover:text-accent"
+          >
+            <span data-i18n="header.nav.banking">Banking</span>
+          </a>
+        </li>
+        <li class="relative nav-item cursor-pointer py-2.5" data-menu="resources-dropdown-menu-v2">
+          <a
+            href="./research.html"
+            class="flex items-center gap-1 px-4 py-2 border border-transparent hover:border-stroke-2 dark:hover:border-stroke-7 rounded-full text-tagline-1 font-normal text-secondary/60 hover:text-secondary transition-all duration-200 dark:text-accent/60 dark:hover:text-accent"
+          >
+            <span data-i18n="header.nav.research">Research & Development</span>
+          </a>
+        </li>
+        
+        <!-- Language Switcher Dropdown -->
+        <li class="relative nav-item cursor-pointer py-2.5 language-switcher" data-menu="language-dropdown">
+          <button
+            class="flex items-center gap-1 px-4 py-2 border border-transparent hover:border-stroke-2 dark:hover:border-stroke-7 rounded-full text-tagline-1 font-normal text-secondary/60 hover:text-secondary transition-all duration-200 dark:text-accent/60 dark:hover:text-accent"
+          >
+            <span data-current-language>English</span>
+            <span class="nav-arrow block origin-center transition-all duration-300 translate-y-px">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </span>
+          </button>
+          
+          <!-- Language Dropdown Menu -->
+          <div class="language-dropdown-menu absolute top-full left-0 mt-2 w-48 bg-white dark:bg-background-6 rounded-xl shadow-lg border border-stroke-2 dark:border-stroke-6 opacity-0 invisible transition-all duration-300 z-50">
+            <ul class="py-2">
+              <li>
+                <button 
+                  data-language-option="en"
+                  class="w-full text-left px-4 py-2.5 text-tagline-1 font-normal text-secondary dark:text-accent hover:bg-background-3 dark:hover:bg-background-7 transition-colors duration-200"
+                >
+                  English
+                </button>
+              </li>
+              <li>
+                <button 
+                  data-language-option="es"
+                  class="w-full text-left px-4 py-2.5 text-tagline-1 font-normal text-secondary dark:text-accent hover:bg-background-3 dark:hover:bg-background-7 transition-colors duration-200"
+                >
+                  Español
+                </button>
+              </li>
+              <li>
+                <button 
+                  data-language-option="de"
+                  class="w-full text-left px-4 py-2.5 text-tagline-1 font-normal text-secondary dark:text-accent hover:bg-background-3 dark:hover:bg-background-7 transition-colors duration-200"
+                >
+                  Deutsch
+                </button>
+              </li>
+              <li>
+                <button 
+                  data-language-option="fr"
+                  class="w-full text-left px-4 py-2.5 text-tagline-1 font-normal text-secondary dark:text-accent hover:bg-background-3 dark:hover:bg-background-7 transition-colors duration-200"
+                >
+                  Français
+                </button>
+              </li>
+              <li>
+                <button 
+                  data-language-option="it"
+                  class="w-full text-left px-4 py-2.5 text-tagline-1 font-normal text-secondary dark:text-accent hover:bg-background-3 dark:hover:bg-background-7 transition-colors duration-200"
+                >
+                  Italiano
+                </button>
+              </li>
+              <li>
+                <button 
+                  data-language-option="pt"
+                  class="w-full text-left px-4 py-2.5 text-tagline-1 font-normal text-secondary dark:text-accent hover:bg-background-3 dark:hover:bg-background-7 transition-colors duration-200"
+                >
+                  Português
+                </button>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="xl:flex hidden items-center justify-center">
+      <a
+        href="https://wa.me/17077022817"
+        class="btn btn-md hover:btn-white dark:hover:btn-white-dark btn-white-dark dark:btn-white"
+      >
+        <span data-i18n="header.cta">Talk to us now</span>
+      </a>
+    </div>
+    <div class="xl:hidden block">
+      <button
+        class="nav-hamburger flex flex-col gap-[5px] size-12 bg-background-4 dark:bg-background-6 rounded-full items-center justify-center cursor-pointer"
+      >
+        <span class="sr-only" data-i18n="header.menu">Menu</span>
+        <span class="block w-6 h-0.5 bg-stroke-9 dark:bg-stroke-1"></span>
+        <span class="block w-6 h-0.5 bg-stroke-9 dark:bg-stroke-1"></span>
+        <span class="block w-6 h-0.5 bg-stroke-9 dark:bg-stroke-1"></span>
+      </button>
+    </div>
+  </div>
+  <Component src="src/components/pages/manufacturing/mobile-menu.htm" />
+</header>
+
+<style>
+/* Language Dropdown Styles */
+.language-switcher:hover .language-dropdown-menu,
+.language-dropdown-menu:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.language-dropdown-menu button.active {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: rgb(59, 130, 246);
+}
+
+.language-switcher:hover .nav-arrow {
+  transform: rotate(180deg);
+}
+</style>
+
+<script>
+// Language dropdown toggle functionality
+document.addEventListener('DOMContentLoaded', () => {
+  const languageSwitcher = document.querySelector('.language-switcher');
+  const dropdownMenu = document.querySelector('.language-dropdown-menu');
+  
+  if (languageSwitcher && dropdownMenu) {
+    // Toggle dropdown on click (for mobile/touch devices)
+    languageSwitcher.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dropdownMenu.classList.toggle('opacity-0');
+      dropdownMenu.classList.toggle('invisible');
+    });
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!languageSwitcher.contains(e.target)) {
+        dropdownMenu.classList.add('opacity-0');
+        dropdownMenu.classList.add('invisible');
+      }
+    });
+  }
+});
+</script>
