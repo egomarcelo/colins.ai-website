@@ -1291,14 +1291,8 @@ class FraudGraphNetwork {
 // Initialize when DOM is ready
 function initFraudGraph() {
   const container = document.getElementById('fraud-graph-container');
-
-  if (container) {
-    // Create instance and store reference
-    window.fraudGraphNetwork = new FraudGraphNetwork(container);
-    console.log('[FraudGraph] Visualization initialized with', CONFIG.TOTAL_NODES, 'nodes');
-  } else {
-    console.warn('[FraudGraph] Container not found: #fraud-graph-container');
-  }
+  if (!container) return;
+  window.fraudGraphNetwork = new FraudGraphNetwork(container);
 }
 
 // Auto-initialize on DOM ready

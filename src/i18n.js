@@ -50,7 +50,6 @@ class I18n {
     // Priority 1: Check if user has a saved preference (they've manually selected a language)
     const savedLanguage = localStorage.getItem('preferredLanguage');
     if (savedLanguage && this.isLanguageSupported(savedLanguage)) {
-      console.log(`Using saved language preference: ${savedLanguage}`);
       return savedLanguage;
     }
 
@@ -59,7 +58,6 @@ class I18n {
     if (countryCode) {
       const geoLanguage = this.getLanguageFromCountry(countryCode);
       if (geoLanguage && this.isLanguageSupported(geoLanguage)) {
-        console.log(`Detected language from location (${countryCode}): ${geoLanguage}`);
         return geoLanguage;
       }
     }
@@ -67,12 +65,10 @@ class I18n {
     // Priority 3: Check browser language
     const browserLanguage = navigator.language.split('-')[0];
     if (this.isLanguageSupported(browserLanguage)) {
-      console.log(`Using browser language: ${browserLanguage}`);
       return browserLanguage;
     }
 
     // Priority 4: Default to English
-    console.log('Using default language: en');
     return 'en';
   }
 
@@ -254,7 +250,6 @@ class I18n {
     // Set up language switcher event listeners
     this.setupLanguageSwitcher();
 
-    console.log(`Translation system initialized successfully with language: ${this.currentLanguage}`);
     // Dispatch event so components know translations are ready
     document.dispatchEvent(new CustomEvent('languageChanged', { 
       detail: { language: this.currentLanguage } 

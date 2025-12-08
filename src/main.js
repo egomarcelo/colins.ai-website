@@ -37,8 +37,6 @@ import i18n from './i18n.js';
 document.addEventListener('DOMContentLoaded', async () => {
   try {
     await i18n.init();
-    console.log('Translation system initialized successfully');
   } catch (error) {
-    console.error('Error initializing translation system:', error);
   }
 });
