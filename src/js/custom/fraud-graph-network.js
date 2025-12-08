@@ -190,12 +190,6 @@ class FraudGraphNetwork {
     this.container.appendChild(this.wrapper);
 
     this.ctx = this.canvas.getContext('2d');
-
-    // Detect mobile and update instructions
-    if (this.isMobile) {
-      this.instructions.querySelector('.desktop-text').style.display = 'none';
-      this.instructions.querySelector('.mobile-text').style.display = 'inline';
-    }
   }
 
   /**
