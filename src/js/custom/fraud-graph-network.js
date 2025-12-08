@@ -210,13 +210,17 @@ class FraudGraphNetwork {
     this.width = rect.width;
     this.height = rect.height;
 
+    const widthChanged = Math.abs(newWidth - this.width) > 50;
+    this.width = newWidth;
+    this.height = newHeight;
+
     // Set canvas size with device pixel ratio
     this.canvas.width = this.width * this.dpr;
     this.canvas.height = this.height * this.dpr;
     this.ctx.scale(this.dpr, this.dpr);
 
     // Regenerate network if dimensions changed significantly
-    if (this.nodes.length > 0) {
+    if (this.nodes.length > 0 && widthChanged) {
       this.generateNetworkData();
     }
 
@@ -246,7 +250,7 @@ class FraudGraphNetwork {
 
     // Reduce padding on mobile for fuller coverage
     const padding = this.isMobile ? 20 : 40;
-    const topOffset = this.isMobile ? 40 : 0;
+    const topOffset = this.isMobile ? 30 : 0;
     const effectiveWidth = this.width - padding * 2;
     const effectiveHeight = this.height - padding * 2;
 
