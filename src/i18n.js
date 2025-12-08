@@ -255,6 +255,10 @@ class I18n {
     this.setupLanguageSwitcher();
 
     console.log(`Translation system initialized successfully with language: ${this.currentLanguage}`);
+    // Dispatch event so components know translations are ready
+    document.dispatchEvent(new CustomEvent('languageChanged', { 
+      detail: { language: this.currentLanguage } 
+    }));
   }
 
   // Setup event listeners for language switcher
