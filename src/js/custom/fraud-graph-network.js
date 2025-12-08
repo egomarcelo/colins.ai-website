@@ -246,8 +246,9 @@ class FraudGraphNetwork {
 
     // Reduce padding on mobile for fuller coverage
     const padding = this.isMobile ? 20 : 40;
+    const topPadding = this.isMobile ? 50 : padding;
     const effectiveWidth = this.width - padding * 2;
-    const effectiveHeight = this.height - padding * 2;
+    const effectiveHeight = this.height - padding - topPadding;
 
     // Create mule clusters (complex web structure)
     const clusterPositions = [
