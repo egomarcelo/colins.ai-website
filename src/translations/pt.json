@@ -1,13 +1,13 @@
 {
   "meta": {
-    "title": "Manufatura || Colins AI",
     "description": "Nossas redes neurais simulam a física interna de bombas e motores em tempo real. Detectamos problemas meses antes com 99% de precisão e economizamos milhões evitando paradas de produção."
   },
   "header": {
     "nav": {
       "manufacturing": "Manufatura",
       "banking": "Bancos",
-      "research": "Pesquisa e Desenvolvimento",
+      "biotech": "Biotecnologia",
+      "deeptech": "Deep Tech",
       "language": "Português"
     },
     "cta": "Contato",
@@ -18,7 +18,7 @@
     "title": "Produção sem Falhas Imprevistas",
     "description": "Nossas redes neurais simulam a física interna de bombas centrífugas e motores elétricos em tempo real. Detectamos problemas meses antes com 99% de precisão e economizamos milhões evitando paradas de produção.",
     "cta": {
-      "primary": "Começar",
+      "primary": "Contato rápido",
       "secondary": "Agendar chamada"
     }
   },
@@ -92,7 +92,7 @@
           "title": "Saúde das Barras do Rotor",
           "healthy": "Saudável",
           "degraded": "Degradado",
-          "critical": "Rompido",
+          "critical": "Quebrado",
           "healthScore": "Pontuação de Saúde",
           "totalBars": "28 Barras Totais",
           "description": "Todas as barras do rotor em excelente condição"
@@ -225,7 +225,7 @@
       "title": "Detecção de Fraude Superior",
       "description": "Ajudamos bancos médios a adotar a tecnologia IA em grafos usada pelos bancos gigantes mas por só 10% do custo. Nós detectamos redes ilegais e reduzimos os falsos positivos que custam milhões em até 50%.",
       "cta": {
-        "primary": "Começar",
+        "primary": "Contato rápido",
         "secondary": "Agendar chamada"
       }
     },
@@ -261,47 +261,98 @@
       "description": "Seu sistema atual fica intacto. Nossa API conecta direto aos seus fluxos de dados sem interromper seus processos."
     }
   },
-  "pharma": {
+  "biotech": {
     "hero": {
-      "badge": "Redes Neurais em Grafos Moleculares",
-      "title": "Deep Learning Geométrico. Sob medida.",
-      "description": "Acesse as mesmas Redes Neurais em Grafos usadas pelas maiores farmacêuticas. Adaptamos nossos modelos para te dar a melhor tecnologia sem precisar de infraestrutura multimilionária.",
-      "cta": {
-        "primary": "Começar",
+      "badge": "Redes Neurais em Grafos Generativas",
+      "title": "Linkers PROTAC. Rápidos e Sintetizáveis",
+      "description": "Construímos redes neurais em grafos treinadas estritamente com fragmentos Enamine e reações válidas para fornecer a biotechs linkers sintetizáveis que formam complexos ternários estáveis e cooperativos.",
+        "cta": {
+        "primary": "Contato rápido",
         "secondary": "Agendar chamada"
       }
     },
+    "animation": {
+     "title": "Como funciona",
+      "description": "Sem custos de infraestrutura, sem perda de PI e sem funcionários de 200K USD + equity. Trabalhamos por projeto e construímos um modelo sob medida. Simulamos milhões de complexos para identificar os poucos linkers sintetizáveis que geram cooperatividade."
+    },
     "value": {
       "badge": "Valor",
-      "title": "2x Velocidade a 10% do custo",
-      "subtitle": "Focamos exclusivamente em redes neurais gráficas moleculares com integrações leves. Assim, damos aos departamentos de Pesquisa médios 90% do benefício a 10% do custo.",
+      "title": "Velocidade e Precisão",
+      "subtitle": "Chega de tentativa e erro escaneando linkers. Nossa arquitetura é restrita a reações químicas válidas e fragmentos disponíveis, entregando linkers que não só predizem ligação, mas são garantidos de serem sintetizáveis.",
       "items": {
-        "nam": {
-          "title": "FDA 2.0",
-          "description": "Nossos modelos cumprem com a Lei de Modernização da FDA. Ajudamos você a superar barreiras regulatórias com dados verificáveis."
+        "reaction-based": {
+          "title": "Baseado em Reações",
+          "description": "Nosso modelo cria linkers selecionando fragmentos Enamine REAL e reações válidas (Amide Coupling, CuAAC). Cada resultado vem com receita sintética, não apenas uma estrutura."
         },
-        "geometry": {
-          "title": "Topologia Molecular 3D",
-          "description": "Usamos Deep Learning Geométrico que entende topologia 3D e invariância rotacional para prever afinidade de ligação com uma precisão que nenhuma outra tecnologia pode oferecer."
+        "hook": {
+          "title": "Efeito Gancho (Hook Effect)",
+          "description": "Otimizamos ativamente a Cooperatividade (α > 1) para maximizar estabilidade e minimizar complexos binários, reduzindo o risco do efeito hook em altas concentrações."
         },
-        "toxicity": {
-          "title": "Detecção de Toxicidade",
-          "description": "Nossas redes analisam milhões de riscos de toxicidade em minutos. Assim você garante que apenas candidatos viáveis avancem para os testes de laboratório."
+        "rigid": {
+          "title": "Andaime Rígido",
+          "description": "Cadeias PEG flexíveis degradam ao ligar. Nosso modelo busca andaimes rígidos (piperazinas, espirociclos) que travam as proteínas numa geometria de degradação produtiva."
         },
-        "explainable": {
-          "title": "IA Explicável (XAI)",
-          "description": "Nossos modelos são restringidos por leis físicas e estruturais. Suas previsões são muito mais confiáveis, mesmo sem um banco de dados massivo."
+        "scoring": {
+           "title": "Pontuação Geométrica + PPI",
+           "description": "Não confiamos em pontuações simples de docking. Filtramos milhões de candidatos com Smina/Vina por ajuste geométrico e validamos os melhores com pontuação PPI para estabilidade real."
         },
-        "data": {
-          "title": "Eficiência de Dados",
-          "description": "Aplicando restrições físicas direto na rede neural, conseguimos um aprendizado de alta confiança com seus próprios dados."
+        "permeability": {
+           "title": "Permeabilidade",
+           "description": "Linkers longos frequentemente matam a permeabilidade celular. Penalizamos alto Peso Molecular e TPSA para gerar linkers que formem pontes de hidrogênio intramoleculares para cruzar membranas."
         }
       }
     },
     "integration": {
       "badge": "Integração",
-      "title": "Compatível com seu Stack de Laboratório",
-      "description": "Nossa API conecta direto aos seus sistemas de laboratório e bancos de dados, melhorando seu fluxo de trabalho com a tecnologia mais avançada."
+      "title": "Compatível com seu Laboratório",
+      "description": "Nossa API conecta diretamente ao seu Sistema de Laboratório Eletrônicos e banco de dados, melhorando seu fluxo de trabalho atual."
+    }
+  },
+  "deeptech": {
+    "hero": {
+      "badge": "Redes Neurais Informadas pela Física",
+      "title": "Simulação da Interface Sólido-Eletrólito",
+      "description": "Ajudamos startups de Baterias de Estado Sólido a conseguir ter um produto fabricável. Nossas redes neurais preveem quando e como dendritos se formarão simulando transporte de íons e estresse mecânico por centenas de ciclos.",
+      "cta": {
+        "primary": "Contato rápido",
+         "secondary": "Agendar chamada"
+      }
+    },
+    "animation": {
+      "title": "Como funciona",
+      "description": "Sem custos de infraestrutura, sem perda de PI e sem funcionários de 200K USD + equity. Trabalhamos por projeto e construímos seu Modelo Físico sob medida. Vamos debugar variações e descobrir como tornar sua bateria fabricável."
+    },
+    "value": {
+       "badge": "Valor",
+       "title": "Velocidade e Precisão",
+       "subtitle": "DFT é preciso mas limitado a nanossegundos. Nossas redes simulam o ciclo completo de carga/descarga e a degradação em centenas de ciclos em horas, restringindo o modelo estritamente às leis da física.",
+       "items": {
+        "batch": {
+          "title": "Lotes Inteligentes",
+          "description": "Um ciclo de validação falho pode custar 3 meses e $100k. Identificamos falhas potenciais digitalmente em dias."
+        },
+        "capex": {
+           "title": "Deployment Ultra Leve",
+           "description": "Acesse um time de pesquisa de IA dedicado por uma taxa de projeto. Sem contratações caras, sem equity, sem montar infraestrutura."
+        },
+        "explainable": {
+           "title": "IA Explicável",
+           "description": "Nossos modelos são restritos pelas leis da Termodinâmica e Mecânica. Eles não podem alucinar física impossível."
+        },
+        "acc-speed": {
+           "title": "Precisão a Longo Prazo",
+           "description": "DFT é preciso mas limitado a nanossegundos. Nossas PINNs são capazes de simular transporte de íons e estresse mecânico em escalas de tempo relevantes."
+        },
+        "data": {
+          "title": "Eficiência de Dados",
+           "description": "Nossos modelos precisam de Big Physics, não Big Data. Ao embutir restrições físicas na rede neural, obtemos resultados de alta qualidade usando seus dados limitados."
+        }
+      }
+    },
+    "integration": {
+      "badge": "Integração",
+       "title": "Totalmente Privado e Personalizado",
+       "description": "Sabemos o quão importante é sua PI. Criamos nossos modelos em instâncias cloud privadas ou até fazemos a implementação on-premise totalmente isolada."
     }
   }
 }

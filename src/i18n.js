@@ -53,14 +53,7 @@ class I18n {
       return savedLanguage;
     }
 
-    // Priority 2: Use geolocation to detect user's country
-    const countryCode = await this.detectUserCountry();
-    if (countryCode) {
-      const geoLanguage = this.getLanguageFromCountry(countryCode);
-      if (geoLanguage && this.isLanguageSupported(geoLanguage)) {
-        return geoLanguage;
-      }
-    }
+
 
     // Priority 3: Check browser language
     const browserLanguage = navigator.language.split('-')[0];

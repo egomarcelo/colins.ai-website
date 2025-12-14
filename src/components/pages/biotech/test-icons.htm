@@ -1,0 +1,53 @@
+<!-- =========================
+Shape Gallery Section
+===========================-->
+<section class="py-20 bg-gray-100 dark:bg-background-9">
+  <div class="main-container">
+    
+    <div class="text-center mb-10">
+      <h2 class="text-3xl font-bold text-secondary dark:text-white mb-4">Shape Library</h2>
+      <p class="text-secondary/70">Displaying ns-shape-1 to ns-shape-150</p>
+    </div>
+
+    <!-- The Grid Container -->
+    <div id="icon-gallery-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+      <!-- Icons will be injected here by the script below -->
+    </div>
+
+  </div>
+
+  <!-- Auto-Generation Script -->
+  <script>
+    (function() {
+      const grid = document.getElementById('icon-gallery-grid');
+      
+      if (grid) {
+        // Clear just in case
+        grid.innerHTML = '';
+
+        // Loop through 150 potential shapes
+        for (let i = 1; i <= 150; i++) {
+          
+          // Create the card container
+          const card = document.createElement('div');
+          card.className = "flex flex-col items-center justify-center p-6 bg-white dark:bg-background-8 rounded-xl shadow-sm border border-transparent hover:border-accent hover:shadow-md transition-all group cursor-pointer";
+          
+          // Create the Icon HTML
+          // We use text-4xl for size, and allow hover colors
+          card.innerHTML = `
+            <span class="ns-shape-${i} text-[40px] text-secondary/80 group-hover:text-accent mb-4 transition-colors"></span>
+            <span class="text-xs font-mono text-gray-400 group-hover:text-accent select-all">ns-shape-${i}</span>
+          `;
+          
+          // Click to copy functionality
+          card.onclick = () => {
+             navigator.clipboard.writeText(`ns-shape-${i}`);
+             alert(`Copied: ns-shape-${i}`);
+          };
+
+          grid.appendChild(card);
+        }
+      }
+    })();
+  </script>
+</section>

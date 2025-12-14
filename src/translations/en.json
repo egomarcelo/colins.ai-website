@@ -1,13 +1,13 @@
 {
   "meta": {
-    "title": "Manufacturing || Colins AI",
     "description": "Our neural networks simulate internal physics of pumps and electric motors in real-time. We detect problems months in advance with 99% accuracy and save millions from unplanned downtime."
   },
   "header": {
     "nav": {
+      "biotech": "Biotech",
+      "deeptech": "Deep Tech",
       "manufacturing": "Manufacturing",
       "banking": "Banking",
-      "research": "Research & Development",
       "language": "English"
     },
     "cta": "Contact",
@@ -18,8 +18,8 @@
     "title": "Uninterrupted Production",
     "description": "Our neural networks simulate internal physics of centrifugal pumps and electric motors in real-time. We detect problems months in advance with 99% accuracy and save millions from unplanned downtime.",
     "cta": {
-      "primary": "Get started",
-      "secondary": "Book a call"
+      "primary": "Talk now",
+      "secondary": "Book a demo"
     }
   },
   "about": {
@@ -125,7 +125,7 @@
   "useCases": {
     "pumps": {
       "badge": "Pumps",
-      "title": "Data you must have",
+      "title": "Essential Data",
       "items": {
         "cavitation": {
           "title": "Virtual Cavitation Index",
@@ -225,8 +225,8 @@
       "title": "Elite Fraud Detection for Mid-sized Banks",
       "description": "We provide mid-sized banks the advanced Graph technology that the larger banks use for just 10% of the cost. We identify mule network schemes, ATO, and reduce the false positives costing you millions by up to 50%.",
       "cta": {
-        "primary": "Get Started",
-        "secondary": "Book a call"
+        "primary": "Talk now",
+        "secondary": "Book a demo"
       }
     },
     "graph": {
@@ -261,40 +261,44 @@
       }
     }
   },
-  "pharma": {
+  "biotech": {
     "hero": {
-      "badge": "Molecular Graph Neural Networks",
-      "title": "Geometric Deep Learning. Tailored to your Lab.",
-      "description": "Access the same Molecular Graph Neural Networks used by top-tier pharma. We custom-fit our models and give you Big Pharma technology without the multi-million dollar infrastructure.",
+      "badge": "Generative Graph Neural Networks",
+      "title": "PROTAC Linkers. Fast and Synthesizable",
+      "description": "We build Graph Neural Networks strictly constrained to Enamine building blocks and valid reactions to provide midsized biotechs with synthesizable linkers that form stable, cooperative ternary complexes.",
       "cta": {
-        "primary": "Get Started",
-        "secondary": "Book a call"
+        "primary": "Talk now",
+        "secondary": "Book a demo"
       }
+    },
+    "animation": {
+      "title": "How it works",
+      "description": "No infrastructure costs, no loss of IP, and no $200K + equity hires. We work with you project-based and build you a customized model. We'll simulate millions of ternary complexes to identify the few synthesizable linkers that drive cooperativity, saving you weeks of synthesis time and thousands in reagents."
     },
     "value": {
       "badge": "Value",
-      "title": "2x Speed at 10% cost",
-      "subtitle": "Mid-sized biotechs shouldn't be priced out of innovation. We focus exclusively on Molecular GNN technology and provide fast and agile integrations. We're able to provide mid-sized labs 90% of the benefit at 10% of the cost.",
+      "title": "Speed & Accuracy",
+      "subtitle": "No more trial and error linker scanning. Our architecture is strictly constrained to valid chemical reactions and available fragments, delivering linkers that are not just predicted to bind, but guaranteed to be synthesizable.",
       "items": {
-        "nam": {
-          "title": "FDA 2.0",
-          "description": "Our models are purpose-built to serve as high-fidelity solutions for the FDA Modernization Act, helping you clear regulatory hurdles faster using verifiable computational data."
+        "reaction-based": {
+          "title": "Reaction Based",
+          "description": "Our model creates linkers by selecting Enamine REAL fragments and valid reaction types (Amide Coupling, CuAAC). Every output comes with a synthetic recipe, not just a structure."
         },
-        "geometry": {
-          "title": "3D Molecular Topology",
-          "description": "We use Geometric Deep Learning that understands 3D topology and rotational invariance. This allows us to accurately predict binding affinity where other models fail."
+        "hook": {
+          "title": "Hook Effect",
+          "description": "We actively optimize for Cooperativity (α > 1) to maximize stability while minimizing binary complex formation, reducing the risk of the hook effect at high concentrations."
         },
-        "toxicity": {
-          "title": "Early Toxicity Screening",
-          "description": "Our Graph Neural Networks screen millions of candidates for toxicity risks in minutes, ensuring you only advance viable candidates to wet-lab trials."
+        "rigid": {
+          "title": "Rigid Scaffold",
+          "description": "Floppy PEG chains degrade upon binding. Our model is trained to find rigid scaffolds (piperazines, spirocycles) that lock the proteins into a productive degradation geometry."
         },
-        "explainable": {
-          "title": "Explainable AI",
-          "description": "Our Physics informed and Graph models are constrained by physics or structure. Their predictions are inherently more trustworthy and robust to data scarcity."
+        "scoring": {
+          "title": "Geometric + PPI Scoring",
+          "description": "We don't rely on simple docking scores. We screen millions of candidates with Smina/Vina for geometric fit, then validate top hits with PPI scoring to ensure genuine interface stability."
         },
-        "data": {
-          "title": "Data Efficiency",
-          "description": "By embedding physical constraints directly into the neural network, we achieve high-fidelity learning from your limited proprietary data, eliminating the need for tons of data."
+        "permeability": {
+          "title": "Permeability",
+          "description": "Long linkers often kill cell permeability. We penalize high Molecular Weight and TPSA to generate linkers that can form intramolecular hydrogen bonds to cross cell membranes."
         }
       }
     },
@@ -302,6 +306,53 @@
       "badge": "Integration",
       "title": "Compatible with your Lab Stack",
       "description": "Our API connects directly to your existing Electronic Lab Notebooks and cloud data lakes, enhancing your current workflow with state of the art technology."
+    }
+  },
+  "deeptech": {
+    "hero": {
+      "badge": "Physics Informed Neural Networks",
+      "title": "Solid-Electrolyte Interface Simulation",
+      "description": "We help Solid State Battery startups reach manufacturability faster. Our physics informed neural networks predict when and how dendrites will form by simulating ion transport and mechanical stress over hundreds of cycles.",
+      "cta": {
+        "primary": "Talk now",
+        "secondary": "Book a demo"
+      }
+    },
+    "animation": {
+      "title": "How it works",
+      "description": "No infrastructure costs, no loss of IP, and no $200K + equity hires. We work with you project-based and build you a custom Physics Model, on-premise if needed. We'll debug variances and figure out how to make your battery manufacturable."
+    },
+    "value": {
+      "badge": "Value",
+      "title": "Speed & Accuracy",
+      "subtitle": "DFT is accurate but limited to nanoseconds. Our neural networks simulate the entire charge/discharge cycle and the degradation over hundreds of cycles in just hours while strictly constraining the model to the laws of physics. ",
+      "items": {
+        "batch": {
+          "title": "Smarter Batches",
+          "description": "A single failed validation cycle may cost up to 3 months and $100k+ in burn. We identify potential failures digitally in days."
+        },
+        "capex": {
+          "title": "Ultra Light Deployment",
+          "description": "Access a dedicated AI Research team for a project-based fee. No $200k hires, no equity, no infrastructure buildup."
+        },
+        "explainable": {
+          "title": "Explainable AI",
+          "description": "Our models are constrained by the laws of Thermodynamics and Mechanics. They cannot hallucinate impossible physics."
+        },
+        "acc-speed": {
+          "title": "Long-term Accuracy",
+          "description": "DFT is accurate but limited to nanoseconds. Standard ML is fast but hallucinates. Our PINNs are capable of simulating ion transport and mechanical stress over relevant timescales."
+        },
+        "data": {
+          "title": "Data Efficient",
+          "description": "Our models need Big Physics, not Big Data. By embedding physical constraints directly into the neural network, we get high quality results even with only limited data."
+        }
+      }
+    },
+    "integration": {
+      "badge": "Integration",
+      "title": "Fully Private and Customized",
+      "description": "We understand how important your IP is. We make our models on private cloud instances and even do fully isolated on-premise deployments. We'll also build you a custom dashboard where you can run your own tests."
     }
   }
 }

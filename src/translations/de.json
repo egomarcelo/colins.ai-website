@@ -1,13 +1,13 @@
 {
   "meta": {
-    "title": "Fertigung || Colins AI",
     "description": "Unsere neuronalen Netze simulieren die interne Physik von Pumpen und Motoren in Echtzeit. Wir erkennen Probleme Monate im Voraus mit 99 % Genauigkeit und sparen Millionen an Ausfallkosten."
   },
   "header": {
     "nav": {
       "manufacturing": "Fertigung",
       "banking": "Bankwesen",
-      "research": "Forschung & Entwicklung",
+      "biotech": "Biotech",
+      "deeptech": "Deep Tech",
       "language": "Deutsch"
     },
     "cta": "Kontakt",
@@ -18,7 +18,7 @@
     "title": "Null ungeplante Ausfälle",
     "description": "Unsere neuronalen Netze simulieren die interne Physik von Kreiselpumpen und E-Motoren in Echtzeit. Wir erkennen Probleme Monate im Voraus mit 99% Genauigkeit und sparen Millionen an Ausfallkosten.",
     "cta": {
-      "primary": "Jetzt starten",
+      "primary": "Schnellkontakt",
       "secondary": "Gespräch buchen"
     }
   },
@@ -53,7 +53,7 @@
           "description": "Betrieb 8% unter dem optimalen Wirkungsgrad"
         },
         "npsh": {
-          "title": "NPSH-Analyse (Haltedruckhöhe)",
+          "title": "NPSH-Wert",
           "available": "Vorhanden",
           "required": "Erforderlich",
           "margin": "Sicherheitsabstand",
@@ -136,7 +136,7 @@
           "description": "Eine Pumpe hat eine spezifische Wirkungsgradkurve (Förderhöhe vs. Durchfluss). Der BEP ist der Scheitelpunkt dieser Kurve."
         },
         "npsh": {
-          "title": "Netto-Haltedruckhöhe (NPSH)",
+          "title": "Netto-NPSH-Wert",
           "description": "Dies ist der am Saugstutzen verfügbare Druck, um Kavitation zu verhindern, die später Schäden verursacht."
         },
         "stress": {
@@ -225,7 +225,7 @@
       "title": "Elite Betrugserkennung für den Mittelstand",
       "description": "Wir bieten mittelständischen Banken die Graph-Technologie, die nur Großbanken benutzen, aber für 10% der Kosten. Wir erkennen Finanzagenten-Netzwerke und reduzieren die Falschmeldungen die Sie millionen kosten, bis zum 50%.",
       "cta": {
-        "primary": "Jetzt starten",
+        "primary": "Schnellkontakt",
         "secondary": "Gespräch buchen"
       }
     },
@@ -261,47 +261,98 @@
       }
     }
   },
-  "pharma": {
+  "biotech": {
     "hero": {
-      "badge": "Molekulare Graph-Neuronale Netze",
-      "title": "Geometrisches Deep Learning. Maßgeschneidert.",
-      "description": "Greifen Sie auf dieselben Molekularen Graph-Neuronalen Netze zu, die von Top-Pharmaunternehmen genutzt werden. Wir passen unsere Modelle an und bieten Ihnen Big-Pharma-Technologie ohne die Infrastruktur Kosten.",
+      "badge": "Generative Graph-Neuronale Netze",
+      "title": "PROTAC-Linker. Schnell und Synthetisierbar",
+      "description": "Wir bauen Graph-Neuronale Netze, die streng auf Enamine-Fragmente und valide Reaktionen beschränkt sind, um mittelständischen Biotechs synthetisierbare Linker zu liefern, die stabile und kooperative ternäre Komplexe bilden.",
       "cta": {
-        "primary": "Jetzt starten",
+        "primary": "Schnellkontakt",
         "secondary": "Gespräch buchen"
       }
     },
+    "animation": {
+      "title": "Wie es funktioniert",
+      "description": "Keine Infrastrukturkosten, kein IP-Verlust und keine 200K + equity Neueinstellungen. Wir arbeiten projektbasiert und bauen ein maßgeschneidertes Modell. Wir simulieren Millionen ternärer Komplexe, um die wenigen synthetisierbaren Linker zu finden, die Kooperativität fördern."
+    },
     "value": {
       "badge": "Wertschöpfung",
-      "title": "Doppelte Geschwindigkeit, 10% der Kosten",
-      "subtitle": "Wir konzentrieren uns exklusiv auf Molekulare GNN-Technologie und bieten schnelle, agile Integrationen. So können wir mittelständischen Laboren 90% des Nutzens zu 10% der Kosten bieten.",
+      "title": "Geschwindigkeit & Präzision",
+      "subtitle": "Kein Trial-and-Error Linker-Scanning mehr. Unsere Architektur ist streng auf valide chemische Reaktionen beschränkt und liefert Linker, die nicht nur binden, sondern garantiert synthetisierbar sind.",
       "items": {
-        "nam": {
-          "title": "FDA 2.0",
-          "description": "Unsere Modelle sind speziell als hochpräzise Lösungen für den 'FDA Modernization Act' konzipiert und helfen Ihnen, regulatorische Hürden durch verifizierbare computergestützte Daten schneller zu nehmen."
+        "reaction-based": {
+          "title": "Reaktionsbasiert",
+          "description": "Unser Modell erstellt Linker durch Auswahl von Enamine REAL-Fragmenten und validen Reaktionstypen (Amide Coupling, CuAAC). Jede Ausgabe enthält ein Syntheserezept."
         },
-        "geometry": {
-          "title": "3D-Molekulartopologie",
-          "description": "Wir nutzen Geometrisches Deep Learning, das 3D-Topologie und Rotationsinvarianz versteht. Dies ermöglicht uns, Bindungsaffinitäten präzise vorherzusagen, wo andere Modelle versagen."
+        "hook": {
+          "title": "Hook-Effekt",
+          "description": "Wir optimieren auf Kooperativität (α > 1), um Stabilität zu maximieren und binärer Komplexe zu minimieren, was das Risiko des Hook-Effekts reduziert."
         },
-        "toxicity": {
-          "title": "Frühes Toxizitäts-Screening",
-          "description": "Unsere Graph-Neuronalen Netze prüfen Millionen von Kandidaten in Minuten und stellen sicher, dass Sie nur viable Kandidaten in die Nasslabor-Tests geben."
+        "rigid": {
+          "title": "Starres Gerüst (Scaffold)",
+          "description": "Flexible PEG-Ketten degradieren bei Bindung. Unser Modell sucht nach starren Gerüsten (Piperazine, Spirocyclen), die Proteine in einer produktiven Degradationsgeometrie fixieren."
         },
-        "explainable": {
-          "title": "Erklärbare KI (XAI)",
-          "description": "Unsere Graph-Modelle werden durch physikalische Gesetze eingeschränkt. Ihre Vorhersagen sind deshalb vertrauenswürdiger selbst ohne riesige Datenmengen."
+        "scoring": {
+          "title": "Geometrisches + PPI Scoring",
+          "description": "Wir verlassen uns nicht auf einfache Docking-Scores. Wir screenen Millionen Kandidaten mit Smina/Vina auf geometrische Passung und validieren Top-Hits mit PPI-Scoring für echte Grenzflächenstabilität."
         },
-        "data": {
-          "title": "Dateneffizienz",
-          "description": "Indem wir physikalische Randbedingungen direkt in das neuronale Netz einbetten, erreichen wir hochpräzises Lernen aus Ihren begrenzten proprietären Daten und eliminieren den Bedarf an riesigen Datenmengen."
+        "permeability": {
+          "title": "Permeabilität",
+          "description": "Lange Linker zerstören oft die Zellpermeabilität. Wir bestrafen hohes Molekulargewicht und TPSA, um Linker zu generieren, die intramolekulare Wasserstoffbrücken bilden, um Zellmembranen zu durchqueren."
         }
       }
     },
     "integration": {
       "badge": "Integration",
-      "title": "Kompatibel mit Ihrem Labor-Stack",
-      "description": "Unsere API integriert sich direkt mit Ihren bestehendem Laborsystem und Datenbank und erweitert Ihren aktuellen Arbeitsablauf um modernste Technologie."
+      "title": "Kompatibel mit Ihrem Labor",
+      "description": "Unsere API verbindet sich direkt mit Ihren bestehenden Laborsystemen und Datenbank und erweitert Ihren Workflow mit der besten Technologie."
+    }
+  },
+  "deeptech": {
+    "hero": {
+      "badge": "Physik-informierte neuronale Netze",
+      "title": "Festelektrolyt-Grenzschicht Simulation",
+      "description": "Wir helfen Feststoffbatterie-Startups, schneller eine produzierbare Batterie zu haben. Unsere neuronalen Netze sagen vorher, wann und wie Dendriten entstehen, indem sie Ionentransport und mechanischen Stress über Hunderte von Zyklen simulieren.",
+      "cta": {
+        "primary": "Schnellkontakt",
+        "secondary": "Gespräch buchen"
+      }
+    },
+    "animation": {
+      "title": "Wie es funktioniert",
+      "description": "Keine Infrastrukturkosten, kein IP-Verlust und keine 200K + equity Neueinstellungen. Wir arbeiten projektbasiert und bauen Ihr Physikmodell nach Maß, und sogar on-premise wenn nötig. Wir debuggen Varianzen und finden heraus, wie Ihre Batterie produzierbar zu machen."
+    },
+    "value": {
+      "badge": "Wert",
+      "title": "Geschwindigkeit & Präzision",
+      "subtitle": "DFT ist präzise, aber auf Nanosekunden begrenzt. Unsere neuronalen Netze simulieren den gesamten Lade-/Entladezyklus und die Degradation über hunderte Zyklen innerhalb von Stunden.",
+      "items": {
+        "batch": {
+          "title": "Intelligente Chargen",
+          "description": "Ein einziger fehlgeschlagener Validierungszyklus kann bis zu 3 Monate und 100.000 $ kosten. Wir identifizieren potenzielle Fehler digital in Tagen."
+        },
+        "capex": {
+          "title": "Ultra-Light Deployment",
+          "description": "Zugriff auf ein dediziertes Forschungsteam gegen eine Projektgebühr. Keine teuren Einstellungen und kein Infrastrukturaufbau."
+        },
+        "explainable": {
+          "title": "Erklärbare KI",
+          "description": "Unsere Modelle unterliegen den Gesetzen der Thermodynamik und Mechanik. Sie können keine unmögliche Physik halluzinieren."
+        },
+        "acc-speed": {
+          "title": "Langzeit-Genauigkeit",
+          "description": "DFT ist präzise, aber auf Nanosekunden begrenzt. ML ist schnell, aber halluziniert. Unsere PINNs können Ionentransport und mechanischen Stress über relevante Zeitskalen genau simulieren."
+        },
+        "data": {
+          "title": "Dateneffizienz",
+          "description": "Unsere Modelle brauchen Big Physics, nicht Big Data. Durch die Einbettung physikalischer Beschränkungen in das neuronale Netz erzielen wir hochwertige Ergebnisse auch mit begrenzten Daten."
+        }
+      }
+    },
+    "integration": {
+      "badge": "Integration",
+      "title": "Vollständig privat und maßgeschneidert",
+      "description": "Wir wissen, wie wichtig Ihr IP ist. Wir erstellen unsere Modelle auf privaten Cloud-Instanzen und führen sogar vollständig isolierte On-Premise-Deployments durch."
     }
   }
 }
