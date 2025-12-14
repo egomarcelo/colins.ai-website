@@ -53,12 +53,19 @@ class I18n {
       return savedLanguage;
     }
 
-
-
-    // Priority 3: Check browser language
+    // Priority 2: Check browser language
     const browserLanguage = navigator.language.split('-')[0];
     if (this.isLanguageSupported(browserLanguage)) {
       return browserLanguage;
+    }
+
+    // Priority 3: Use geolocation to detect user's country
+    const countryCode = await this.detectUserCountry();
+    if (countryCode) {
+      const geoLanguage = this.getLanguageFromCountry(countryCode);
+      if (geoLanguage && this.isLanguageSupported(geoLanguage)) {
+        return geoLanguage;
+      }
     }
 
     // Priority 4: Default to English
