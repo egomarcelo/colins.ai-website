@@ -1,0 +1,54 @@
+<!-- =========================
+biotech section
+===========================-->
+<div data-ns-animate data-delay="0.6" data-instant>
+  <div class="tab-content max-w-[850px] mx-auto space-y-[75px] {=$class}" data-display="block">
+    
+    <!-- Section 1 -->
+    <div data-ns-animate data-delay="0.3" class="space-y-2">
+      <h4>What is ISO/IEC 42001?</h4>
+      <p>
+        ISO/IEC 42001 mandates that AI systems must be explainable. Standard deep learning models are often black boxes. They provide answers, but cannot explain why. In chemistry, the greatest risk is creating molecules that seem plausible but that are ultimately unsynthesizable. We prevent this with the architecture of our Graph Neural Networks.
+      </p>
+    </div>
+
+    <!-- Section 2 -->
+    <div data-ns-animate data-delay="0.5" class="space-y-6">
+      <div class="space-y-2">
+        <h4>Constrained Architecture</h4>
+        <p>Our GNNs are architecturally constrained to a discrete action space of verified chemical reactions (e.g., Amide Coupling, Click Chemistry). It is mathematically impossible for our AI to propose a linker that violates the rules of valence or chemical logic. We treat synthesizability as a hard constraint that cannot be violated.</p>
+      </div>
+    </div>
+
+    <!-- Section 3 with multiple elements -->
+    <div data-ns-animate data-delay="0.5" class="space-y-6">
+      <div class="space-y-2">
+        <h4>Explainability</h4>
+        <p>
+          Our system provides full traceability. For every linker proposed, we output the specific Enamine Catalog IDs of the starting fragments and the reaction sequence used to join them. We also accompany every prediction with the raw thermodynamic scores from our Physics Oracle (Vina/Rosetta), providing a clear, auditable rationale for why a specific linker was given a high score based on energy.
+        </p>
+      </div>
+    </div>
+
+    <!-- Section 4 -->
+    <div data-ns-animate data-delay="0.5" class="space-y-6">
+      <div class="space-y-2">
+        <h4>Data Quality</h4>
+        <p>
+          Our agents interact exclusively with the Enamine REAL database and high-fidelity crystal structures (PDB). This strict data governance ensures that the model's worldview is limited to commercially available, high-purity chemistry.
+        </p>
+      </div>
+    </div>
+
+    <!-- Section 5 -->
+    <div data-ns-animate data-delay="0.5" class="space-y-6">
+      <div class="space-y-2">
+        <h4>Human-in-the-Loop</h4>
+        <p>
+          Our technology is designed to present options, not final decisions. The AI generates a ranked list of high-probability candidates, but the final selection for synthesis remains in the hands of your medicinal chemists.
+        </p>
+      </div>
+    </div>        
+
+  </div>
+</div>

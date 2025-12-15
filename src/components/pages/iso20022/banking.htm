@@ -1,0 +1,52 @@
+<!-- =========================
+Banking section
+===========================-->
+<div data-ns-animate data-delay="0.6" data-instant>
+  <div class="tab-content max-w-[850px] mx-auto space-y-[75px] {=$class}" data-display="block">
+    
+    <!-- Section 1 -->
+    <div data-ns-animate data-delay="0.3" class="space-y-2">
+      <h4>Why ISO 20022?</h4>
+      <p>
+        The global financial system is undergoing its most significant language shift in decades. As payment infrastructures like SWIFT, SEPA, and FedNow migrate to ISO 20022, banks are gaining access to a depth of data that was previously impossible to transmit. Our detection engine is ISO 20022 Native. We ingest the full richness of the XML schema to find fraud signals that other providers strip away.
+      </p>
+    </div>
+
+    <!-- Section 2 -->
+    <div data-ns-animate data-delay="0.5" class="space-y-6">
+      <div class="space-y-2">
+        <h4>Full Visibility</h4>
+        <p>Legacy formats often obscure the real actors in a transaction, showing only the intermediary banks rather than the actual humans involved. This creates blind spots in the graph where money launderers hide. We leverage specific ISO 20022 fields like Ultimate Debtor (UltmtDbtr) and Ultimate Creditor (UltmtCdtr). By capturing these fields, our GNN bypasses the noise of intermediary hops and graphs connections between the actual source and destination. This allows us to map the full topology of a Mule Ring, even if the funds pass through multiple correspondent banks.</p>
+      </div>
+    </div>
+
+    <!-- Section 3 with multiple elements -->
+    <div data-ns-animate data-delay="0.5" class="space-y-6">
+      <div class="space-y-2">
+        <h4>Scam Prevention</h4>
+        <p>Modern fraud is often psychological. In Authorized Push Payment (APP) scams, victims are often coached by fraudsters to write specific messages in the payment reference to avoid suspicion. We utilize the Remittance Information (RmtInf) field, which supports structured and unstructured text. Our system applies Natural Language Processing (NLP) to this text to generate semantic embeddings. This allows our model to detect the subtle linguistic patterns of coercion and scam scripts that are invisible to systems looking only at transaction amounts.</p>
+      </div>
+    </div>
+
+    <!-- Section 4 -->
+    <div data-ns-animate data-delay="0.5" class="space-y-6">
+      <div class="space-y-2">
+        <h4>Device Intelligence</h4>
+        <p>
+          We fully utilize the Supplementary Data envelope within the ISO 20022 schema. This allows us to inject critical fraud signals such as Device Fingerprints and Geocoordinates directly into the transaction payload. Our GNN consumes this harmonized data to link a physical device to a financial account in real time, enabling the detection of Account Takeover (ATO) without requiring separate, disjointed data streams.
+        </p>
+      </div>
+    </div>
+
+    <!-- Section 5 -->
+    <div data-ns-animate data-delay="0.5" class="space-y-6">
+      <div class="space-y-2">
+        <h4>Future Interoperability</h4>
+        <p>
+          As the world moves to Instant Payments, the window for data transformation closes. Because our ingestion layer is native to the pacs.008 (Customer Credit Transfer) format, we eliminate the latency and data loss risks associated with translating messages down to legacy formats. As cross border payments adopt this standard, our graph models will seamlessly scale to detect international fraud rings without requiring costly re-engineering of your data pipelines.
+        </p>
+      </div>
+    </div>    
+
+  </div>
+</div>

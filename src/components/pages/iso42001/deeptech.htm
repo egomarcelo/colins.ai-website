@@ -1,0 +1,45 @@
+<!-- =========================
+Deep Tech section
+===========================-->
+<div data-ns-animate data-delay="0.6" data-instant>
+  <div class="tab-content max-w-[850px] mx-auto space-y-[75px] {=$class}" data-display="block">
+    
+    <!-- Section 1 -->
+    <div data-ns-animate data-delay="0.3" class="space-y-2">
+      <h4>What is ISO/IEC 42001?</h4>
+      <p>
+        ISO/IEC 42001 mandates that AI systems must be explainable. Standard deep learning models are often black boxes. They provide answers, but cannot explain why. In material science, the greatest risk is inventing impossible physics that lead to a wasted manufacturing run, a compromised safety test, or a delayed product launch. We prevent this with the architecture of our Physics-Informed Neural Networks.
+      </p>
+    </div>
+
+    <!-- Section 2 -->
+    <div data-ns-animate data-delay="0.5" class="space-y-6">
+      <div class="space-y-2">
+        <h4>Hard-Coded Equations</h4>
+        <p>Our models don't just find patterns in data, they solve known equations (Nernst-Planck, Mechanics). When our model predicts a dendrite formation, it provides the underlying physical variables that caused it such as stress gradients, ion concentration, and potential drop. This allows your engineers to verify the Why behind every prediction.</p>
+      </div>
+    </div>
+
+    <!-- Section 3 with multiple elements -->
+    <div data-ns-animate data-delay="0.5" class="space-y-6">
+      <div class="space-y-2">
+        <h4>Physics-Constrained Loss Functions</h4>
+        <p>Unlike a standard Large Language Model that can say anything, our PINNs are mathematically penalized if they violate the laws of thermodynamics or conservation of mass. If the model predicts a scenario that is physically impossible (creating energy from nothing), the system rejects it during the training phase. We do not allow the AI to guess outside the boundaries of reality.</p>
+      </div>
+    </div>
+
+    <!-- Section 4 -->
+    <div data-ns-animate data-delay="0.5" class="space-y-6">
+      <div class="space-y-2">
+        <h4>Managing Model Drift</h4>
+        <p>Batteries are complex, and manufacturing conditions change. A model trained on Batch 1 might fail on Batch 10 if the pressure settings drift. We apply the ISO 42001 requirement for Continuous Monitoring:</p>
+      </div>
+      
+      <ul class="space-y-3 list-inside text-tagline-1 font-normal text-secondary/60 dark:text-accent/60">
+        <li>Drift Detection: We monitor the statistical distribution of your input data. If your factory sensors start reporting temperatures outside the range our model was trained on, our system flags the anomaly immediately rather than making a low-confidence prediction.</li>
+        <li>Version Control: We maintain strict versioning of all physics kernels. If we update the underlying equations, we can trace exactly which version of the model was used to validate which batch of batteries.</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
