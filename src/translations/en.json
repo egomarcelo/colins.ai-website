@@ -273,7 +273,7 @@
     },
     "animation": {
       "title": "How it works",
-      "description": "No infrastructure costs, no loss of IP, and no $200K + equity hires. We work with you project-based and build you a customized model. We'll simulate millions of ternary complexes to identify the few synthesizable linkers that drive cooperativity, saving you weeks of synthesis time and thousands in reagents."
+      "description": "No infrastructure costs, no loss of IP, and no $200K hires. We work with you project-based and build you a customized model. We'll simulate millions of ternary complexes to identify the few synthesizable linkers that drive cooperativity, saving you weeks of synthesis time and thousands in reagents."
     },
     "value": {
       "badge": "Value",
@@ -311,8 +311,8 @@
   "deeptech": {
     "hero": {
       "badge": "Physics Informed Neural Networks",
-      "title": "Solid-Electrolyte Interface Simulation",
-      "description": "We help Solid State Battery startups reach manufacturability faster. Our physics informed neural networks predict when and how dendrites will form by simulating ion transport and mechanical stress over hundreds of cycles.",
+      "title": "Solid-State Battery Simulation",
+      "description": "We help you reach manufacturability faster. With Physics Informed Neural Networks that simulate ion transport, stress-coupled kinetics, and fracture mechanics, we predict critical dendrite and SEI formation over hundreds of cycles.",
       "cta": {
         "primary": "Talk now",
         "secondary": "Book a demo"
@@ -320,19 +320,41 @@
     },
     "animation": {
       "title": "How it works",
-      "description": "No infrastructure costs, no loss of IP, and no $200K + equity hires. We work with you project-based and build you a custom Physics Model, on-premise if needed. We'll debug variances and figure out how to make your battery manufacturable."
+      "description": "Stop burning cash on failed batches. We combine the reliability of high quality solvers (PyBaMM/FEniCS) with the speed of Neural Networks and deliver a custom, pre-trained Digital Simulator calibrated to your specific chemistry."
+    },
+    "simulation": {
+      "controlTitle": "Manufacturing Parameters",
+      "controlSubtitle": "Adjust to simulate cell behavior",
+      "pressure": {
+        "label": "Stack Pressure"
+      },
+      "roughness": {
+        "label": "Surface Roughness"
+      },
+      "penetration": "Dendrite Penetration",
+      "failureRisk": "Failure Risk",
+      "riskLow": "Low Risk",
+      "riskMedium": "Medium Risk",
+      "riskHigh": "High Risk",
+      "labelAnode": "Li Metal Anode",
+      "labelElectrolyte": "LLZO Ceramic Electrolyte",
+      "annotationVoid": "Void Formation",
+      "annotationDendrite": "Lightning Rod Effect: Current Focusing",
+      "annotationFlow": "J2-Viscoplasticity: Li Creep Active",
+      "stateLow": "Low Pressure (3 MPa)",
+      "stateHigh": "High Pressure (18 MPa)"
     },
     "value": {
       "badge": "Value",
       "title": "Speed & Accuracy",
-      "subtitle": "DFT is accurate but limited to nanoseconds. Our neural networks simulate the entire charge/discharge cycle and the degradation over hundreds of cycles in just hours while strictly constraining the model to the laws of physics. ",
+      "subtitle": "Physical validation cycles take months. FEM takes days. We simulate the entire charge/discharge cycle and the degradation over hundreds of cycles in just hours while strictly constraining the model to the laws of physics.",
       "items": {
         "batch": {
           "title": "Smarter Batches",
           "description": "A single failed validation cycle may cost up to 3 months and $100k+ in burn. We identify potential failures digitally in days."
         },
         "capex": {
-          "title": "Ultra Light Deployment",
+          "title": "Zero Infrastructure",
           "description": "Access a dedicated AI Research team for a project-based fee. No $200k hires, no equity, no infrastructure buildup."
         },
         "explainable": {
@@ -352,7 +374,7 @@
     "integration": {
       "badge": "Integration",
       "title": "Fully Private and Customized",
-      "description": "We understand how important your IP is. We make our models on private cloud instances and even do fully isolated on-premise deployments. We'll also build you a custom dashboard where you can run your own tests."
+      "description": "We understand how important your IP is. We train your custom model on isolated, private cloud instances or fully on-premise. You receive the full model weights and inference along with a custom dashboard where you can run your own tests."
     }
   }
 }

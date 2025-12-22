@@ -311,8 +311,8 @@
   "deeptech": {
     "hero": {
       "badge": "Reti Neurali Informate dalla Fisica",
-      "title": "Simulazione dell'Interfaccia Solido-Elettrolita",
-      "description": "Aiutiamo le startup di Batterie allo Stato Solido a creare una batteria davvero industrializzabile. Le nostre reti neurali prevedono quando e come si formeranno dendriti simulando trasporto ionico e stress meccanico su centinaia di cicli.",
+      "title": "Simulazione Batterie allo Stato Solido",
+      "description": "Ti aiutiamo a creare una batteria davvero industrializzabile. Le nostre reti neurali prevedono quando e come si formeranno dendriti simulando trasporto ionico, cinetica accoppiata allo stress e stress meccanico su centinaia di cicli.",
       "cta": {
         "primary": "Contatto rapido",
         "secondary": "Prenota chiamata"
@@ -320,19 +320,41 @@
     },
     "animation": {
       "title": "Come funziona",
-      "description": "Nessun costo di infrastruttura, nessuna perdita di IP e nessun dipendente di 200K + equity. Lavoriamo a progetto e costruiamo il tuo Modello Fisico su misura. Risolveremo le varianze e renderemo la tua batteria manifatturabile."
+      "description": "Smetti di bruciare cassa su lotti falliti. Combiniamo l'affidabilità di solver di alta qualità (PyBaMM/FEniCS) con la velocità delle Reti Neurali e forniamo un Simulatore Digitale personalizzato e pre-addestrato, calibrato sulla tua chimica specifica."
+    },
+    "simulation": {
+      "controlTitle": "Parametri di Produzione",
+      "controlSubtitle": "Regola per simulare il comportamento della cella",
+      "pressure": {
+        "label": "Pressione di Stack"
+      },
+      "roughness": {
+        "label": "Rugosità Superficiale"
+      },
+      "penetration": "Penetrazione Dendritica",
+      "failureRisk": "Rischio di Guasto",
+      "riskLow": "Basso Rischio",
+      "riskMedium": "Medio Rischio",
+      "riskHigh": "Alto Rischio",
+      "labelAnode": "Anodo Li Metallo",
+      "labelElectrolyte": "Elettrolita Ceramico LLZO",
+      "annotationVoid": "Formazione di Vuoti",
+      "annotationDendrite": "Effetto Parafulmine: Focalizzazione Corrente",
+      "annotationFlow": "Viscoplasticità J2: Scorrimento Li Attivo",
+      "stateLow": "Bassa Pressione (3 MPa)",
+      "stateHigh": "Alta Pressione (18 MPa)"
     },
     "value": {
       "badge": "Valore",
       "title": "Velocità e Precisione",
-      "subtitle": "La DFT è precisa ma limitata ai nanosecondi. Le nostre reti simulano l'intero ciclo di carica/scarica e la degradazione su centinaia di cicli in ore, vincolando il modello strettamente alle leggi della fisica.",
+      "subtitle": "I cicli di validazione fisica richiedono mesi. Il FEM richiede giorni. Noi simuliamo l'intero ciclo di carica/scarica e la degradazione su centinaia di cicli in ore, vincolando il modello strettamente alle leggi della fisica.",
       "items": {
         "batch": {
           "title": "Lotti Intelligenti",
           "description": "Un ciclo di validazione fallito può costare 3 mesi e $100k. Identifichiamo potenziali fallimenti digitalmente in giorni."
         },
         "capex": {
-          "title": "Deployment Ultra Leggero",
+          "title": "Zero Infrastruttura",
           "description": "Accedi a un team di ricerca IA dedicato per una tariffa a progetto. Niente assunzioni da $200k + equity e niente infrastruttura."
         },
         "explainable": {
@@ -351,8 +373,8 @@
     },
     "integration": {
       "badge": "Integrazione",
-      "title": "Totalmente Privato e Personalizzato",
-      "description": "Sappiamo quanto è importante la tua IP. Creiamo i modelli su istanze cloud private o anche direttamente nei tuoi server totalmente isolati."
+      "title": "Privato e Personalizzato",
+      "description": "Sappiamo quanto è importante la tua IP. Addestriamo il tuo modello su istanze cloud isolate e private o completamente on-premise. Ricevi i pesi completi del modello e l'inferenza insieme a una dashboard personalizzata."
     }
   }
 }

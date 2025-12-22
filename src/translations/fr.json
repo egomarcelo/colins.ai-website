@@ -273,7 +273,7 @@
     },
     "animation": {
       "title": "Comment ça marche",
-      "description": "Pas de coûts d'infrastructure, pas de perte de PI, pas de recrutements de 200K + equity. On travaille par projet et construit un modèle sur mesure. Nous simulons des millions de complexes pour identifier les linkers synthétisables qui favorise la coopérativité."
+      "description": "Pas de coûts d'infrastructure, pas de perte de PI, pas de recrutements de 200K. On travaille par projet et construit un modèle sur mesure. Nous simulons des millions de complexes pour identifier les linkers synthétisables qui favorise la coopérativité."
     },
     "value": {
       "badge": "Valeur",
@@ -311,8 +311,8 @@
   "deeptech": {
     "hero": {
       "badge": "Réseaux de Neurones Informés par la Physique",
-      "title": "Simulation de l'Interface Solide-Électrolyte",
-      "description": "Nous aidons les startups de batteries à l'état solide à avoir une batterie vraiment manufacturable. Nos réseaux de neurones prédisent la formation de dendrites en simulant le transport d'ions et le stress mécanique sur des centaines de cycles.",
+      "title": "Simulation de Batterie à l'État Solide",
+      "description": "On t'aide à avoir une batterie vraiment manufacturable. Nos réseaux de neurones prédisent la formation de dendrites en simulant le transport d'ions, la cinétique couplée aux contraintes et le stress mécanique sur des centaines de cycles.",
       "cta": {
         "primary": "Contact rapide",
         "secondary": "Prendre RDV"
@@ -320,19 +320,41 @@
     },
     "animation": {
       "title": "Comment ça marche",
-      "description": "Pas de coûts d'infrastructure, pas de perte de PI et pas de recrutements de 200K + equity. On travaille par projet et construit votre Modèle Physique sur mesure. Nous déboguons les variances pour rendre votre batterie manufacturable."
+      "description": "Arrêtez de brûler du capital sur des lots ratés. Nous combinons solveurs de haute qualité (PyBaMM/FEniCS) avec la vitesse des réseaux de neurones et livrons un simulateur personnalisé et pré-entraîné, calibré pour votre chimie spécifique."
+    },
+    "simulation": {
+      "controlTitle": "Paramètres de Fabrication",
+      "controlSubtitle": "Ajuster pour simuler le comportement de la cellule",
+      "pressure": {
+        "label": "Pression d'Empilement"
+      },
+      "roughness": {
+        "label": "Rugosité de Surface"
+      },
+      "penetration": "Pénétration de Dendrite",
+      "failureRisk": "Risque de Défaillance",
+      "riskLow": "Risque Faible",
+      "riskMedium": "Risque Moyen",
+      "riskHigh": "Risque Élevé",
+      "labelAnode": "Anode Li Métal",
+      "labelElectrolyte": "Électrolyte Céramique LLZO",
+      "annotationVoid": "Formation de Vide",
+      "annotationDendrite": "Effet Paratonnerre : Concentration de Courant",
+      "annotationFlow": "Viscoplasticité J2 : Fluage du Li Actif",
+      "stateLow": "Basse Pression (3 MPa)",
+      "stateHigh": "Haute Pression (18 MPa)"
     },
     "value": {
       "badge": "Valeur",
       "title": "Vitesse & Précision",
-      "subtitle": "La DFT est précise mais limitée aux nanosecondes. Nos réseaux simulent le cycle complet de charge/décharge et la dégradation sur des centaines de cycles en quelques heures, tout en contraignant le modèle aux lois de la physique.",
+      "subtitle": "Les cycles de validation physique prennent des mois. La FEM prend des jours. Nous simulons le cycle complet de charge/décharge et la dégradation sur des centaines de cycles en quelques heures, tout en contraignant strictement le modèle aux lois de la physique.",
       "items": {
         "batch": {
           "title": "Lots Intelligents",
-          "description": "Un cycle de validation échoué peut coûter 3 mois et 100k $. Nous identifions les échecs potentiels numériquement en quelques jours."
+          "description": "Un cycle de validation échoué peut coûter 3 mois et $100k. Nous identifions les échecs potentiels numériquement en quelques jours."
         },
         "capex": {
-          "title": "Déploiement Ultra Léger",
+          "title": "Zéro Infrastructure",
           "description": "Accédez à une équipe de recherche en IA dédiée. Pas d'embauches coûteuses et pas d'infrastructure à monter."
         },
         "explainable": {
@@ -351,8 +373,8 @@
     },
     "integration": {
       "badge": "Intégration",
-      "title": "Entièrement Privé et Personnalisé",
-      "description": "Nous savons que votre PI est cruciale. Nous créons nos modèles sur des instances cloud privées ou via des déploiements sur site entièrement isolés."
+      "title": "Privé et Personnalisé",
+      "description": "Nous savons que votre PI est cruciale. Nous entraînons votre modèle personnalisé sur des instances cloud isolées et privées ou entièrement sur site. Vous recevez les poids complets du modèle et l'inférence ainsi qu'un tableau de bord personnalisé."
     }
   }
 }

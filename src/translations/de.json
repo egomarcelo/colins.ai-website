@@ -242,7 +242,7 @@
       "description": "Unsere API verbindet sich direkt mit Ihren Datenströmen und Monitoring-Dashboards, ohne den Arbeitsablauf zu stören."
     },
     "value": {
-      "badge": "Wertschöpfung",
+      "badge": "Mehrwert",
       "title": "Doppelte Geschwindigkeit, 10% der Kosten",
       "subtitle": "Wir konzentrieren uns ausschließlich darauf, mittelständischen Banken die fortschrittliche Graph-KI-Technologie bereitzustellen, die derzeit meist nur Großbanken zur Verfügung steht. Dabei bieten wir 90% der Vorteile zu 10% der Kosten. Wir integrieren uns schnell und einfach in Ihr aktuelles Setup und stoppen Betrug doppelt so schnell dort, wo er Ihnen am meisten schadet.",
       "items": {
@@ -273,10 +273,10 @@
     },
     "animation": {
       "title": "Wie es funktioniert",
-      "description": "Keine Infrastrukturkosten, kein IP-Verlust und keine 200K + equity Neueinstellungen. Wir arbeiten projektbasiert und bauen ein maßgeschneidertes Modell. Wir simulieren Millionen ternärer Komplexe, um die wenigen synthetisierbaren Linker zu finden, die Kooperativität fördern."
+      "description": "Keine Infrastrukturkosten, kein IP-Verlust und keine 200K Neueinstellungen. Wir arbeiten projektbasiert und bauen ein maßgeschneidertes Modell. Wir simulieren Millionen ternärer Komplexe, um die wenigen synthetisierbaren Linker zu finden, die Kooperativität fördern."
     },
     "value": {
-      "badge": "Wertschöpfung",
+      "badge": "Mehrwert",
       "title": "Geschwindigkeit & Präzision",
       "subtitle": "Kein Trial-and-Error Linker-Scanning mehr. Unsere Architektur ist streng auf valide chemische Reaktionen beschränkt und liefert Linker, die nicht nur binden, sondern garantiert synthetisierbar sind.",
       "items": {
@@ -311,8 +311,8 @@
   "deeptech": {
     "hero": {
       "badge": "Physik-informierte neuronale Netze",
-      "title": "Festelektrolyt-Grenzschicht Simulation",
-      "description": "Wir helfen Feststoffbatterie-Startups, schneller eine produzierbare Batterie zu haben. Unsere neuronalen Netze sagen vorher, wann und wie Dendriten entstehen, indem sie Ionentransport und mechanischen Stress über Hunderte von Zyklen simulieren.",
+      "title": "Feststoffbatterie-Simulation",
+      "description": "Mit physikbasierten neuronalen Netzen, die Ionentransport, spannungsgekoppelte Kinetik und Bruchmechanik simulieren, sehen wir kritische Dendriten- und SEI-Bildung über Hunderte von Zyklen im voraus.",
       "cta": {
         "primary": "Schnellkontakt",
         "secondary": "Gespräch buchen"
@@ -320,19 +320,41 @@
     },
     "animation": {
       "title": "Wie es funktioniert",
-      "description": "Keine Infrastrukturkosten, kein IP-Verlust und keine 200K + equity Neueinstellungen. Wir arbeiten projektbasiert und bauen Ihr Physikmodell nach Maß, und sogar on-premise wenn nötig. Wir debuggen Varianzen und finden heraus, wie Ihre Batterie produzierbar zu machen."
+      "description": "Wir kombinieren die Zuverlässigkeit hochwertiger Solver (PyBaMM/FEniCS) mit der Geschwindigkeit neuronaler Netze und liefern einen personalisierten, vortrainierten digitalen Simulator, der auf Ihre spezifische Chemie kalibriert ist."
+    },
+    "simulation": {
+      "controlTitle": "Fertigungsparameter",
+      "controlSubtitle": "Simulation des Zellverhaltens",
+      "pressure": {
+        "label": "Stapeldruck"
+      },
+      "roughness": {
+        "label": "Oberflächenrauheit"
+      },
+      "penetration": "Dendritendurchdringung",
+      "failureRisk": "Ausfallrisiko",
+      "riskLow": "Geringes Risiko",
+      "riskMedium": "Mittleres Risiko",
+      "riskHigh": "Hohes Risiko",
+      "labelAnode": "Li-Metall-Anode",
+      "labelElectrolyte": "LLZO-Keramikelektrolyt",
+      "annotationVoid": "Hohlraumbildung",
+      "annotationDendrite": "Lightning Rod Effekt: Stromfokussierung",
+      "annotationFlow": "J2-Viskoplastizität: Li-Kriechen aktiv",
+      "stateLow": "Niederdruck (3 MPa)",
+      "stateHigh": "Hochdruck (18 MPa)"
     },
     "value": {
-      "badge": "Wert",
+      "badge": "Mehrwert",
       "title": "Geschwindigkeit & Präzision",
-      "subtitle": "DFT ist präzise, aber auf Nanosekunden begrenzt. Unsere neuronalen Netze simulieren den gesamten Lade-/Entladezyklus und die Degradation über hunderte Zyklen innerhalb von Stunden.",
+      "subtitle": "Physische Validierungszyklen dauern Monate. FEM-Simulationen dauern Tage. Wir simulieren den gesamten Lade-/Entladezyklus und die Degradation über Hunderte von Zyklen in nur wenigen Stunden und halten das Modell dabei strikt an die Gesetze der Physik.",
       "items": {
         "batch": {
           "title": "Intelligente Chargen",
           "description": "Ein einziger fehlgeschlagener Validierungszyklus kann bis zu 3 Monate und 100.000 $ kosten. Wir identifizieren potenzielle Fehler digital in Tagen."
         },
         "capex": {
-          "title": "Ultra-Light Deployment",
+          "title": "Keine Infrastruktur",
           "description": "Zugriff auf ein dediziertes Forschungsteam gegen eine Projektgebühr. Keine teuren Einstellungen und kein Infrastrukturaufbau."
         },
         "explainable": {
@@ -351,8 +373,8 @@
     },
     "integration": {
       "badge": "Integration",
-      "title": "Vollständig privat und maßgeschneidert",
-      "description": "Wir wissen, wie wichtig Ihr IP ist. Wir erstellen unsere Modelle auf privaten Cloud-Instanzen und führen sogar vollständig isolierte On-Premise-Deployments durch."
+      "title": "Privat und Maßgeschneidert",
+      "description": "Wir verstehen, wie wichtig Ihr IP ist. Wir trainieren Ihr Modell auf isolierten, privaten Cloud-Instanzen oder vollständig On-Premise. Sie erhalten die vollständigen Modellgewichte und Inferenz zusammen mit einem personalisierten Dashboard."
     }
   }
 }

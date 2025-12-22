@@ -273,7 +273,7 @@
     },
     "animation": {
       "title": "Cómo funciona",
-      "description": "0 costos de infraestructura, 0 pérdida de IP y 0 contrataciones de $200K USD + acciones. Trabajamos contigo por proyecto y construimos un modelo a medida. Simularemos millones de complejos ternarios para identificar los pocos linkers sintetizables que impulsan la cooperatividad."
+      "description": "0 costos de infraestructura, 0 pérdida de IP y 0 contrataciones de $200K USD. Trabajamos contigo por proyecto y construimos un modelo a medida. Simularemos millones de complejos ternarios para identificar los pocos linkers sintetizables que impulsan la cooperatividad."
     },
     "value": {
       "badge": "Valor",
@@ -311,8 +311,8 @@
   "deeptech": {
     "hero": {
       "badge": "Redes Neuronales Informadas por Física",
-      "title": "Simulación de Interfase Sólido-Electrolito",
-      "description": "Ayudamos a startups de Baterías de Estado Sólido a tener un producto fabricable. Nuestras redes neuronales predicen cuándo y cómo se formarán dendritas simulando transporte de iones y estrés mecánico a lo largo de cientos de ciclos.",
+      "title": "Simulación de Baterías de Estado Sólido",
+      "description": "Te ayudamos a tener un producto fabricable. Nuestras redes neuronales predicen cuándo y cómo se formarán dendritas simulando el transporte de iones y el estrés mecánico a lo largo de cientos de ciclos.",
       "cta": {
         "primary": "Contacto rápido",
         "secondary": "Agendar demo"
@@ -320,19 +320,41 @@
     },
     "animation": {
       "title": "Cómo funciona",
-      "description": "0 costos de infraestructura, 0 pérdida de IP y 0 contrataciones de $200K USD + acciones. Trabajamos por proyecto y construimos tu Modelo Físico a medida, on-premise si es necesario. Depuraremos variaciones y descubriremos cómo hacer tu batería fabricable."
+      "description": "Deja de quemar capital en lotes fallidos. Combinamos solucionadores de alta calidad (PyBaMM/FEniCS) con la velocidad de una Red Neuronal y te entregamos un Simulador Digital personalizado y pre-entrenado, calibrado a tu química."
+    },
+    "simulation": {
+      "controlTitle": "Parámetros de Manufactura",
+      "controlSubtitle": "Ajusta para simular comportamiento de celda",
+      "pressure": {
+        "label": "Presión de Apilamiento"
+      },
+      "roughness": {
+        "label": "Rugosidad de Superficie"
+      },
+      "penetration": "Penetración de Dendritas",
+      "failureRisk": "Riesgo de Falla",
+      "riskLow": "Riesgo Bajo",
+      "riskMedium": "Riesgo Medio",
+      "riskHigh": "Riesgo Alto",
+      "labelAnode": "Ánodo de Metal Li",
+      "labelElectrolyte": "Electrolito Cerámico LLZO",
+      "annotationVoid": "Formación de Vacíos",
+      "annotationDendrite": "Efecto Pararrayos: Enfoque de Corriente",
+      "annotationFlow": "Viscoplasticidad J2: Fluencia de Li Activa",
+      "stateLow": "Baja Presión (3 MPa)",
+      "stateHigh": "Alta Presión (18 MPa)"
     },
     "value": {
       "badge": "Valor",
       "title": "Velocidad y Precisión",
-      "subtitle": "DFT es preciso pero limitado a nanosegundos. Nuestras redes simulan todo el ciclo de carga/descarga y la degradación en cientos de ciclos en horas, restringiendo el modelo estrictamente a las leyes de la física.",
+      "subtitle": "Los ciclos de validación física toman meses. Nuestras redes simulan todo el ciclo de carga/descarga y la degradación en cientos de ciclos en horas, restringiendo el modelo estrictamente a las leyes de la física.",
       "items": {
         "batch": {
           "title": "Lotes Inteligentes",
           "description": "Un ciclo de validación fallido puede costar hasta 3 meses y $100k. Identificamos fallas potenciales digitalmente en días."
         },
         "capex": {
-          "title": "Arranque Ultra Ligero",
+          "title": "Cero Infraestructura",
           "description": "Accede a un equipo de investigación por una tarifa de proyecto. Sin contrataciones de $200k y sin montar infraestructura."
         },
         "explainable": {
@@ -351,8 +373,8 @@
     },
     "integration": {
       "badge": "Integración",
-      "title": "Totalmente Privado y Personalizado",
-      "description": "Sabemos lo importante que es tu Propiedad Intelectual. Creamos nuestros modelos en instancias de nube privadas e incluso hacemos implementaciones totalmente aisladas en tu servidor. También construiremos un dashboard donde puedes correr tus propias pruebas."
+      "title": "Privado y Personalizado",
+      "description": "Sabemos lo importante que es tu Propiedad Intelectual. Entrenamos tu modelo en instancias de nube privadas y aisladas o completamente on-premise. Recibes los pesos completos del modelo y la inferencia junto con un panel personalizado."
     }
   }
 }
