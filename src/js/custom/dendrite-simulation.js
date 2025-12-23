@@ -7,7 +7,8 @@ Canvas 2D implementation with interactive sliders
 // Configuration constants
 const DENDRITE_CONFIG = {
   // Canvas dimensions
-  CANVAS_HEIGHT: 400,
+  CANVAS_HEIGHT_DESKTOP: 400,
+  CANVAS_HEIGHT_MOBILE: 500,
   
   // Layer proportions (of canvas height)
   ANODE_HEIGHT_RATIO: 0.4,
@@ -184,10 +185,11 @@ class DendriteSimulation {
     // Right panel: Canvas visualization
     this.canvasContainer = document.createElement('div');
     this.canvasContainer.className = 'dendrite-canvas-container';
+    const canvasHeight = this.isMobile ? DENDRITE_CONFIG.CANVAS_HEIGHT_MOBILE : DENDRITE_CONFIG.CANVAS_HEIGHT_DESKTOP;
     this.canvasContainer.style.cssText = `
       flex: 1;
       position: relative;
-      min-height: ${DENDRITE_CONFIG.CANVAS_HEIGHT}px;
+      min-height: ${canvasHeight}px;
     `;
     
     // Create canvas
@@ -595,7 +597,8 @@ class DendriteSimulation {
   handleResize() {
     const rect = this.canvasContainer.getBoundingClientRect();
     this.width = rect.width;
-    this.height = Math.max(rect.height, DENDRITE_CONFIG.CANVAS_HEIGHT);
+    const canvasHeight = this.isMobile ? DENDRITE_CONFIG.CANVAS_HEIGHT_MOBILE : DENDRITE_CONFIG.CANVAS_HEIGHT_DESKTOP;
+    this.height = Math.max(rect.height, canvasHeight);
     
     this.canvas.width = this.width * this.dpr;
     this.canvas.height = this.height * this.dpr;
@@ -856,7 +859,7 @@ class DendriteSimulation {
     
     // Determine which annotations should be visible
     const showVoid = this.voidFraction > 0.05;
-    const showDendrite = this.dendritePenetration > 0.1;
+    const showDendrite = this.dendritePenetration > 0.1 && pressureNorm < 0.4;
     const showFlow = pressureNorm > 0.6;
     
     // Create or update void annotation
@@ -886,7 +889,7 @@ class DendriteSimulation {
       'flow',
       showFlow,
       this.width * 0.75,
-      this.height * 0.28,
+      this.height * 0.42,
       'deeptech.simulation.annotationFlow',
       'J2-Viscoplasticity: Li Creep Active',
       'success'
@@ -945,7 +948,7 @@ class DendriteSimulation {
       
     } else if (annotation) {
       // Hide annotation
-      annotation.style.opacity = '0';
+      annotation.remove();
     }
   }
   
