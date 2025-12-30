@@ -32,6 +32,7 @@ import './js/utils/theme-switcher';
 import './js/custom/digital-twin';
 import './js/custom/fraud-graph-network';
 import './js/custom/dendrite-simulation';
+import './js/custom/protac-linker-animation';
 import i18n from './i18n.js';
 
 // Initialize i18n when DOM is ready

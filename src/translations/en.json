@@ -263,9 +263,9 @@
   },
   "biotech": {
     "hero": {
-      "badge": "Generative Graph Neural Networks",
-      "title": "PROTAC Linkers. Fast and Synthesizable",
-      "description": "We build Graph Neural Networks strictly constrained to Enamine building blocks and valid reactions to provide midsized biotechs with synthesizable linkers that form stable, cooperative ternary complexes.",
+      "badge": "Graph Neural Networks",
+      "title": "Synthesizable PROTAC Linkers",
+      "description": "Our Graph AI Model constructs Linkers step by step using known reactions. This gives us the unique ability to provide not just viable and synthesizable Linkers, but also their complete manufacturing blueprint.",
       "cta": {
         "primary": "Talk now",
         "secondary": "Book a demo"
@@ -273,33 +273,77 @@
     },
     "animation": {
       "title": "How it works",
-      "description": "No infrastructure costs, no loss of IP, and no $200K hires. We work with you project-based and build you a customized model. We'll simulate millions of ternary complexes to identify the few synthesizable linkers that drive cooperativity, saving you weeks of synthesis time and thousands in reagents."
+      "description": "By representing the ternary complex as a graph where atoms are nodes and interactions are edges, our Graph Neural Network can formulate new synthesizable Linkers in days instead of months. Every linker is built from fragments with a known synthesis pathway.",
+      "bom": "Bill of Materials",
+      "status": {
+        "sourcing": "Source: Enamine",
+        "evaluating": "Evaluating:",
+        "rejecting": "✗ Rejected:",
+        "aligning": "Aligning:",
+        "connecting": "Forming ternary complex...",
+        "validating": "Validating cooperativity...",
+        "complete": "✓ Stable Ternary Complex"
+      },
+      "rejection": {
+        "entropyHigh": "Entropy: Too High",
+        "stericClash": "Steric Clash",
+        "poorRigidity": "Poor Rigidity"
+      },
+      "metrics": {
+        "cooperativity": "Cooperativity:",
+        "predictedDeltaG": "Predicted ΔG:"
+      },
+      "final": {
+        "cooperativity": "Positive Cooperativity (α > 1)",
+        "stabilized": "Ternary Complex Stabilized • 100% Synthesizable"
+      }
     },
     "value": {
-      "badge": "Value",
-      "title": "Speed & Accuracy",
-      "subtitle": "No more trial and error linker scanning. Our architecture is strictly constrained to valid chemical reactions and available fragments, delivering linkers that are not just predicted to bind, but guaranteed to be synthesizable.",
+      "badge": "Quality",
+      "title": "Guaranteed Synthesizability",
+      "subtitle": "We do not use individual atoms. Our GNN builds linkers using Enamine REAL fragments compatible with valid chemical reactions (e.g., Amide Coupling). This guarantees that 100% of our output is synthesizable by design.",
       "items": {
-        "reaction-based": {
-          "title": "Reaction Based",
-          "description": "Our model creates linkers by selecting Enamine REAL fragments and valid reaction types (Amide Coupling, CuAAC). Every output comes with a synthetic recipe, not just a structure."
+        "maxcooperativity": {
+          "title": "Maximized Cooperativity",
+          "description": "Our model is rewarded for selecting rigid scaffolds (piperazines, spirocycles). This reduces the energy cost of binding and locking the E3 Ligase and Target Protein into a stable, cooperative complex (α > 1)."
         },
-        "hook": {
-          "title": "Hook Effect",
-          "description": "We actively optimize for Cooperativity (α > 1) to maximize stability while minimizing binary complex formation, reducing the risk of the hook effect at high concentrations."
+        "geometry": {
+          "title": "Physics-Informed Geometry",
+          "description": "By encoding Van der Waals Repulsion Edges directly into the graph, the AI feels the protein walls and navigates the solvent channel without physical hallucinations."
         },
-        "rigid": {
-          "title": "Rigid Scaffold",
-          "description": "Floppy PEG chains degrade upon binding. Our model is trained to find rigid scaffolds (piperazines, spirocycles) that lock the proteins into a productive degradation geometry."
+        "dynamics": {
+          "title": "Molecular Dynamics",
+          "description": "We run 10ns Molecular Dynamics simulations on top candidates. We then calculate the binding energy using MM/GBSA, which averages the interaction over time. This proves dynamic stability, not just static fit."
         },
-        "scoring": {
-          "title": "Geometric + PPI Scoring",
-          "description": "We don't rely on simple docking scores. We screen millions of candidates with Smina/Vina for geometric fit, then validate top hits with PPI scoring to ensure genuine interface stability."
-        },
-        "permeability": {
-          "title": "Permeability",
-          "description": "Long linkers often kill cell permeability. We penalize high Molecular Weight and TPSA to generate linkers that can form intramolecular hydrogen bonds to cross cell membranes."
+        "exitvector": {
+          "title": "Exit Vector Alignment",
+          "description": "We enforce precise Exit Vector Alignment at the attachment points, ensuring the linker not only bridges the gap but enters the binding pocket at the thermodynamically correct angle, eliminating torsional strain."
         }
+      }
+    },
+    "deliverables": {
+      "badge": "Deliverables",
+      "title": "Your Manufacturing Blueprint",
+      "subtitle": "We don't just deliver a SMILES string. We provide a complete Design-to-Drug package that allows you to start synthesis immediately or hand off to a CRO with zero friction.",
+      "manifest": {
+        "title": "Synthesis Manifest (JSON/YAML)",
+        "description": "This is your Manufacturing Blueprint. For every Linker candidate, we'll provide a file containing a precise Bill of Materials and a step by step Reaction Protocol (e.g., Amide Coupling -> Click Chemistry)."
+      },
+      "twin": {
+        "title": "3D Digital Twin (.PDB/.SDF)",
+        "description": "You get fully posed Ternary Complexes. These files contain 3D coordinates, protonation states adjusted for pH 7.4, and bond order perception so they render perfectly in PyMOL, MOE, or Schrödinger."
+      },
+      "data": {
+        "title": "Quantitative Data Sheet",
+        "description": "We deliver a Confidence Report that breaks down the physicochemical logic behind the design. This includes our calculated MM/GBSA Binding Free Energy, the Cooperativity Index, and a comprehensive ADMET profile (TPSA, LogP)."
+      },
+      "clusters": {
+        "title": "Conformational Clusters",
+        "description": "We'll also provide the Top 3 Conformational Clusters for high confidence predictions. This allows you to visualize the Entropic Cost. If the clusters are identical, the linker is rigid and ideal. If they vary significantly, it's floppy."
+      },
+      "croready": {
+        "title": "CRO Ready",
+        "description": "You receive a Design-to-Drug package that can be forwarded directly to your external partners, eliminating the need for them to spend weeks on route scouting and effectively cutting the Design-Make-Test cycle time by 30–40%."
       }
     },
     "integration": {

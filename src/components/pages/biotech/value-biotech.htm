@@ -5,12 +5,12 @@
     >
       <div class="flex-1 lg:text-left text-center">
         <div class="space-y-3">
-          <span data-ns-animate data-delay="0.1" class="badge badge-green" data-i18n="biotech.value.badge">Value</span>
-          <h2 data-ns-animate data-delay="0.2" class="max-w-[600px]" data-i18n="biotech.value.title">
-             Speed & Accuracy
+          <span data-ns-animate data-delay="0.1" class="badge badge-green" data-i18n="biotech.value.badge">Quality</span>
+          <h2 data-ns-animate data-delay="0.2" class="max-w-[650px]" data-i18n="biotech.value.title">
+             Guaranteed Synthesizability
           </h2>
           <p data-ns-animate data-delay="0.3" class="max-w-[780px]" data-i18n="biotech.value.subtitle">
-            No more trial-and-error linker scanning. We replace guesswork with physics-informed, reaction-constrained design, delivering linkers that are not just predicted to bind, but guaranteed to be synthesizable.
+            We do not generate molecules atom-by-atom. Our GNN builds linkers constructively by selecting commercial Enamine REAL fragments compatible with valid chemical reactions (e.g., Amide Coupling). This guarantees that 100% of our output is synthesizable by design.
           </p>
         </div>
       </div>
@@ -21,11 +21,11 @@
       <div data-ns-animate data-delay="0.4" class="col-span-12 lg:col-span-4">
         <div class="space-y-6">
           <div class="max-lg:text-center">
-            <span class="ns-shape-66 text-[52px] text-secondary dark:text-accent"></span>
+            <span class="ns-shape-6 text-[52px] text-secondary dark:text-accent"></span>
           </div>
           <div class="space-y-1 lg:text-left text-center">
-            <h3 class="text-heading-5" data-i18n="biotech.value.items.reaction-based.title">Reaction Based</h3>
-            <p class="max-w-[338px] lg:mx-0 mx-auto" data-i18n="biotech.value.items.reaction-based.description">
+            <h3 class="text-heading-5" data-i18n="biotech.value.items.maxcooperativity.title">Maximum Cooperativity</h3>
+            <p class="max-w-[338px] lg:mx-0 mx-auto" data-i18n="biotech.value.items.maxcooperativity.description">
               Our model creates linkers by sequentially selecting Enamine REAL fragments and valid reaction types (Amide Coupling, CuAAC). Every output comes with a synthetic recipe, not just a structure.
             </p>
           </div>
@@ -35,12 +35,12 @@
       <div data-ns-animate data-delay="0.5" class="col-span-12 lg:col-span-4">
         <div class="space-y-6">
           <div class="max-lg:text-center">
-            <span class="ns-shape-97 text-[52px] text-secondary dark:text-accent"></span>
+            <span class="ns-shape-50 text-[52px] text-secondary dark:text-accent"></span>
           </div>
           <div class="space-y-1 lg:text-left text-center">
-            <h3 class="text-heading-5" data-i18n="biotech.value.items.hook.title">Hook Effect</h3>
-            <p class="max-w-[313px] lg:mx-0 mx-auto" data-i18n="biotech.value.items.hook.description">
-              We actively optimize for Cooperativity (alpha > 1) to maximize ternary complex stability while minimizing binary complex formation, reducing the risk of the hook effect at high concentrations.
+            <h3 class="text-heading-5" data-i18n="biotech.value.items.exitvector.title">Exit Vector Alignment</h3>
+            <p class="max-w-[313px] lg:mx-0 mx-auto" data-i18n="biotech.value.items.exitvector.description">
+              We enforce precise Exit Vector Alignment at the attachment points, ensuring the linker not only bridges the gap but enters the binding pocket at the thermodynamically correct angle, eliminating torsional strain.
             </p>
           </div>
         </div>
@@ -49,12 +49,89 @@
       <div data-ns-animate data-delay="0.6" class="col-span-12 lg:col-span-4">
         <div class="space-y-6">
           <div class="max-lg:text-center">
-            <span class="ns-shape-116 text-[52px] text-secondary dark:text-accent"></span>
+            <span class="ns-shape-66 text-[52px] text-secondary dark:text-accent"></span>
           </div>          
           <div class="space-y-1 lg:text-left text-center">
-            <h3 class="text-heading-5" data-i18n="biotech.value.items.rigid.title">Rigid Scaffold</h3>
-            <p class="max-w-[337px] lg:mx-0 mx-auto" data-i18n="biotech.value.items.rigid.description">
-              Floppy PEG chains impose a high entropic penalty upon binding. Our model is trained to find rigid, pre-organized scaffolds (piperazines, spirocycles) that lock the proteins into a productive degradation geometry.
+            <h3 class="text-heading-5" data-i18n="biotech.value.items.dynamics.title">Molecular Dynamics</h3>
+            <p class="max-w-[337px] lg:mx-0 mx-auto" data-i18n="biotech.value.items.dynamics.description">
+              We run 10ns Molecular Dynamics simulations on top candidates. We then calculate the binding energy using MM/GBSA, which averages the interaction over time. This proves dynamic stability, not just static fit.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div data-ns-animate data-delay="0.4" class="col-span-12 lg:col-span-4">
+        <div class="space-y-6">
+          <div class="max-lg:text-center">
+            <span class="ns-shape-108 text-[52px] text-secondary dark:text-accent"></span>
+          </div>          
+          <div class="space-y-1 lg:text-left text-center">
+            <h3 class="text-heading-5" data-i18n="biotech.value.items.geometry.title">Physics-Informed Geometry</h3>
+            <p class="max-w-[337px] lg:mx-0 mx-auto" data-i18n="biotech.value.items.geometry.description">
+              By encoding Van der Waals Repulsion Edges directly into the graph, the AI feels the protein walls and navigates the solvent channel without physical hallucinations.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div> 
+  </div>
+</section>
+<section class="pt-[50px] pb-[100px] xl:pb-[100px] bg-white dark:bg-background-5">
+  <div class="main-container">
+    <div class="flex lg:items-end items-center lg:flex-row flex-col lg:gap-0 gap-4 justify-between mb-[70px]">
+      <div class="flex-1 lg:text-left text-center">
+        <div class="space-y-3">
+          <span data-ns-animate data-delay="0.1" class="badge badge-green" data-i18n="biotech.deliverables.badge">Deliverables</span>
+          <h2 data-ns-animate data-delay="0.2" class="max-w-[650px]" data-i18n="biotech.deliverables.title">
+             Your Manufacturing Blueprint
+          </h2>
+          <p data-ns-animate data-delay="0.3" class="max-w-[780px]" data-i18n="biotech.deliverables.subtitle">
+            We don't just deliver a SMILES string. We provide a complete Design-to-Drug package that allows you to start synthesis immediately or hand off to a CRO with zero friction.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="grid grid-cols-12 lg:gap-8 gap-y-14">
+      
+      <div data-ns-animate data-delay="0.4" class="col-span-12 lg:col-span-4">
+        <div class="space-y-6">
+          <div class="max-lg:text-center">
+            <span class="ns-shape-12 text-[52px] text-secondary dark:text-accent"></span>
+          </div>
+          <div class="space-y-1 lg:text-left text-center">
+            <h3 class="text-heading-5" data-i18n="biotech.deliverables.manifest.title">Synthesis Manifest (JSON/YAML)</h3>
+            <p class="max-w-[338px] lg:mx-0 mx-auto" data-i18n="biotech.deliverables.manifest.description">
+              We deliver a Manufacturing Blueprint for every Linker candidate. This file includes a precise Bill of Materials and a step by step Reaction Protocol.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div data-ns-animate data-delay="0.5" class="col-span-12 lg:col-span-4">
+        <div class="space-y-6">
+          <div class="max-lg:text-center">
+            <span class="ns-shape-116 text-[52px] text-secondary dark:text-accent"></span>
+          </div>
+          <div class="space-y-1 lg:text-left text-center">
+            <h3 class="text-heading-5" data-i18n="biotech.deliverables.twin.title">3D Digital Twin (.PDB/.SDF)</h3>
+            <p class="max-w-[313px] lg:mx-0 mx-auto" data-i18n="biotech.deliverables.twin.description">
+              We export fully posed Ternary Complexes. These files act as geometric proof, embedding 3D coordinates, protonation states adjusted for pH 7.4, and bond order perception so they render perfectly in PyMOL, MOE, or Schrödinger Maestro.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div data-ns-animate data-delay="0.6" class="col-span-12 lg:col-span-4">
+        <div class="space-y-6">
+          <div class="max-lg:text-center">
+            <span class="ns-shape-123 text-[52px] text-secondary dark:text-accent"></span>
+          </div>
+          <div class="space-y-1 lg:text-left text-center">
+            <h3 class="text-heading-5" data-i18n="biotech.deliverables.data.title">Quantitative Data Sheet</h3>
+            <p class="max-w-[337px] lg:mx-0 mx-auto" data-i18n="biotech.deliverables.data.description">
+              We deliver a Confidence Report that breaks down the physicochemical logic behind the design. This includes our calculated MM/GBSA Binding Free Energy, the Cooperativity Index, and a comprehensive ADMET profile (TPSA, LogP).
             </p>
           </div>
         </div>
@@ -64,11 +141,11 @@
         <div class="space-y-6">
           <div class="max-lg:text-center">
             <span class="ns-shape-99 text-[52px] text-secondary dark:text-accent"></span>
-          </div>          
+          </div>
           <div class="space-y-1 lg:text-left text-center">
-            <h3 class="text-heading-5" data-i18n="biotech.value.items.scoring.title">Scoring</h3>
-            <p class="max-w-[337px] lg:mx-0 mx-auto" data-i18n="biotech.value.items.scoring.description">
-              We don't rely on simple docking scores. We screen millions of candidates with Smina/Vina for geometric fit, then validate top hits with PPI scoring to ensure genuine interface stability.
+            <h3 class="text-heading-5" data-i18n="biotech.deliverables.clusters.title">Conformational Clusters</h3>
+            <p class="max-w-[337px] lg:mx-0 mx-auto" data-i18n="biotech.deliverables.clusters.description">
+              We deliver the Top 3 Conformational Clusters for high-confidence predictions. This allows you to visualize the Entropic Cost. If the clusters are identical, the linker is rigid and ideal. If they vary significantly, it's floppy.
             </p>
           </div>
         </div>
@@ -77,17 +154,17 @@
       <div data-ns-animate data-delay="0.5" class="col-span-12 lg:col-span-4">
         <div class="space-y-6">
           <div class="max-lg:text-center">
-            <span class="ns-shape-24 text-[52px] text-secondary dark:text-accent"></span>
+            <span class="ns-shape-55 text-[52px] text-secondary dark:text-accent"></span>
           </div>
           <div class="space-y-1 lg:text-left text-center">
-            <h3 class="text-heading-5" data-i18n="biotech.value.items.permeability.title">Permeability</h3>
-            <p class="max-w-[338px] lg:mx-0 mx-auto" data-i18n="biotech.value.items.permeability.description">
-              Long linkers often kill cell permeability. We penalize high Molecular Weight and TPSA in real-time, biasing the generation toward linkers that can form intramolecular hydrogen bonds to cross cell membranes.
+            <h3 class="text-heading-5" data-i18n="biotech.deliverables.croready.title">CRO Ready</h3>
+            <p class="max-w-[338px] lg:mx-0 mx-auto" data-i18n="biotech.deliverables.croready.description">
+              You receive a Design-to-Drug package that can be forwarded directly to your external partners, eliminating the need for them to spend weeks on route scouting and effectively cutting the Design-Make-Test cycle time by 30–40%.
             </p>
           </div>
         </div>
       </div>
 
-    </div> 
+    </div>
   </div>
 </section>

@@ -263,9 +263,9 @@
   },
   "biotech": {
     "hero": {
-      "badge": "Generative Graph-Neuronale Netze",
-      "title": "PROTAC-Linker. Schnell und Synthetisierbar",
-      "description": "Wir bauen Graph-Neuronale Netze, die streng auf Enamine-Fragmente und valide Reaktionen beschränkt sind, um mittelständischen Biotechs synthetisierbare Linker zu liefern, die stabile und kooperative ternäre Komplexe bilden.",
+      "badge": "Graph-Neuronale Netze",
+      "title": "Synthetisierbare PROTAC-Linker",
+      "description": "Unser KI-Modell baut die Linker Schritt für Schritt mit bekannter Reaktionen. Dies gibt uns die einzigartige Fähigkeit, nicht nur realistische und synthetisierbare Linker zu liefern, sondern auch deren vollständigen Herstellungsplan.",
       "cta": {
         "primary": "Schnellkontakt",
         "secondary": "Gespräch buchen"
@@ -273,39 +273,83 @@
     },
     "animation": {
       "title": "Wie es funktioniert",
-      "description": "Keine Infrastrukturkosten, kein IP-Verlust und keine 200K Neueinstellungen. Wir arbeiten projektbasiert und bauen ein maßgeschneidertes Modell. Wir simulieren Millionen ternärer Komplexe, um die wenigen synthetisierbaren Linker zu finden, die Kooperativität fördern."
+      "description": "Indem wir den ternären Komplex als Graph darstellen, wo Knoten Atome und Verbindungen Interaktionen repräsentieren, kann unser Graph-KI neue synthetisierbare Linker in Tagen statt Monaten formulieren. Jeder Linker wird aus Fragmenten mit einem bekannten Syntheseweg aufgebaut.",
+      "bom": "Stückliste",
+      "status": {
+        "sourcing": "Quelle: Enamine",
+        "evaluating": "Bewertung:",
+        "rejecting": "✗ Abgelehnt:",
+        "aligning": "Ausrichten:",
+        "connecting": "Ternärer Komplex wird gebildet...",
+        "validating": "Kooperativität wird validiert...",
+        "complete": "✓ Stabiler ternärer Komplex"
+      },
+      "rejection": {
+        "entropyHigh": "Entropie: Zu hoch",
+        "stericClash": "Sterische Abstoßung",
+        "poorRigidity": "Geringe Starrheit"
+      },
+      "metrics": {
+        "cooperativity": "Kooperativität:",
+        "predictedDeltaG": "Vorhergesagtes ΔG:"
+      },
+      "final": {
+        "cooperativity": "Positive Kooperativität (α > 1)",
+        "stabilized": "Ternärer Komplex stabilisiert • 100% synthetisierbar"
+      }
     },
     "value": {
-      "badge": "Mehrwert",
-      "title": "Geschwindigkeit & Präzision",
-      "subtitle": "Kein Trial-and-Error Linker-Scanning mehr. Unsere Architektur ist streng auf valide chemische Reaktionen beschränkt und liefert Linker, die nicht nur binden, sondern garantiert synthetisierbar sind.",
+      "badge": "Qualität",
+      "title": "Synthetisierbarkeit Garantiert",
+      "subtitle": "Wir bauen Linker unter Verwendung von Enamine REAL-Fragmenten auf, die mit validen chemischen Reaktionen (z.B. Amid-Kupplung) kompatibel sind. Dies garantiert, dass 100% unserer Ergebnisse synthetisierbar sind.",
       "items": {
-        "reaction-based": {
-          "title": "Reaktionsbasiert",
-          "description": "Unser Modell erstellt Linker durch Auswahl von Enamine REAL-Fragmenten und validen Reaktionstypen (Amide Coupling, CuAAC). Jede Ausgabe enthält ein Syntheserezept."
+        "maxcooperativity": {
+          "title": "Maximierte Kooperativität",
+          "description": "Unser Modell wird belohnt, wenn es starre Gerüste (Piperazine, Spirocyclen) auswählt. Dies reduziert die energetischen Bindungskosten und fixiert die E3-Ligase und das Zielprotein in einem stabilen, kooperativen Komplex (α > 1)."
         },
-        "hook": {
-          "title": "Hook-Effekt",
-          "description": "Wir optimieren auf Kooperativität (α > 1), um Stabilität zu maximieren und binärer Komplexe zu minimieren, was das Risiko des Hook-Effekts reduziert."
+        "geometry": {
+          "title": "Physik-Informierte Geometrie",
+          "description": "Durch die direkte Kodierung von Van-der-Waals-Gesetze in den Graphen spürt die KI die Proteinwände und navigiert den Lösungsmittelkanal ohne Halluzinationen."
         },
-        "rigid": {
-          "title": "Starres Gerüst (Scaffold)",
-          "description": "Flexible PEG-Ketten degradieren bei Bindung. Unser Modell sucht nach starren Gerüsten (Piperazine, Spirocyclen), die Proteine in einer produktiven Degradationsgeometrie fixieren."
+        "dynamics": {
+          "title": "Molekulardynamik",
+          "description": "Wir führen 10ns Molekulardynamik-Simulationen für Top-Kandidaten durch und dann berechnen wir die Bindungsenergie mit MM/GBSA. Dies beweist dynamische Stabilität, nicht nur statische Passung."
         },
-        "scoring": {
-          "title": "Geometrisches + PPI Scoring",
-          "description": "Wir verlassen uns nicht auf einfache Docking-Scores. Wir screenen Millionen Kandidaten mit Smina/Vina auf geometrische Passung und validieren Top-Hits mit PPI-Scoring für echte Grenzflächenstabilität."
-        },
-        "permeability": {
-          "title": "Permeabilität",
-          "description": "Lange Linker zerstören oft die Zellpermeabilität. Wir bestrafen hohes Molekulargewicht und TPSA, um Linker zu generieren, die intramolekulare Wasserstoffbrücken bilden, um Zellmembranen zu durchqueren."
+        "exitvector": {
+          "title": "Exit-Vektor-Ausrichtung",
+          "description": "Wir erzwingen die Exit-Vektor-Ausrichtung an den Befestigungspunkten und stellen sicher, dass der Linker die Bindungstasche im thermodynamisch korrekten Winkel betritt und Torsionsspannung eliminiert."
         }
+      }
+    },
+    "deliverables": {
+      "badge": "Lieferumfang",
+      "title": "Ihr Herstellungsplan",
+      "subtitle": "Wir liefern nicht nur eine SMILES-Zeichenkette. Wir bieten ein vollständiges Design-zu-Medikament-Paket, das Ihnen ermöglicht, die Synthese sofort zu starten oder reibungslos an ein CRO zu übergeben.",
+      "manifest": {
+        "title": "Synthese-Manifest (JSON/YAML)",
+        "description": "Dies ist Ihr Herstellungsplan. Für jeden Linker-Kandidaten liefern wir eine Datei mit einer präzisen Stückliste und einem schrittweisen Reaktionsprotokoll (z.B. Amid-Kupplung -> Click-Chemie)."
+      },
+      "twin": {
+        "title": "3D-Digitaler Zwilling (.PDB/.SDF)",
+        "description": "Sie bekommen ternäre Komplexe bereits mit 3D-Koordinaten,  angepasste Protonierung und Bindungsordnungswahrnehmung, sodass sie perfekt in PyMOL, MOE oder Schrödinger dargestellt werden."
+      },
+      "data": {
+        "title": "Quantitatives Datenblatt",
+        "description": "Wir liefern einen Bericht, der die Logik hinter dem Design aufschlüsselt. Dies umfasst unsere berechnete MM/GBSA-Bindungsfreie Energie, den Kooperativitätsindex und ein umfassendes ADMET-Profil (TPSA, LogP)."
+      },
+      "clusters": {
+        "title": "Konformations-Cluster",
+        "description": "Wir liefern auch die Top 3 Konformations-Cluster. Dies ermöglicht es Ihnen, die entropischen Kosten zu visualisieren. Wenn die Cluster identisch sind, ist der Linker starr und ideal. Wenn sie erheblich variieren, ist er flexibel."
+      },
+      "croready": {
+        "title": "CRO-Bereit",
+        "description": "Sie erhalten ein Design-Paket, das direkt an Ihre externen Partner weitergeleitet werden kann. Damit verkürzen wir den Design-Herstellung-Test-Vorgang um 30–40%, indem Sie keine Zeit mit der Routensuche verbringen."
       }
     },
     "integration": {
       "badge": "Integration",
       "title": "Kompatibel mit Ihrem Labor",
-      "description": "Unsere API verbindet sich direkt mit Ihren bestehenden Laborsystemen und Datenbank und erweitert Ihren Workflow mit der besten Technologie."
+      "description": "Unsere API verbindet sich direkt mit Ihren elektronischen Labornotizbüchern und Cloud-Datenseen und erweitert Ihren aktuellen Workflow mit modernster Technologie."
     }
   },
   "deeptech": {

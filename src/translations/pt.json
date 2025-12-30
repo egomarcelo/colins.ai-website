@@ -263,49 +263,93 @@
   },
   "biotech": {
     "hero": {
-      "badge": "Redes Neurais em Grafos Generativas",
-      "title": "Linkers PROTAC. Rápidos e Sintetizáveis",
-      "description": "Construímos redes neurais em grafos treinadas estritamente com fragmentos Enamine e reações válidas para fornecer a biotechs linkers sintetizáveis que formam complexos ternários estáveis e cooperativos.",
-        "cta": {
+      "badge": "Redes Neurais em Grafos",
+      "title": "Linkers PROTAC Sintetizáveis",
+      "description": "Nosso Modelo de IA constrói Linkers passo a passo usando reações conhecidas. Isso nos dá a capacidade única de entregar não só Linkers viáveis e sintetizáveis, mas também seu plano de fabricação completo.",
+      "cta": {
         "primary": "Contato rápido",
         "secondary": "Agendar chamada"
       }
     },
     "animation": {
-     "title": "Como funciona",
-      "description": "Sem custos de infraestrutura, sem perda de PI e sem funcionários de 200K USD + equity. Trabalhamos por projeto e construímos um modelo sob medida. Simulamos milhões de complexos para identificar os poucos linkers sintetizáveis que geram cooperatividade."
+      "title": "Como funciona",
+      "description": "Ao modelar o complexo ternário como um grafo onde os nós representam átomos e as conexões representam interações, conseguimos formular novos Linkers sintetizáveis em dias em vez de meses. Cada linker é construído a partir de fragmentos com uma rota de síntese conhecida.",
+      "bom": "Lista de Materiais",
+      "status": {
+        "sourcing": "Fonte: Enamine",
+        "evaluating": "Avaliando:",
+        "rejecting": "✗ Rejeitado:",
+        "aligning": "Alinhando:",
+        "connecting": "Formando complexo ternário...",
+        "validating": "Validando cooperatividade...",
+        "complete": "✓ Complexo Ternário Estável"
+      },
+      "rejection": {
+        "entropyHigh": "Entropia: Muito alta",
+        "stericClash": "Choque estérico",
+        "poorRigidity": "Rigidez baixa"
+      },
+      "metrics": {
+        "cooperativity": "Cooperatividade:",
+        "predictedDeltaG": "ΔG Previsto:"
+      },
+      "final": {
+        "cooperativity": "Cooperatividade Positiva (α > 1)",
+        "stabilized": "Complexo Ternário Estabilizado • 100% Sintetizável"
+      }
     },
     "value": {
-      "badge": "Valor",
-      "title": "Velocidade e Precisão",
-      "subtitle": "Chega de tentativa e erro escaneando linkers. Nossa arquitetura é restrita a reações químicas válidas e fragmentos disponíveis, entregando linkers que não só predizem ligação, mas são garantidos de serem sintetizáveis.",
+      "badge": "Qualidade",
+      "title": "Sintetizabilidade Garantida",
+      "subtitle": "Não usamos átomos individuais. Nossa GNN constrói linkers usando fragmentos Enamine REAL compatíveis com reações químicas válidas (ex. Amide Coupling). Isso garante que 100% dos resultados sejam sintetizáveis.",
       "items": {
-        "reaction-based": {
-          "title": "Baseado em Reações",
-          "description": "Nosso modelo cria linkers selecionando fragmentos Enamine REAL e reações válidas (Amide Coupling, CuAAC). Cada resultado vem com receita sintética, não apenas uma estrutura."
+        "maxcooperativity": {
+          "title": "Cooperatividade Maximizada",
+          "description": "Nosso modelo é recompensado por selecionar andaimes rígidos (piperazinas, espirociclos). Isso reduz o custo energético de ligação e trava a Ligase E3 e Proteína Alvo num complexo estável e cooperativo (α > 1)."
         },
-        "hook": {
-          "title": "Efeito Gancho (Hook Effect)",
-          "description": "Otimizamos ativamente a Cooperatividade (α > 1) para maximizar estabilidade e minimizar complexos binários, reduzindo o risco do efeito hook em altas concentrações."
+        "geometry": {
+          "title": "Geometria Informada pela Física",
+          "description": "Ao codificar as equações de Repulsão Van der Waals diretamente no grafo, a IA sente as paredes proteicas e navega o canal de solvente sem alucinações físicas."
         },
-        "rigid": {
-          "title": "Andaime Rígido",
-          "description": "Cadeias PEG flexíveis degradam ao ligar. Nosso modelo busca andaimes rígidos (piperazinas, espirociclos) que travam as proteínas numa geometria de degradação produtiva."
+        "dynamics": {
+          "title": "Dinâmica Molecular",
+          "description": "Rodamos simulações de Dinâmica Molecular de 10ns nos melhores candidatos. Depois calculamos a energia de ligação usando MM/GBSA. Isso prova estabilidade dinâmica, não só ajuste estático."
         },
-        "scoring": {
-           "title": "Pontuação Geométrica + PPI",
-           "description": "Não confiamos em pontuações simples de docking. Filtramos milhões de candidatos com Smina/Vina por ajuste geométrico e validamos os melhores com pontuação PPI para estabilidade real."
-        },
-        "permeability": {
-           "title": "Permeabilidade",
-           "description": "Linkers longos frequentemente matam a permeabilidade celular. Penalizamos alto Peso Molecular e TPSA para gerar linkers que formem pontes de hidrogênio intramoleculares para cruzar membranas."
+        "exitvector": {
+          "title": "Alinhamento do Vetor de Saída",
+          "description": "Impomos um alinhamento preciso do Vetor de Saída nos pontos de ligação, garantindo que o linker entra no bolsão de ligação no ângulo termodinamicamente correto, eliminando tensão torsional."
         }
+      }
+    },
+    "deliverables": {
+      "badge": "Entregáveis",
+      "title": "Seu Plano de Fabricação",
+      "subtitle": "Não te entregamos só uma sequência SMILES. Te damos um pacote completo de Design-a-Droga que te permite começar a síntese imediatamente ou passar para um CRO sem fricção.",
+      "manifest": {
+        "title": "Manifesto de Síntese (JSON/YAML)",
+        "description": "Este é o teu Plano de Fabricação. Para cada candidato de Linker, te daremos um arquivo com uma Lista de Materiais precisa e um Protocolo de Reação passo a passo (ex. Amide Coupling -> Click Chemistry)."
+      },
+      "twin": {
+        "title": "Gêmeo Digital 3D (.PDB/.SDF)",
+        "description": "Você recebe Complexos Ternários já com coordenadas 3D, estados de protonação ajustados para pH 7.4, e percepção da ordem de ligações para renderizarem perfeitamente no PyMOL, MOE, ou Schrödinger."
+      },
+      "data": {
+        "title": "Ficha de Dados Quantitativos",
+        "description": "Te entregamos um Relatório que detalha a lógica por trás do design. Isso inclui nossa Energia Livre de Ligação MM/GBSA calculada, o Índice de Cooperatividade, e um perfil ADMET completo (TPSA, LogP)."
+      },
+      "clusters": {
+        "title": "Clusters Conformacionais",
+        "description": "Também te daremos os 3 Melhores Clusters Conformacionais para previsões de alta confiança. Isso te permite visualizar o Custo Entrópico. Se os clusters são idênticos, o linker é rígido e ideal. Se variam significativamente, é flexível."
+      },
+      "croready": {
+        "title": "Pronto para CRO",
+        "description": "Você recebe um pacote de Design-a-Droga que pode ser encaminhado diretamente aos teus parceiros externos, eliminando a necessidade de passarem semanas procurando rotas e efetivamente cortando o ciclo Design-Fazer-Testar em 30–40%."
       }
     },
     "integration": {
       "badge": "Integração",
-      "title": "Compatível com seu Laboratório",
-      "description": "Nossa API conecta diretamente ao seu Sistema de Laboratório Eletrônicos e banco de dados, melhorando seu fluxo de trabalho atual."
+      "title": "Compatível com teu Laboratório",
+      "description": "Nossa API conecta diretamente aos teus Cadernos de Laboratório Eletrônicos e lagos de dados na nuvem, melhorando teu fluxo de trabalho atual com tecnologia de ponta."
     }
   },
   "deeptech": {
