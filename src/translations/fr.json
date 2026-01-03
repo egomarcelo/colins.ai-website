@@ -14,7 +14,7 @@
     "menu": "Menu"
   },
   "hero": {
-    "badge": "Réseaux de Neurones Informés par la Physique",
+    "badge": "Réseau Neuronal Informé par la Physique",
     "title": "Production sans Pannes Imprévues",
     "description": "Nos réseaux de neurones simulent la physique interne des pompes centrifuges et moteurs électriques en temps réel. On détecte les problèmes des mois à l'avance avec 99% de précision et économise des millions en temps d'arrêt.",
     "cta": {
@@ -221,7 +221,7 @@
   },
   "banking": {
     "hero": {
-    "badge": "Réseaux de Neurones Graphiques",
+    "badge": "Réseau Neuronal Graphique",
     "title": "Détection de Fraude pour les Banques Moyennes",
     "description": "Nous aidons les banques moyennes à adopter l'IA graphique utilisée par les plus grandes pour juste 10% du coût. On identifie les réseaux illégaux et réduit les faux positifs qui vous coûtent des millions jusqu'à 50%.",
     "cta": {
@@ -263,7 +263,7 @@
   },
   "biotech": {
     "hero": {
-      "badge": "Réseaux de Neurones Graphiques",
+      "badge": "Réseau Neuronal Graphique",
       "title": "Linkers PROTAC Synthétisables",
       "description": "Notre Modèle d'IA construit les Linkers étape par étape avec des réactions connues. Cela nous donne la capacité unique de fournir non seulement des Linkers viables et synthétisables, mais aussi leur plan de fabrication complet.",
       "cta": {
@@ -354,7 +354,7 @@
   },
   "deeptech": {
     "hero": {
-      "badge": "Réseaux de Neurones Informés par la Physique",
+      "badge": "Réseau Neuronal Informé par la Physique",
       "title": "Simulation de Batterie à l'État Solide",
       "description": "On t'aide à avoir une batterie vraiment manufacturable. Nos réseaux de neurones prédisent la formation de dendrites en simulant le transport d'ions, la cinétique couplée aux contraintes et le stress mécanique sur des centaines de cycles.",
       "cta": {
