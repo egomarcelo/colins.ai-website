@@ -264,16 +264,16 @@
   "biotech": {
     "hero": {
       "badge": "Réseau Neuronal Graphique",
-      "title": "Linkers PROTAC Synthétisables",
-      "description": "Notre Modèle d'IA construit les Linkers étape par étape avec des réactions connues. Cela nous donne la capacité unique de fournir non seulement des Linkers viables et synthétisables, mais aussi leur plan de fabrication complet.",
+      "title": "Conception Rationnelle de Dégradeurs de Protéines",
+      "description": "Nous créons des modèles d'IA qui cartographient la géométrie 3D exacte de votre complexe ternaire. Cela nous permet de construire le Linker, le Molecular Glue ou le Payload DAC adapté à votre protéine cible et à votre ligase E3.",
       "cta": {
         "primary": "Contact rapide",
         "secondary": "Prendre RDV"
       }
     },
     "animation": {
-      "title": "Comment ça marche",
-      "description": "On modélise le complexe ternaire comme un graphe où les nœuds représent des atomes et les connexions des interactions. Comme ça, notre Réseau de Neurones peut formuler de nouveaux Linkers synthétisables en jours plutôt qu'en mois. Chaque linker est construit à partir de fragments avec une voie de synthèse connue.",
+      "title": "Fast-Track vers les Essais Cliniques",
+      "description": "En contraignant le modèle à des réactions et fragments connus, nous générons des candidats thermodynamiquement stables, coopératifs, perméables et synthétisables dès le départ. Cela accélère l'entrée en clinique pour tous vos pipelines actuels et futurs.",
       "bom": "Liste de Matériaux",
       "status": {
         "sourcing": "Source: Enamine",
@@ -300,8 +300,8 @@
     },
     "value": {
       "badge": "Qualité",
-      "title": "Synthétisabilité Garantie",
-      "subtitle": "Notre GNN utilise des fragments Enamine REAL compatibles avec des réactions chimiques valides (ex. Couplage Amide). Cela garantit que 100% de nos Linker sont synthétisables par conception.",
+      "title": "Conception Basée sur la Physique",
+      "subtitle": "Au-delà du simple docking, notre GNN simule la réalité dynamique du complexe ternaire et intègre l'entropie, la solvatation et l'alignement vectoriel pour garantir que vos dégradeurs fonctionnent dans le monde réel.",
       "items": {
         "maxcooperativity": {
           "title": "Coopérativité Maximisée",
@@ -316,8 +316,8 @@
           "description": "Nous exécutons des simulations de Dynamique Moléculaire de 10ns sur les meilleurs candidats et calculons ensuite l'énergie de liaison en utilisant MM/GBSA. Cela prouve la stabilité dynamique, pas seulement l'ajustement statique."
         },
         "exitvector": {
-          "title": "Vecteur de Sortie",
-          "description": "Nous imposons un alignement précis du Vecteur de Sortie aux points d'attachement, garantissant que le linker entre dans la poche de liaison à l'angle thermodynamiquement correct, éliminant la tension de torsion."
+          "title": "Alignement Vectoriel Précis",
+          "description": "Nous imposons un alignement vectoriel strict. Soit pour combler un espace soit pour remplir une poche, la molécule engage la cible sous l'angle thermodynamiquement correct, éliminant ainsi la contrainte de torsion."
         }
       }
     },
@@ -348,8 +348,8 @@
     },
     "integration": {
       "badge": "Intégration",
-      "title": "Compatible avec votre Laboratoire",
-      "description": "Notre API se connecte directement à vos Cahiers de Laboratoire Électroniques et lacs de données cloud, améliorant votre flux de travail actuel avec une technologie de pointe."
+      "title": "Déploiement Sécurisé On-Premise",
+      "description": "Nous garantissons une confidentialité absolue pour vos cibles propriétaires. Notre modèle est entièrement conteneurisé et peut être déployé sur site ou via un Cloud Privé, garantissant que vos données ne quittent jamais votre pare-feu."
     }
   },
   "deeptech": {

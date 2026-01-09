@@ -264,16 +264,16 @@
   "biotech": {
     "hero": {
       "badge": "Graph-Neuronale Netze",
-      "title": "Synthetisierbare PROTAC-Linker",
-      "description": "Unser KI-Modell baut die Linker Schritt für Schritt mit bekannter Reaktionen. Dies gibt uns die einzigartige Fähigkeit, nicht nur realistische und synthetisierbare Linker zu liefern, sondern auch deren vollständigen Herstellungsplan.",
+      "title": "Rationales Design von Protein-Degradern",
+      "description": "Wir machen maßgeschneiderte Graph-KI-Modelle, die die vollständige 3D-Geometrie Ihres spezifischen ternären Komplexes abbilden. Dies ermöglicht uns die rationale Konstruktion von Linkern, Molecular Glues oder DAC-Payloads, die exakt auf Ihr Target-Protein und Ihre E3-Ligase zugeschnitten sind.",
       "cta": {
         "primary": "Schnellkontakt",
         "secondary": "Gespräch buchen"
       }
     },
     "animation": {
-      "title": "Wie es funktioniert",
-      "description": "Indem wir den ternären Komplex als Graph darstellen, wo Knoten Atome und Verbindungen Interaktionen repräsentieren, kann unser Graph-KI neue synthetisierbare Linker in Tagen statt Monaten formulieren. Jeder Linker wird aus Fragmenten mit einem bekannten Syntheseweg aufgebaut.",
+      "title": "Fast-Track zu klinischen Studien",
+      "description": "Indem wir das Modell auf bekannte Reaktionen und Fragmente beschränken, generieren wir Kandidaten, die thermodynamisch stabil, kooperativ, zellgängig und synthetisierbar sind. Dies beschleunigt den klinischen Eintritt für all Ihre aktuellen und zukünftigen Pipelines.",
       "bom": "Stückliste",
       "status": {
         "sourcing": "Quelle: Enamine",
@@ -300,8 +300,8 @@
     },
     "value": {
       "badge": "Qualität",
-      "title": "Synthetisierbarkeit Garantiert",
-      "subtitle": "Wir bauen Linker unter Verwendung von Enamine REAL-Fragmenten auf, die mit validen chemischen Reaktionen (z.B. Amid-Kupplung) kompatibel sind. Dies garantiert, dass 100% unserer Ergebnisse synthetisierbar sind.",
+      "title": "Physik-Informiertes Design",
+      "subtitle": "Wir gehen über einfaches Docking hinaus. Unser GNN simuliert die dynamische Realität des ternären Komplexes. Einschließlich Entropie, Solvatation und Vektorausrichtung um sicherzustellen, dass Ihre Degrader wirklich funktionieren.",
       "items": {
         "maxcooperativity": {
           "title": "Maximierte Kooperativität",
@@ -316,8 +316,8 @@
           "description": "Wir führen 10ns Molekulardynamik-Simulationen für Top-Kandidaten durch und dann berechnen wir die Bindungsenergie mit MM/GBSA. Dies beweist dynamische Stabilität, nicht nur statische Passung."
         },
         "exitvector": {
-          "title": "Exit-Vektor-Ausrichtung",
-          "description": "Wir erzwingen die Exit-Vektor-Ausrichtung an den Befestigungspunkten und stellen sicher, dass der Linker die Bindungstasche im thermodynamisch korrekten Winkel betritt und Torsionsspannung eliminiert."
+          "title": "Präzise Vektorausrichtung",
+          "description": "Wir erzwingen eine strikte Vektorausrichtung. Egal ob es sich um einen Linker oder Glue handlet, das Molekül bindet das Target im thermodynamisch korrekten Winkel und eliminiert Torsionsspannungen."
         }
       }
     },
@@ -348,8 +348,8 @@
     },
     "integration": {
       "badge": "Integration",
-      "title": "Kompatibel mit Ihrem Labor",
-      "description": "Unsere API verbindet sich direkt mit Ihren elektronischen Labornotizbüchern und Cloud-Datenseen und erweitert Ihren aktuellen Workflow mit modernster Technologie."
+      "title": "Sichere On-Premise Bereitstellung",
+      "description": "Wir garantieren absolute Privatsphäre. Unser Modell ist vollständig containerisiert und kann On-Premise oder in einer Private Cloud bereitgestellt werden, sodass Ihre Daten niemals Ihre Firewall verlassen."
     }
   },
   "deeptech": {

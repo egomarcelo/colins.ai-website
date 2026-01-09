@@ -264,16 +264,16 @@
   "biotech": {
     "hero": {
       "badge": "Redes Neurais em Grafos",
-      "title": "Linkers PROTAC Sintetizáveis",
-      "description": "Nosso Modelo de IA constrói Linkers passo a passo usando reações conhecidas. Isso nos dá a capacidade única de entregar não só Linkers viáveis e sintetizáveis, mas também seu plano de fabricação completo.",
+      "title": "Degradadores de Proteínas",
+      "description": "Criamos modelos de IA sob medida que mapeiam a geometria 3D exata do seu complexo ternário. Isso nos permite construir racionalmente o Linker, Molecular Glue ou payload de DAC que se encaixa na sua Proteína Alvo e E3 ligase.",
       "cta": {
         "primary": "Contato rápido",
         "secondary": "Agendar chamada"
       }
     },
     "animation": {
-      "title": "Como funciona",
-      "description": "Ao modelar o complexo ternário como um grafo onde os nós representam átomos e as conexões representam interações, conseguimos formular novos Linkers sintetizáveis em dias em vez de meses. Cada linker é construído a partir de fragmentos com uma rota de síntese conhecida.",
+      "title": "Fast-Track para Ensaios Clínicos",
+      "description": "Ao restringir o modelo a reações e fragmentos conhecidos, geramos candidatos termodinamicamente estáveis, cooperativos, permeáveis e sintetizáveis desde o início. Isso acelera a entrada clínica para todos os seus pipelines atuais e futuros.",
       "bom": "Lista de Materiais",
       "status": {
         "sourcing": "Fonte: Enamine",
@@ -300,8 +300,8 @@
     },
     "value": {
       "badge": "Qualidade",
-      "title": "Sintetizabilidade Garantida",
-      "subtitle": "Não usamos átomos individuais. Nossa GNN constrói linkers usando fragmentos Enamine REAL compatíveis com reações químicas válidas (ex. Amide Coupling). Isso garante que 100% dos resultados sejam sintetizáveis.",
+      "title": "Design Baseado em Física",
+      "subtitle": "Vamos além do simples docking. Nossa GNN simula a realidade dinâmica do complexo ternário e incorpora entropia, solvatação e alinhamento vetorial para garantir que seus degradadores funcionem no mundo real.",
       "items": {
         "maxcooperativity": {
           "title": "Cooperatividade Maximizada",
@@ -316,8 +316,8 @@
           "description": "Rodamos simulações de Dinâmica Molecular de 10ns nos melhores candidatos. Depois calculamos a energia de ligação usando MM/GBSA. Isso prova estabilidade dinâmica, não só ajuste estático."
         },
         "exitvector": {
-          "title": "Alinhamento do Vetor de Saída",
-          "description": "Impomos um alinhamento preciso do Vetor de Saída nos pontos de ligação, garantindo que o linker entra no bolsão de ligação no ângulo termodinamicamente correto, eliminando tensão torsional."
+          "title": "Alinhamento Vetorial Preciso",
+          "description": "Impomos um alinhamento vetorial rigoroso. Seja preenchendo uma lacuna (PROTAC) ou um pocket (Glue), a molécula acopla no alvo no ângulo termodinamicamente correto, eliminando a tensão torcional."
         }
       }
     },
@@ -348,8 +348,8 @@
     },
     "integration": {
       "badge": "Integração",
-      "title": "Compatível com teu Laboratório",
-      "description": "Nossa API conecta diretamente aos teus Cadernos de Laboratório Eletrônicos e lagos de dados na nuvem, melhorando teu fluxo de trabalho atual com tecnologia de ponta."
+      "title": "Implantação Segura On-Premise",
+      "description": "Garantimos privacidade absoluta para seus targets proprietários. Nosso modelo é totalmente conteinerizado e pode ser implantado On-Premise ou via Private Cloud, garantindo que seus dados nunca saiam do firewall."
     }
   },
   "deeptech": {
