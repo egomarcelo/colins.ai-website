@@ -265,7 +265,7 @@
     "hero": {
       "badge": "Graph Neural Networks",
       "title": "Rational Design of Protein Degraders",
-      "description": "We create custom Graph AI Models that map the full 3D geometry of your specific ternary complex. This allows us to then rationally construct the Linker, Molecular glue, or DAC payload that fits your Target Protein and E3 ligase.",
+      "description": "We build custom Graph AI Models that simulate the geometry and molecular interactions of your bioconjugates or ternary complexes. We then rationally construct stable and synthesizable Linkers or Molecular Glues for your ADCs or Protein Degraders.",
       "cta": {
         "primary": "Talk now",
         "secondary": "Book a demo"

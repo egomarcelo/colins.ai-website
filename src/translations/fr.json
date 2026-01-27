@@ -265,7 +265,7 @@
     "hero": {
       "badge": "Réseau Neuronal Graphique",
       "title": "Conception Rationnelle de Dégradeurs de Protéines",
-      "description": "Nous créons des modèles d'IA qui cartographient la géométrie 3D exacte de votre complexe ternaire. Cela nous permet de construire le Linker, le Molecular Glue ou le Payload DAC adapté à votre protéine cible et à votre ligase E3.",
+      "description": "Nous développons des modèles d'IA sur graphes qui simulent la géométrie et les interactions moléculaires de vos bioconjugués ou complexes ternaires. Nous concevons ensuite des Linkers ou des colles moléculaires stables et synthétisables.",
       "cta": {
         "primary": "Contact rapide",
         "secondary": "Prendre RDV"

@@ -265,7 +265,7 @@
     "hero": {
       "badge": "Redes Neurais em Grafos",
       "title": "Degradadores de Proteínas",
-      "description": "Criamos modelos de IA sob medida que mapeiam a geometria 3D exata do seu complexo ternário. Isso nos permite construir racionalmente o Linker, Molecular Glue ou payload de DAC que se encaixa na sua Proteína Alvo e E3 ligase.",
+      "description": "Desenvolvemos modelos de IA em grafos que simulam a geometria e as interações moleculares dos teus bioconjugados ou complexos ternários. Em seguida, construímos Linkers ou colas moleculares estáveis e sintetizáveis.",
       "cta": {
         "primary": "Contato rápido",
         "secondary": "Agendar chamada"

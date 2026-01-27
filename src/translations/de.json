@@ -265,7 +265,7 @@
     "hero": {
       "badge": "Graph-Neuronale Netze",
       "title": "Rationales Design von Protein-Degradern",
-      "description": "Wir machen maßgeschneiderte Graph-KI-Modelle, die die vollständige 3D-Geometrie Ihres spezifischen ternären Komplexes abbilden. Dies ermöglicht uns die rationale Konstruktion von Linkern, Molecular Glues oder DAC-Payloads, die exakt auf Ihr Target-Protein und Ihre E3-Ligase zugeschnitten sind.",
+      "description": "Wir entwickeln maßgeschneiderte Graph-KI-Modelle, die die Geometrie und die molekularen Wechselwirkungen Ihrer Biokonjugate oder ternären Komplexe simulieren. Anschließend konstruieren wir stabile und synthetisierbare Linker oder Molecular Glues.",
       "cta": {
         "primary": "Schnellkontakt",
         "secondary": "Gespräch buchen"

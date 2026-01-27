@@ -265,7 +265,7 @@
     "hero": {
       "badge": "Reti Neurali a Grafo",
       "title": "Design di Degradatori Proteici",
-      "description": "Creiamo modelli di IA che mappano la geometria 3D esatta del tuo complesso ternario specifico. Così costruiamo razionalmente il Linker, Molecular Glue o il DAC che si adatta perfettamente alla tua Proteina Target e alla E3 ligasi.",
+      "description": "Sviluppiamo modelli di IA a grafo che simulano la geometria e le interazioni molecolari dei vostri bioconiugati o complessi ternari. Poi, progettiamo Linker o colle molecolari stabili e sintetizzabili per il ADC o Protein Degrader.",
       "cta": {
         "primary": "Contatto rapido",
         "secondary": "Prenota chiamata"

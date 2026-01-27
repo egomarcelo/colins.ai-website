@@ -265,7 +265,7 @@
     "hero": {
       "badge": "Redes Neuronales Gráficas",
       "title": "Degradadores de Proteínas",
-      "description": "Creamos modelos de IA que mapean la geometría 3D exacta de tu complejo ternario. Esto nos permite construir racionalmente el Linker, Molecular Glue o payload DAC que encaja perfectamente con tu Proteína y E3 ligase.",
+      "description": "Desarrollamos modelos de IA de grafos que simulan la geometría e interacciones moleculares de tus bioconjugados o complejos ternarios. Después, diseñamos racionalmente Linkers o pegamentos moleculares estables y sintetizables.",
       "cta": {
         "primary": "Contacto rápido",
         "secondary": "Agendar demo"
