@@ -263,9 +263,9 @@
   },
   "biotech": {
     "hero": {
-      "badge": "Réseau Neuronal Graphique",
-      "title": "Conception Rationnelle de Dégradeurs de Protéines",
-      "description": "Nous développons des modèles d'IA sur graphes qui simulent la géométrie et les interactions moléculaires de vos bioconjugués ou complexes ternaires. Nous concevons ensuite des Linkers ou des colles moléculaires stables et synthétisables.",
+      "badge": "Graph neural networks",
+      "title": "Targeted Protein & Cell Degradation",
+      "description": "Nous concevons des modèles Graph AI qui simulent les interactions moléculaires pour tester les attachment sites et mapper les exit vectors, et puis construire des linkers PROTAC, ADC et DAC synthétisables, ou designer des chaînes peptidiques bispécifiques à partir de building blocks stables.",
       "cta": {
         "primary": "Contact rapide",
         "secondary": "Prendre RDV"

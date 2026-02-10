@@ -264,8 +264,8 @@
   "biotech": {
     "hero": {
       "badge": "Graph-Neuronale Netze",
-      "title": "Rationales Design von Protein-Degradern",
-      "description": "Wir entwickeln Graph-KI-Modelle, die die Geometrie und die molekularen Wechselwirkungen Ihrer Biokonjugate oder ternären Komplexe simulieren. Damit generieren wir stabile und synthetisierbare Linker oder Molecular Glues.",
+      "title": "Targeted Protein & Cell Degradation",
+      "description": "Wir entwickeln Graph KI die molekulare Interaktionen simulieren, um Attachment Sites und Exit Vectors zu mappieren, und dann synthetisierbare PROTAC, ADC und DAC Linker, oder bispezifische Peptidketten aus stabilen Building Blocks entwerfen.",
       "cta": {
         "primary": "Schnellkontakt",
         "secondary": "Gespräch buchen"

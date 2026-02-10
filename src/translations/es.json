@@ -263,9 +263,9 @@
   },
   "biotech": {
     "hero": {
-      "badge": "Redes Neuronales Gráficas",
-      "title": "Degradadores de Proteínas",
-      "description": "Desarrollamos modelos de IA de grafos que simulan la geometría e interacciones moleculares de tus bioconjugados o complejos ternarios. Después, diseñamos racionalmente Linkers o pegamentos moleculares estables y sintetizables.",
+      "badge": "Graph neural networks",
+      "title": "Targeted Protein & Cell Degradation",
+      "description": "Desarrollamos modelos de IA que simulan interacciones moleculares para mappear attachment sites y exit vectors y así construir linkers de PROTAC, ADC y DAC sintetizables, o diseñar cadenas peptídicas biespecíficas usando building blocks estables.",
       "cta": {
         "primary": "Contacto rápido",
         "secondary": "Agendar demo"

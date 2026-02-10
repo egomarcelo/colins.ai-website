@@ -263,9 +263,9 @@
   },
   "biotech": {
     "hero": {
-      "badge": "Reti Neurali a Grafo",
-      "title": "Design di Degradatori Proteici",
-      "description": "Sviluppiamo modelli di IA a grafo che simulano la geometria e le interazioni molecolari dei vostri bioconiugati o complessi ternari. Poi, progettiamo Linker o colle molecolari stabili e sintetizzabili per il ADC o Protein Degrader.",
+      "badge": "Graph neural networks",
+      "title": "Targeted Protein & Cell Degradation",
+      "description": "Sviluppiamo modelli di Graph AI per simulare interazioni molecolari, testare attachment sites, mappare exit vectors e poi progettare linker PROTAC, ADC e DAC sintetizzabili, o catene peptidiche bispecifiche usando building blocks stabili.",
       "cta": {
         "primary": "Contatto rapido",
         "secondary": "Prenota chiamata"

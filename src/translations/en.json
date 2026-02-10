@@ -264,8 +264,8 @@
   "biotech": {
     "hero": {
       "badge": "Graph Neural Networks",
-      "title": "Rational Design of Protein Degraders",
-      "description": "We build custom Graph AI Models that simulate the geometry and molecular interactions of your bioconjugates or ternary complexes. We then rationally construct stable and synthesizable Linkers or Molecular Glues for your ADCs or Protein Degraders.",
+      "title": "Targeted Protein & Cell Degradation",
+      "description": "We build Graph AI Models that can simulate molecular interactions in order to test attachment sites, map exit vectors, and then construct synthesizble PROTAC, ADC, and DAC linkers, or design bispecific peptide chains using only stable building blocks.",
       "cta": {
         "primary": "Talk now",
         "secondary": "Book a demo"
