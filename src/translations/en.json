@@ -4,8 +4,9 @@
   },
   "header": {
     "nav": {
-      "biotech": "Biotech",
-      "deeptech": "Deep Tech",
+      "protein-degradation": "Protein Degradation",
+      "heist": "Cell Signaling",
+      "deeptech": "Solid State Batteries",
       "manufacturing": "Manufacturing",
       "banking": "Banking",
       "language": "English"
@@ -350,6 +351,64 @@
       "badge": "Integration",
       "title": "Secure, On-Premise Deployment",
       "description": "We guarantee absolute privacy for your proprietary targets. Our engine is fully containerized and can be deployed On-Premise (air-gapped) or via Private Cloud, ensuring your data never leaves your firewall."
+    }
+  },
+  "heist": {
+    "hero": {
+      "title": "Cell Signaling & Gene Expression",
+      "description": "Using our Graph AI model, we simulate both paracrine signaling throughout the tissue microenvironment as well as the gene regulatory network within each cell to fully map both inter and intra cellular interactions."
+    },
+    "animation": {
+      "title": "Inter & Intra Cellular Signaling",
+      "description": "Our model is composed of 2 embedded graphs. At the top level, we model cells within a tissue as nodes and intercellular signals as edges. Inside every cell node, there is an intracellular graph that models transcription factors as nodes and gene regulation as edges."
+    },
+    "value": {
+      "badge": "Quality",
+      "title": "Cell Communication + Gene Expression",
+      "subtitle": "Our Graph AI models the entire tissue, from the microenvironment to the internal genetic circuit within each cell. This ensures you completely understand both inter and intra cellular interactions.",
+      "items": {
+        "spatial": {
+          "title": "Spatial Transcriptomics",
+          "description": "We map exactly how cells talk to each other. By modeling paracrine signaling, the AI predicts how your drug penetrates deep tissue and where it might be blocked."
+        },
+        "masterreg": {
+          "title": "Gene Regulatory Networks",
+          "description": "Within the lower level Graph, we model each transcription factor as a node and each gene regulation as an edge, allowing us to find the main drivers of the disease."
+        },
+        "resistance": {
+          "title": "Resistance Prediction",
+          "description": "Our model simulates the backup pathways a cell might use to survive your treatment. We help you stay one step ahead of drug resistance before it happens in patients."
+        },
+        "data": {
+          "title": "Data Fusion",
+          "description": "Whether you have 10x Visium, Xenium, or scRNA-seq data, our GNN merges these different resolutions into a single, high-fidelity biological graph."
+        }
+      }
+    },
+    "deliverables": {
+      "badge": "Deliverables",
+      "title": "Your Evidence Package",
+      "subtitle": "We provide the deep biological evidence you need for regulatory filings, funding rounds, and clinical trial strategy.",
+      "manifest": {
+        "title": "Spatial Biomarker List",
+        "description": "You will receive a precise list of coordinates and gene signatures that will define which patients will respond to your drug."
+      },
+      "twin": {
+        "title": "Interaction Maps (.PDF/HTML)",
+        "description": "Fully interactive tissue maps showing drug penetration, cell-cell communication, and active signaling pathways."
+      },
+      "data": {
+        "title": "Network Impact Report",
+        "description": "A detailed audit of how your treatment re-wires the cellular network, highlighting master regulators and potential off-target risks."
+      },
+      "clusters": {
+        "title": "Conformational Clusters",
+        "description": "We deliver the Top 3 Conformational Clusters for high-confidence predictions. This allows you to visualize the Entropic Cost. If the clusters are identical, the linker is rigid and ideal. If they vary significantly, it's floppy."
+      },
+      "croready": {
+        "title": "CRO Service",
+        "description": "We can also perform all of the research operation ourselves and simply provide you with the final results."
+      }
     }
   },
   "deeptech": {

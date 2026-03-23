@@ -6,8 +6,9 @@
     "nav": {
       "manufacturing": "Industrie",
       "banking": "Banque",
-      "biotech": "Biotechnologie",
-      "deeptech": "Deep Tech",
+      "protein-degradation": "Dégradation des Protéines.",
+      "heist": "Communication des Cellules",
+      "deeptech": "Bateries à l'état Solide",
       "language": "Français"
     },
     "cta": "Contact",
@@ -264,8 +265,8 @@
   "biotech": {
     "hero": {
       "badge": "Graph neural networks",
-      "title": "Targeted Protein & Cell Degradation",
-      "description": "Nous concevons des modèles Graph AI qui simulent les interactions moléculaires pour tester les attachment sites et mapper les exit vectors, et puis construire des linkers PROTAC, ADC et DAC synthétisables, ou designer des chaînes peptidiques bispécifiques à partir de building blocks stables.",
+      "title": "Dégradation des Protéines.",
+      "description": "Notre modèle Graph AI simulent les interactions moléculaires pour tester les attachment sites et mapper les exit vectors, et puis construire des linkers PROTAC, ADC et DAC synthétisables, ou designer des chaînes peptidiques bispécifiques à partir de building blocks stables.",
       "cta": {
         "primary": "Contact rapide",
         "secondary": "Prendre RDV"
@@ -349,7 +350,65 @@
     "integration": {
       "badge": "Intégration",
       "title": "Déploiement Sécurisé On-Premise",
-      "description": "Nous garantissons une confidentialité absolue pour vos cibles propriétaires. Notre modèle est entièrement conteneurisé et peut être déployé sur site ou via un Cloud Privé, garantissant que vos données ne quittent jamais votre pare-feu."
+      "description": "Nous garantissons une confidentialité absolue pour vos cibles propriétaires. Notre modèle est entièrement conteneurisé et peut être déployé sur site ou via un Cloud Privé, garantissant que vos données ne quittent jamais votre Firewall."
+    }
+  },
+  "heist": {
+    "hero": {
+      "title": "Cellules & Expression Génétique",
+      "description": "Avec notre modèle Graph AI, nous simulons la signalisation paracrine dans le microenvironnement tissulaire ainsi que le réseau de régulation génétique dans chaque cellule, afin d'identifier précisément les interactions inter- et intracellulaires."
+    },
+    "animation": {
+      "title": "Signalisation Inter & Intracellulaire",
+      "description": "Notre modèle est composé de 2 graphes. Au niveau supérieur, on modélise les cellules dans un tissu comme des nœuds et leur signaux comme des arêtes. À l'intérieur de chaque nœud se trouve un Graphe intracellulaire qui modélise les facteurs de transcription."
+    },
+    "value": {
+      "badge": "Qualité",
+      "title": "Communication Cellulaire + Expression Génique",
+      "subtitle": "Notre IA graphique modélise l'ensemble du tissu, du microenvironnement au circuit génétique interne de chaque cellule. Cela vous garantit une compréhension complète des interactions inter- et intracellulaires.",
+      "items": {
+        "spatial": {
+          "title": "Spatial Transcriptomics",
+          "description": "Nous modélisons exactement comment les cellules se communiquent entre elles. L'IA simule la signalisation paracrine et prédit si votre médicament pénètre assez profond dans les tissus ou s'il pourrait être bloqué."
+        },
+        "masterreg": {
+          "title": "Réseaux Régulateurs Géniques",
+          "description": "Dans le Graphe intérieur, l'IA modélise chaque facteur de transcription comme un nœud et chaque régulation génique comme une arête, ce qui vous permet d'identifier les principaux drivers de la maladie."
+        },
+        "resistance": {
+          "title": "Prédiction de Résistance",
+          "description": "Notre modèle simule les voies de contournement qu'une cellule pourrait emprunter pour survivre à votre traitement. Nous vous aidons à prédire la résistance à votre médicament avant qu'elle ne survienne chez les patients."
+        },
+        "data": {
+          "title": "Fusion de Données",
+          "description": "Que vous disposiez de données 10x Visium, Xenium ou scRNA-seq, notre GNN fusionne ces différentes résolutions en un seul graphe biologique haute fidélité."
+        }
+      }
+    },
+    "deliverables": {
+      "badge": "Livrables",
+      "title": "Votre Package de Preuves",
+      "subtitle": "Nous fournissons les preuves biologiques approfondies dont vous avez besoin pour les dossiers réglementaires, les levées de fonds et la stratégie d'essais cliniques.",
+      "manifest": {
+        "title": "Liste de Biomarqueurs Spatiaux",
+        "description": "Vous recevrez une liste précise de coordonnées et de signatures géniques qui définira quels patients répondront à votre médicament."
+      },
+      "twin": {
+        "title": "Cartes d'Interaction (.PDF/HTML)",
+        "description": "Cartes tissulaires entièrement interactives montrant la pénétration médicamenteuse, la communication cellule-cellule et les voies de signalisation actives."
+      },
+      "data": {
+        "title": "Rapport d'Impact sur le Réseau",
+        "description": "Un audit détaillé de la façon dont votre traitement reconfigure le réseau cellulaire, en mettant en évidence les master regulators et les risques off-target potentiels."
+      },
+      "clusters": {
+        "title": "Clusters Conformationnels",
+        "description": "Nous livrons les Top 3 Clusters Conformationnels pour des prédictions à haute confiance. Cela vous permet de visualiser le Coût Entropique. Si les clusters sont identiques, le linker est rigide et idéal. S'ils varient significativement, il est flexible."
+      },
+      "croready": {
+        "title": "Service CRO",
+        "description": "Nous pouvons également réaliser l'ensemble des opérations de recherche nous-mêmes et vous fournir simplement les résultats finaux."
+      }
     }
   },
   "deeptech": {

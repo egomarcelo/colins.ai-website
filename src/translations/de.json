@@ -6,8 +6,9 @@
     "nav": {
       "manufacturing": "Fertigung",
       "banking": "Bankwesen",
-      "biotech": "Biotech",
-      "deeptech": "Deep Tech",
+      "protein-degradation": "Protein Degradation",
+      "heist": "Zellsignalisierung",
+      "deeptech": "Festkörperbatterien",
       "language": "Deutsch"
     },
     "cta": "Kontakt",
@@ -221,7 +222,7 @@
   },
   "banking": {
     "hero": {
-      "badge": "Graph-Neuronale Netzwerke",
+      "badge": "Graph Neuronale Netzwerke",
       "title": "Elite Betrugserkennung für den Mittelstand",
       "description": "Wir bieten mittelständischen Banken die Graph-Technologie, die nur Großbanken benutzen, aber für 10% der Kosten. Wir erkennen Finanzagenten-Netzwerke und reduzieren die Falschmeldungen die Sie millionen kosten, bis zum 50%.",
       "cta": {
@@ -263,7 +264,7 @@
   },
   "biotech": {
     "hero": {
-      "badge": "Graph-Neuronale Netze",
+      "badge": "Graph Neuronale Netze",
       "title": "Targeted Protein & Cell Degradation",
       "description": "Wir entwickeln Graph KI die molekulare Interaktionen simulieren, um Attachment Sites und Exit Vectors zu mappieren, und dann synthetisierbare PROTAC, ADC und DAC Linker, oder bispezifische Peptidketten aus stabilen Building Blocks entwerfen.",
       "cta": {
@@ -350,6 +351,64 @@
       "badge": "Integration",
       "title": "Sichere On-Premise Bereitstellung",
       "description": "Wir garantieren absolute Privatsphäre. Unser Modell ist vollständig containerisiert und kann On-Premise oder in einer Private Cloud bereitgestellt werden, sodass Ihre Daten niemals Ihre Firewall verlassen."
+    }
+  },
+  "heist": {
+    "hero": {
+      "title": "Zellsignalisierung & Genexpression",
+      "description": "Mit unserem Graph Modell simulieren wir sowohl die parakrine Signale im Gewebemikroumgebung als auch das Genregulatorische Netzwerk innerhalb jeder Zelle, um inter- und intrazelluläre Interaktionen vollständig abzubilden."
+    },
+    "animation": {
+      "title": "Inter- & Intrazelluläre Signale",
+      "description": "Unser Modell besteht aus 2 eingebetteten Graphen. Auf der oberen Ebene modellieren wir Zellen im Gewebe als Knoten und zelluläre Signale als Kanten. Innerhalb jedes Zellknotens befindet sich ein intrazellulärer Graph, der Transkriptionsfaktoren modelliert."
+    },
+    "value": {
+      "badge": "Qualität",
+      "title": "Zellkommunikation + Genexpression",
+      "subtitle": "Unser Graph-KI erfasst das gesamte Gewebe, von der Mikroumgebung bis zum internen genetischen Schaltkreis jeder Zelle. Dadurch bekommen Sie ein umfassendes Verständnis der inter- und intrazellulären Interaktionen.",
+      "items": {
+        "spatial": {
+          "title": "Spatial Transcriptomics",
+          "description": "Wir mappieren genau, wie Zellen miteinander kommunizieren. Durch die Modellierung der parakrinen Signalübertragung sagt die KI vorher, wie Ihr Wirkstoff ins tiefe Gewebe eindringt und wo er blockiert werden könnte."
+        },
+        "masterreg": {
+          "title": "Genregulatorische Netzwerke",
+          "description": "Im untergeordneten Graph modellieren wir jeden Transkriptionsfaktor als Knoten und jede Genregulation als Kante, was es uns ermöglicht, die Haupttreiber der Erkrankung zu identifizieren."
+        },
+        "resistance": {
+          "title": "Resistenzvorhersage",
+          "description": "Unser Modell simuliert die Ausweichpfade, die eine Zelle nutzen könnte, um Ihre Behandlung zu überleben. Wir helfen Ihnen, der Wirkstoffresistenz einen Schritt voraus zu bleiben, bevor sie bei Patienten auftritt."
+        },
+        "data": {
+          "title": "Datenfusion",
+          "description": "Ob Sie 10x Visium-, Xenium- oder scRNA-seq-Daten haben, unser GNN führt diese verschiedenen Auflösungen zu einem einzigen, hochpräzisen biologischen Graphen zusammen."
+        }
+      }
+    },
+    "deliverables": {
+      "badge": "Lieferumfang",
+      "title": "Ihr Evidenzpaket",
+      "subtitle": "Wir liefern die biologischen Belege, die Sie für regulatorische Einreichungen, Finanzierungsrunden und die klinische Studienstrategie benötigen.",
+      "manifest": {
+        "title": "Spatial Biomarker-Liste",
+        "description": "Sie erhalten eine präzise Liste von Koordinaten und Gensignaturen, die definiert, welche Patienten auf Ihren Wirkstoff ansprechen werden."
+      },
+      "twin": {
+        "title": "Interaktionskarten (.PDF/HTML)",
+        "description": "Vollständig interaktive Gewebekarten, die die Wirkstoffpenetration, Zell-Zell-Kommunikation und aktive Signalwege zeigen."
+      },
+      "data": {
+        "title": "Netzwerk-Wirkungsbericht",
+        "description": "Eine detaillierte Analyse, wie Ihre Behandlung das zelluläre Netzwerk umverdrahtet, mit Hervorhebung von Master-Regulatoren und potenziellen Off-Target-Risiken."
+      },
+      "clusters": {
+        "title": "Konformations-Cluster",
+        "description": "Wir liefern die Top 3 Konformations-Cluster für hochkonfidente Vorhersagen. Dies ermöglicht es Ihnen, die Entropiekosten zu visualisieren. Wenn die Cluster identisch sind, ist der Linker starr und ideal. Wenn sie erheblich variieren, ist er flexibel."
+      },
+      "croready": {
+        "title": "CRO-Service",
+        "description": "Wir können auch alle Forschungsoperationen selbst durchführen und Ihnen einfach die finalen Ergebnisse liefern."
+      }
     }
   },
   "deeptech": {

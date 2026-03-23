@@ -6,8 +6,9 @@
     "nav": {
       "manufacturing": "Manufactura",
       "banking": "Bancos",
-      "biotech": "Biotecnología",
-      "deeptech": "Deep Tech",
+      "protein-degradation": "Degradación de Proteinas",
+      "heist": "Comunicación Celular",
+      "deeptech": "Batterias de Estado Solido",
       "language": "Español"
     },
     "cta": "Contacto",
@@ -350,6 +351,64 @@
       "badge": "Integración",
       "title": "Instalación Segura On-Premise",
       "description": "Garantizamos privacidad absoluta. Nuestro modelo está totalmente contenerizado y puede instalarse On-Premise o en Private Cloud, asegurando que tus datos nunca salgan del firewall."
+    }
+  },
+  "heist": {
+    "hero": {
+      "title": "Tejidos + Expresión Genética",
+      "description": "Con nuestro modelo Graph AI, simulamos tanto las señales paracrinas en el microambiente tisular como la red reguladora de genes dentro de cada célula para darte un mapa completo de las interacciones inter e intracelulares."
+    },
+    "animation": {
+      "title": "Señalización Inter & Intracelular",
+      "description": "Nuestro modelo está compuesto por 2 grafos. En el nivel superior, modelamos células dentro de un tejido como nodos y las señales intercelulares como aristas. Dentro de cada nodo existe un Grafo intracelular que modela cada factor de transcripción."
+    },
+    "value": {
+      "badge": "Calidad",
+      "title": "Comunicación Celular & Expresión Genética",
+      "subtitle": "Nuestra IA modela todo el tejido, desde el microambiente hasta el circuito genético interno de cada célula. Esto garantiza una comprensión completa de las interacciones intercelulares e intracelulares.",
+      "items": {
+        "spatial": {
+          "title": "Spatial Transcriptomics",
+          "description": "Mapeamos exactamente cómo se comunican las células. Al modelar la señalización paracrina, la IA predice cómo penetra tu fármaco en el tejido y dónde podría ser bloqueado."
+        },
+        "masterreg": {
+          "title": "Redes Regulatorias Génicas",
+          "description": "Dentro del Grafo interior, modelamos cada factor de transcripción como un nodo y cada regulación génica como una arista, lo que nos permite ver las causas de la enfermedad."
+        },
+        "resistance": {
+          "title": "Predicción de Resistencia",
+          "description": "Nuestro modelo simula las formas en que una célula podría sobrevivir tu tratamiento. Te ayudamos a prevenir la resistencia antes de que ocurra en los pacientes."
+        },
+        "data": {
+          "title": "Fusión de Datos",
+          "description": "Aunque tengas datos de 10x Visium, Xenium o scRNA-seq, nuestra GNN fusiona estas diferentes resoluciones en un único grafo biológico de alta fidelidad."
+        }
+      }
+    },
+    "deliverables": {
+      "badge": "Entregables",
+      "title": "Tu Paquete de Evidencia",
+      "subtitle": "Entregamos la evidencia biológica profunda que necesitas para presentaciones regulatorias, rondas de financiación y estrategia de ensayos clínicos.",
+      "manifest": {
+        "title": "Lista de Biomarcadores Espaciales",
+        "description": "Recibirás una lista precisa de coordenadas y firmas génicas que definirá qué pacientes responderán a tu fármaco."
+      },
+      "twin": {
+        "title": "Mapas de Interacción (.PDF/HTML)",
+        "description": "Mapas tissulares completamente interactivos que muestran la penetración del fármaco, la comunicación célula-célula y las vías de señalización activas."
+      },
+      "data": {
+        "title": "Informe de Impacto en la Red",
+        "description": "Un análisis detallado de cómo tu tratamiento reconfigura la red celular, destacando los master regulators y los posibles riesgos off-target."
+      },
+      "clusters": {
+        "title": "Clusters Conformacionales",
+        "description": "Entregamos los Top 3 Clusters Conformacionales para predicciones de alta confianza. Esto te permite visualizar el Costo Entrópico. Si los clusters son idénticos, el linker es rígido e ideal. Si varían significativamente, es flexible."
+      },
+      "croready": {
+        "title": "Servicio CRO",
+        "description": "También podemos realizar todas las operaciones de investigación nosotros mismos y simplemente entregarte los resultados finales."
+      }
     }
   },
   "deeptech": {

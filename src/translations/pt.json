@@ -6,8 +6,9 @@
     "nav": {
       "manufacturing": "Manufatura",
       "banking": "Bancos",
-      "biotech": "Biotecnologia",
-      "deeptech": "Deep Tech",
+      "protein-degradation": "Degradação de Proteínas",
+      "heist": "Comunicação de Células",
+      "deeptech": "Baterias de Estado Sólido",
       "language": "Português"
     },
     "cta": "Contato",
@@ -264,7 +265,7 @@
   "biotech": {
     "hero": {
       "badge": "Graph neural networks",
-      "title": "Targeted Protein & Cell Degradation",
+      "title": "Degradação de Proteínas",
       "description": "Desenvolvemos modelos de IA que simulam interações moleculares para mapear attachment sites e exit vectors, e depois projetar linkers sintetizáveis para PROTAC, ADC e DAC, ou cadeias peptídicas bispecíficas usando building blocks estáveis.",
       "cta": {
         "primary": "Contato rápido",
@@ -350,6 +351,64 @@
       "badge": "Integração",
       "title": "Implantação Segura On-Premise",
       "description": "Garantimos privacidade absoluta para seus targets proprietários. Nosso modelo é totalmente conteinerizado e pode ser implantado On-Premise ou via Private Cloud, garantindo que seus dados nunca saiam do firewall."
+    }
+  },
+  "heist": {
+    "hero": {
+      "title": "Células & Expressão Genética",
+      "description": "Com o nosso modelo Graph AI, simulamos tanto a sinalização parácrina no microambiente tissular como a rede reguladora de genes dentro de cada célula. Assim mapeamos completamente as interações inter e intracelulares."
+    },
+    "animation": {
+      "title": "Sinalização Inter & Intracelular",
+      "description": "O nosso modelo é composto por 2 grafos. Ao nível superior, modelamos as células dentro de um tecido como nós e os sinais intercelulares como arestas. Dentro de cada nó celular existe um grafo intracelular que modela cada fator de transcrição."
+    },
+    "value": {
+      "badge": "Qualidade",
+      "title": "Comunicação Celular & Expressão Genética",
+      "subtitle": "A nossa IA modela o tecido completo, desde o microambiente até ao circuito genético interno de cada célula, garantindo que identifiques completamente tanto as interações inter como intracelulares.",
+      "items": {
+        "spatial": {
+          "title": "Spatial Transcriptomics",
+          "description": "Mapeamos exatamente como as células se comunicam. Ao modelar a sinalização parácrina, a IA prevê se o teu fármaco consegue penetrar nos tecidos mais profundos e onde pode ser bloqueado."
+        },
+        "masterreg": {
+          "title": "Redes Regulatórias Génicas",
+          "description": "Dentro do Grafo interior, modelamos cada fator de transcrição como um nó e cada regulação genética como uma aresta, permitindo-nos encontrar as causas principais da doença."
+        },
+        "resistance": {
+          "title": "Predição de Resistência",
+          "description": "O nosso modelo simula as vias alternativas que uma célula pode usar para sobreviver ao teu tratamento. Ajudamo-te a estar um passo à frente da resistência farmacológica antes que aconteça nos ensaios clínicos."
+        },
+        "data": {
+          "title": "Fusão de Dados",
+          "description": "Quer tenhas dados 10x Visium, Xenium ou scRNA-seq, a nossa GNN funde estas diferentes resoluções num único grafo biológico de alta fidelidade."
+        }
+      }
+    },
+    "deliverables": {
+      "badge": "Entregáveis",
+      "title": "O Teu Pacote de Evidências",
+      "subtitle": "Fornecemos as evidências biológicas aprofundadas que precisas para submissões regulatórias, rondas de financiamento e estratégia de ensaios clínicos.",
+      "manifest": {
+        "title": "Lista de Biomarcadores Espaciais",
+        "description": "Receberás uma lista precisa de coordenadas e assinaturas génicas que definirá quais são as pessoas que responderão bem ao teu fármaco."
+      },
+      "twin": {
+        "title": "Mapas de Interação (.PDF/HTML)",
+        "description": "Mapas tissulares totalmente interativos que mostram a penetração do fármaco, a comunicação célula-célula e as vias de sinalização ativas."
+      },
+      "data": {
+        "title": "Relatório de Impacto na Rede",
+        "description": "Uma auditoria detalhada de como o teu tratamento reconfigura a rede celular, destacando os master regulators e os potenciais riscos off-target."
+      },
+      "clusters": {
+        "title": "Clusters Conformacionais",
+        "description": "Entregamos os Top 3 Clusters Conformacionais para previsões de alta confiança. Isto permite-te visualizar o Custo Entrópico. Se os clusters são idênticos, o linker é rígido e ideal. Se variarem significativamente, é flexível."
+      },
+      "croready": {
+        "title": "Serviço CRO",
+        "description": "Podemos também realizar todas as operações de investigação internamente e simplesmente fornecer-te os resultados finais."
+      }
     }
   },
   "deeptech": {
