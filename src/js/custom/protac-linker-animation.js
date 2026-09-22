@@ -272,15 +272,15 @@ class PhaseTwoConstruction {
   // Translation strings (English defaults)
   static TRANSLATIONS = {
     proteinInterface: 'Protein Interface',
-    glueConstruction: 'Glue Construction',
+    glueConstruction: 'Molecular Glue',
     billOfMaterials: 'Bill of Materials',
     analyzing: 'Analyzing CRBN pocket topology...',
     placingCore: 'Placing core scaffold...',
     coreAnchored: '✓ Core anchored in pocket',
     testing: (name) => `Testing ${name}...`,
-    rejectHighEntropy: '✗ Rejected: High Entropy',
+    rejectHighEntropy: '✗ Rejected: Unfavorable H-bond',
     rejectStericClash: '✗ Rejected: Steric Clash',
-    rejectPoorSurface: '✗ Rejected: Poor Surface Complementarity',
+    rejectPoorSurface: '✗ Rejected: Low Energy Contribution',
     rejectNegativeCooperativity: '✗ Rejected: Negative Cooperativity',
     aligning: (name) => `Aligning ${name}...`,
     reactionSuccess: (reaction) => `✓ ${reaction} complete`,
@@ -829,93 +829,6 @@ class PhaseTwoConstruction {
     drawSide(BINDING_INTERFACE.crbnAtoms, BINDING_INTERFACE.crbnBonds, '#60a5fa', 'CRBN', -scale * 1.5, true);
     drawSide(BINDING_INTERFACE.ikzfAtoms, BINDING_INTERFACE.ikzfBonds, '#fb923c', 'IKZF1', scale * 1.8, false);
     
-    // Draw glue blob filling into CRBN pocket
-    if (glueFillProgress > 0) {
-      const fillEase = easeOutCubic(Math.min(1, glueFillProgress));
-      
-      const transformedOutline = GLUE_FILL_SHAPE.outline.map(p => {
-        const wobble = Math.sin(time * 0.002 + p.x * 2) * 0.02 * fillEase;
-        return transform3D(
-          p.x + GLUE_FILL_SHAPE.offsetX + wobble,
-          p.y + GLUE_FILL_SHAPE.offsetY,
-          p.z + GLUE_FILL_SHAPE.offsetZ
-        );
-      });
-      
-      // Glow
-      ctx.globalAlpha = glueFillProgress * 0.6;
-      ctx.shadowColor = CONFIG.COLOR_ACCENT;
-      ctx.shadowBlur = 15;
-      ctx.fillStyle = CONFIG.COLOR_ACCENT;
-      
-      ctx.beginPath();
-      transformedOutline.forEach((p, i) => {
-        if (i === 0) ctx.moveTo(p.x, p.y);
-        else ctx.lineTo(p.x, p.y);
-      });
-      ctx.closePath();
-      ctx.fill();
-      
-      // Main blob
-      ctx.shadowBlur = 0;
-      ctx.globalAlpha = glueFillProgress * 0.9;
-      
-      const blobCenter = transform3D(
-        GLUE_FILL_SHAPE.offsetX,
-        GLUE_FILL_SHAPE.offsetY,
-        GLUE_FILL_SHAPE.offsetZ
-      );
-      const gradient = ctx.createRadialGradient(
-        blobCenter.x - 8, blobCenter.y - 8, 0,
-        blobCenter.x, blobCenter.y, scale * 1.5
-      );
-      gradient.addColorStop(0, 'rgba(255, 255, 255, 0.95)');
-      gradient.addColorStop(0.15, 'rgba(150, 230, 255, 0.9)');
-      gradient.addColorStop(0.4, CONFIG.COLOR_ACCENT);
-      gradient.addColorStop(0.7, 'rgba(0, 150, 200, 0.85)');
-      gradient.addColorStop(1, 'rgba(0, 80, 120, 0.8)');
-      
-      ctx.fillStyle = gradient;
-      
-      // Smooth bezier blob
-      ctx.beginPath();
-      const pts = transformedOutline;
-      ctx.moveTo(pts[0].x, pts[0].y);
-      
-      for (let i = 0; i < pts.length; i++) {
-        const p0 = pts[(i - 1 + pts.length) % pts.length];
-        const p1 = pts[i];
-        const p2 = pts[(i + 1) % pts.length];
-        const p3 = pts[(i + 2) % pts.length];
-        
-        const cp1x = p1.x + (p2.x - p0.x) / 6;
-        const cp1y = p1.y + (p2.y - p0.y) / 6;
-        const cp2x = p2.x - (p3.x - p1.x) / 6;
-        const cp2y = p2.y - (p3.y - p1.y) / 6;
-        
-        ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, p2.x, p2.y);
-      }
-      ctx.closePath();
-      ctx.fill();
-      
-      ctx.globalAlpha = glueFillProgress * 0.5;
-      ctx.strokeStyle = 'rgba(255, 255, 255, 0.6)';
-      ctx.lineWidth = 1.5;
-      ctx.stroke();
-      
-      // Label
-      if (glueFillProgress > 0.6) {
-        ctx.globalAlpha = (glueFillProgress - 0.6) * 2.5 * 0.8;
-        ctx.fillStyle = CONFIG.COLOR_ACCENT;
-        ctx.font = 'bold 8px "SF Mono", monospace';
-        ctx.shadowColor = CONFIG.COLOR_ACCENT;
-        ctx.shadowBlur = 4;
-        ctx.textAlign = 'center';
-        ctx.fillText('Glue', blobCenter.x, blobCenter.y + scale * 2);
-        ctx.shadowBlur = 0;
-      }
-    }
-    
     // Scanning effect
     if (scanProgress > 0 && scanProgress < 1) {
       ctx.globalAlpha = opacity * (1 - scanProgress) * 0.5;
@@ -1339,7 +1252,7 @@ class PhaseTwoConstruction {
       state.glueFillProgress = 1;
       state.metrics.cooperativity = easeOutCubic(progress);
       state.metrics.deltaG = lerp(0, -9.8, easeOutCubic(progress));
-      state.metrics.bsa = lerp(0, 847, easeOutCubic(progress));
+      state.metrics.bsa = lerp(0, 2847, easeOutCubic(progress));
       state.metrics.shapeComp = lerp(0, 0.92, easeOutCubic(progress));
       state.statusMessage = T.validating;
       state.statusColor = CONFIG.COLOR_SUCCESS;

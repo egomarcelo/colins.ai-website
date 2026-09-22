@@ -4,17 +4,266 @@
   },
   "header": {
     "nav": {
-      "manufacturing": "Manufactura",
-      "banking": "Bancos",
-      "protein-degradation": "Degradación de Proteinas",
+      "molecular-engineering": "Ingeniería Molecular",
       "heist": "Spatial Transcriptomics",
       "deeptech": "Batterias de Estado Solido",
+      "banking": "Bancos",
+      "manufacturing": "Manufactura",
       "language": "Español"
     },
     "cta": "Contacto",
     "menu": "Menú"
   },
-  "hero": {
+  "footer": {
+    "tagline": "Do Better.",
+    "company": {
+      "title": "Empresa",
+      "technology": "Tecnología",
+      "support": "Soporte",
+      "contact": "Contacto"
+    },
+    "quality": {
+      "title": "Estándares de Calidad"
+    },
+    "legal": {
+      "title": "Políticas Legales",
+      "terms": "Términos y Condiciones",
+      "privacy": "Política de Privacidad",
+      "refund": "Política de Reembolso",
+      "gdpr": "Cumplimiento GDPR"
+    },
+    "copyright": "Copyright ©Colins AI 2025 – Todos los derechos reservados."
+  },
+  "molecular-engineering": {
+    "hero": {
+      "badge": "Biotecnología",
+      "title": "Ingeniería Molecular",
+      "description": "Diseñamos moléculas para nanopartículas y degradación de proteinas usando modelos IA y tecnología MD propietaria.",
+      "cta": {
+        "primary": "Contacto directo",
+        "secondary": "Reserva una demo"
+      }
+    },
+    "animation": {
+      "title": "Diseño & Validación Completa",
+      "description": "Implementamos modelos de IA y source code MD personalizados para diseñar vuestros binders. Nos encargamos del análisis de superficies, docking, química y validación DFT/FEP/MM-GBSA. Al final entregamos 20–50 candidatos altamente optimizados."
+    },
+    "value": {
+      "badge": "Ingeniería",
+      "title": "Más Allá de Paquetes Estándar",
+      "subtitle": "En cada fase implementamos tecnología especializada para asegurar que vuestros binders funcionen en condiciones reales.",
+      "items": {
+        "docking": {
+          "title": "Superficie & Docking",
+          "description": "Realizamos un análisis detallado de la superficie de la proteina para identificar hotspots y usamos workflows de docking especializados para identificar interfaces proteína-proteína (glue/ligandos) o attachment sites (linkers)."
+        },
+        "ai-models": {
+          "title": "Modelos de IA",
+          "description": "Como base del proceso de diseño utilizamos modelos de Graph AI y difusión personalizados y optimizados, ejecutados en un sistema local. Así obtenemos una molecula de base sobre la cual trabajar."
+        },
+        "chemistry": {
+          "title": "Química Electrostática",
+          "description": "Optimizamos los enlaces de hidrógeno, π-stacking y packing hidrofóbico, iterando hasta obtener una energía suficientemente favorable. Hemos diseñado complejos ternarios con valores MM/GBSA inferiores a 140 kcal/mol."
+        },
+        "molecular-dynamics": {
+          "title": "Dinámica Molecular",
+          "description": "Realizamos simulaciones exhaustivas de MD, FEP, DFT y MM-GBSA según la necesidad. También modificamos el source code de estos sistemas en función del objetivo a lograr."
+        }
+      }
+    },
+    "deliverables": {
+      "badge": "Entregables",
+      "title": "Todo lo que Necesitas",
+      "subtitle": "Proporcionamos un paquete completo que os permite iniciar la síntesis de inmediato.",
+      "manifest": {
+        "title": "Candidatos Optimizados",
+        "description": "Sabemos que un binder energéticamente favorable no significa automáticamente a la degradación. Entregamos 20–50 candidatos altamente optimizados para maximizar las probabilidades de éxito en las líneas celulares."
+      },
+      "data": {
+        "title": "Datos de Descomposición",
+        "description": "Entregamos un reporte de descomposición completo que muestra los enlaces y energías específicas de cada residuo. El reporte incluye datos de enlace y energía en cada nanosegundo y un perfil ADMET completo (TPSA, LogP)."
+      },
+      "twin": {
+        "title": "Modelo de IA & Código Fuente",
+        "description": "También podemos desarrollar un modelo de IA, una arquitectura MD o tecnologías adicionales completamente personalizadas para implementar in-house. Es un servicio por proyecto y tiene un coste adicional."
+      }
+    },
+    "integration": {
+      "badge": "Propiedad Intelectual",
+      "title": "Derechos IP & Transferencia de Datos",
+      "description": "La propiedad intelectual desarrollada en cada proyecto os pertenece por completo. Garantizamos privacidad absoluta para vuestros targets propietarios con encriptación end-to-end y transferencias de datos seguras con Private Cloud."
+    }
+  },
+  "heist": {
+    "hero": {
+      "title": "Tejidos + Expresión Genética",
+      "description": "Con nuestro modelo Graph AI, simulamos tanto las señales paracrinas en el microambiente tisular como la red reguladora de genes dentro de cada célula para darte un mapa completo de las interacciones inter e intracelulares."
+    },
+    "animation": {
+      "title": "Señalización Inter & Intracelular",
+      "description": "Nuestro modelo está compuesto por 2 grafos. En el nivel superior, modelamos células dentro de un tejido como nodos y las señales intercelulares como aristas. Dentro de cada nodo existe un Grafo intracelular que modela cada factor de transcripción."
+    },
+    "value": {
+      "badge": "Calidad",
+      "title": "Comunicación Celular & Expresión Genética",
+      "subtitle": "Nuestra IA modela todo el tejido, desde el microambiente hasta el circuito genético interno de cada célula. Esto garantiza una comprensión completa de las interacciones intercelulares e intracelulares.",
+      "items": {
+        "spatial": {
+          "title": "Spatial Transcriptomics",
+          "description": "Mapeamos exactamente cómo se comunican las células. Al modelar la señalización paracrina, la IA predice cómo penetra tu fármaco en el tejido y dónde podría ser bloqueado."
+        },
+        "masterreg": {
+          "title": "Redes Regulatorias Génicas",
+          "description": "Dentro del Grafo interior, modelamos cada factor de transcripción como un nodo y cada regulación génica como una arista, lo que nos permite ver las causas de la enfermedad."
+        },
+        "resistance": {
+          "title": "Predicción de Resistencia",
+          "description": "Nuestro modelo simula las formas en que una célula podría sobrevivir tu tratamiento. Te ayudamos a prevenir la resistencia antes de que ocurra en los pacientes."
+        },
+        "data": {
+          "title": "Fusión de Datos",
+          "description": "Aunque tengas datos de 10x Visium, Xenium o scRNA-seq, nuestra GNN fusiona estas diferentes resoluciones en un único grafo biológico de alta fidelidad."
+        }
+      }
+    },
+    "deliverables": {
+      "badge": "Entregables",
+      "title": "Tu Paquete de Evidencia",
+      "subtitle": "Entregamos la evidencia biológica profunda que necesitas para presentaciones regulatorias, rondas de financiación y estrategia de ensayos clínicos.",
+      "manifest": {
+        "title": "Lista de Biomarcadores Espaciales",
+        "description": "Recibirás una lista precisa de coordenadas y firmas génicas que definirá qué pacientes responderán a tu fármaco."
+      },
+      "twin": {
+        "title": "Mapas de Interacción (.PDF/HTML)",
+        "description": "Mapas tissulares completamente interactivos que muestran la penetración del fármaco, la comunicación célula-célula y las vías de señalización activas."
+      },
+      "data": {
+        "title": "Informe de Impacto en la Red",
+        "description": "Un análisis detallado de cómo tu tratamiento reconfigura la red celular, destacando los master regulators y los posibles riesgos off-target."
+      },
+      "clusters": {
+        "title": "Clusters Conformacionales",
+        "description": "Entregamos los Top 3 Clusters Conformacionales para predicciones de alta confianza. Esto te permite visualizar el Costo Entrópico. Si los clusters son idénticos, el linker es rígido e ideal. Si varían significativamente, es flexible."
+      },
+      "croready": {
+        "title": "Servicio CRO",
+        "description": "También podemos realizar todas las operaciones de investigación nosotros mismos y simplemente entregarte los resultados finales."
+      }
+    }
+  },
+  "deeptech": {
+    "hero": {
+      "badge": "Redes Neuronales Informadas por Física",
+      "title": "Simulación de Baterías de Estado Sólido",
+      "description": "Te ayudamos a tener un producto fabricable. Nuestras redes neuronales predicen cuándo y cómo se formarán dendritas simulando el transporte de iones y el estrés mecánico a lo largo de cientos de ciclos.",
+      "cta": {
+        "primary": "Contacto rápido",
+        "secondary": "Agendar demo"
+      }
+    },
+    "animation": {
+      "title": "Cómo funciona",
+      "description": "Deja de quemar capital en lotes fallidos. Combinamos solucionadores de alta calidad (PyBaMM/FEniCS) con la velocidad de una Red Neuronal y te entregamos un Simulador Digital personalizado y pre-entrenado, calibrado a tu química."
+    },
+    "simulation": {
+      "controlTitle": "Parámetros de Manufactura",
+      "controlSubtitle": "Ajusta para simular comportamiento de celda",
+      "pressure": {
+        "label": "Presión de Apilamiento"
+      },
+      "roughness": {
+        "label": "Rugosidad de Superficie"
+      },
+      "penetration": "Penetración de Dendritas",
+      "failureRisk": "Riesgo de Falla",
+      "riskLow": "Riesgo Bajo",
+      "riskMedium": "Riesgo Medio",
+      "riskHigh": "Riesgo Alto",
+      "labelAnode": "Ánodo de Metal Li",
+      "labelElectrolyte": "Electrolito Cerámico LLZO",
+      "annotationVoid": "Formación de Vacíos",
+      "annotationDendrite": "Efecto Pararrayos: Enfoque de Corriente",
+      "annotationFlow": "Viscoplasticidad J2: Fluencia de Li Activa",
+      "stateLow": "Baja Presión (3 MPa)",
+      "stateHigh": "Alta Presión (18 MPa)"
+    },
+    "value": {
+      "badge": "Valor",
+      "title": "Velocidad y Precisión",
+      "subtitle": "Los ciclos de validación física toman meses. Nuestras redes simulan todo el ciclo de carga/descarga y la degradación en cientos de ciclos en horas, restringiendo el modelo estrictamente a las leyes de la física.",
+      "items": {
+        "batch": {
+          "title": "Lotes Inteligentes",
+          "description": "Un ciclo de validación fallido puede costar hasta 3 meses y $100k. Identificamos fallas potenciales digitalmente en días."
+        },
+        "capex": {
+          "title": "Cero Infraestructura",
+          "description": "Accede a un equipo de investigación por una tarifa de proyecto. Sin contrataciones de $200k y sin montar infraestructura."
+        },
+        "explainable": {
+          "title": "IA Explicable",
+          "description": "Nuestros modelos están restringidos por leyes de Termodinámica y Mecánica. No pueden alucinar física imposible."
+        },
+        "acc-speed": {
+          "title": "Precisión a Largo Plazo",
+          "description": "El ML estándar es rápido pero alucina. Nuestras PINNs son capaces de simular transporte de iones y estrés mecánico en escalas de tiempo relevantes."
+        },
+        "data": {
+          "title": "Eficiencia de Datos",
+          "description": "Nuestros modelos necesitan mucha física, no muchos datos. Al codificar restricciones físicas en la red neuronal, obtenemos resultados de alta calidad aún con datos limitados."
+        }
+      }
+    },
+    "integration": {
+      "badge": "Integración",
+      "title": "Privado y Personalizado",
+      "description": "Sabemos lo importante que es tu Propiedad Intelectual. Entrenamos tu modelo en instancias de nube privadas y aisladas o completamente on-premise. Recibes los pesos completos del modelo y la inferencia junto con un panel personalizado."
+    }
+  },
+  "banking": {
+    "hero": {
+      "badge": "Redes Neuronales Gráficas",
+      "title": "Detección de Fraude para Bancos Medianos",
+      "description": "Ayudamos a bancos medianos a adoptar la tecnología de IA gráfica que usan los grandes por solo 10% del costo. Identificamos esquemas ilegales y reducimos los falsos positivos que te cuestan millones hasta 50%.",
+      "cta": {
+        "primary": "Contacto rápido",
+        "secondary": "Agendar demo"
+      }
+    },
+    "graph": {
+      "title": "Cómo funciona",
+      "description": "Nuestra tecnología modela toda tu red de transacciones. Los nodos representan entidades (clientes, cuentas, dispositivos) y las conexiones representan atributos (IP, cantidad). Modelar la relación completa entre nodos y bordes nos permite entender el contexto de cada transacción y así encontrar el fraude real y minimizar falsos positivos.",
+      "legend": "Alto Riesgo. Toca para explorar",
+      "riskScore": "Probabilidad de Riesgo",
+      "account": "Cuenta"
+    },
+    "value": {
+      "badge": "Valor",
+      "title": "2x Velocidad a 10% del costo",
+      "subtitle": "Nos enfocamos exclusivamente en la tecnología de mayor valor que suele ser usada solo por bancos grandes. Esto nos permite ofrecer a bancos medianos 90% del beneficio a 10% del costo. Nos integramos rápido con tu configuración actual y detenemos el fraude donde más duele.",
+      "items": {
+        "refund": {
+          "title": "Cargos no reconocidos",
+          "description": "Entendemos cuánto te cuestan los reembolsos. Nuestra tecnología reduce significativamente la toma de cuentas (ATO) y el fraude APP, ahorrándote millones cada año."
+        },
+        "falsePositives": {
+          "title": "Falsos Positivos",
+          "description": "Mapeando la red completa, verificamos usuarios legítimos que los sistemas tradicionales bloquean. Vemos si el destinatario es 'amigo de un amigo' y suprimimos la alerta."
+        },
+        "aml": {
+          "title": "Cumplimiento AML",
+          "description": "Las GNN son la mejor tecnología para atrapar esquemas de lavado de dinero. Detectarás estas redes más rápido y con mayor precisión que con cualquier tecnología estándar."
+        }
+      }
+    },
+    "integration": {
+      "badge": "Integración",
+      "title": "Plug-and-play con tu ecosistema",
+      "description": "Tu sistema actual se queda intacto. Nuestra API se conecta directo a tus flujos de datos sin interrumpir tus procesos ni tu estructura actual."
+    }
+  },
+  "manufacturing": {
     "badge": "Redes Neuronales Informadas por Física",
     "title": "Producción sin Fallos Imprevistos",
     "description": "Nuestras redes neuronales simulan la física interna de bombas centrífugas y motores eléctricos en tiempo real. Detectamos problemas meses antes con 99% de precisión y ahorramos millones evitando paradas de producción.",
@@ -199,285 +448,5 @@
     "badge": "Integración",
     "title": "Nos adaptamos a tu sistema",
     "description": "Nuestra API se integra fácilmente a SAP, Maximo o Ignition, generando tickets de mantenimiento al momento en que se detecta un riesgo."
-  },
-  "footer": {
-    "tagline": "Hazlo mejor.",
-    "company": {
-      "title": "Empresa",
-      "technology": "Tecnología",
-      "support": "Soporte",
-      "contact": "Contacto"
-    },
-    "quality": {
-      "title": "Estándares de Calidad"
-    },
-    "legal": {
-      "title": "Políticas Legales",
-      "terms": "Términos y Condiciones",
-      "privacy": "Política de Privacidad",
-      "refund": "Política de Reembolso",
-      "gdpr": "Cumplimiento GDPR"
-    },
-    "copyright": "Copyright ©Colins AI 2025 – Todos los derechos reservados."
-  },
-  "banking": {
-    "hero": {
-      "badge": "Redes Neuronales Gráficas",
-      "title": "Detección de Fraude para Bancos Medianos",
-      "description": "Ayudamos a bancos medianos a adoptar la tecnología de IA gráfica que usan los grandes por solo 10% del costo. Identificamos esquemas ilegales y reducimos los falsos positivos que te cuestan millones hasta 50%.",
-      "cta": {
-        "primary": "Contacto rápido",
-        "secondary": "Agendar demo"
-      }
-    },
-    "graph": {
-      "title": "Cómo funciona",
-      "description": "Nuestra tecnología modela toda tu red de transacciones. Los nodos representan entidades (clientes, cuentas, dispositivos) y las conexiones representan atributos (IP, cantidad). Modelar la relación completa entre nodos y bordes nos permite entender el contexto de cada transacción y así encontrar el fraude real y minimizar falsos positivos.",
-      "legend": "Alto Riesgo. Toca para explorar",
-      "riskScore": "Probabilidad de Riesgo",
-      "account": "Cuenta"
-    },
-    "value": {
-      "badge": "Valor",
-      "title": "2x Velocidad a 10% del costo",
-      "subtitle": "Nos enfocamos exclusivamente en la tecnología de mayor valor que suele ser usada solo por bancos grandes. Esto nos permite ofrecer a bancos medianos 90% del beneficio a 10% del costo. Nos integramos rápido con tu configuración actual y detenemos el fraude donde más duele.",
-      "items": {
-        "refund": {
-          "title": "Cargos no reconocidos",
-          "description": "Entendemos cuánto te cuestan los reembolsos. Nuestra tecnología reduce significativamente la toma de cuentas (ATO) y el fraude APP, ahorrándote millones cada año."
-        },
-        "falsePositives": {
-          "title": "Falsos Positivos",
-          "description": "Mapeando la red completa, verificamos usuarios legítimos que los sistemas tradicionales bloquean. Vemos si el destinatario es 'amigo de un amigo' y suprimimos la alerta."
-        },
-        "aml": {
-          "title": "Cumplimiento AML",
-          "description": "Las GNN son la mejor tecnología para atrapar esquemas de lavado de dinero. Detectarás estas redes más rápido y con mayor precisión que con cualquier tecnología estándar."
-        }
-      }
-    },
-    "integration": {
-      "badge": "Integración",
-      "title": "Plug-and-play con tu ecosistema",
-      "description": "Tu sistema actual se queda intacto. Nuestra API se conecta directo a tus flujos de datos sin interrumpir tus procesos ni tu estructura actual."
-    }
-  },
-  "biotech": {
-    "hero": {
-      "badge": "Graph neural networks",
-      "title": "Targeted Protein & Cell Degradation",
-      "description": "Desarrollamos modelos de IA que simulan interacciones moleculares para mappear attachment sites y exit vectors y así construir linkers de PROTAC, ADC y DAC sintetizables, o diseñar cadenas peptídicas biespecíficas usando building blocks estables.",
-      "cta": {
-        "primary": "Contacto rápido",
-        "secondary": "Agendar demo"
-      }
-    },
-    "animation": {
-      "title": "Fast-Track a Pruebas Clínicas",
-      "description": "Al restringir el modelo a reacciones y fragmentos conocidos, generamos candidatos termodinámicamente estables, cooperativos, permeables y sintetizables desde el inicio. Esto acelera la entrada a la clínica para todos tus pipelines actuales y futuros.",
-      "bom": "Lista de Materiales",
-      "status": {
-        "sourcing": "Fuente: Enamine",
-        "evaluating": "Evaluando:",
-        "rejecting": "✗ Rechazado:",
-        "aligning": "Alineando:",
-        "connecting": "Formando complejo ternario...",
-        "validating": "Validando cooperatividad...",
-        "complete": "✓ Complejo Ternario Estable"
-      },
-      "rejection": {
-        "entropyHigh": "Entropía: Demasiado alta",
-        "stericClash": "Choque estérico",
-        "poorRigidity": "Rigidez pobre"
-      },
-      "metrics": {
-        "cooperativity": "Cooperatividad:",
-        "predictedDeltaG": "ΔG Predicho:"
-      },
-      "final": {
-        "cooperativity": "Cooperatividad Positiva (α > 1)",
-        "stabilized": "Complejo Ternario Estabilizado • 100% Sintetizable"
-      }
-    },
-    "value": {
-      "badge": "Calidad",
-      "title": "Diseño Basado en Física",
-      "subtitle": "Vamos más allá del simple docking. Nuestra GNN simula la realidad dinámica del complejo ternario e incorpora entropía, solvatación y alineación de vectores para asegurar que tus degradadores funcionen en el mundo real.",
-      "items": {
-        "maxcooperativity": {
-          "title": "Cooperatividad Maximizada",
-          "description": "Nuestro modelo es recompensado por seleccionar scaffolds rígidos (piperazinas, espirociclos). Esto reduce el costo energético de unión y fija la Ligasa E3 y Proteína Objetivo en un complejo estable y cooperativo (α > 1)."
-        },
-        "geometry": {
-          "title": "Geometría Informada por Física",
-          "description": "Al codificar la ley de Repulsión Van der Waals directamente en el modelo, la IA siente las paredes proteicas y navega el canal de solvente sin alucinaciones físicas."
-        },
-        "dynamics": {
-          "title": "Dinámica Molecular",
-          "description": "Corremos simulaciones de Dinámica Molecular de 10ns en los mejores candidatos. Luego calculamos la energía de unión usando MM/GBSA. Esto prueba estabilidad dinámica, no solo ajuste estático."
-        },
-        "exitvector": {
-          "title": "Alineación Precisa de Vectores",
-          "description": "Imponemos la alineación del Vector de Salida en los puntos de unión, asegurando que el linker  entre al bolsillo de unión en el ángulo termodinámicamente correcto, eliminando tensión torsional."
-        }
-      }
-    },
-    "deliverables": {
-      "badge": "Entregables",
-      "title": "Tu Plano de Manufactura",
-      "subtitle": "No solo te entregamos una cadena SMILES. Te damos la receta completa que te permite empezar la síntesis inmediatamente o transferirla a un CRO sin fricción.",
-      "manifest": {
-        "title": "Manifiesto de Síntesis (JSON/YAML)",
-        "description": "Este es tu Plano de Manufactura. Para cada candidato de Linker, te daremos un archivo con una lista de materiales y un Protocolo de Reacción paso a paso (ej. Amide Coupling -> Click Chemistry)."
-      },
-      "twin": {
-        "title": "Gemelo Digital 3D (.PDB/.SDF)",
-        "description": "Obtienes Complejos Ternarios ya con coordenadas 3D, estados de protonación ajustados para pH 7.4, y percepción del orden de enlaces para proyectarlos perfectamente en PyMOL, MOE, o Schrödinger."
-      },
-      "data": {
-        "title": "Hoja de Datos Cuantitativos",
-        "description": "Te entregamos un Reporte que desglosa la lógica detrás del diseño. Esto incluye nuestra Energía Libre de Unión MM/GBSA calculada, el Índice de Cooperatividad, y un perfil ADMET completo (TPSA, LogP)."
-      },
-      "clusters": {
-        "title": "Clusters Conformacionales",
-        "description": "Te daremos los 3 Mejores Clusters para predicciones de alta confianza. Esto te permite visualizar el Costo Entrópico. Si los clusters son idénticos, el linker es rígido e ideal. Si varían significativamente, es flexible."
-      },
-      "croready": {
-        "title": "Listo para CRO",
-        "description": "Recibes un paquete de diseño que puede ser enviado directamente a tus socios externos, eliminando la necesidad de que pasen semanas buscando rutas y reduciendo efectivamente el ciclo Diseño-Hacer-Probar en 30–40%."
-      }
-    },
-    "integration": {
-      "badge": "Integración",
-      "title": "Instalación Segura On-Premise",
-      "description": "Garantizamos privacidad absoluta. Nuestro modelo está totalmente contenerizado y puede instalarse On-Premise o en Private Cloud, asegurando que tus datos nunca salgan del firewall."
-    }
-  },
-  "heist": {
-    "hero": {
-      "title": "Tejidos + Expresión Genética",
-      "description": "Con nuestro modelo Graph AI, simulamos tanto las señales paracrinas en el microambiente tisular como la red reguladora de genes dentro de cada célula para darte un mapa completo de las interacciones inter e intracelulares."
-    },
-    "animation": {
-      "title": "Señalización Inter & Intracelular",
-      "description": "Nuestro modelo está compuesto por 2 grafos. En el nivel superior, modelamos células dentro de un tejido como nodos y las señales intercelulares como aristas. Dentro de cada nodo existe un Grafo intracelular que modela cada factor de transcripción."
-    },
-    "value": {
-      "badge": "Calidad",
-      "title": "Comunicación Celular & Expresión Genética",
-      "subtitle": "Nuestra IA modela todo el tejido, desde el microambiente hasta el circuito genético interno de cada célula. Esto garantiza una comprensión completa de las interacciones intercelulares e intracelulares.",
-      "items": {
-        "spatial": {
-          "title": "Spatial Transcriptomics",
-          "description": "Mapeamos exactamente cómo se comunican las células. Al modelar la señalización paracrina, la IA predice cómo penetra tu fármaco en el tejido y dónde podría ser bloqueado."
-        },
-        "masterreg": {
-          "title": "Redes Regulatorias Génicas",
-          "description": "Dentro del Grafo interior, modelamos cada factor de transcripción como un nodo y cada regulación génica como una arista, lo que nos permite ver las causas de la enfermedad."
-        },
-        "resistance": {
-          "title": "Predicción de Resistencia",
-          "description": "Nuestro modelo simula las formas en que una célula podría sobrevivir tu tratamiento. Te ayudamos a prevenir la resistencia antes de que ocurra en los pacientes."
-        },
-        "data": {
-          "title": "Fusión de Datos",
-          "description": "Aunque tengas datos de 10x Visium, Xenium o scRNA-seq, nuestra GNN fusiona estas diferentes resoluciones en un único grafo biológico de alta fidelidad."
-        }
-      }
-    },
-    "deliverables": {
-      "badge": "Entregables",
-      "title": "Tu Paquete de Evidencia",
-      "subtitle": "Entregamos la evidencia biológica profunda que necesitas para presentaciones regulatorias, rondas de financiación y estrategia de ensayos clínicos.",
-      "manifest": {
-        "title": "Lista de Biomarcadores Espaciales",
-        "description": "Recibirás una lista precisa de coordenadas y firmas génicas que definirá qué pacientes responderán a tu fármaco."
-      },
-      "twin": {
-        "title": "Mapas de Interacción (.PDF/HTML)",
-        "description": "Mapas tissulares completamente interactivos que muestran la penetración del fármaco, la comunicación célula-célula y las vías de señalización activas."
-      },
-      "data": {
-        "title": "Informe de Impacto en la Red",
-        "description": "Un análisis detallado de cómo tu tratamiento reconfigura la red celular, destacando los master regulators y los posibles riesgos off-target."
-      },
-      "clusters": {
-        "title": "Clusters Conformacionales",
-        "description": "Entregamos los Top 3 Clusters Conformacionales para predicciones de alta confianza. Esto te permite visualizar el Costo Entrópico. Si los clusters son idénticos, el linker es rígido e ideal. Si varían significativamente, es flexible."
-      },
-      "croready": {
-        "title": "Servicio CRO",
-        "description": "También podemos realizar todas las operaciones de investigación nosotros mismos y simplemente entregarte los resultados finales."
-      }
-    }
-  },
-  "deeptech": {
-    "hero": {
-      "badge": "Redes Neuronales Informadas por Física",
-      "title": "Simulación de Baterías de Estado Sólido",
-      "description": "Te ayudamos a tener un producto fabricable. Nuestras redes neuronales predicen cuándo y cómo se formarán dendritas simulando el transporte de iones y el estrés mecánico a lo largo de cientos de ciclos.",
-      "cta": {
-        "primary": "Contacto rápido",
-        "secondary": "Agendar demo"
-      }
-    },
-    "animation": {
-      "title": "Cómo funciona",
-      "description": "Deja de quemar capital en lotes fallidos. Combinamos solucionadores de alta calidad (PyBaMM/FEniCS) con la velocidad de una Red Neuronal y te entregamos un Simulador Digital personalizado y pre-entrenado, calibrado a tu química."
-    },
-    "simulation": {
-      "controlTitle": "Parámetros de Manufactura",
-      "controlSubtitle": "Ajusta para simular comportamiento de celda",
-      "pressure": {
-        "label": "Presión de Apilamiento"
-      },
-      "roughness": {
-        "label": "Rugosidad de Superficie"
-      },
-      "penetration": "Penetración de Dendritas",
-      "failureRisk": "Riesgo de Falla",
-      "riskLow": "Riesgo Bajo",
-      "riskMedium": "Riesgo Medio",
-      "riskHigh": "Riesgo Alto",
-      "labelAnode": "Ánodo de Metal Li",
-      "labelElectrolyte": "Electrolito Cerámico LLZO",
-      "annotationVoid": "Formación de Vacíos",
-      "annotationDendrite": "Efecto Pararrayos: Enfoque de Corriente",
-      "annotationFlow": "Viscoplasticidad J2: Fluencia de Li Activa",
-      "stateLow": "Baja Presión (3 MPa)",
-      "stateHigh": "Alta Presión (18 MPa)"
-    },
-    "value": {
-      "badge": "Valor",
-      "title": "Velocidad y Precisión",
-      "subtitle": "Los ciclos de validación física toman meses. Nuestras redes simulan todo el ciclo de carga/descarga y la degradación en cientos de ciclos en horas, restringiendo el modelo estrictamente a las leyes de la física.",
-      "items": {
-        "batch": {
-          "title": "Lotes Inteligentes",
-          "description": "Un ciclo de validación fallido puede costar hasta 3 meses y $100k. Identificamos fallas potenciales digitalmente en días."
-        },
-        "capex": {
-          "title": "Cero Infraestructura",
-          "description": "Accede a un equipo de investigación por una tarifa de proyecto. Sin contrataciones de $200k y sin montar infraestructura."
-        },
-        "explainable": {
-          "title": "IA Explicable",
-          "description": "Nuestros modelos están restringidos por leyes de Termodinámica y Mecánica. No pueden alucinar física imposible."
-        },
-        "acc-speed": {
-          "title": "Precisión a Largo Plazo",
-          "description": "El ML estándar es rápido pero alucina. Nuestras PINNs son capaces de simular transporte de iones y estrés mecánico en escalas de tiempo relevantes."
-        },
-        "data": {
-          "title": "Eficiencia de Datos",
-          "description": "Nuestros modelos necesitan mucha física, no muchos datos. Al codificar restricciones físicas en la red neuronal, obtenemos resultados de alta calidad aún con datos limitados."
-        }
-      }
-    },
-    "integration": {
-      "badge": "Integración",
-      "title": "Privado y Personalizado",
-      "description": "Sabemos lo importante que es tu Propiedad Intelectual. Entrenamos tu modelo en instancias de nube privadas y aisladas o completamente on-premise. Recibes los pesos completos del modelo y la inferencia junto con un panel personalizado."
-    }
   }
 }

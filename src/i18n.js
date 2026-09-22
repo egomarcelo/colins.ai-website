@@ -10,7 +10,7 @@ class I18n {
     // Map countries to languages
     this.countryToLanguage = {
       'US': 'en', 'GB': 'en', 'CA': 'en', 'AU': 'en', 'NZ': 'en', 'IE': 'en',
-      'ES': 'es', 'MX': 'es', 'AR': 'es', 'CO': 'es', 'CL': 'es', 'PE': 'es', 'VE': 'es',
+      'ES': 'es', 'MX': 'en', 'AR': 'es', 'CO': 'es', 'CL': 'es', 'PE': 'es', 'VE': 'es',
       'DE': 'de', 'AT': 'de', 'CH': 'de',
       'FR': 'fr', 'BE': 'fr', 'LU': 'fr',
       'IT': 'it',

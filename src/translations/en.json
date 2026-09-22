@@ -4,17 +4,266 @@
   },
   "header": {
     "nav": {
-      "protein-degradation": "Protein Degradation",
+      "molecular-engineering": "Molecular Engineering",
       "heist": "Spatial Transcriptomics",
       "deeptech": "Solid State Batteries",
-      "manufacturing": "Manufacturing",
       "banking": "Banking",
+      "manufacturing": "Manufacturing",
       "language": "English"
     },
     "cta": "Contact",
     "menu": "Menu"
   },
-  "hero": {
+  "footer": {
+    "tagline": "Do Better.",
+    "company": {
+      "title": "Company",
+      "technology": "Technology",
+      "support": "Support",
+      "contact": "Contact"
+    },
+    "quality": {
+      "title": "Quality Standards"
+    },
+    "legal": {
+      "title": "Legal Policies",
+      "terms": "Terms & Conditions",
+      "privacy": "Privacy Policy",
+      "refund": "Refund Policy",
+      "gdpr": "GDPR Compliance"
+    },
+    "copyright": "Copyright ©Colins AI 2025 – All rights reserved."
+  },
+  "molecular-engineering": {
+    "hero": {
+      "badge": "Biotechnology",
+      "title": "Molecular Engineering",
+      "description": "We engineer molecules for Lipid Nanoparticles and Protein Degradation using proprietary Graph AI models and MD technology.",
+      "cta": {
+        "primary": "Talk now",
+        "secondary": "Book a demo"
+      }
+    },
+    "animation": {
+      "title": "Complete Design & Validation",
+      "description": "We implement custom AI models and Molecular Dynamics source code to design your specific binders. We handle the surface analysis, docking, chemistry, DFT/FEP/MM-GBSA validation, and deliver 20-50 rigorously tested and optimized candidates."
+    },
+    "value": {
+      "badge": "Engineering",
+      "title": "Beyond Standard Tools",
+      "subtitle": "At every step, we implement custom technology and workflows to ensure your binders work in the real world.",
+      "items": {
+        "docking": {
+          "title": "Surface & Docking",
+          "description": "We run a detailed protein surface analysis to identify hotspots and then run custom docking workflows in order to identify favorable protein-protein interfaces (Glues/Ligands) or attachment sites (Linkers)."
+        },
+        "ai-models": {
+          "title": "AI Models",
+          "description": "For the base design process, we use customized and improved Graph and Diffusion AI models run in a local environment. This gives us a base molecular design to work with."
+        },
+        "chemistry": {
+          "title": "Electrostatic Chemistry",
+          "description": "We manually analyze and optimize hydrogen bonds, π-stacking, hydrophobic packing, and iterate until we get sufficiently favorable energy. We have engineered ternary complexes showing sub 140 kcal/mol in MM/GBSA."
+        },
+        "molecular-dynamics": {
+          "title": "Molecular Dynamics",
+          "description": "We run extensive MD, FEP, DFT, and MM-GBSA simulations as needed. We also modify and customize the source code of these systems depending on the goal we are trying to achieve. "
+        }
+      }
+    },
+    "deliverables": {
+      "badge": "Deliverables",
+      "title": "Everything you need",
+      "subtitle": "We provide a complete package that allows you to start synthesis immediately.",
+      "manifest": {
+        "title": "Optimized Candidates",
+        "description": "We understand that an energetically favorable binder does not automatically lead to degradation. We deliver 20-50 highly optimized candidates in order to maximize the probability of success in the cell lines.  "
+      },
+      "data": {
+        "title": "Decomposition Data",
+        "description": "We deliver a complete decomposition report that shows you the specific bonds and energies of each residue in the complex. The report includes bonding and energy data at each time frame and a full ADMET profile (TPSA, LogP)."
+      },
+      "twin": {
+        "title": "AI Model & Source Code",
+        "description": "We may also build and deliver a fully customized AI model, MD workflow, or additional technology for you to implement in-house. This is project based and comes at an additional cost."
+      }
+    },
+    "integration": {
+      "badge": "Intellectual Property",
+      "title": "IP Rights & Data Transfer",
+      "description": "The Intellectual Property developed on each project belongs entirely to you. We guarantee absolute privacy for your proprietary targets, utilizing end-to-end encryption and secure data transfers via Private Clouds."
+    }
+  },
+  "heist": {
+    "hero": {
+      "title": "Cell Signaling & Gene Expression",
+      "description": "Using our Graph AI model, we simulate both paracrine signaling throughout the tissue microenvironment as well as the gene regulatory network within each cell to fully map both inter and intra cellular interactions."
+    },
+    "animation": {
+      "title": "Inter & Intra Cellular Signaling",
+      "description": "Our model is composed of 2 embedded graphs. At the top level, we model cells within a tissue as nodes and intercellular signals as edges. Inside every cell node, there is an intracellular graph that models transcription factors as nodes and gene regulation as edges."
+    },
+    "value": {
+      "badge": "Quality",
+      "title": "Cell Communication + Gene Expression",
+      "subtitle": "Our Graph AI models the entire tissue, from the microenvironment to the internal genetic circuit within each cell. This ensures you completely understand both inter and intra cellular interactions.",
+      "items": {
+        "spatial": {
+          "title": "Spatial Transcriptomics",
+          "description": "We map exactly how cells talk to each other. By modeling paracrine signaling, the AI predicts how your drug penetrates deep tissue and where it might be blocked."
+        },
+        "masterreg": {
+          "title": "Gene Regulatory Networks",
+          "description": "Within the lower level Graph, we model each transcription factor as a node and each gene regulation as an edge, allowing us to find the main drivers of the disease."
+        },
+        "resistance": {
+          "title": "Resistance Prediction",
+          "description": "Our model simulates the backup pathways a cell might use to survive your treatment. We help you stay one step ahead of drug resistance before it happens in patients."
+        },
+        "data": {
+          "title": "Data Fusion",
+          "description": "Whether you have 10x Visium, Xenium, or scRNA-seq data, our GNN merges these different resolutions into a single, high-fidelity biological graph."
+        }
+      }
+    },
+    "deliverables": {
+      "badge": "Deliverables",
+      "title": "Your Evidence Package",
+      "subtitle": "We provide the deep biological evidence you need for regulatory filings, funding rounds, and clinical trial strategy.",
+      "manifest": {
+        "title": "Spatial Biomarker List",
+        "description": "You will receive a precise list of coordinates and gene signatures that will define which patients will respond to your drug."
+      },
+      "twin": {
+        "title": "Interaction Maps (.PDF/HTML)",
+        "description": "Fully interactive tissue maps showing drug penetration, cell-cell communication, and active signaling pathways."
+      },
+      "data": {
+        "title": "Network Impact Report",
+        "description": "A detailed audit of how your treatment re-wires the cellular network, highlighting master regulators and potential off-target risks."
+      },
+      "clusters": {
+        "title": "Conformational Clusters",
+        "description": "We deliver the Top 3 Conformational Clusters for high-confidence predictions. This allows you to visualize the Entropic Cost. If the clusters are identical, the linker is rigid and ideal. If they vary significantly, it's floppy."
+      },
+      "croready": {
+        "title": "CRO Service",
+        "description": "We can also perform all of the research operation ourselves and simply provide you with the final results."
+      }
+    }
+  },
+  "deeptech": {
+    "hero": {
+      "badge": "Physics Informed Neural Networks",
+      "title": "Solid-State Battery Simulation",
+      "description": "We help you reach manufacturability faster. With Physics Informed Neural Networks that simulate ion transport, stress-coupled kinetics, and fracture mechanics, we predict critical dendrite and SEI formation over hundreds of cycles.",
+      "cta": {
+        "primary": "Talk now",
+        "secondary": "Book a demo"
+      }
+    },
+    "animation": {
+      "title": "How it works",
+      "description": "Stop burning cash on failed batches. We combine the reliability of high quality solvers (PyBaMM/FEniCS) with the speed of Neural Networks and deliver a custom, pre-trained Digital Simulator calibrated to your specific chemistry."
+    },
+    "simulation": {
+      "controlTitle": "Manufacturing Parameters",
+      "controlSubtitle": "Adjust to simulate cell behavior",
+      "pressure": {
+        "label": "Stack Pressure"
+      },
+      "roughness": {
+        "label": "Surface Roughness"
+      },
+      "penetration": "Dendrite Penetration",
+      "failureRisk": "Failure Risk",
+      "riskLow": "Low Risk",
+      "riskMedium": "Medium Risk",
+      "riskHigh": "High Risk",
+      "labelAnode": "Li Metal Anode",
+      "labelElectrolyte": "LLZO Ceramic Electrolyte",
+      "annotationVoid": "Void Formation",
+      "annotationDendrite": "Lightning Rod Effect: Current Focusing",
+      "annotationFlow": "J2-Viscoplasticity: Li Creep Active",
+      "stateLow": "Low Pressure (3 MPa)",
+      "stateHigh": "High Pressure (18 MPa)"
+    },
+    "value": {
+      "badge": "Value",
+      "title": "Speed & Accuracy",
+      "subtitle": "Physical validation cycles take months. FEM takes days. We simulate the entire charge/discharge cycle and the degradation over hundreds of cycles in just hours while strictly constraining the model to the laws of physics.",
+      "items": {
+        "batch": {
+          "title": "Smarter Batches",
+          "description": "A single failed validation cycle may cost up to 3 months and $100k+ in burn. We identify potential failures digitally in days."
+        },
+        "capex": {
+          "title": "Zero Infrastructure",
+          "description": "Access a dedicated AI Research team for a project-based fee. No $200k hires, no equity, no infrastructure buildup."
+        },
+        "explainable": {
+          "title": "Explainable AI",
+          "description": "Our models are constrained by the laws of Thermodynamics and Mechanics. They cannot hallucinate impossible physics."
+        },
+        "acc-speed": {
+          "title": "Long-term Accuracy",
+          "description": "DFT is accurate but limited to nanoseconds. Standard ML is fast but hallucinates. Our PINNs are capable of simulating ion transport and mechanical stress over relevant timescales."
+        },
+        "data": {
+          "title": "Data Efficient",
+          "description": "Our models need Big Physics, not Big Data. By embedding physical constraints directly into the neural network, we get high quality results even with only limited data."
+        }
+      }
+    },
+    "integration": {
+      "badge": "Integration",
+      "title": "Fully Private and Customized",
+      "description": "We understand how important your IP is. We train your custom model on isolated, private cloud instances or fully on-premise. You receive the full model weights and inference along with a custom dashboard where you can run your own tests."
+    }
+  },
+  "banking": {
+    "hero": {
+      "badge": "Graph Neural Networks",
+      "title": "Elite Fraud Detection for Mid-sized Banks",
+      "description": "We provide mid-sized banks the advanced Graph technology that the larger banks use for just 10% of the cost. We identify mule network schemes, ATO, and reduce the false positives costing you millions by up to 50%.",
+      "cta": {
+        "primary": "Talk now",
+        "secondary": "Book a demo"
+      }
+    },
+    "graph": {
+      "title": "How it works",
+      "description": "Our proprietary graph technology models your entire network. Nodes represent entities (customers, accounts, devices) and Edges represent transaction attributes (IP address, amount). Mapping the entire relationship between nodes and edges allows us to understand the context of each transaction, minimizing false positives and finding the real fraud.",
+      "legend": "High Risk. Tap to explore",
+      "riskScore": "Risk Score",
+      "account": "Account"
+    },
+    "integration": {
+      "badge": "Integration",
+      "title": "Plug-and-play with your ecosystem",
+      "description": "Keep your current setup, just make it smarter. Our API connects directly to your data streams and monitoring dashboards without disrupting workflow."
+    },
+    "value": {
+      "badge": "Value",
+      "title": "2x Speed at 10% cost",
+      "subtitle": "We focus exclusively on providing mid-sized banks with the advanced graph AI technology that is currently mostly only available to large banks. This allows us to provide 90% of the benefit at 10% of the cost. We integrate fast and easy with your current setup and stop fraud 2x faster where it's hurting you the most.",
+      "items": {
+        "refund": {
+          "title": "Refund Liability",
+          "description": "We understand how much time and money refunds are costing you every year. Our technology will significantly reduce Account takeovers and APP Fraud, saving you millions every year and making your customers happy."
+        },
+        "falsePositives": {
+          "title": "False Positives",
+          "description": "By understanding the network, we verify legitimate high-velocity users like small businesses that rule-based systems often block. We see that the recipient is a friend of a friend (2-hop connection) and suppress the alert."
+        },
+        "aml": {
+          "title": "AML Compliance",
+          "description": "Graph Neural Networks are the absolute best technology in the world to catch mule network schemes. You will be able to detect money laundering faster and more accurately than any KYC technology can."
+        }
+      }
+    }
+  },
+  "manufacturing": {
     "badge": "Physics Informed Neural Networks",
     "title": "Uninterrupted Production",
     "description": "Our neural networks simulate internal physics of centrifugal pumps and electric motors in real-time. We detect problems months in advance with 99% accuracy and save millions from unplanned downtime.",
@@ -199,285 +448,5 @@
     "badge": "Integration",
     "title": "Works with the tools you already use",
     "description": "Our API automatically feeds predictive health metrics into SAP, Maximo, or Ignition, triggering maintenance tickets the moment a risk is detected."
-  },
-  "footer": {
-    "tagline": "Do Better.",
-    "company": {
-      "title": "Company",
-      "technology": "Technology",
-      "support": "Support",
-      "contact": "Contact"
-    },
-    "quality": {
-      "title": "Quality Standards"
-    },
-    "legal": {
-      "title": "Legal Policies",
-      "terms": "Terms & Conditions",
-      "privacy": "Privacy Policy",
-      "refund": "Refund Policy",
-      "gdpr": "GDPR Compliance"
-    },
-    "copyright": "Copyright ©Colins AI 2025 – All rights reserved."
-  },
-  "banking": {
-    "hero": {
-      "badge": "Graph Neural Networks",
-      "title": "Elite Fraud Detection for Mid-sized Banks",
-      "description": "We provide mid-sized banks the advanced Graph technology that the larger banks use for just 10% of the cost. We identify mule network schemes, ATO, and reduce the false positives costing you millions by up to 50%.",
-      "cta": {
-        "primary": "Talk now",
-        "secondary": "Book a demo"
-      }
-    },
-    "graph": {
-      "title": "How it works",
-      "description": "Our proprietary graph technology models your entire network. Nodes represent entities (customers, accounts, devices) and Edges represent transaction attributes (IP address, amount). Mapping the entire relationship between nodes and edges allows us to understand the context of each transaction, minimizing false positives and finding the real fraud.",
-      "legend": "High Risk. Tap to explore",
-      "riskScore": "Risk Score",
-      "account": "Account"
-    },
-    "integration": {
-      "badge": "Integration",
-      "title": "Plug-and-play with your ecosystem",
-      "description": "Keep your current setup, just make it smarter. Our API connects directly to your data streams and monitoring dashboards without disrupting workflow."
-    },
-    "value": {
-      "badge": "Value",
-      "title": "2x Speed at 10% cost",
-      "subtitle": "We focus exclusively on providing mid-sized banks with the advanced graph AI technology that is currently mostly only available to large banks. This allows us to provide 90% of the benefit at 10% of the cost. We integrate fast and easy with your current setup and stop fraud 2x faster where it's hurting you the most.",
-      "items": {
-        "refund": {
-          "title": "Refund Liability",
-          "description": "We understand how much time and money refunds are costing you every year. Our technology will significantly reduce Account takeovers and APP Fraud, saving you millions every year and making your customers happy."
-        },
-        "falsePositives": {
-          "title": "False Positives",
-          "description": "By understanding the network, we verify legitimate high-velocity users like small businesses that rule-based systems often block. We see that the recipient is a friend of a friend (2-hop connection) and suppress the alert."
-        },
-        "aml": {
-          "title": "AML Compliance",
-          "description": "Graph Neural Networks are the absolute best technology in the world to catch mule network schemes. You will be able to detect money laundering faster and more accurately than any KYC technology can."
-        }
-      }
-    }
-  },
-  "biotech": {
-    "hero": {
-      "badge": "Graph Neural Networks",
-      "title": "Targeted Protein & Cell Degradation",
-      "description": "We build Graph AI Models that can simulate molecular interactions in order to test attachment sites, map exit vectors, and then construct synthesizble PROTAC, ADC, and DAC linkers, or design bispecific peptide chains using only stable building blocks.",
-      "cta": {
-        "primary": "Talk now",
-        "secondary": "Book a demo"
-      }
-    },
-    "animation": {
-      "title": "Fast-Track to Clinical Trials",
-      "description": "By constraining the model to known reactions and fragments, we generate candidates that are thermodynamically stable, cooperative, cell-permeable, and chemically synthesizable from the start. This accelerates clinical entry for all current and future pipelines.",
-      "bom": "Bill of Materials",
-      "status": {
-        "sourcing": "Source: Enamine",
-        "evaluating": "Evaluating:",
-        "rejecting": "✗ Rejected:",
-        "aligning": "Aligning:",
-        "connecting": "Forming ternary complex...",
-        "validating": "Validating cooperativity...",
-        "complete": "✓ Stable Ternary Complex"
-      },
-      "rejection": {
-        "entropyHigh": "Entropy: Too High",
-        "stericClash": "Steric Clash",
-        "poorRigidity": "Poor Rigidity"
-      },
-      "metrics": {
-        "cooperativity": "Cooperativity:",
-        "predictedDeltaG": "Predicted ΔG:"
-      },
-      "final": {
-        "cooperativity": "Positive Cooperativity (α > 1)",
-        "stabilized": "Ternary Complex Stabilized • 100% Synthesizable"
-      }
-    },
-    "value": {
-      "badge": "Quality",
-      "title": "Physics-Informed Design",
-      "subtitle": "We go beyond simple docking. Our GNN simulates the dynamic reality of the ternary complex and incorporates entropy, solvation, and vector alignment to ensure your degraders work in the real world.",
-      "items": {
-        "maxcooperativity": {
-          "title": "Maximized Cooperativity",
-          "description": "Our model is rewarded for selecting rigid scaffolds (piperazines, spirocycles). This reduces the energy cost of binding and locking the E3 Ligase and Target Protein into a stable, cooperative complex (α > 1)."
-        },
-        "geometry": {
-          "title": "Physics-Informed Geometry",
-          "description": "By encoding Van der Waals Repulsion Edges directly into the graph, the AI feels the protein walls and navigates the solvent channel without physical hallucinations."
-        },
-        "dynamics": {
-          "title": "Molecular Dynamics",
-          "description": "We run 10ns Molecular Dynamics simulations on top candidates. We then calculate the binding energy using MM/GBSA, which averages the interaction over time. This proves dynamic stability, not just static fit."
-        },
-        "exitvector": {
-          "title": "Precise Vector Alignment",
-          "description": "We enforce strict vector alignment at all interfaces. Whether bridging a gap (PROTAC) or filling a pocket (Glue), the molecule engages the target at the thermodynamically correct angle, eliminating torsional strain."
-        }
-      }
-    },
-    "deliverables": {
-      "badge": "Deliverables",
-      "title": "Your Manufacturing Blueprint",
-      "subtitle": "We don't just deliver a SMILES string. We provide a complete Design-to-Drug package that allows you to start synthesis immediately or hand off to a CRO with zero friction.",
-      "manifest": {
-        "title": "Synthesis Manifest (JSON/YAML)",
-        "description": "This is your Manufacturing Blueprint. For every Linker candidate, we'll provide a file containing a precise Bill of Materials and a step by step Reaction Protocol (e.g., Amide Coupling -> Click Chemistry)."
-      },
-      "twin": {
-        "title": "3D Digital Twin (.PDB/.SDF)",
-        "description": "You get fully posed Ternary Complexes. These files contain 3D coordinates, protonation states adjusted for pH 7.4, and bond order perception so they render perfectly in PyMOL, MOE, or Schrödinger."
-      },
-      "data": {
-        "title": "Quantitative Data Sheet",
-        "description": "We deliver a Confidence Report that breaks down the physicochemical logic behind the design. This includes our calculated MM/GBSA Binding Free Energy, the Cooperativity Index, and a comprehensive ADMET profile (TPSA, LogP)."
-      },
-      "clusters": {
-        "title": "Conformational Clusters",
-        "description": "We'll also provide the Top 3 Conformational Clusters for high confidence predictions. This allows you to visualize the Entropic Cost. If the clusters are identical, the linker is rigid and ideal. If they vary significantly, it's floppy."
-      },
-      "croready": {
-        "title": "CRO Ready",
-        "description": "You receive a Design-to-Drug package that can be forwarded directly to your external partners, eliminating the need for them to spend weeks on route scouting and effectively cutting the Design-Make-Test cycle time by 30–40%."
-      }
-    },
-    "integration": {
-      "badge": "Integration",
-      "title": "Secure, On-Premise Deployment",
-      "description": "We guarantee absolute privacy for your proprietary targets. Our engine is fully containerized and can be deployed On-Premise (air-gapped) or via Private Cloud, ensuring your data never leaves your firewall."
-    }
-  },
-  "heist": {
-    "hero": {
-      "title": "Cell Signaling & Gene Expression",
-      "description": "Using our Graph AI model, we simulate both paracrine signaling throughout the tissue microenvironment as well as the gene regulatory network within each cell to fully map both inter and intra cellular interactions."
-    },
-    "animation": {
-      "title": "Inter & Intra Cellular Signaling",
-      "description": "Our model is composed of 2 embedded graphs. At the top level, we model cells within a tissue as nodes and intercellular signals as edges. Inside every cell node, there is an intracellular graph that models transcription factors as nodes and gene regulation as edges."
-    },
-    "value": {
-      "badge": "Quality",
-      "title": "Cell Communication + Gene Expression",
-      "subtitle": "Our Graph AI models the entire tissue, from the microenvironment to the internal genetic circuit within each cell. This ensures you completely understand both inter and intra cellular interactions.",
-      "items": {
-        "spatial": {
-          "title": "Spatial Transcriptomics",
-          "description": "We map exactly how cells talk to each other. By modeling paracrine signaling, the AI predicts how your drug penetrates deep tissue and where it might be blocked."
-        },
-        "masterreg": {
-          "title": "Gene Regulatory Networks",
-          "description": "Within the lower level Graph, we model each transcription factor as a node and each gene regulation as an edge, allowing us to find the main drivers of the disease."
-        },
-        "resistance": {
-          "title": "Resistance Prediction",
-          "description": "Our model simulates the backup pathways a cell might use to survive your treatment. We help you stay one step ahead of drug resistance before it happens in patients."
-        },
-        "data": {
-          "title": "Data Fusion",
-          "description": "Whether you have 10x Visium, Xenium, or scRNA-seq data, our GNN merges these different resolutions into a single, high-fidelity biological graph."
-        }
-      }
-    },
-    "deliverables": {
-      "badge": "Deliverables",
-      "title": "Your Evidence Package",
-      "subtitle": "We provide the deep biological evidence you need for regulatory filings, funding rounds, and clinical trial strategy.",
-      "manifest": {
-        "title": "Spatial Biomarker List",
-        "description": "You will receive a precise list of coordinates and gene signatures that will define which patients will respond to your drug."
-      },
-      "twin": {
-        "title": "Interaction Maps (.PDF/HTML)",
-        "description": "Fully interactive tissue maps showing drug penetration, cell-cell communication, and active signaling pathways."
-      },
-      "data": {
-        "title": "Network Impact Report",
-        "description": "A detailed audit of how your treatment re-wires the cellular network, highlighting master regulators and potential off-target risks."
-      },
-      "clusters": {
-        "title": "Conformational Clusters",
-        "description": "We deliver the Top 3 Conformational Clusters for high-confidence predictions. This allows you to visualize the Entropic Cost. If the clusters are identical, the linker is rigid and ideal. If they vary significantly, it's floppy."
-      },
-      "croready": {
-        "title": "CRO Service",
-        "description": "We can also perform all of the research operation ourselves and simply provide you with the final results."
-      }
-    }
-  },
-  "deeptech": {
-    "hero": {
-      "badge": "Physics Informed Neural Networks",
-      "title": "Solid-State Battery Simulation",
-      "description": "We help you reach manufacturability faster. With Physics Informed Neural Networks that simulate ion transport, stress-coupled kinetics, and fracture mechanics, we predict critical dendrite and SEI formation over hundreds of cycles.",
-      "cta": {
-        "primary": "Talk now",
-        "secondary": "Book a demo"
-      }
-    },
-    "animation": {
-      "title": "How it works",
-      "description": "Stop burning cash on failed batches. We combine the reliability of high quality solvers (PyBaMM/FEniCS) with the speed of Neural Networks and deliver a custom, pre-trained Digital Simulator calibrated to your specific chemistry."
-    },
-    "simulation": {
-      "controlTitle": "Manufacturing Parameters",
-      "controlSubtitle": "Adjust to simulate cell behavior",
-      "pressure": {
-        "label": "Stack Pressure"
-      },
-      "roughness": {
-        "label": "Surface Roughness"
-      },
-      "penetration": "Dendrite Penetration",
-      "failureRisk": "Failure Risk",
-      "riskLow": "Low Risk",
-      "riskMedium": "Medium Risk",
-      "riskHigh": "High Risk",
-      "labelAnode": "Li Metal Anode",
-      "labelElectrolyte": "LLZO Ceramic Electrolyte",
-      "annotationVoid": "Void Formation",
-      "annotationDendrite": "Lightning Rod Effect: Current Focusing",
-      "annotationFlow": "J2-Viscoplasticity: Li Creep Active",
-      "stateLow": "Low Pressure (3 MPa)",
-      "stateHigh": "High Pressure (18 MPa)"
-    },
-    "value": {
-      "badge": "Value",
-      "title": "Speed & Accuracy",
-      "subtitle": "Physical validation cycles take months. FEM takes days. We simulate the entire charge/discharge cycle and the degradation over hundreds of cycles in just hours while strictly constraining the model to the laws of physics.",
-      "items": {
-        "batch": {
-          "title": "Smarter Batches",
-          "description": "A single failed validation cycle may cost up to 3 months and $100k+ in burn. We identify potential failures digitally in days."
-        },
-        "capex": {
-          "title": "Zero Infrastructure",
-          "description": "Access a dedicated AI Research team for a project-based fee. No $200k hires, no equity, no infrastructure buildup."
-        },
-        "explainable": {
-          "title": "Explainable AI",
-          "description": "Our models are constrained by the laws of Thermodynamics and Mechanics. They cannot hallucinate impossible physics."
-        },
-        "acc-speed": {
-          "title": "Long-term Accuracy",
-          "description": "DFT is accurate but limited to nanoseconds. Standard ML is fast but hallucinates. Our PINNs are capable of simulating ion transport and mechanical stress over relevant timescales."
-        },
-        "data": {
-          "title": "Data Efficient",
-          "description": "Our models need Big Physics, not Big Data. By embedding physical constraints directly into the neural network, we get high quality results even with only limited data."
-        }
-      }
-    },
-    "integration": {
-      "badge": "Integration",
-      "title": "Fully Private and Customized",
-      "description": "We understand how important your IP is. We train your custom model on isolated, private cloud instances or fully on-premise. You receive the full model weights and inference along with a custom dashboard where you can run your own tests."
-    }
   }
 }

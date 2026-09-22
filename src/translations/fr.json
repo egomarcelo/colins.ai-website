@@ -4,204 +4,18 @@
   },
   "header": {
     "nav": {
-      "manufacturing": "Industrie",
-      "banking": "Banque",
-      "protein-degradation": "Dégradation des Protéines.",
+      "molecular-engineering": "Ingénierie Moléculaire",
       "heist": "Spatial Transcriptomics",
       "deeptech": "Bateries à l'état Solide",
+      "banking": "Banque",
+      "manufacturing": "Industrie",
       "language": "Français"
     },
     "cta": "Contact",
     "menu": "Menu"
   },
-  "hero": {
-    "badge": "Réseau Neuronal Informé par la Physique",
-    "title": "Production sans Pannes Imprévues",
-    "description": "Nos réseaux de neurones simulent la physique interne des pompes centrifuges et moteurs électriques en temps réel. On détecte les problèmes des mois à l'avance avec 99% de précision et économise des millions en temps d'arrêt.",
-    "cta": {
-      "primary": "Contact rapide",
-      "secondary": "Prendre RDV"
-    }
-  },
-  "about": {
-    "title": "Comment ça marche",
-    "description": "Notre modèle physique analyse les données des capteurs en temps réel et résout des équations complexes de dynamique des fluides et d'électromagnétisme. Cela nous permet de voir des défauts internes invisibles pour les systèmes standards.",
-    "assetTitle": {
-      "pump": "Jumeau Numérique de Pompe Centrifuge",
-      "motor": "Jumeau Numérique de Moteur Électrique"
-    },
-    "cloudServer": "Serveur Cloud",
-    "pinnAnalysis": "Analyse PINN",
-    "mobile": {
-      "step1": "Collecte des données des capteurs...",
-      "step2": "Traitement par IA...",
-      "step3": "Analyse terminée"
-    },
-    "metrics": {
-      "pump": {
-        "cavitation": {
-          "title": "Indice de Cavitation Virtuel",
-          "value": "0.72",
-          "safe": "Sûr",
-          "moderate": "Attention",
-          "critical": "Cavitation",
-          "description": "Conditions actuelles : niveaux de cavitation sûrs"
-        },
-        "bep": {
-          "title": "Carte d'Efficacité",
-          "operating": "Actuel",
-          "optimal": "BEP",
-          "description": "Fonctionnement à 8% sous le rendement optimal"
-        },
-        "npsh": {
-          "title": "Analyse NPSH",
-          "available": "Disponible",
-          "required": "Requis",
-          "margin": "Marge",
-          "description": "Marge de pression d'aspiration saine maintenue"
-        },
-        "stress": {
-          "title": "Analyse de Contrainte",
-          "leadingEdge": "Bord d'attaque",
-          "hub": "Moyeu",
-          "bladeTip": "Bout d'aube",
-          "yield": "Limite élastique",
-          "description": "Contraintes mécaniques dans les limites de sécurité"
-        },
-        "hydraulic": {
-          "title": "Poussée Hydraulique",
-          "axial": "Axiale",
-          "radial": "Radiale",
-          "ofMax": "65% du max",
-          "ofMaxRadial": "35% du max",
-          "status": "Butées fonctionnant dans les limites",
-          "description": "Fonctionnement à 88% de la capacité hydraulique nominale"
-        }
-      },
-      "motor": {
-        "imbalance": {
-          "title": "Analyse de Courant de Phase",
-          "phaseA": "Phase A",
-          "phaseB": "Phase B",
-          "phaseC": "Phase C",
-          "label": "Déséquilibre :",
-          "threshold": "Seuil : 5%",
-          "status": "État : Normal",
-          "description": "Toutes phases équilibrées (tolérance 2%)"
-        },
-        "rotor": {
-          "title": "Santé des Barres Rotor",
-          "healthy": "Sain",
-          "degraded": "Dégradé",
-          "critical": "Rompu",
-          "healthScore": "Score de Santé",
-          "totalBars": "28 Barres au total",
-          "description": "Toutes les barres du rotor en excellent état"
-        },
-        "efficiency": {
-          "title": "Efficacité Moteur vs Charge",
-          "optimal": "Optimal",
-          "current": "Actuel",
-          "description": "Fonctionnement dans la plage d'efficacité optimal"
-        },
-        "winding": {
-          "title": "Température du Bobinage",
-          "windingU": "Bobinage U",
-          "windingV": "Bobinage V",
-          "windingW": "Bobinage W",
-          "classF": "Classe F",
-          "description": "Température bien en dessous des limites"
-        },
-        "torque": {
-          "title": "Couple de Sortie",
-          "current": "Actuel",
-          "rated": "Nominal",
-          "load": "Charge",
-          "status": "Opère dans la capacité nominale",
-          "description": "Opère dans la capacité nominale"
-        }
-      }
-    }
-  },
-"useCases": {
-    "pumps": {
-      "badge": "Pompes",
-      "title": "Données Clés",
-      "items": {
-        "cavitation": {
-          "title": "Indice de Cavitation Virtuelle",
-          "description": "La cavitation est la formation de bulles de vapeur due à une basse pression. Cela détruit le métal."
-        },
-        "bep": {
-          "title": "Point de Meilleure Efficacité",
-          "description": "Une pompe a une courbe d'efficacité (Hauteur vs Débit). Le pic est son point le plus efficace."
-        },
-        "npsh": {
-          "title": "Charge Nette Positive à l'Aspiration",
-          "description": "C'est la pression disponible dans le tuyau d'aspiration pour empêcher la cavitation."
-        },
-        "stress": {
-          "title": "Carte de Contrainte de la Roue",
-          "description": "Montre la fatigue mécanique sur les aubes causée par la pression de l'eau."
-        },
-        "hydraulic": {
-          "title": "Charge Hydraulique",
-          "description": "Montre les forces axiales et radiales qui agissent sur l'arbre de la pompe."
-        }
-      }
-    },
-    "motors": {
-      "badge": "Moteurs",
-      "title": "Santé et Efficacité",
-      "items": {
-        "imbalance": {
-          "title": "Déséquilibre de Courant",
-          "description": "Le courant doit être équilibré. Si la Phase A tire 100A et la Phase B 105, le moteur surchauffe."
-        },
-        "rotor": {
-          "title": "Santé des Barres du Rotor",
-          "description": "Les barres internes peuvent se fissurer. Nous le détectons via une fréquence d'onde spécifique."
-        },
-        "efficiency": {
-          "title": "Courbe d'Efficacité",
-          "description": "Les moteurs ont une courbe Couple vs Efficacité. Ils fonctionnent mieux à 75-100%."
-        },
-        "winding": {
-          "title": "Température du Bobinage",
-          "description": "Nous estimons la température à l'intérieur des bobines selon le courant et la résistance."
-        },
-        "torque": {
-          "title": "Couple de Sortie",
-          "description": "Mesure la force de rotation réelle délivrée par l'arbre du moteur à la charge."
-        }
-      }
-    },
-    "general": {
-      "badge": "Données Générales",
-      "title": "Pour Moteurs et Pompes",
-      "items": {
-        "vibration": {
-          "title": "Vibration RMS",
-          "description": "Utilisé pour détecter déséquilibres, désalignements, jeux mécaniques et problèmes de flux."
-        },
-        "temperature": {
-          "title": "Tendances de Température",
-          "description": "Critique pour l'isolant du bobinage et les roulements. Chaque hausse de 10°C réduit la durée de vie de moitié."
-        },
-        "rul": {
-          "title": "Durée de Vie Restante",
-          "description": "Prédit exactement quand les roulements gripperont ou quand les joints se dégraderont."
-        }
-      }
-    }
-  },
-  "integration": {
-    "badge": "Intégration",
-    "title": "On s'adapte à votre système",
-    "description": "Notre API s'intègre facilement à SAP, Maximo ou Ignition, générant des tickets de maintenance dès qu'un risque est détecté."
-  },
   "footer": {
-    "tagline": "Fais mieux.",
+    "tagline": "Do better.",
     "company": {
       "title": "Entreprise",
       "technology": "Technologie",
@@ -220,137 +34,64 @@
     },
     "copyright": "Copyright ©Colins AI 2025 – Tous droits réservés."
   },
-  "banking": {
+  "molecular-engineering": {
     "hero": {
-    "badge": "Réseau Neuronal Graphique",
-    "title": "Détection de Fraude pour les Banques Moyennes",
-    "description": "Nous aidons les banques moyennes à adopter l'IA graphique utilisée par les plus grandes pour juste 10% du coût. On identifie les réseaux illégaux et réduit les faux positifs qui vous coûtent des millions jusqu'à 50%.",
-    "cta": {
-        "primary": "Contact rapide",
-        "secondary": "Prendre RDV"
-      }
-    },
-    "graph": {
-    "title": "Comment ça marche",
-    "description": "Notre technologie modélise tout votre réseau de transactions. Les nœuds sont les entités (clients, comptes) et les connexions sont les attributs (IP, montant). En modélisant la relation complète entre nœuds et connexions, nous comprenons le contexte de chaque transaction. Cela nous permet de minimiser les faux positifs et de trouver la vraie fraude.",
-    "legend": "Risque élevé. Appuyez pour explorer",
-    "riskScore": "Probabilité de risque",
-    "account": "Compte"
-    },
-    "value": {
-      "badge": "Valeur",
-      "title": "2x plus vite à 10% du coût",
-      "subtitle": "On se concentre exclusivement sur la technologie de haute valeur avec des intégrations agiles. Cela nous permet de donner aux banques moyennes 90% des bénéfices pour 10% du coût et de stopper la fraude là où ça fait mal.",
-      "items": {
-        "refund": {
-          "title": "Débits non reconnus",
-          "description": "Les remboursements coûtent cher. Notre technologie réduit les prises de contrôle de compte (ATO) et la fraude APP, vous économisant des millions."
-        },
-        "falsePositives": {
-          "title": "Faux Positifs",
-          "description": "En cartographiant le réseau complet, nous vérifions les utilisateurs légitimes que les systèmes traditionnels bloquent. Si le destinataire est un 'ami d'un ami', nous supprimons l'alerte."
-        },
-        "aml": {
-          "title": "Conformité Lutte Anti-Blanchiment",
-          "description": "Les GNN sont la meilleure technologie pour piéger les réseaux de blanchiment d'argent. Vous détecterez ces réseaux plus vite qu'avec n'importe quel système standard."
-        }
-      }
-    },
-    "integration": {
-      "badge": "Intégration",
-      "title": "Plug-and-play avec votre écosystème",
-      "description": "Votre système actuel reste intact. Notre API se connecte directement à vos flux de données sans interrompre vos processus."
-    }
-  },
-  "biotech": {
-    "hero": {
-      "badge": "Graph neural networks",
-      "title": "Dégradation des Protéines.",
-      "description": "Notre modèle Graph AI simulent les interactions moléculaires pour tester les attachment sites et mapper les exit vectors, et puis construire des linkers PROTAC, ADC et DAC synthétisables, ou designer des chaînes peptidiques bispécifiques à partir de building blocks stables.",
+      "badge": "Biotechnologie",
+      "title": "Ingénierie Moléculaire",
+      "description": "Nous concevons des molécules pour les nanoparticules lipidiques et la dégradation des protéines avec nos modèles propriétaires de Graph AI et technologie MD.",
       "cta": {
-        "primary": "Contact rapide",
-        "secondary": "Prendre RDV"
+        "primary": "Contact direct",
+        "secondary": "Réserver une démo"
       }
     },
     "animation": {
-      "title": "Fast-Track vers les Essais Cliniques",
-      "description": "En contraignant le modèle à des réactions et fragments connus, nous générons des candidats thermodynamiquement stables, coopératifs, perméables et synthétisables dès le départ. Cela accélère l'entrée en clinique pour tous vos pipelines actuels et futurs.",
-      "bom": "Liste de Matériaux",
-      "status": {
-        "sourcing": "Source: Enamine",
-        "evaluating": "Évaluation:",
-        "rejecting": "✗ Rejeté:",
-        "aligning": "Alignement:",
-        "connecting": "Formation du complexe ternaire...",
-        "validating": "Validation de la coopérativité...",
-        "complete": "✓ Complexe Ternaire Stable"
-      },
-      "rejection": {
-        "entropyHigh": "Entropie: Trop élevée",
-        "stericClash": "Conflit stérique",
-        "poorRigidity": "Rigidité faible"
-      },
-      "metrics": {
-        "cooperativity": "Coopérativité:",
-        "predictedDeltaG": "ΔG Prédit:"
-      },
-      "final": {
-        "cooperativity": "Coopérativité Positive (α > 1)",
-        "stabilized": "Complexe Ternaire Stabilisé • 100% Synthétisable"
-      }
+      "title": "Conception & Validation Complète",
+      "description": "Nous utilisons des modèles d’IA et du source code sur mesure pour concevoir vos binders. Nous prenons en charge l’analyse de surface, le docking, la chimie et la validation DFT/FEP/MM-GBSA, puis nous livrons 20 à 50 candidats optimisés et testés rigoureusement."
     },
     "value": {
-      "badge": "Qualité",
-      "title": "Conception Basée sur la Physique",
-      "subtitle": "Au-delà du simple docking, notre GNN simule la réalité dynamique du complexe ternaire et intègre l'entropie, la solvatation et l'alignement vectoriel pour garantir que vos dégradeurs fonctionnent dans le monde réel.",
+      "badge": "Ingénierie",
+      "title": "Au-delà des Outils Standards",
+      "subtitle": "À chaque étape, nous déployons des technologies sur mesure pour que vos binders fonctionnent dans des conditions réelles.",
       "items": {
-        "maxcooperativity": {
-          "title": "Coopérativité Maximisée",
-          "description": "Notre modèle est récompensé pour la sélection de squelettes rigides (pipérazines, spirocycles). Cela réduit le coût énergétique de liaison et verrouille la Ligase E3 et la Protéine Cible dans un complexe stable et coopératif (α > 1)."
+        "docking": {
+          "title": "Surface & Docking",
+          "description": "Nous analysons la surface protéique, nous identifions les hotspots, et exécutons le docking afin de repérer les interfaces protéine-protéine favorables (glues/ligands) ou les sites d’attachement (linkers)."
         },
-        "geometry": {
-          "title": "Géométrie Informée par la Physique",
-          "description": "En encodant les équations de Répulsion Van der Waals directement dans le graphe, l'IA ressent les parois protéiques et navigue dans le canal de solvant sans hallucinations physiques."
+        "ai-models": {
+          "title": "Modèles d’IA",
+          "description": "Pour établir la base du design, nous utilisons des modèles de Graph AI et de diffusion personnalisés, optimisés et exécutés dans un environnement local. Nous obtenons ainsi un premier design moléculaire à affiner."
         },
-        "dynamics": {
+        "chemistry": {
+          "title": "Chimie Électrostatique",
+          "description": "Nous optimisons les liaisons hydrogène, π stacking et le packing hydrophobe, puis nous itérons jusqu’à obtenir une énergie suffisamment favorable. Nous avons conçu des complexes affichant moins de 140 kcal/mol en MM/GBSA."
+        },
+        "molecular-dynamics": {
           "title": "Dynamique Moléculaire",
-          "description": "Nous exécutons des simulations de Dynamique Moléculaire de 10ns sur les meilleurs candidats et calculons ensuite l'énergie de liaison en utilisant MM/GBSA. Cela prouve la stabilité dynamique, pas seulement l'ajustement statique."
-        },
-        "exitvector": {
-          "title": "Alignement Vectoriel Précis",
-          "description": "Nous imposons un alignement vectoriel strict. Soit pour combler un espace soit pour remplir une poche, la molécule engage la cible sous l'angle thermodynamiquement correct, éliminant ainsi la contrainte de torsion."
+          "description": "Nous réalisons des simulations MD, FEP, DFT et MM-GBSA approfondies selon les besoins. Nous modifions et personnalisons également le source code en fonction de l’objectif visé."
         }
       }
     },
     "deliverables": {
       "badge": "Livrables",
-      "title": "Votre Plan de Fabrication",
-      "subtitle": "On ne fournit pas simplement une chaîne SMILES. Vous recevez un package complet Design-à-Médicament qui vous permet de commencer la synthèse immédiatement ou de le transmettre à un CRO.",
+      "title": "Tout ce qu’il Vous Faut",
+      "subtitle": "Nous vous livrons un package complet qui vous permet de lancer immédiatement la synthèse.",
       "manifest": {
-        "title": "Manifeste de Synthèse (JSON/YAML)",
-        "description": "Ceci est votre Plan de Fabrication. Pour chaque candidat Linker, nous fournirons un fichier contenant une Nomenclature précise et un Protocole de Réaction étape par étape (ex. Couplage Amide -> Click Chemistry)."
-      },
-      "twin": {
-        "title": "Jumeau Numérique 3D (.PDB/.SDF)",
-        "description": "Vous obtenez des Complexes Ternaires déjà avec des coordonnées 3D, des états de protonation ajustés pour pH 7.4, et une perception de l'ordre des liaisons pour les visualiser dans PyMOL, MOE, ou Schrödinger."
+        "title": "Candidats Optimisés",
+        "description": "Nous savons qu’un binder énergétiquement favorable ne mène pas automatiquement à la dégradation. Nous livrons 20 à 50 candidats très optimisés afin de maximiser les chances de réussite dans les lignées cellulaires."
       },
       "data": {
-        "title": "Fiche de Données Quantitatives",
-        "description": "On fournit un Rapport qui détaille la logique derrière la conception. Cela inclut notre Énergie Libre de Liaison MM/GBSA calculée, l'Indice de Coopérativité, et un profil ADMET complet (TPSA, LogP)."
+        "title": "Données de Décomposition",
+        "description": "Nous vous livrons un rapport de décomposition complet qui détaille les liaisons et les énergies à chaque résidu. Il comprend les données de liaison et d’énergie à chaque frame, ainsi qu’un profil ADMET complet (TPSA, LogP)."
       },
-      "clusters": {
-        "title": "Clusters Conformationnels",
-        "description": "Vous recevez aussi les 3 Meilleurs Clusters Conformationnels. Cela vous permet de visualiser le Coût Entropique. Si les clusters sont identiques, le linker est rigide et idéal. S'ils varient significativement, il est flexible."
-      },
-      "croready": {
-        "title": "Prêt pour CRO",
-        "description": "Vous recevez un package Design-à-Médicament qui peut être transmis directement à vos partenaires externes, éliminant le besoin pour eux de chercher des routes et réduisant le cycle Design-Fabrication-Test de 30–40%."
+      "twin": {
+        "title": "Modèle d’IA & Code Source",
+        "description": "Nous pouvons également développer un modèle d’IA ou une architecture MD entièrement personnalisée à déployer en interne. Cette prestation est facturée en supplément, selon le projet."
       }
     },
     "integration": {
-      "badge": "Intégration",
-      "title": "Déploiement Sécurisé On-Premise",
-      "description": "Nous garantissons une confidentialité absolue pour vos cibles propriétaires. Notre modèle est entièrement conteneurisé et peut être déployé sur site ou via un Cloud Privé, garantissant que vos données ne quittent jamais votre Firewall."
+      "badge": "Propriété Intellectuelle",
+      "title": "Droits de PI & Transfert de Données",
+      "description": "La propriété intellectuelle développée dans le cadre de chaque projet vous appartient intégralement. Nous garantissons une confidentialité absolue grâce au chiffrement end-to-end et à des transferts de données sécurisés via des Private Clouds."
     }
   },
   "heist": {
@@ -479,5 +220,233 @@
       "title": "Privé et Personnalisé",
       "description": "Nous savons que votre PI est cruciale. Nous entraînons votre modèle personnalisé sur des instances cloud isolées et privées ou entièrement sur site. Vous recevez les poids complets du modèle et l'inférence ainsi qu'un tableau de bord personnalisé."
     }
+  },
+  "banking": {
+    "hero": {
+      "badge": "Réseau Neuronal Graphique",
+      "title": "Détection de Fraude pour les Banques Moyennes",
+      "description": "Nous aidons les banques moyennes à adopter l'IA graphique utilisée par les plus grandes pour juste 10% du coût. On identifie les réseaux illégaux et réduit les faux positifs qui vous coûtent des millions jusqu'à 50%.",
+      "cta": {
+        "primary": "Contact rapide",
+        "secondary": "Prendre RDV"
+      }
+    },
+    "graph": {
+      "title": "Comment ça marche",
+      "description": "Notre technologie modélise tout votre réseau de transactions. Les nœuds sont les entités (clients, comptes) et les connexions sont les attributs (IP, montant). En modélisant la relation complète entre nœuds et connexions, nous comprenons le contexte de chaque transaction. Cela nous permet de minimiser les faux positifs et de trouver la vraie fraude.",
+      "legend": "Risque élevé. Appuyez pour explorer",
+      "riskScore": "Probabilité de risque",
+      "account": "Compte"
+    },
+    "value": {
+      "badge": "Valeur",
+      "title": "2x plus vite à 10% du coût",
+      "subtitle": "On se concentre exclusivement sur la technologie de haute valeur avec des intégrations agiles. Cela nous permet de donner aux banques moyennes 90% des bénéfices pour 10% du coût et de stopper la fraude là où ça fait mal.",
+      "items": {
+        "refund": {
+          "title": "Débits non reconnus",
+          "description": "Les remboursements coûtent cher. Notre technologie réduit les prises de contrôle de compte (ATO) et la fraude APP, vous économisant des millions."
+        },
+        "falsePositives": {
+          "title": "Faux Positifs",
+          "description": "En cartographiant le réseau complet, nous vérifions les utilisateurs légitimes que les systèmes traditionnels bloquent. Si le destinataire est un 'ami d'un ami', nous supprimons l'alerte."
+        },
+        "aml": {
+          "title": "Conformité Lutte Anti-Blanchiment",
+          "description": "Les GNN sont la meilleure technologie pour piéger les réseaux de blanchiment d'argent. Vous détecterez ces réseaux plus vite qu'avec n'importe quel système standard."
+        }
+      }
+    },
+    "integration": {
+      "badge": "Intégration",
+      "title": "Plug-and-play avec votre écosystème",
+      "description": "Votre système actuel reste intact. Notre API se connecte directement à vos flux de données sans interrompre vos processus."
+    }
+  },
+  "manufacturing": {
+    "badge": "Réseau Neuronal Informé par la Physique",
+    "title": "Production sans Pannes Imprévues",
+    "description": "Nos réseaux de neurones simulent la physique interne des pompes centrifuges et moteurs électriques en temps réel. On détecte les problèmes des mois à l'avance avec 99% de précision et économise des millions en temps d'arrêt.",
+    "cta": {
+      "primary": "Contact rapide",
+      "secondary": "Prendre RDV"
+    }
+  },
+  "about": {
+    "title": "Comment ça marche",
+    "description": "Notre modèle physique analyse les données des capteurs en temps réel et résout des équations complexes de dynamique des fluides et d'électromagnétisme. Cela nous permet de voir des défauts internes invisibles pour les systèmes standards.",
+    "assetTitle": {
+      "pump": "Jumeau Numérique de Pompe Centrifuge",
+      "motor": "Jumeau Numérique de Moteur Électrique"
+    },
+    "cloudServer": "Serveur Cloud",
+    "pinnAnalysis": "Analyse PINN",
+    "mobile": {
+      "step1": "Collecte des données des capteurs...",
+      "step2": "Traitement par IA...",
+      "step3": "Analyse terminée"
+    },
+    "metrics": {
+      "pump": {
+        "cavitation": {
+          "title": "Indice de Cavitation Virtuel",
+          "value": "0.72",
+          "safe": "Sûr",
+          "moderate": "Attention",
+          "critical": "Cavitation",
+          "description": "Conditions actuelles : niveaux de cavitation sûrs"
+        },
+        "bep": {
+          "title": "Carte d'Efficacité",
+          "operating": "Actuel",
+          "optimal": "BEP",
+          "description": "Fonctionnement à 8% sous le rendement optimal"
+        },
+        "npsh": {
+          "title": "Analyse NPSH",
+          "available": "Disponible",
+          "required": "Requis",
+          "margin": "Marge",
+          "description": "Marge de pression d'aspiration saine maintenue"
+        },
+        "stress": {
+          "title": "Analyse de Contrainte",
+          "leadingEdge": "Bord d'attaque",
+          "hub": "Moyeu",
+          "bladeTip": "Bout d'aube",
+          "yield": "Limite élastique",
+          "description": "Contraintes mécaniques dans les limites de sécurité"
+        },
+        "hydraulic": {
+          "title": "Poussée Hydraulique",
+          "axial": "Axiale",
+          "radial": "Radiale",
+          "ofMax": "65% du max",
+          "ofMaxRadial": "35% du max",
+          "status": "Butées fonctionnant dans les limites",
+          "description": "Fonctionnement à 88% de la capacité hydraulique nominale"
+        }
+      },
+      "motor": {
+        "imbalance": {
+          "title": "Analyse de Courant de Phase",
+          "phaseA": "Phase A",
+          "phaseB": "Phase B",
+          "phaseC": "Phase C",
+          "label": "Déséquilibre :",
+          "threshold": "Seuil : 5%",
+          "status": "État : Normal",
+          "description": "Toutes phases équilibrées (tolérance 2%)"
+        },
+        "rotor": {
+          "title": "Santé des Barres Rotor",
+          "healthy": "Sain",
+          "degraded": "Dégradé",
+          "critical": "Rompu",
+          "healthScore": "Score de Santé",
+          "totalBars": "28 Barres au total",
+          "description": "Toutes les barres du rotor en excellent état"
+        },
+        "efficiency": {
+          "title": "Efficacité Moteur vs Charge",
+          "optimal": "Optimal",
+          "current": "Actuel",
+          "description": "Fonctionnement dans la plage d'efficacité optimal"
+        },
+        "winding": {
+          "title": "Température du Bobinage",
+          "windingU": "Bobinage U",
+          "windingV": "Bobinage V",
+          "windingW": "Bobinage W",
+          "classF": "Classe F",
+          "description": "Température bien en dessous des limites"
+        },
+        "torque": {
+          "title": "Couple de Sortie",
+          "current": "Actuel",
+          "rated": "Nominal",
+          "load": "Charge",
+          "status": "Opère dans la capacité nominale",
+          "description": "Opère dans la capacité nominale"
+        }
+      }
+    }
+  },
+  "useCases": {
+    "pumps": {
+      "badge": "Pompes",
+      "title": "Données Clés",
+      "items": {
+        "cavitation": {
+          "title": "Indice de Cavitation Virtuelle",
+          "description": "La cavitation est la formation de bulles de vapeur due à une basse pression. Cela détruit le métal."
+        },
+        "bep": {
+          "title": "Point de Meilleure Efficacité",
+          "description": "Une pompe a une courbe d'efficacité (Hauteur vs Débit). Le pic est son point le plus efficace."
+        },
+        "npsh": {
+          "title": "Charge Nette Positive à l'Aspiration",
+          "description": "C'est la pression disponible dans le tuyau d'aspiration pour empêcher la cavitation."
+        },
+        "stress": {
+          "title": "Carte de Contrainte de la Roue",
+          "description": "Montre la fatigue mécanique sur les aubes causée par la pression de l'eau."
+        },
+        "hydraulic": {
+          "title": "Charge Hydraulique",
+          "description": "Montre les forces axiales et radiales qui agissent sur l'arbre de la pompe."
+        }
+      }
+    },
+    "motors": {
+      "badge": "Moteurs",
+      "title": "Santé et Efficacité",
+      "items": {
+        "imbalance": {
+          "title": "Déséquilibre de Courant",
+          "description": "Le courant doit être équilibré. Si la Phase A tire 100A et la Phase B 105, le moteur surchauffe."
+        },
+        "rotor": {
+          "title": "Santé des Barres du Rotor",
+          "description": "Les barres internes peuvent se fissurer. Nous le détectons via une fréquence d'onde spécifique."
+        },
+        "efficiency": {
+          "title": "Courbe d'Efficacité",
+          "description": "Les moteurs ont une courbe Couple vs Efficacité. Ils fonctionnent mieux à 75-100%."
+        },
+        "winding": {
+          "title": "Température du Bobinage",
+          "description": "Nous estimons la température à l'intérieur des bobines selon le courant et la résistance."
+        },
+        "torque": {
+          "title": "Couple de Sortie",
+          "description": "Mesure la force de rotation réelle délivrée par l'arbre du moteur à la charge."
+        }
+      }
+    },
+    "general": {
+      "badge": "Données Générales",
+      "title": "Pour Moteurs et Pompes",
+      "items": {
+        "vibration": {
+          "title": "Vibration RMS",
+          "description": "Utilisé pour détecter déséquilibres, désalignements, jeux mécaniques et problèmes de flux."
+        },
+        "temperature": {
+          "title": "Tendances de Température",
+          "description": "Critique pour l'isolant du bobinage et les roulements. Chaque hausse de 10°C réduit la durée de vie de moitié."
+        },
+        "rul": {
+          "title": "Durée de Vie Restante",
+          "description": "Prédit exactement quand les roulements gripperont ou quand les joints se dégraderont."
+        }
+      }
+    }
+  },
+  "integration": {
+    "badge": "Intégration",
+    "title": "On s'adapte à votre système",
+    "description": "Notre API s'intègre facilement à SAP, Maximo ou Ignition, générant des tickets de maintenance dès qu'un risque est détecté."
   }
 }

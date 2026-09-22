@@ -4,17 +4,266 @@
   },
   "header": {
     "nav": {
-      "manufacturing": "Fertigung",
-      "banking": "Bankwesen",
-      "protein-degradation": "Protein Degradation",
+      "molecular-engineering": "Moleküldesign",
       "heist": "Spatial Transcriptomics",
       "deeptech": "Festkörperbatterien",
+      "banking": "Bankwesen",
+      "manufacturing": "Fertigung",
       "language": "Deutsch"
     },
     "cta": "Kontakt",
     "menu": "Menü"
   },
-  "hero": {
+  "footer": {
+    "tagline": "Besser machen.",
+    "company": {
+      "title": "Unternehmen",
+      "technology": "Technologie",
+      "support": "Support",
+      "contact": "Kontakt"
+    },
+    "quality": {
+      "title": "Qualitätsstandards"
+    },
+    "legal": {
+      "title": "Rechtliches",
+      "terms": "AGB",
+      "privacy": "Datenschutz",
+      "refund": "Rückerstattung",
+      "gdpr": "DSGVO-Konformität"
+    },
+    "copyright": "Copyright ©Colins AI 2025 – Alle Rechte vorbehalten."
+  },
+  "molecular-engineering": {
+    "hero": {
+      "badge": "Biotechnologie",
+      "title": "Moleküldesign",
+      "description": "Wir entwickeln Moleküle für Lipidnanopartikel und Proteinabbau mithilfe proprietärer Graph-AI-Modelle und MD-Technologie.",
+      "cta": {
+        "primary": "Schnellkontakt",
+        "secondary": "Demo buchen"
+      }
+    },
+    "animation": {
+      "title": "Vollständige Design & Validierung",
+      "description": "Wir implementieren maßgeschneiderte KI Modelle und Molecular-Dynamics-Source-Code, um Ihre spezifischen Binder zu entwickeln. Wir übernehmen Oberflächenanalyse, Docking, Chemie, DFT/FEP/MM-GBSA Validierung und liefern 20–50 optimierte Kandidaten."
+    },
+    "value": {
+      "badge": "Engineering",
+      "title": "Mehr als Standard-Tools",
+      "subtitle": "In jedem Schritt setzen wir individuelle Technologien ein, damit Ihre Binder auch unter realen Bedingungen funktionieren.",
+      "items": {
+        "docking": {
+          "title": "Oberfläche & Docking",
+          "description": "Wir analysieren die Proteinoberfläche detailliert, identifizieren Hotspots und nutzen anschließend individuelle Docking-Workflows, um günstige Protein-Protein-Interfaces (Glues/Liganden) oder Bindestellen (Linker) zu finden."
+        },
+        "ai-models": {
+          "title": "KI-Modelle",
+          "description": "Als Basis des Designprozesses nutzen wir angepasste Graph- und Diffusionsmodelle in einer lokalen Umgebung. So erhalten wir ein molekulares Grunddesign, das wir gezielt weiterentwickeln."
+        },
+        "chemistry": {
+          "title": "Elektrostatische Chemie",
+          "description": "Wir optimieren Wasserstoffbrücken, π-Stacking und hydrophobes Packing manuell und iterieren, bis die Energie ausreichend günstig ist. Wir haben ternäre Komplexe mit MM/GBSA-Werten unter 140 kcal/mol entwickelt."
+        },
+        "molecular-dynamics": {
+          "title": "Molekulardynamik",
+          "description": "Je nach Bedarf führen wir umfangreiche MD-, FEP-, DFT- und MM-GBSA-Simulationen durch. Abhängig vom jeweiligen Ziel modifizieren und individualisieren wir auch den Source Code dieser Systeme."
+        }
+      }
+    },
+    "deliverables": {
+      "badge": "Lieferumfang",
+      "title": "Alles, was Sie brauchen",
+      "subtitle": "Sie erhalten ein vollständiges Paket, mit dem Sie sofort in die Synthese starten können.",
+      "manifest": {
+        "title": "Optimierte Kandidaten",
+        "description": "Wir wissen, dass ein energetisch günstiger Binder nicht automatisch zum Proteinabbau führt. Deshalb liefern wir 20–50 hoch optimierte Kandidaten, um die Erfolgswahrscheinlichkeit in den Zelllinien zu maximieren."
+      },
+      "data": {
+        "title": "Dekompositionsdaten",
+        "description": "Sie erhalten einen Dekompositionsbericht mit den spezifischen Bindungen und Energien jedes Residuums. Der Bericht enthält Bindungs- und Energiedaten für jeden Zeitschritt sowie ein vollständiges ADMET-Profil (TPSA, LogP)."
+      },
+      "twin": {
+        "title": "KI-Modell & Source Code",
+        "description": "Auf Wunsch entwickeln wir außerdem ein vollständig individualisiertes KI-Modell, MD-Workflow oder zusätzliche Technologie zur internen Implementierung. Dies erfolgt projektbasiert und gegen Aufpreis."
+      }
+    },
+    "integration": {
+      "badge": "Geistiges Eigentum",
+      "title": "IP-Rechte & Datentransfer",
+      "description": "Das in jedem Projekt entwickelte geistige Eigentum gehört vollständig Ihnen. Für Ihre proprietären Targets garantieren wir absolute Vertraulichkeit mit End-to-End-Encryption und sicheren Datentransfers über Private Clouds."
+    }
+  },
+  "heist": {
+    "hero": {
+      "title": "Zellsignalisierung & Genexpression",
+      "description": "Mit unserem Graph Modell simulieren wir sowohl die parakrine Signale im Gewebemikroumgebung als auch das Genregulatorische Netzwerk innerhalb jeder Zelle, um inter- und intrazelluläre Interaktionen vollständig abzubilden."
+    },
+    "animation": {
+      "title": "Inter- & Intrazelluläre Signale",
+      "description": "Unser Modell besteht aus 2 eingebetteten Graphen. Auf der oberen Ebene modellieren wir Zellen im Gewebe als Knoten und zelluläre Signale als Kanten. Innerhalb jedes Zellknotens befindet sich ein intrazellulärer Graph, der Transkriptionsfaktoren modelliert."
+    },
+    "value": {
+      "badge": "Qualität",
+      "title": "Zellkommunikation + Genexpression",
+      "subtitle": "Unser Graph-KI erfasst das gesamte Gewebe, von der Mikroumgebung bis zum internen genetischen Schaltkreis jeder Zelle. Dadurch bekommen Sie ein umfassendes Verständnis der inter- und intrazellulären Interaktionen.",
+      "items": {
+        "spatial": {
+          "title": "Spatial Transcriptomics",
+          "description": "Wir mappieren genau, wie Zellen miteinander kommunizieren. Durch die Modellierung der parakrinen Signalübertragung sagt die KI vorher, wie Ihr Wirkstoff ins tiefe Gewebe eindringt und wo er blockiert werden könnte."
+        },
+        "masterreg": {
+          "title": "Genregulatorische Netzwerke",
+          "description": "Im untergeordneten Graph modellieren wir jeden Transkriptionsfaktor als Knoten und jede Genregulation als Kante, was es uns ermöglicht, die Haupttreiber der Erkrankung zu identifizieren."
+        },
+        "resistance": {
+          "title": "Resistenzvorhersage",
+          "description": "Unser Modell simuliert die Ausweichpfade, die eine Zelle nutzen könnte, um Ihre Behandlung zu überleben. Wir helfen Ihnen, der Wirkstoffresistenz einen Schritt voraus zu bleiben, bevor sie bei Patienten auftritt."
+        },
+        "data": {
+          "title": "Datenfusion",
+          "description": "Ob Sie 10x Visium-, Xenium- oder scRNA-seq-Daten haben, unser GNN führt diese verschiedenen Auflösungen zu einem einzigen, hochpräzisen biologischen Graphen zusammen."
+        }
+      }
+    },
+    "deliverables": {
+      "badge": "Lieferumfang",
+      "title": "Ihr Evidenzpaket",
+      "subtitle": "Wir liefern die biologischen Belege, die Sie für regulatorische Einreichungen, Finanzierungsrunden und die klinische Studienstrategie benötigen.",
+      "manifest": {
+        "title": "Spatial Biomarker-Liste",
+        "description": "Sie erhalten eine präzise Liste von Koordinaten und Gensignaturen, die definiert, welche Patienten auf Ihren Wirkstoff ansprechen werden."
+      },
+      "twin": {
+        "title": "Interaktionskarten (.PDF/HTML)",
+        "description": "Vollständig interaktive Gewebekarten, die die Wirkstoffpenetration, Zell-Zell-Kommunikation und aktive Signalwege zeigen."
+      },
+      "data": {
+        "title": "Netzwerk-Wirkungsbericht",
+        "description": "Eine detaillierte Analyse, wie Ihre Behandlung das zelluläre Netzwerk umverdrahtet, mit Hervorhebung von Master-Regulatoren und potenziellen Off-Target-Risiken."
+      },
+      "clusters": {
+        "title": "Konformations-Cluster",
+        "description": "Wir liefern die Top 3 Konformations-Cluster für hochkonfidente Vorhersagen. Dies ermöglicht es Ihnen, die Entropiekosten zu visualisieren. Wenn die Cluster identisch sind, ist der Linker starr und ideal. Wenn sie erheblich variieren, ist er flexibel."
+      },
+      "croready": {
+        "title": "CRO-Service",
+        "description": "Wir können auch alle Forschungsoperationen selbst durchführen und Ihnen einfach die finalen Ergebnisse liefern."
+      }
+    }
+  },
+  "deeptech": {
+    "hero": {
+      "badge": "Physik-informierte neuronale Netze",
+      "title": "Feststoffbatterie-Simulation",
+      "description": "Mit physikbasierten neuronalen Netzen, die Ionentransport, spannungsgekoppelte Kinetik und Bruchmechanik simulieren, sehen wir kritische Dendriten- und SEI-Bildung über Hunderte von Zyklen im voraus.",
+      "cta": {
+        "primary": "Schnellkontakt",
+        "secondary": "Gespräch buchen"
+      }
+    },
+    "animation": {
+      "title": "Wie es funktioniert",
+      "description": "Wir kombinieren die Zuverlässigkeit hochwertiger Solver (PyBaMM/FEniCS) mit der Geschwindigkeit neuronaler Netze und liefern einen personalisierten, vortrainierten digitalen Simulator, der auf Ihre spezifische Chemie kalibriert ist."
+    },
+    "simulation": {
+      "controlTitle": "Fertigungsparameter",
+      "controlSubtitle": "Simulation des Zellverhaltens",
+      "pressure": {
+        "label": "Stapeldruck"
+      },
+      "roughness": {
+        "label": "Oberflächenrauheit"
+      },
+      "penetration": "Dendritendurchdringung",
+      "failureRisk": "Ausfallrisiko",
+      "riskLow": "Geringes Risiko",
+      "riskMedium": "Mittleres Risiko",
+      "riskHigh": "Hohes Risiko",
+      "labelAnode": "Li-Metall-Anode",
+      "labelElectrolyte": "LLZO-Keramikelektrolyt",
+      "annotationVoid": "Hohlraumbildung",
+      "annotationDendrite": "Lightning Rod Effekt: Stromfokussierung",
+      "annotationFlow": "J2-Viskoplastizität: Li-Kriechen aktiv",
+      "stateLow": "Niederdruck (3 MPa)",
+      "stateHigh": "Hochdruck (18 MPa)"
+    },
+    "value": {
+      "badge": "Mehrwert",
+      "title": "Geschwindigkeit & Präzision",
+      "subtitle": "Physische Validierungszyklen dauern Monate. FEM-Simulationen dauern Tage. Wir simulieren den gesamten Lade-/Entladezyklus und die Degradation über Hunderte von Zyklen in nur wenigen Stunden und halten das Modell dabei strikt an die Gesetze der Physik.",
+      "items": {
+        "batch": {
+          "title": "Intelligente Chargen",
+          "description": "Ein einziger fehlgeschlagener Validierungszyklus kann bis zu 3 Monate und 100.000 $ kosten. Wir identifizieren potenzielle Fehler digital in Tagen."
+        },
+        "capex": {
+          "title": "Keine Infrastruktur",
+          "description": "Zugriff auf ein dediziertes Forschungsteam gegen eine Projektgebühr. Keine teuren Einstellungen und kein Infrastrukturaufbau."
+        },
+        "explainable": {
+          "title": "Erklärbare KI",
+          "description": "Unsere Modelle unterliegen den Gesetzen der Thermodynamik und Mechanik. Sie können keine unmögliche Physik halluzinieren."
+        },
+        "acc-speed": {
+          "title": "Langzeit-Genauigkeit",
+          "description": "DFT ist präzise, aber auf Nanosekunden begrenzt. ML ist schnell, aber halluziniert. Unsere PINNs können Ionentransport und mechanischen Stress über relevante Zeitskalen genau simulieren."
+        },
+        "data": {
+          "title": "Dateneffizienz",
+          "description": "Unsere Modelle brauchen Big Physics, nicht Big Data. Durch die Einbettung physikalischer Beschränkungen in das neuronale Netz erzielen wir hochwertige Ergebnisse auch mit begrenzten Daten."
+        }
+      }
+    },
+    "integration": {
+      "badge": "Integration",
+      "title": "Privat und Maßgeschneidert",
+      "description": "Wir verstehen, wie wichtig Ihr IP ist. Wir trainieren Ihr Modell auf isolierten, privaten Cloud-Instanzen oder vollständig On-Premise. Sie erhalten die vollständigen Modellgewichte und Inferenz zusammen mit einem personalisierten Dashboard."
+    }
+  },
+  "banking": {
+    "hero": {
+      "badge": "Graph Neuronale Netzwerke",
+      "title": "Elite Betrugserkennung für den Mittelstand",
+      "description": "Wir bieten mittelständischen Banken die Graph-Technologie, die nur Großbanken benutzen, aber für 10% der Kosten. Wir erkennen Finanzagenten-Netzwerke und reduzieren die Falschmeldungen die Sie millionen kosten, bis zum 50%.",
+      "cta": {
+        "primary": "Schnellkontakt",
+        "secondary": "Gespräch buchen"
+      }
+    },
+    "graph": {
+      "title": "So funktioniert es",
+      "description": "Unsere Graph-Technologie modelliert das gesamte Netzwerk. Knoten repräsentieren Entitäten (Kunden, Konten, Geräte) und Verbindungen stehen für Transaktionsattribute (IP-Adresse, Betrag). Die Kartierung der gesamten Beziehungen zwischen Knoten und Verbindungen ermöglicht es uns, den Kontext jeder Transaktion zu verstehen, Falschmeldungen zu minimieren und echten Betrug zu finden.",
+      "legend": "Hohes Risiko. Tippen zum Erkunden",
+      "riskScore": "Risikobewertung",
+      "account": "Konto"
+    },
+    "integration": {
+      "badge": "Integration",
+      "title": "Plug-and-Play mit Ihrem Ökosystem",
+      "description": "Unsere API verbindet sich direkt mit Ihren Datenströmen und Monitoring-Dashboards, ohne den Arbeitsablauf zu stören."
+    },
+    "value": {
+      "badge": "Mehrwert",
+      "title": "Doppelte Geschwindigkeit, 10% der Kosten",
+      "subtitle": "Wir konzentrieren uns ausschließlich darauf, mittelständischen Banken die fortschrittliche Graph-KI-Technologie bereitzustellen, die derzeit meist nur Großbanken zur Verfügung steht. Dabei bieten wir 90% der Vorteile zu 10% der Kosten. Wir integrieren uns schnell und einfach in Ihr aktuelles Setup und stoppen Betrug doppelt so schnell dort, wo er Ihnen am meisten schadet.",
+      "items": {
+        "refund": {
+          "title": "Haftung für Rückerstattungen",
+          "description": "Wir verstehen, wie viel Zeit und Geld Sie jährliche Rückerstattungen kosten. Unsere Technologie reduziert Kontoübernahmen und APP-Betrug erheblich, spart Ihnen Millionen und sorgt für zufriedene Kunden."
+        },
+        "falsePositives": {
+          "title": "Falsch-Positive Meldungen",
+          "description": "Durch das Verständnis des Netzwerks verifizieren wir legitime Nutzer wie kleine Unternehmen, die von regelbasierten Systemen oft blockiert werden. Wir erkennen, dass der Empfänger ein 'Freund eines Freundes' ist."
+        },
+        "aml": {
+          "title": "Geldwäsche-Compliance",
+          "description": "Graph-Neuronale Netze sind die weltweit beste Technologie, um Finanzagenten-Netzwerke aufzudecken. Sie werden Geldwäsche schneller und präziser erkennen können als jede reine KYC-Technologie."
+        }
+      }
+    }
+  },
+  "manufacturing": {
     "badge": "Physik-Informierte Neuronale Netze",
     "title": "Null ungeplante Ausfälle",
     "description": "Unsere neuronalen Netze simulieren die interne Physik von Kreiselpumpen und E-Motoren in Echtzeit. Wir erkennen Probleme Monate im Voraus mit 99% Genauigkeit und sparen Millionen an Ausfallkosten.",
@@ -199,285 +448,5 @@
     "badge": "Integration",
     "title": "Wir passen uns Ihrem System an.",
     "description": "Unsere API lässt sich problemlos in SAP, Maximo oder Ignition integrieren und generiert Wartungstickets, sobald ein Risiko erkannt wird."
-  },
-  "footer": {
-    "tagline": "Besser machen.",
-    "company": {
-      "title": "Unternehmen",
-      "technology": "Technologie",
-      "support": "Support",
-      "contact": "Kontakt"
-    },
-    "quality": {
-      "title": "Qualitätsstandards"
-    },
-    "legal": {
-      "title": "Rechtliches",
-      "terms": "AGB",
-      "privacy": "Datenschutz",
-      "refund": "Rückerstattung",
-      "gdpr": "DSGVO-Konformität"
-    },
-    "copyright": "Copyright ©Colins AI 2025 – Alle Rechte vorbehalten."
-  },
-  "banking": {
-    "hero": {
-      "badge": "Graph Neuronale Netzwerke",
-      "title": "Elite Betrugserkennung für den Mittelstand",
-      "description": "Wir bieten mittelständischen Banken die Graph-Technologie, die nur Großbanken benutzen, aber für 10% der Kosten. Wir erkennen Finanzagenten-Netzwerke und reduzieren die Falschmeldungen die Sie millionen kosten, bis zum 50%.",
-      "cta": {
-        "primary": "Schnellkontakt",
-        "secondary": "Gespräch buchen"
-      }
-    },
-    "graph": {
-      "title": "So funktioniert es",
-      "description": "Unsere Graph-Technologie modelliert das gesamte Netzwerk. Knoten repräsentieren Entitäten (Kunden, Konten, Geräte) und Verbindungen stehen für Transaktionsattribute (IP-Adresse, Betrag). Die Kartierung der gesamten Beziehungen zwischen Knoten und Verbindungen ermöglicht es uns, den Kontext jeder Transaktion zu verstehen, Falschmeldungen zu minimieren und echten Betrug zu finden.",
-      "legend": "Hohes Risiko. Tippen zum Erkunden",
-      "riskScore": "Risikobewertung",
-      "account": "Konto"
-    },
-    "integration": {
-      "badge": "Integration",
-      "title": "Plug-and-Play mit Ihrem Ökosystem",
-      "description": "Unsere API verbindet sich direkt mit Ihren Datenströmen und Monitoring-Dashboards, ohne den Arbeitsablauf zu stören."
-    },
-    "value": {
-      "badge": "Mehrwert",
-      "title": "Doppelte Geschwindigkeit, 10% der Kosten",
-      "subtitle": "Wir konzentrieren uns ausschließlich darauf, mittelständischen Banken die fortschrittliche Graph-KI-Technologie bereitzustellen, die derzeit meist nur Großbanken zur Verfügung steht. Dabei bieten wir 90% der Vorteile zu 10% der Kosten. Wir integrieren uns schnell und einfach in Ihr aktuelles Setup und stoppen Betrug doppelt so schnell dort, wo er Ihnen am meisten schadet.",
-      "items": {
-        "refund": {
-          "title": "Haftung für Rückerstattungen",
-          "description": "Wir verstehen, wie viel Zeit und Geld Sie jährliche Rückerstattungen kosten. Unsere Technologie reduziert Kontoübernahmen und APP-Betrug erheblich, spart Ihnen Millionen und sorgt für zufriedene Kunden."
-        },
-        "falsePositives": {
-          "title": "Falsch-Positive Meldungen",
-          "description": "Durch das Verständnis des Netzwerks verifizieren wir legitime Nutzer wie kleine Unternehmen, die von regelbasierten Systemen oft blockiert werden. Wir erkennen, dass der Empfänger ein 'Freund eines Freundes' ist."
-        },
-        "aml": {
-          "title": "Geldwäsche-Compliance",
-          "description": "Graph-Neuronale Netze sind die weltweit beste Technologie, um Finanzagenten-Netzwerke aufzudecken. Sie werden Geldwäsche schneller und präziser erkennen können als jede reine KYC-Technologie."
-        }
-      }
-    }
-  },
-  "biotech": {
-    "hero": {
-      "badge": "Graph Neuronale Netze",
-      "title": "Targeted Protein & Cell Degradation",
-      "description": "Wir entwickeln Graph KI die molekulare Interaktionen simulieren, um Attachment Sites und Exit Vectors zu mappieren, und dann synthetisierbare PROTAC, ADC und DAC Linker, oder bispezifische Peptidketten aus stabilen Building Blocks entwerfen.",
-      "cta": {
-        "primary": "Schnellkontakt",
-        "secondary": "Gespräch buchen"
-      }
-    },
-    "animation": {
-      "title": "Fast-Track zu klinischen Studien",
-      "description": "Indem wir das Modell auf bekannte Reaktionen und Fragmente beschränken, generieren wir Kandidaten, die thermodynamisch stabil, kooperativ, zellgängig und synthetisierbar sind. Dies beschleunigt den klinischen Eintritt für all Ihre aktuellen und zukünftigen Pipelines.",
-      "bom": "Stückliste",
-      "status": {
-        "sourcing": "Quelle: Enamine",
-        "evaluating": "Bewertung:",
-        "rejecting": "✗ Abgelehnt:",
-        "aligning": "Ausrichten:",
-        "connecting": "Ternärer Komplex wird gebildet...",
-        "validating": "Kooperativität wird validiert...",
-        "complete": "✓ Stabiler ternärer Komplex"
-      },
-      "rejection": {
-        "entropyHigh": "Entropie: Zu hoch",
-        "stericClash": "Sterische Abstoßung",
-        "poorRigidity": "Geringe Starrheit"
-      },
-      "metrics": {
-        "cooperativity": "Kooperativität:",
-        "predictedDeltaG": "Vorhergesagtes ΔG:"
-      },
-      "final": {
-        "cooperativity": "Positive Kooperativität (α > 1)",
-        "stabilized": "Ternärer Komplex stabilisiert • 100% synthetisierbar"
-      }
-    },
-    "value": {
-      "badge": "Qualität",
-      "title": "Physik-Informiertes Design",
-      "subtitle": "Wir gehen über einfaches Docking hinaus. Unser GNN simuliert die dynamische Realität des ternären Komplexes. Einschließlich Entropie, Solvatation und Vektorausrichtung um sicherzustellen, dass Ihre Degrader wirklich funktionieren.",
-      "items": {
-        "maxcooperativity": {
-          "title": "Maximierte Kooperativität",
-          "description": "Unser Modell wird belohnt, wenn es starre Gerüste (Piperazine, Spirocyclen) auswählt. Dies reduziert die energetischen Bindungskosten und fixiert die E3-Ligase und das Zielprotein in einem stabilen, kooperativen Komplex (α > 1)."
-        },
-        "geometry": {
-          "title": "Physik-Informierte Geometrie",
-          "description": "Durch die direkte Kodierung von Van-der-Waals-Gesetze in den Graphen spürt die KI die Proteinwände und navigiert den Lösungsmittelkanal ohne Halluzinationen."
-        },
-        "dynamics": {
-          "title": "Molekulardynamik",
-          "description": "Wir führen 10ns Molekulardynamik-Simulationen für Top-Kandidaten durch und dann berechnen wir die Bindungsenergie mit MM/GBSA. Dies beweist dynamische Stabilität, nicht nur statische Passung."
-        },
-        "exitvector": {
-          "title": "Präzise Vektorausrichtung",
-          "description": "Wir erzwingen eine strikte Vektorausrichtung. Egal ob es sich um einen Linker oder Glue handlet, das Molekül bindet das Target im thermodynamisch korrekten Winkel und eliminiert Torsionsspannungen."
-        }
-      }
-    },
-    "deliverables": {
-      "badge": "Lieferumfang",
-      "title": "Ihr Herstellungsplan",
-      "subtitle": "Wir liefern nicht nur eine SMILES-Zeichenkette. Wir bieten ein vollständiges Design-zu-Medikament-Paket, das Ihnen ermöglicht, die Synthese sofort zu starten oder reibungslos an ein CRO zu übergeben.",
-      "manifest": {
-        "title": "Synthese-Manifest (JSON/YAML)",
-        "description": "Dies ist Ihr Herstellungsplan. Für jeden Linker-Kandidaten liefern wir eine Datei mit einer präzisen Stückliste und einem schrittweisen Reaktionsprotokoll (z.B. Amid-Kupplung -> Click-Chemie)."
-      },
-      "twin": {
-        "title": "3D-Digitaler Zwilling (.PDB/.SDF)",
-        "description": "Sie bekommen ternäre Komplexe bereits mit 3D-Koordinaten,  angepasste Protonierung und Bindungsordnungswahrnehmung, sodass sie perfekt in PyMOL, MOE oder Schrödinger dargestellt werden."
-      },
-      "data": {
-        "title": "Quantitatives Datenblatt",
-        "description": "Wir liefern einen Bericht, der die Logik hinter dem Design aufschlüsselt. Dies umfasst unsere berechnete MM/GBSA-Bindungsfreie Energie, den Kooperativitätsindex und ein umfassendes ADMET-Profil (TPSA, LogP)."
-      },
-      "clusters": {
-        "title": "Konformations-Cluster",
-        "description": "Wir liefern auch die Top 3 Konformations-Cluster. Dies ermöglicht es Ihnen, die entropischen Kosten zu visualisieren. Wenn die Cluster identisch sind, ist der Linker starr und ideal. Wenn sie erheblich variieren, ist er flexibel."
-      },
-      "croready": {
-        "title": "CRO-Bereit",
-        "description": "Sie erhalten ein Design-Paket, das direkt an Ihre externen Partner weitergeleitet werden kann. Damit verkürzen wir den Design-Herstellung-Test-Vorgang um 30–40%, indem Sie keine Zeit mit der Routensuche verbringen."
-      }
-    },
-    "integration": {
-      "badge": "Integration",
-      "title": "Sichere On-Premise Bereitstellung",
-      "description": "Wir garantieren absolute Privatsphäre. Unser Modell ist vollständig containerisiert und kann On-Premise oder in einer Private Cloud bereitgestellt werden, sodass Ihre Daten niemals Ihre Firewall verlassen."
-    }
-  },
-  "heist": {
-    "hero": {
-      "title": "Zellsignalisierung & Genexpression",
-      "description": "Mit unserem Graph Modell simulieren wir sowohl die parakrine Signale im Gewebemikroumgebung als auch das Genregulatorische Netzwerk innerhalb jeder Zelle, um inter- und intrazelluläre Interaktionen vollständig abzubilden."
-    },
-    "animation": {
-      "title": "Inter- & Intrazelluläre Signale",
-      "description": "Unser Modell besteht aus 2 eingebetteten Graphen. Auf der oberen Ebene modellieren wir Zellen im Gewebe als Knoten und zelluläre Signale als Kanten. Innerhalb jedes Zellknotens befindet sich ein intrazellulärer Graph, der Transkriptionsfaktoren modelliert."
-    },
-    "value": {
-      "badge": "Qualität",
-      "title": "Zellkommunikation + Genexpression",
-      "subtitle": "Unser Graph-KI erfasst das gesamte Gewebe, von der Mikroumgebung bis zum internen genetischen Schaltkreis jeder Zelle. Dadurch bekommen Sie ein umfassendes Verständnis der inter- und intrazellulären Interaktionen.",
-      "items": {
-        "spatial": {
-          "title": "Spatial Transcriptomics",
-          "description": "Wir mappieren genau, wie Zellen miteinander kommunizieren. Durch die Modellierung der parakrinen Signalübertragung sagt die KI vorher, wie Ihr Wirkstoff ins tiefe Gewebe eindringt und wo er blockiert werden könnte."
-        },
-        "masterreg": {
-          "title": "Genregulatorische Netzwerke",
-          "description": "Im untergeordneten Graph modellieren wir jeden Transkriptionsfaktor als Knoten und jede Genregulation als Kante, was es uns ermöglicht, die Haupttreiber der Erkrankung zu identifizieren."
-        },
-        "resistance": {
-          "title": "Resistenzvorhersage",
-          "description": "Unser Modell simuliert die Ausweichpfade, die eine Zelle nutzen könnte, um Ihre Behandlung zu überleben. Wir helfen Ihnen, der Wirkstoffresistenz einen Schritt voraus zu bleiben, bevor sie bei Patienten auftritt."
-        },
-        "data": {
-          "title": "Datenfusion",
-          "description": "Ob Sie 10x Visium-, Xenium- oder scRNA-seq-Daten haben, unser GNN führt diese verschiedenen Auflösungen zu einem einzigen, hochpräzisen biologischen Graphen zusammen."
-        }
-      }
-    },
-    "deliverables": {
-      "badge": "Lieferumfang",
-      "title": "Ihr Evidenzpaket",
-      "subtitle": "Wir liefern die biologischen Belege, die Sie für regulatorische Einreichungen, Finanzierungsrunden und die klinische Studienstrategie benötigen.",
-      "manifest": {
-        "title": "Spatial Biomarker-Liste",
-        "description": "Sie erhalten eine präzise Liste von Koordinaten und Gensignaturen, die definiert, welche Patienten auf Ihren Wirkstoff ansprechen werden."
-      },
-      "twin": {
-        "title": "Interaktionskarten (.PDF/HTML)",
-        "description": "Vollständig interaktive Gewebekarten, die die Wirkstoffpenetration, Zell-Zell-Kommunikation und aktive Signalwege zeigen."
-      },
-      "data": {
-        "title": "Netzwerk-Wirkungsbericht",
-        "description": "Eine detaillierte Analyse, wie Ihre Behandlung das zelluläre Netzwerk umverdrahtet, mit Hervorhebung von Master-Regulatoren und potenziellen Off-Target-Risiken."
-      },
-      "clusters": {
-        "title": "Konformations-Cluster",
-        "description": "Wir liefern die Top 3 Konformations-Cluster für hochkonfidente Vorhersagen. Dies ermöglicht es Ihnen, die Entropiekosten zu visualisieren. Wenn die Cluster identisch sind, ist der Linker starr und ideal. Wenn sie erheblich variieren, ist er flexibel."
-      },
-      "croready": {
-        "title": "CRO-Service",
-        "description": "Wir können auch alle Forschungsoperationen selbst durchführen und Ihnen einfach die finalen Ergebnisse liefern."
-      }
-    }
-  },
-  "deeptech": {
-    "hero": {
-      "badge": "Physik-informierte neuronale Netze",
-      "title": "Feststoffbatterie-Simulation",
-      "description": "Mit physikbasierten neuronalen Netzen, die Ionentransport, spannungsgekoppelte Kinetik und Bruchmechanik simulieren, sehen wir kritische Dendriten- und SEI-Bildung über Hunderte von Zyklen im voraus.",
-      "cta": {
-        "primary": "Schnellkontakt",
-        "secondary": "Gespräch buchen"
-      }
-    },
-    "animation": {
-      "title": "Wie es funktioniert",
-      "description": "Wir kombinieren die Zuverlässigkeit hochwertiger Solver (PyBaMM/FEniCS) mit der Geschwindigkeit neuronaler Netze und liefern einen personalisierten, vortrainierten digitalen Simulator, der auf Ihre spezifische Chemie kalibriert ist."
-    },
-    "simulation": {
-      "controlTitle": "Fertigungsparameter",
-      "controlSubtitle": "Simulation des Zellverhaltens",
-      "pressure": {
-        "label": "Stapeldruck"
-      },
-      "roughness": {
-        "label": "Oberflächenrauheit"
-      },
-      "penetration": "Dendritendurchdringung",
-      "failureRisk": "Ausfallrisiko",
-      "riskLow": "Geringes Risiko",
-      "riskMedium": "Mittleres Risiko",
-      "riskHigh": "Hohes Risiko",
-      "labelAnode": "Li-Metall-Anode",
-      "labelElectrolyte": "LLZO-Keramikelektrolyt",
-      "annotationVoid": "Hohlraumbildung",
-      "annotationDendrite": "Lightning Rod Effekt: Stromfokussierung",
-      "annotationFlow": "J2-Viskoplastizität: Li-Kriechen aktiv",
-      "stateLow": "Niederdruck (3 MPa)",
-      "stateHigh": "Hochdruck (18 MPa)"
-    },
-    "value": {
-      "badge": "Mehrwert",
-      "title": "Geschwindigkeit & Präzision",
-      "subtitle": "Physische Validierungszyklen dauern Monate. FEM-Simulationen dauern Tage. Wir simulieren den gesamten Lade-/Entladezyklus und die Degradation über Hunderte von Zyklen in nur wenigen Stunden und halten das Modell dabei strikt an die Gesetze der Physik.",
-      "items": {
-        "batch": {
-          "title": "Intelligente Chargen",
-          "description": "Ein einziger fehlgeschlagener Validierungszyklus kann bis zu 3 Monate und 100.000 $ kosten. Wir identifizieren potenzielle Fehler digital in Tagen."
-        },
-        "capex": {
-          "title": "Keine Infrastruktur",
-          "description": "Zugriff auf ein dediziertes Forschungsteam gegen eine Projektgebühr. Keine teuren Einstellungen und kein Infrastrukturaufbau."
-        },
-        "explainable": {
-          "title": "Erklärbare KI",
-          "description": "Unsere Modelle unterliegen den Gesetzen der Thermodynamik und Mechanik. Sie können keine unmögliche Physik halluzinieren."
-        },
-        "acc-speed": {
-          "title": "Langzeit-Genauigkeit",
-          "description": "DFT ist präzise, aber auf Nanosekunden begrenzt. ML ist schnell, aber halluziniert. Unsere PINNs können Ionentransport und mechanischen Stress über relevante Zeitskalen genau simulieren."
-        },
-        "data": {
-          "title": "Dateneffizienz",
-          "description": "Unsere Modelle brauchen Big Physics, nicht Big Data. Durch die Einbettung physikalischer Beschränkungen in das neuronale Netz erzielen wir hochwertige Ergebnisse auch mit begrenzten Daten."
-        }
-      }
-    },
-    "integration": {
-      "badge": "Integration",
-      "title": "Privat und Maßgeschneidert",
-      "description": "Wir verstehen, wie wichtig Ihr IP ist. Wir trainieren Ihr Modell auf isolierten, privaten Cloud-Instanzen oder vollständig On-Premise. Sie erhalten die vollständigen Modellgewichte und Inferenz zusammen mit einem personalisierten Dashboard."
-    }
   }
 }
