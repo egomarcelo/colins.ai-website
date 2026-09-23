@@ -4,7 +4,7 @@
   },
   "header": {
     "nav": {
-      "molecular-engineering": "Molecular Engineering",
+      "molecular-engineering": "Molecular Design",
       "heist": "Spatial Transcriptomics",
       "deeptech": "Solid State Batteries",
       "banking": "Banking",
@@ -37,7 +37,7 @@
   "molecular-engineering": {
     "hero": {
       "badge": "Biotechnology",
-      "title": "Molecular Engineering",
+      "title": "Molecular Design",
       "description": "We engineer molecules for Lipid Nanoparticles and Protein Degradation using proprietary Graph AI models and MD technology.",
       "cta": {
         "primary": "Talk now",

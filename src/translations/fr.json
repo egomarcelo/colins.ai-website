@@ -4,7 +4,7 @@
   },
   "header": {
     "nav": {
-      "molecular-engineering": "Ingénierie Moléculaire",
+      "molecular-engineering": "Conception Moléculaire",
       "heist": "Spatial Transcriptomics",
       "deeptech": "Batteries à l'état Solide",
       "banking": "Banque",
@@ -37,7 +37,7 @@
   "molecular-engineering": {
     "hero": {
       "badge": "Biotechnologie",
-      "title": "Ingénierie Moléculaire",
+      "title": "Conception Moléculaire",
       "description": "Nous concevons des molécules pour les nanoparticules et la dégradation des protéines avec nos modèles IA et technologie MD propriétaire.",
       "cta": {
         "primary": "Contact direct",
