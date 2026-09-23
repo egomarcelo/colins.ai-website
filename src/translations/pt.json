@@ -1,6 +1,6 @@
 {
   "meta": {
-    "description": "Projetamos moléculas para nanopartículas e degradação de proteinas usando modelos IA e tecnologia MD proprietária."
+    "description": "Projetamos moléculas para nanopartículas e degradação de proteínas usando modelos IA e tecnologia MD proprietária."
   },
   "header": {
     "nav": {
@@ -38,7 +38,7 @@
     "hero": {
       "badge": "Biotecnologia",
       "title": "Engenharia Molecular",
-      "description": "Projetamos moléculas para nanopartículas e degradação de proteinas usando modelos IA e tecnologia MD proprietária.",
+      "description": "Projetamos moléculas para nanopartículas e degradação de proteínas usando modelos IA e tecnologia MD proprietária.",
       "cta": {
         "primary": "Contato direto",
         "secondary": "Reservar demo"
@@ -50,16 +50,16 @@
     },
     "value": {
       "badge": "Engenharia",
-      "title": "Além dos Paquetes Padrão",
+      "title": "Além dos Pacotes Padrão",
       "subtitle": "Em cada fase, implementamos tecnologia especializada para garantir que os binders funcionem em condições reais.",
       "items": {
         "docking": {
           "title": "Superfície & Docking",
-          "description": "Fazemos uma análise detalhada da superfície da proteina para identificar os hotspots e usamos workflows de docking sob medida para identificar interfaces proteína-proteína favoráveis (glue/ligantes) ou attachment sites (linker)."
+          "description": "Fazemos uma análise detalhada da superfície da proteína para identificar os hotspots e usamos workflows de docking sob medida para identificar interfaces proteína-proteína favoráveis (glue/ligantes) ou attachment sites (linker)."
         },
         "ai-models": {
           "title": "Modelos de IA",
-          "description": "Como base do processo de desenho, usamos modelos de Graph AI especializados e executados em um sistema local. Assim, obtemos uma molecula de base com a qual trabalhar."
+          "description": "Como base do processo de desenho, usamos modelos de Graph AI especializados e executados em um sistema local. Assim, obtemos uma molécula de base com a qual trabalhar."
         },
         "chemistry": {
           "title": "Química Eletrostática",

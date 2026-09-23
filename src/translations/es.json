@@ -1,12 +1,12 @@
 {
   "meta": {
-    "description": "Diseñamos moléculas para nanopartículas y degradación de proteinas usando modelos IA y tecnología MD propietaria."
+    "description": "Diseñamos moléculas para nanopartículas y degradación de proteínas usando modelos IA y tecnología MD propietaria."
   },
   "header": {
     "nav": {
       "molecular-engineering": "Ingeniería Molecular",
       "heist": "Spatial Transcriptomics",
-      "deeptech": "Batterias de Estado Solido",
+      "deeptech": "Baterías de Estado Sólido",
       "banking": "Bancos",
       "manufacturing": "Manufactura",
       "language": "Español"
@@ -38,7 +38,7 @@
     "hero": {
       "badge": "Biotecnología",
       "title": "Ingeniería Molecular",
-      "description": "Diseñamos moléculas para nanopartículas y degradación de proteinas usando modelos IA y tecnología MD propietaria.",
+      "description": "Diseñamos moléculas para nanopartículas y degradación de proteínas usando modelos IA y tecnología MD propietaria.",
       "cta": {
         "primary": "Contacto directo",
         "secondary": "Agendar Demo"
@@ -55,11 +55,11 @@
       "items": {
         "docking": {
           "title": "Superficie & Docking",
-          "description": "Realizamos un análisis detallado de la superficie de la proteina para identificar hotspots y usamos workflows de docking especializados para identificar interfaces proteína-proteína (glue/ligandos) o attachment sites (linkers)."
+          "description": "Realizamos un análisis detallado de la superficie de la proteína para identificar hotspots y usamos workflows de docking especializados para identificar interfaces proteína-proteína (glue/ligandos) o attachment sites (linkers)."
         },
         "ai-models": {
           "title": "Modelos de IA",
-          "description": "Como base del proceso de diseño utilizamos modelos de Graph AI y difusión personalizados y optimizados, ejecutados en un sistema local. Así obtenemos una molecula de base sobre la cual trabajar."
+          "description": "Como base del proceso de diseño utilizamos modelos de Graph AI y difusión personalizados y optimizados, ejecutados en un sistema local. Así obtenemos una molécula de base sobre la cual trabajar."
         },
         "chemistry": {
           "title": "Química Electrostática",
@@ -97,7 +97,7 @@
   "heist": {
     "hero": {
       "title": "Tejidos + Expresión Genética",
-      "description": "Con nuestro modelo Graph AI, simulamos tanto las señales paracrinas en el microambiente tisular como la red reguladora de genes dentro de cada célula para darte un mapa completo de las interacciones inter e intracelulares."
+      "description": "Con nuestro modelo Graph AI, simulamos tanto las señales paracrinas en el microambiente tisular como la red reguladora de genes dentro de cada célula para entregar un mapa completo de las interacciones inter e intracelulares."
     },
     "animation": {
       "title": "Señalización Inter & Intracelular",
@@ -136,7 +136,7 @@
       },
       "twin": {
         "title": "Mapas de Interacción (.PDF/HTML)",
-        "description": "Mapas tissulares completamente interactivos que muestran la penetración del fármaco, la comunicación célula-célula y las vías de señalización activas."
+        "description": "Mapas tisulares completamente interactivos que muestran la penetración del fármaco, la comunicación célula-célula y las vías de señalización activas."
       },
       "data": {
         "title": "Informe de Impacto en la Red",

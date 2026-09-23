@@ -46,7 +46,7 @@
     },
     "animation": {
       "title": "Design & Validazione Completa",
-      "description": "Implementiamo modelli di IA ed architetture MD specializzate per progettare i vostri binder. Ci incarichiamo del analisi delle superfici, docking, chimica e validazione DFT/FEP/MM-GBSA. All fine consegniamo 20–50 candidati ottimizzati e testati rigorosamente."
+      "description": "Implementiamo modelli di IA ed architetture MD specializzate per progettare i vostri binder. Ci incarichiamo dell’analisi delle superfici, docking, chimica e validazione DFT/FEP/MM-GBSA. Alla fine consegniamo 20–50 candidati ottimizzati e testati rigorosamente."
     },
     "value": {
       "badge": "Ingegneria",
@@ -77,7 +77,7 @@
       "subtitle": "Forniamo un pacchetto completo che vi permette di avviare subito la sintesi.",
       "manifest": {
         "title": "Candidati Ottimizzati",
-        "description": "Sappiamo che un binder energeticamente favorevole non porta automaticamente alla degradazione. Consegniamo 20–50 candidati altamente ottimizati per massimizzare le probabilità di successo nelle linee cellulari."
+        "description": "Sappiamo che un binder energeticamente favorevole non porta automaticamente alla degradazione. Consegniamo 20–50 candidati altamente ottimizzati per massimizzare le probabilità di successo nelle linee cellulari."
       },
       "data": {
         "title": "Dati di Decomposizione",
@@ -97,7 +97,7 @@
   "heist": {
     "hero": {
       "title": "Cellule & Espressione Genica",
-      "description": "Con il nostro modello Graph AI, simuliamo la segnalazione paracrina nel microambiente tissutale e la rete di regolazione genica all'interno di ogni cellula per mappare completamente le interazioni inter e intracellulari."
+      "description": "Con il nostro modello Graph AI, simuliamo la segnalazione paracrina nel microambiente tissutale e la rete di regolazione genica all'interno di ogni cellula per individuare completamente le interazioni inter e intracellulari."
     },
     "animation": {
       "title": "Segnalazione Inter & Intracellulare",

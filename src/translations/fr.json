@@ -6,7 +6,7 @@
     "nav": {
       "molecular-engineering": "Ingénierie Moléculaire",
       "heist": "Spatial Transcriptomics",
-      "deeptech": "Bateries à l'état Solide",
+      "deeptech": "Batteries à l'état Solide",
       "banking": "Banque",
       "manufacturing": "Industrie",
       "language": "Français"
@@ -46,7 +46,7 @@
     },
     "animation": {
       "title": "Conception & Validation Complète",
-      "description": "Nous utilisons des modèles d’IA et architectures MD specialisées pour concevoir vos binders. Nous prenons en charge l’analyse de surface, le docking, la chimie et la validation DFT/FEP/MM-GBSA, puis nous livrons 20 à 50 candidats optimisés et testés rigoureusement."
+      "description": "Nous utilisons des modèles d’IA et architectures MD spécialisées pour concevoir vos binders. Nous prenons en charge l’analyse de surface, le docking, la chimie et la validation DFT/FEP/MM-GBSA, puis nous livrons 20 à 50 candidats optimisés et testés rigoureusement."
     },
     "value": {
       "badge": "Ingénierie",

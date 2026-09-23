@@ -46,7 +46,7 @@
     },
     "animation": {
       "title": "Vollständige Design & Validierung",
-      "description": "Wir implementieren maßgeschneiderte KI Modelle und MD-Architekturen, um Ihre Binder zu entwickeln. Wir übernehmen die Oberflächenanalyse, Docking, Chemie, DFT/FEP/MM-GBSA Validierung und liefern 20–50 optimierte Kandidaten."
+      "description": "Wir implementieren maßgeschneiderte KI-Modelle und MD-Architekturen, um Ihre Binder zu entwickeln. Wir übernehmen die Oberflächenanalyse, Docking, Chemie, DFT/FEP/MM-GBSA-Validierung und liefern 20–50 optimierte Kandidaten."
     },
     "value": {
       "badge": "Engineering",
@@ -156,7 +156,7 @@
     "hero": {
       "badge": "Physik-informierte neuronale Netze",
       "title": "Feststoffbatterie-Simulation",
-      "description": "Mit physikbasierten neuronalen Netzen, die Ionentransport, spannungsgekoppelte Kinetik und Bruchmechanik simulieren, sehen wir kritische Dendriten- und SEI-Bildung über Hunderte von Zyklen im voraus.",
+      "description": "Mit physikbasierten neuronalen Netzen, die Ionentransport, spannungsgekoppelte Kinetik und Bruchmechanik simulieren, sehen wir kritische Dendriten- und SEI-Bildung über Hunderte von Zyklen im Voraus.",
       "cta": {
         "primary": "Schnellkontakt",
         "secondary": "Gespräch buchen"
@@ -225,7 +225,7 @@
     "hero": {
       "badge": "Graph Neuronale Netzwerke",
       "title": "Elite Betrugserkennung für den Mittelstand",
-      "description": "Wir bieten mittelständischen Banken die Graph-Technologie, die nur Großbanken benutzen, aber für 10% der Kosten. Wir erkennen Finanzagenten-Netzwerke und reduzieren die Falschmeldungen die Sie millionen kosten, bis zum 50%.",
+      "description": "Wir bieten mittelständischen Banken die Graph-Technologie, die nur Großbanken benutzen, aber für 10% der Kosten. Wir erkennen Finanzagenten-Netzwerke und reduzieren die Falschmeldungen die Sie Millionen kosten, bis zum 50%.",
       "cta": {
         "primary": "Schnellkontakt",
         "secondary": "Gespräch buchen"
