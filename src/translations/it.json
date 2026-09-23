@@ -1,6 +1,6 @@
 {
   "meta": {
-    "description": "Le nostre reti neurali simulano la fisica interna di pompe centrifughe e motori elettrici in tempo reale. Rileviamo problemi mesi in anticipo con una precisione del 99% e risparmiamo milioni evitando fermi macchina."
+    "description": "Progettiamo molecole per nanoparticelle lipidiche e degradazione proteica usando modelli proprietari di Graph AI e tecnologie MD."
   },
   "header": {
     "nav": {
@@ -41,7 +41,7 @@
       "description": "Progettiamo molecole per nanoparticelle lipidiche e degradazione proteica usando modelli proprietari di Graph AI e tecnologie MD.",
       "cta": {
         "primary": "Contatto diretto",
-        "secondary": "Prenota una demo"
+        "secondary": "Prenotare Demo"
       }
     },
     "animation": {

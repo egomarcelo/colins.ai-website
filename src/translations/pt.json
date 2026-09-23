@@ -1,6 +1,6 @@
 {
   "meta": {
-    "description": "Nossas redes neurais simulam a física interna de bombas e motores em tempo real. Detectamos problemas meses antes com 99% de precisão e economizamos milhões evitando paradas de produção."
+    "description": "Projetamos moléculas para nanopartículas e degradação de proteinas usando modelos IA e tecnologia MD proprietária."
   },
   "header": {
     "nav": {
@@ -41,7 +41,7 @@
       "description": "Projetamos moléculas para nanopartículas e degradação de proteinas usando modelos IA e tecnologia MD proprietária.",
       "cta": {
         "primary": "Contato direto",
-        "secondary": "Agenda uma demo"
+        "secondary": "Reservar demo"
       }
     },
     "animation": {
