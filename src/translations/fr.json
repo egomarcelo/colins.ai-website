@@ -38,7 +38,7 @@
     "hero": {
       "badge": "Biotechnologie",
       "title": "Ingénierie Moléculaire",
-      "description": "Nous concevons des molécules pour les nanoparticules lipidiques et la dégradation des protéines avec nos modèles propriétaires de Graph AI et technologie MD.",
+      "description": "Nous concevons des molécules pour les nanoparticules et la dégradation des protéines avec nos modèles IA et technologie MD propriétaire.",
       "cta": {
         "primary": "Contact direct",
         "secondary": "Réserver une démo"
@@ -46,7 +46,7 @@
     },
     "animation": {
       "title": "Conception & Validation Complète",
-      "description": "Nous utilisons des modèles d’IA et du source code sur mesure pour concevoir vos binders. Nous prenons en charge l’analyse de surface, le docking, la chimie et la validation DFT/FEP/MM-GBSA, puis nous livrons 20 à 50 candidats optimisés et testés rigoureusement."
+      "description": "Nous utilisons des modèles d’IA et architectures MD specialisées pour concevoir vos binders. Nous prenons en charge l’analyse de surface, le docking, la chimie et la validation DFT/FEP/MM-GBSA, puis nous livrons 20 à 50 candidats optimisés et testés rigoureusement."
     },
     "value": {
       "badge": "Ingénierie",

@@ -46,7 +46,7 @@
     },
     "animation": {
       "title": "Vollständige Design & Validierung",
-      "description": "Wir implementieren maßgeschneiderte KI Modelle und Molecular-Dynamics-Source-Code, um Ihre spezifischen Binder zu entwickeln. Wir übernehmen Oberflächenanalyse, Docking, Chemie, DFT/FEP/MM-GBSA Validierung und liefern 20–50 optimierte Kandidaten."
+      "description": "Wir implementieren maßgeschneiderte KI Modelle und MD-Architekturen, um Ihre Binder zu entwickeln. Wir übernehmen die Oberflächenanalyse, Docking, Chemie, DFT/FEP/MM-GBSA Validierung und liefern 20–50 optimierte Kandidaten."
     },
     "value": {
       "badge": "Engineering",
