@@ -1,31 +1,42 @@
 <!-- =========================
-biotech section
+Biotechnology section
 ===========================-->
 <div data-ns-animate data-delay="0.6" data-instant>
-  <div class="tab-content max-w-[850px] mx-auto space-y-[75px] {=$class}" data-display="block">
-    
+  <div class="tab-content max-w-[850px] mx-auto space-y-[75px]" data-display="block">
     <!-- Section 1 -->
     <div data-ns-animate data-delay="0.3" class="space-y-2">
-      <h4>What is ISO/IEC 42001?</h4>
+      <h4>What is ISO 42001?</h4>
       <p>
-        ISO/IEC 42001 mandates that AI systems must be explainable. Standard deep learning models are often black boxes. They provide answers, but cannot explain why. In chemistry, the greatest risk is creating molecules that seem plausible but that are ultimately unsynthesizable. We prevent this with the architecture of our Graph Neural Networks.
+        ISO 42001 provides a framework for managing AI responsibly, including its risks,
+        limitations, and human oversight. For us, that means being clear about how we use our
+        proprietary AI models within a complete molecular design service. We handle the design,
+        chemistry, and simulation work for lipid nanoparticle and protein degradation projects, with
+        people reviewing the results at each stage.
       </p>
     </div>
 
     <!-- Section 2 -->
     <div data-ns-animate data-delay="0.5" class="space-y-6">
       <div class="space-y-2">
-        <h4>Constrained Architecture</h4>
-        <p>Our GNNs are architecturally constrained to a discrete action space of verified chemical reactions (e.g., Amide Coupling, Click Chemistry). It is mathematically impossible for our AI to propose a linker that violates the rules of valence or chemical logic. We treat synthesizability as a hard constraint that cannot be violated.</p>
+        <h4>Start with the Right Inputs</h4>
+        <p>
+          A useful design starts with a clear brief and reliable data. We review the target
+          structures, starting molecules, and available experimental results against your project's
+          goals. Missing information and assumptions are recorded so they can be taken into account
+          when we assess the candidates.
+        </p>
       </div>
     </div>
 
     <!-- Section 3 with multiple elements -->
     <div data-ns-animate data-delay="0.5" class="space-y-6">
       <div class="space-y-2">
-        <h4>Explainability</h4>
+        <h4>Review Every Design</h4>
         <p>
-          Our system provides full traceability. For every linker proposed, we output the specific Enamine Catalog IDs of the starting fragments and the reaction sequence used to join them. We also accompany every prediction with the raw thermodynamic scores from our Physics Oracle (Vina/Rosetta), providing a clear, auditable rationale for why a specific linker was given a high score based on energy.
+          AI gives us a starting point for molecular design. We then combine surface analysis,
+          docking, and manual chemistry review to refine the candidates. We look at how each
+          molecule fits, which interactions support it, and whether there is a practical route to
+          synthesis. A promising AI score is one piece of evidence in that review.
         </p>
       </div>
     </div>
@@ -33,9 +44,12 @@ biotech section
     <!-- Section 4 -->
     <div data-ns-animate data-delay="0.5" class="space-y-6">
       <div class="space-y-2">
-        <h4>Data Quality</h4>
+        <h4>Check Predictions with Simulations</h4>
         <p>
-          Our agents interact exclusively with the Enamine REAL database and high-fidelity crystal structures (PDB). This strict data governance ensures that the model's worldview is limited to commercially available, high-purity chemistry.
+          We use molecular dynamics (MD) to examine how a design behaves over time, with FEP and
+          MM-GBSA calculations to assess binding energies where appropriate. These checks help us
+          refine and compare candidates. We explain the assumptions and limits of the results: a
+          favorable simulation still needs to be tested in the lab.
         </p>
       </div>
     </div>
@@ -43,12 +57,15 @@ biotech section
     <!-- Section 5 -->
     <div data-ns-animate data-delay="0.5" class="space-y-6">
       <div class="space-y-2">
-        <h4>Human-in-the-Loop</h4>
+        <h4>Keep Decisions Traceable</h4>
         <p>
-          Our technology is designed to present options, not final decisions. The AI generates a ranked list of high-probability candidates, but the final selection for synthesis remains in the hands of your medicinal chemists.
+          We keep track of the inputs, model and workflow versions, and simulation settings behind
+          our recommendations. Your candidate package includes the supporting results and our
+          reasoning, so your team can see why a molecule made the shortlist. We review the final
+          designs with you, and your team decides which candidates move forward to synthesis and
+          experimental testing.
         </p>
       </div>
-    </div>        
-
+    </div>
   </div>
 </div>
